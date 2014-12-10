@@ -1,0 +1,13 @@
+# Site settings
+title: Mike Carter &bull; Full Stack Developer
+email: mike@mcarter.me
+description: > # this means to ignore newlines until "baseurl:"
+  I'm a Full Stack Developer currently working at Holiday Extras in sunny Kent, UK. 
+  I help to create a truly hassle-free travel experience for our customers through good teamwork and technical wizardry.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://mcarter.me" # the base hostname & protocol for your site
+twitter_username: mcarterj
+github_username:  michaelcarter
+
+# Build settings
+markdown: kramdown
