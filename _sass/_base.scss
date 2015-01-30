@@ -9,13 +9,14 @@ dl, dd, ol, ul, figure {
 }
 
 h2 span.bordered {
-    border-radius:0.3em;
+    border-radius:4px;
     color:$grey-color;
     border: 0.1em solid $grey-color;
     font-family:Helvetica;
-    font-size:70%;
+    font-size:0.4em;
+    font-weight:700;
     letter-spacing:1px;
-    padding:0.35em 0.4em 0.2em 0.4em;
+    padding:0.8em 1.1em 0.65em;
     text-transform:uppercase;
     vertical-align:middle;
 }
