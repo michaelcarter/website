@@ -8,6 +8,18 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+h2 span.bordered {
+    border-radius:0.3em;
+    color:$grey-color;
+    border: 0.1em solid $grey-color;
+    font-family:Helvetica;
+    font-size:70%;
+    letter-spacing:1px;
+    padding:0.35em 0.4em 0.2em 0.4em;
+    text-transform:uppercase;
+    vertical-align:middle;
+}
+
 
 
 /**
@@ -104,7 +116,6 @@ a {
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
     }
 }
 
@@ -199,12 +210,12 @@ pre {
 
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: 32px;
+        height: 32px;
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: $brand-color-light;
         }
     }
 }

@@ -1,41 +1,41 @@
 ---
 layout: default
 ---
-
 <div class="home">
-  <div class="about-me">
+  <div class="container">
     <div class="avatar-container text-center">
       <img class="avatar" src="http://www.gravatar.com/avatar/c37474003e2798e695e7cbbcff39b3d8?s=200" alt="Mike Carter" />
     </div>
-
-    <h1 class="text-center">Mike Carter</h1>
-
     <p class="text-center">{{ site.description }}</p>
   </div>
 
-  <h2>Open source</h2>
-  <ul class="list">
-    <li>
-      <a href="https://github.com/michaelcarter/cordova-backbone-template" alt="Cordova Backbone Template on Github">Cordova BackboneTemplate</a>
-      <span class="meta">&bull; A simple Cordova/Backbone/Grunt starter project.</span>
-    </li>
-    <li>
-      <a href="https://github.com/michaelcarter/mixpanel-data-export-js" alt="Mixpanel Data Export JS on Github">Mixpanel Data Export JS</a>
-      <span class="meta">&bull; A Javascript SDK for Mixpanel's Data export API</span>
-    </li>
-    <li>
-      <a href="https://github.com/michaelcarter/movver" alt="Movver on Github">Movver</a>
-      <span class="meta">&bull; The concept of hover on mobile devices.</span>
-    </li>
-  </ul>
-
-  <h2>Writing</h2>
-  <ul class="list">
-    {% for post in site.posts %}
+  <div class="container text-center">
+    <h2><span class="bordered">Open source</span></h2>
+    <ul class="list">
       <li>
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        <span class="meta">&bull; {{ post.date | date: "%b %-d, %Y" }}</span>
+        <a href="https://github.com/michaelcarter/cordova-backbone-template" alt="Cordova Backbone Template on Github">Cordova BackboneTemplate</a>
+        <span class="meta">&bull; A simple Cordova/Backbone/Grunt starter project.</span>
       </li>
-    {% endfor %}
-  </ul>
+      <li>
+        <a href="https://github.com/michaelcarter/mixpanel-data-export-js" alt="Mixpanel Data Export JS on Github">Mixpanel Data Export JS</a>
+        <span class="meta">&bull; A Javascript SDK for Mixpanel's Data export API</span>
+      </li>
+      <li>
+        <a href="https://github.com/michaelcarter/movver" alt="Movver on Github">Movver</a>
+        <span class="meta">&bull; The concept of hover on mobile devices.</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container text-center">
+    <h2 class="bordered"><span class="bordered">Writing</span></h2>
+    <ul class="list">
+      {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <span class="meta">&bull; {{ post.date | date: "%b %-d, %Y" }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
