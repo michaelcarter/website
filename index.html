@@ -6,7 +6,7 @@ layout: default
     <div class="avatar-container text-center">
       <img class="avatar" src="http://www.gravatar.com/avatar/c37474003e2798e695e7cbbcff39b3d8?s=200" alt="Mike Carter" />
     </div>
-    <p class="text-center">{{ site.description }}</p>
+    <p class="text-center description">{{ site.description_html }}</p>
   </div>
 
   <div class="container text-center">
@@ -19,6 +19,10 @@ layout: default
       <li>
         <a href="https://github.com/michaelcarter/mixpanel-data-export-js" alt="Mixpanel Data Export JS on Github">Mixpanel Data Export JS</a>
         <span class="meta">&bull; A Javascript SDK for Mixpanel's Data export API</span>
+      </li>
+      <li>
+        <a href="https://github.com/holidayextras/truman" alt="Truman on Github">Truman</a>
+        <span class="meta">&bull; Simple test fixtures for single page apps</span>
       </li>
       <li>
         <a href="http://mcarter.me/movver" alt="Movver">Movver</a>
@@ -36,6 +40,16 @@ layout: default
           <span class="meta">&bull; {{ post.date | date: "%b %-d, %Y" }}</span>
         </li>
       {% endfor %}
+    </ul>
+  </div>
+
+  <div class="container text-center">
+    <h2 class="bordered"><span class="bordered">Presenting</span></h2>
+    <ul class="list">
+      <li>
+        <a href="https://speakerdeck.com/michaelcarter/test-fixturing-for-single-page-apps" alt="Test Fixturing for Single Page Apps">Test Fixturing for Single Page Apps</a>
+        <span class="meta">&bull; A talk I originally gave at CodeHarbour in April 2016</span>
+      </li>
     </ul>
   </div>
 </div>
