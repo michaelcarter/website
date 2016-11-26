@@ -1,12 +1,10 @@
 # Site settings
-title: Mike Carter &bull; Software Architect
+title: Mike Carter &bull; Software Enginner & founder
 email: mike@mcarter.me
 description: >
-  I'm Mike Carter, I work as a Software Architect at Holiday Extras in sunny Kent, UK.
-  I also do contracting work through my own small company, Leaf.
+  I'm Mike Carter, I'm a software engineer from Kent, UK. I'm currently building a web development studio, Leaf.
 description_html: >
-  I'm Mike Carter, I work as a Software Architect at <a href="http://holidayextras.com">Holiday Extras</a> in sunny Kent, UK.
-  I also do contracting work through my own small company, <a href="http://www.weareleaf.com">Leaf</a>.
+  I'm Mike Carter, I'm a software engineer from Kent, UK. I'm currently building a web development studio, <a href="http://www.weareleaf.com">Leaf</a>.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://mcarter.me" # the base hostname & protocol for your site
 twitter_username: mcarterj
