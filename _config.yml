@@ -1,10 +1,10 @@
 # Site settings
-title: Mike Carter &bull; Software Enginner & founder
-email: mike@mcarter.me
+title: Mike Carter
+email: mike@weareleaf.com
 description: >
-  I'm Mike Carter, I'm a software engineer from Kent, UK. I'm currently building a web development studio, Leaf.
+  I'm Mike Carter. I'm currently building Leaf, where we transform businesses with bespoke digital products and services that let them serve customers better, faster and at massive scale.
 description_html: >
-  I'm Mike Carter, I'm a software engineer from Kent, UK. I'm currently building a web development studio, <a href="http://www.weareleaf.com">Leaf</a>.
+  I'm Mike Carter. I'm currently building <a href="http://www.weareleaf.com">Leaf</a>, where we transform businesses with bespoke digital products and services that let them serve customers better, faster and at massive scale.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://mcarter.me" # the base hostname & protocol for your site
 twitter_username: mcarterj
