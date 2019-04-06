@@ -1,0 +1,151 @@
+body {
+  -webkit-animation: Gradient 30s ease infinite;
+  -moz-animation: Gradient 30s ease infinite;
+  animation: Gradient 30s ease infinite;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  color: #fff;
+  font-family: 'Rosario', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+.image {
+  &--text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2em;
+  }
+}
+
+.section {
+  &--main {
+    margin: 0 auto;
+    max-width: 30em;
+    padding: 1em;
+  }
+
+  &--gallery-container {
+
+  }
+}
+
+h1 {
+  font-size: 1.7em;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 1.5em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: center;
+  margin: 2.5em 0 0 0;
+}
+
+p {
+  text-align: center
+}
+
+b {
+  font-weight: 600;
+}
+
+ul {
+  text-align: center;
+  list-style: none;
+
+  li {
+    font-size: 0.9em;
+    line-height: 200%;
+  }
+}
+
+a {
+  &:link, &:visited {
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+    text-decoration: none;
+    transition:color .4s ease-out;
+  }
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+  }
+}
+
+.avatar {
+  display: block;
+  border-radius: 100px;
+  max-width: 5em;
+  margin: 2em auto 0 auto;
+}
+
+.gallery {
+  display: flex;
+  margin: 2em 0 0 0;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+
+  &__image {
+    flex: 1 1 100%;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.emojis {
+  display: block;
+  font-size: 0.7em
+}
+
+.footer {
+  margin: 3em 0 0 0;
+  font-size: 0.8em;
+}
