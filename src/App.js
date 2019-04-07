@@ -19,25 +19,25 @@ class App extends Component {
             <span className="emojis">👨👩🏻🐕</span>
           </h2>
 
-          <p>I'm a <Age birthday={birthday} /> year old product-focussed Software Engineer living in Canterbury, England with my fiancée, Sylvie, and my dog, Bramley.</p>
+          <p>I'm a <Age birthday={birthday} /> year old product-focussed Software Engineer living in Canterbury with my fiancée Sylvie and my dog Bramley.</p>
 
-          <p>I like movies, music, and keeping healthy with regular gym sessions. I am also learning to sail, and hope to learn to play the piano soon too.</p>
+          <p>I like movies, music, and keeping healthy with regular gym sessions. I am also learning to sail this year.</p>
 
           <h2>
             My Work
             <span className="emojis">👨‍🔧💻📱</span>
           </h2>
 
-          <p>At the moment I'm building <a href="https://www.weareleaf.com" target="_blank" rel="noopener"><img className="image--text" src={logo} alt="Logo" /></a>, where we transform existing businesses by with digital products that let them serve customers better, faster and at massive scale.</p>
+          <p>I'm building <a href="https://www.weareleaf.com" target="_blank" rel="noopener"><img className="image--text" src={logo} alt="Logo" /></a>, where we transform existing businesses with digital products that let them serve customers more effectively, and at massive scale.</p>
 
-          <p>Before this, I worked as a Software Architect at <a href="https://www.holidayextras.co.uk" target="_blank" rel="noopener">Holiday Extras</a> where I played a small role in growing a development team from 25 to over 100 people, while helping to deliver profitable travel software used by millions.</p>
+          <p>Before this, I was a Software Architect at <a href="https://www.holidayextras.co.uk" target="_blank" rel="noopener">Holiday Extras</a> where I played a small role in growing a development team from 25 to over 100 people, while helping to deliver profitable travel software used by millions.</p>
 
           <h2>
             My Writing
             <span className="emojis">👨‍💻✍️📖</span>
           </h2>
 
-          <p>I try make time to write about <b>software engineering</b> and <b>good work habits</b>. More recently focussing on the engineering challenges of building software products in within established businesses:</p>
+          <p>I write about <b>software engineering</b> and <b>good work habits</b>. More recently focussing on the engineering challenges of building software products in within established businesses:</p>
 
           <ul>
             <li>
@@ -74,7 +74,7 @@ class App extends Component {
             <span className="emojis">🌍💌⌨️</span>
           </h2>
 
-          <p>If you'd like to get in touch, you can email me at <a href="mailto:mike@mcarter.me">mike@mcarter.me</a>, If you're just interested in what I have to say, follow me on <a href="https://twitter.com/mcarterj" target="_blank" rel="noopener">Twitter</a>, or <a href="https://www.instagram.com/mike_j_carter/" target="_blank" rel="noopener">Instagram</a>. </p>
+          <p>You can email me at <a href="mailto:mike@mcarter.me">mike@mcarter.me</a>, follow me on <a href="https://twitter.com/mcarterj" target="_blank" rel="noopener">Twitter</a>, or see me living my best life on <a href="https://www.instagram.com/mike_j_carter/" target="_blank" rel="noopener">Instagram</a>. </p>
         </div>
       </div>
     )
