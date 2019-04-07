@@ -9,9 +9,10 @@ class App extends Component {
     return (
       <div className="app">
         <div className="section section--main">
-          <img className="avatar" src="http://www.gravatar.com/avatar/c37474003e2798e695e7cbbcff39b3d8?s=200" alt="Mike Carter" />
-
-          <h1>Mike Carter</h1>
+          <div className="header">
+            <img className="avatar" src="http://www.gravatar.com/avatar/c37474003e2798e695e7cbbcff39b3d8?s=200" alt="Mike Carter" />
+            <h1>Mike Carter</h1>
+          </div>
 
           <h2>
             About Me
@@ -40,31 +41,31 @@ class App extends Component {
 
           <ul>
             <li>
-              <a href="https://medium.com/leaf-software/the-power-of-development-phases-c65aa077e0ca">The power of small development phases</a>
+              <a href="https://medium.com/leaf-software/the-power-of-development-phases-c65aa077e0ca" target="_blank" rel="noopener">The power of small development phases</a>
             </li>
             <li>
-              <a href="https://medium.com/leaf-software/a-home-office-for-productivity-d23f0aee627b">A home office for productivity</a>
+              <a href="https://medium.com/leaf-software/a-home-office-for-productivity-d23f0aee627b" target="_blank" rel="noopener">A home office for productivity</a>
             </li>
             <li>
-              <a href="https://medium.com/leaf-software/behavioural-traps-in-software-teams-e27806f35884">Behavioural traps in software teams</a>
+              <a href="https://medium.com/leaf-software/behavioural-traps-in-software-teams-e27806f35884" target="_blank" rel="noopener">Behavioural traps in software teams</a>
             </li>
             <li>
-              <a href="https://medium.com/leaf-software/working-too-much-please-stop-8dc0ac3ec179">Working too much? Please stop</a>
+              <a href="https://medium.com/leaf-software/working-too-much-please-stop-8dc0ac3ec179" target="_blank" rel="noopener">Working too much? Please stop</a>
             </li>
             <li>
-              <a href="https://medium.com/leaf-software/5-tips-for-actually-shipping-a-side-project-72080f7b8d5e">5 tips for actually shipping a side project</a>
+              <a href="https://medium.com/leaf-software/5-tips-for-actually-shipping-a-side-project-72080f7b8d5e" target="_blank" rel="noopener">5 tips for actually shipping a side project</a>
             </li>
             <li>
-              <a href="https://medium.com/leaf-software/there-are-no-excuses-for-poor-engineering-92573e51ece0">There are no excuses for poor engineering in 2017</a>
+              <a href="https://medium.com/leaf-software/there-are-no-excuses-for-poor-engineering-92573e51ece0" target="_blank" rel="noopener">There are no excuses for poor engineering in 2017</a>
             </li>
             <li>
-              <a href="/tech/2015/03/18/5-tips-for-a-smoother-code-review-process.html">5 tips for a smoother code review process</a>
+              <a href="http://tech.holidayextras.co.uk/2015/03/18/5-tips-for-a-smoother-code-review-process/" target="_blank" rel="noopener">5 tips for a smoother code review process</a>
             </li>
             <li>
-              <a href="/tech/2014/03/09/taming-your-technical-debt.html">Taming your Technical Debt</a>
+              <a href="http://tech.holidayextras.co.uk/misc/2014/03/09/taming-technical-debt/" target="_blank" rel="noopener">Taming your Technical Debt</a>
             </li>
             <li>
-              <a href="/tech/2014/01/20/great-performance-from-your-cordova-app.html">5 tips for great performance from your Cordova app</a>
+              <a href="http://tech.holidayextras.co.uk/mobile/2014/01/20/getting-performance-cordova-based-application/" target="_blank" rel="noopener">5 tips for great performance from your Cordova app</a>
             </li>
           </ul>
 
@@ -73,7 +74,7 @@ class App extends Component {
             <span className="emojis">🌍💌⌨️</span>
           </h2>
 
-          <p>If you'd like to get in touch, you can email me at <a href="mailto:mike@mcarter.me">mike@mcarter.me</a>, If you're just interested in what I have to say, follow me on <a href="https://twitter.com/mcarterj">Twitter</a>, or <a href="https://www.instagram.com/mike_j_carter/" target="_blank" rel="noopener">Instagram</a>. </p>
+          <p>If you'd like to get in touch, you can email me at <a href="mailto:mike@mcarter.me">mike@mcarter.me</a>, If you're just interested in what I have to say, follow me on <a href="https://twitter.com/mcarterj" target="_blank" rel="noopener">Twitter</a>, or <a href="https://www.instagram.com/mike_j_carter/" target="_blank" rel="noopener">Instagram</a>. </p>
         </div>
       </div>
     )
