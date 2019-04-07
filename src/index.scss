@@ -1,25 +1,43 @@
 @keyframes FadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 @keyframes Gradient {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
+  0% { background-position: 0% 5% }
+  10% { background-position: 0% 5% }
+
+  16% { background-position: 50% 5% }
+  26% { background-position: 50% 5% }
+
+  32% { background-position: 50% 50% }
+  42% { background-position: 50% 50% }
+
+  48% { background-position: 50% 100% }
+  58% { background-position: 50% 100% }
+
+  64% { background-position: 0% 100% }
+  74% { background-position: 0% 100% }
+
+  80% { background-position: 0% 50% }
+  90% { background-position: 0% 50% }
+
+  100% { background-position: 0% 5% }
+}
+
+@keyframes Bounce {
+  0%   { transform: scale(1,1)      translateY(0); }
+  10%  { transform: scale(1.1,.9)   translateY(0); }
+  30%  { transform: scale(.9,1.1)   translateY(-100px); }
+  50%  { transform: scale(1.05,.95) translateY(0); }
+  57%  { transform: scale(1,1)      translateY(-7px); }
+  64%  { transform: scale(1,1)      translateY(0); }
+  100% { transform: scale(1,1)      translateY(0); }
 }
 
 body {
-  -webkit-animation: Gradient 20s ease infinite;
-  -moz-animation: Gradient 20s ease infinite;
-  animation: Gradient 20s ease infinite;
-  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  animation: Gradient 40s ease infinite;
+  background: linear-gradient(-45deg, #c61919, #EE7752, #E73C7E, #23A6D5);
   background-size: 400% 400%;
   color: #fff;
   font-family: 'Hind', sans-serif;
@@ -27,6 +45,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
+  text-shadow: 0 0 2px rgba(0,0,0,.3);
   font-size: 1.3em;
   @media only screen and (min-width: 600px) {
     font-size: 1.5em;
@@ -37,8 +56,13 @@ body {
   margin-top: 1em;
 
   img {
+    animation-name: Bounce;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+    animation-duration: .7s;
+    animation-iteration-count: 1;
     border-radius: 100px;
-    margin-right: .5em;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+    margin: 0 .5em 0 0;
     max-width: 3em;
 
     @media only screen and (min-width: 600px) {
@@ -50,11 +74,68 @@ body {
 
   h1 {
     display: inline;
-    vertical-align: top;
+    vertical-align: 40%;
 
     @media only screen and (min-width: 600px) {
+      vertical-align: auto;
       display: block;
     }
+  }
+}
+
+.section {
+  animation: FadeIn 2s;
+
+  &--main {
+    margin: 0 auto;
+    max-width: 30em;
+    padding: .5em;
+    @media only screen and (min-width: 600px) {
+      padding: 1em;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    text-align: center;
+  }
+}
+
+h1, h2 {
+  font-family: 'Amaranth', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin: 1.5em 0 0 0;
+}
+
+
+ul {
+  @media only screen and (min-width: 600px) {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    font-size: .9em;
+    margin: 1.2em 0;
+  }
+}
+
+a {
+  &:link, &:visited {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+  }
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.5);
+    transition: color .2s ease-out;
   }
 }
 
@@ -66,95 +147,7 @@ body {
   }
 }
 
-.section {
-  animation: FadeIn 2s;
-
-  &--main {
-    margin: 0 auto;
-    max-width: 30em;
-    padding: 1em;
-  }
-}
-
-h1 {
-  font-family: 'Amaranth', sans-serif;
-  font-size: 1.8em;
-  font-weight: 400;
-  text-align: center;
-
-  margin: 0;
-  @media only screen and (min-width: 600px) {
-    margin-bottom: 1.5em;
-  }
-}
-
-h2 {
-  font-family: 'Amaranth', sans-serif;
-  font-size: 1.6em;
-  font-weight: 400;
-  margin-top: 1.5em;
-
-  @media only screen and (min-width: 600px) {
-    margin-top: 1.5em;
-    text-align: center;
-  }
-}
-
-p {
-  text-align: left;
-  @media only screen and (min-width: 600px) {
-    text-align: center;
-  }
-}
-
-b {
-  font-weight: 600;
-}
-
-ul {
-  text-align: center;
-  list-style: none;
-  padding: 0;
-
-  li {
-    font-size: 0.9em;
-    line-height: 200%;
-  }
-}
-
-a {
-  &:link, &:visited {
-    color: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px dashed rgba(255, 255, 255, 0.9);
-    font-weight: 600;
-    text-decoration: none;
-  }
-
-  &:hover {
-    color: rgba(255, 255, 255, 0.5);
-    border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
-    transition: color .4s ease-out;
-  }
-}
-
-.gallery {
-  display: flex;
-  margin: 2em 0 0 0;
-  overflow: hidden;
-  padding: 0;
-  width: 100%;
-
-  &__image {
-    flex: 1 1 100%;
-
-    img {
-      display: block;
-      width: 100%;
-    }
-  }
-}
-
-.emojis {
+.emoji {
   margin-left: .3em;
 
   @media only screen and (min-width: 600px) {
