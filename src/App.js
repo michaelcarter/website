@@ -59,8 +59,8 @@ class App extends Component {
             >
               a few talented folks
             </a>
-            , where we specialise in building digital products &amp; services
-            that automate business.
+            , where we specialise in digital products &amp; services that
+            automate business.
           </p>
 
           <p>
