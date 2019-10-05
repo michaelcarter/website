@@ -128,6 +128,17 @@
       background: #f5f5f5;
       border-top: 1px solid #ddd;
       border-bottom: 1px solid #ddd;
+      overflow: hidden;
+    }
+
+    header .inner-wrapper {
+      position: relative;
+      z-index: 1;
+    }
+
+    canvas {
+      position: absolute;
+      margin: -1em auto 0 auto;
     }
 
     h1, h2 {
@@ -258,8 +269,9 @@
         max-width: 100%;
       }
     }
-
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js" async defer"></script>
+  <script src="index.js" async defer></script>
   <title>Mike Carter &bull; A Software Engineer and Founder from the UK</title>
 </head>
 <body>
@@ -279,6 +291,7 @@
   </section>
 
   <header>
+    <canvas id="canvas"></canvas>
     <div class="inner-wrapper">
       <h1>Hi <span class="emoji" role="img" aria-label="Hand waving">👋</span></h1>
 
