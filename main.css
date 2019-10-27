@@ -99,7 +99,7 @@ body {
   overflow: auto;
 }
 
-header, section {
+header, section, article, footer {
   padding: 1em 0;
 }
 
@@ -125,6 +125,16 @@ h1, h2 {
   font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
   margin: 0.5em 0;
 }
+
+h2 {
+  margin: 2.5em 0 0.5em 0;
+  font-size: 1.3em;
+}
+
+h2:first-child {
+  margin-top: 1.5em;
+}
+
 
 h3 {
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
@@ -194,11 +204,11 @@ nav a:link, nav a:visited {
   width: 40%;
 }
 
-.footer p {
+footer p {
   font-size: 0.7em;
 }
 
-.footer nav {
+footer nav {
   max-width: 50%;
 }
 
@@ -254,7 +264,7 @@ nav a:link, nav a:visited {
   }
 
   h2 {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   .left {
@@ -272,12 +282,12 @@ nav a:link, nav a:visited {
     margin: 1em 0 0 0;
   }
 
-  .footer p {
+  footer p {
     margin: 0;
     font-size: 0.6em;
   }
 
-  .footer nav {
+  footer nav {
     max-width: 100%;
   }
 

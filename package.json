@@ -1,0 +1,23 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelcarter/website.git"
+  },
+  "author": "Mike Carter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelcarter/website/issues"
+  },
+  "homepage": "https://github.com/michaelcarter/website#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
