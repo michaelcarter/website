@@ -403,8 +403,8 @@ window.addEventListener('load', function() {
   // Add a sphere to the scene
   var sphereGeometry = new THREE.SphereGeometry(50, 50, 50)
   var material = new THREE.MeshLambertMaterial({
-    color: '#dddddd',
-    emissive: '#dddddd',
+    color: '#cccccc',
+    emissive: '#cccccc',
     wireframe: true
   })
   var sphere = new THREE.Mesh(sphereGeometry, material)
