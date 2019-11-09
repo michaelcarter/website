@@ -84,7 +84,7 @@ body {
   font-size: 1.4em;
 }
 
-/* Begin styles: */
+/* Begin structural styles */
 .inner-wrapper {
   margin: 0 auto;
   padding: 0 1em;
@@ -103,47 +103,40 @@ header, section, article, footer {
   padding: 1em 0;
 }
 
-header {
-  background: #f5f5f5;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  overflow: hidden;
+.left {
+  float: left;
+  width: 40%;
 }
+/* End structural styles */
 
-header .inner-wrapper {
-  position: relative;
-  z-index: 1;
-}
 
-canvas {
-  position: absolute;
-  margin: -1em auto 0 auto;
-}
-
+/* Begin typographic styles */
 h1, h2 {
   color: black;
   font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-  margin: 0.5em 0;
+  margin-bottom: 0.3em;
+
+}
+
+h1 {
+  font-size: 1.6em;
 }
 
 h2 {
-  margin: 2.5em 0 0.5em 0;
-  font-size: 1.3em;
-}
-
-h2:first-child {
-  margin-top: 1.5em;
+  font-size: 1.2em;
+  margin: 0.5em 0;
 }
 
 
 h3 {
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 p, ul, ol {
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
-  margin: 1em 0 1.5em;
+  font-size: 0.9em;
+  margin: 1em 0;
 }
 
 li {
@@ -164,8 +157,29 @@ a:hover, a:active {
   text-decoration: none;
 }
 
+.emoji {
+  filter: grayscale(100%);
+}
+
+hr {
+  margin: 2em 0;
+}
+/* End typographic styles */
+
+
+/* Begin navigation styles */
+.profile-picture {
+  border: 1px solid #ddd;
+  border-radius: 3em;
+  filter: grayscale(100%);
+  float: left;
+  height: 3em;
+  width: 3em;
+}
+
 nav {
   float: right;
+  margin: 1em 0 0 0;
 }
 
 nav ul {
@@ -177,41 +191,47 @@ nav ul {
 nav li {
   display: inline-block;
   font-size: 0.8em;
-  margin: 0;
-  margin-left: 0.5em;
+  margin: 0 0.5em 0 0;
 }
 
 nav a:link, nav a:visited {
   font-weight: bold;
+  font-size: 1.1em;
   text-decoration: none;
 }
+/* End navigation styles */
 
-.profile-picture {
-  border: 1px solid #ddd;
-  border-radius: 3em;
-  filter: grayscale(100%);
-  float: left;
-  height: 3em;
-  width: 3em;
+
+/* Begin header styles */
+header {
+  background: #f5f5f5;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
 }
 
-.emoji {
-  filter: grayscale(100%);
+header canvas {
+  margin: -1em auto 0 auto;
+  position: absolute;
 }
 
-.left {
-  float: left;
-  width: 40%;
+header .inner-wrapper {
+  position: relative;
+  z-index: 1;
 }
 
-footer p {
-  font-size: 0.7em;
+header p {
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
 }
+/* End header styles*/
 
-footer nav {
-  max-width: 50%;
-}
+/* Begin section styles */
 
+/* End section styles */
+
+
+/* Begin writings styles */
 .writings {
   display: flex;
   flex-direction: row;
@@ -221,6 +241,7 @@ footer nav {
 
 .writings li {
   flex: 0 0 49%;
+  margin: 0 0 0.75em 0;
 }
 
 .post a:link, .post a:visited {
@@ -231,18 +252,56 @@ footer nav {
   height: 100%;
 }
 
+.post--external a:link, .post--external a:visited {
+  background-image: url("./images/icons/external-link.svg");
+  background-repeat: no-repeat;
+  background-position: 97% 0.6em;
+  background-size: 1em 1em;
+}
+
 .post a:hover .post__date {
   color: #ddd;
 }
 
+.post h3 {
+  margin-right: 1.5em;
+}
+
 .post__date {
-  color: #666;
-  font-size: 0.7em;
+  color: #414141;
+  font-size: 0.8em;
 }
 
 .post__description {
-  font-size: 0.6em;
+  font-size: 0.7em;
+  margin-bottom: 0.5em;
 }
+/* End writings styles */
+
+
+/* Begin article styles */
+article h2 {
+  margin: 1em 0 0 0;
+}
+
+article p {
+  color: #414141;
+  font-size: 0.8em;
+  margin: 0 0 1em 0;
+}
+/* End article styles */
+
+
+/* Begin footer styles */
+footer p {
+  font-size: 0.7em;
+}
+
+footer nav {
+  max-width: 50%;
+}
+/* End footer styles */
+
 
 @media only screen and (max-width: 550px) {
   .profile-picture {
@@ -252,7 +311,6 @@ footer nav {
 
   nav {
     float: none;
-    margin-top: 1em;
   }
 
   nav ul {
@@ -274,16 +332,13 @@ footer nav {
   }
 
   li {
-    margin-bottom: 1em;
   }
 
   h3 {
     font-size: 0.7em;
-    margin: 1em 0 0 0;
   }
 
   footer p {
-    margin: 0;
     font-size: 0.6em;
   }
 
