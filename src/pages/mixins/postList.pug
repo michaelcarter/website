@@ -1,0 +1,15 @@
+mixin postList(posts)
+  ul.writings
+    each post in posts
+      if post.external
+        li(class="post post--external")
+          a(href!=post.href, target="_blank" rel="noopener")
+            h3!=post.title
+            span.post__date=post.date
+            p.post__description!=post.description
+      else
+        li.post
+          a(href!=post.href)
+            h3!=post.title
+            span.post__date=post.date
+            p.post__description!=post.description

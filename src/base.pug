@@ -1,0 +1,31 @@
+block vars
+  -var pageTitle = "Mike Carter - A Software Engineer and Founder from the UK"
+  -var metaTitle = "Mike Carter"
+  -var metaDescription = "A Software Engineer and Founder from the UK"
+
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    link(rel='shortcut icon' href='/favicon.ico' type='image/x-icon')
+    link(rel='icon' href='/favicon.ico' type='image/x-icon')
+    meta(name='description' content=metaDescription)
+    meta(name='viewport' content='width=device-width,initial-scale=1,shrink-to-fit=no')
+    meta(property='og:url' content='https://mcarter.me')
+    meta(property='og:title' content=metaTitle)
+    meta(property='og:image' content='https://mcarter.me/me.jpg')
+    meta(property='og:description' content=metaDescription)
+    meta(name='twitter:title' content=metaTitle)
+    meta(name='twitter:image' content='https://mcarter.me/me.jpg')
+    meta(name='twitter:description' content=metaDescription)
+    meta(name='twitter:card' content='summary')
+    meta(name='twitter:site' content='@mcarterj')
+    meta(name='twitter:creator' content='@mcarterj')
+    meta(name='theme-color' content='#000000')
+    meta(name='viewport' content='width=device-width,initial-scale=1,shrink-to-fit=no')
+    link(rel='stylesheet' type='text/css' href='/assets/styles/main.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js' async='')
+    script(src='index.js' async='' defer='')
+    title=pageTitle
+  body
+    block pageContent
