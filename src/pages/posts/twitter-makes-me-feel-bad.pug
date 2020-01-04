@@ -1,0 +1,63 @@
+extends ../../base.pug
+
+include ../mixins/nav.pug
+include ../mixins/header.pug
+
+block append vars
+  -var pageTitle = "Twitter makes me feel bad - Mike Carter"
+  -var metaTitle = "Twitter makes me feel bad"
+  -var metaDescription = "I love Twitter because it allows me to keep up with the latest goings on in my industry. However, it also often leaves me feeling like a fake, a failure, and like I'm missing out. Here's why, and what I intend to do about it."
+
+block pageContent
+  +nav()
+  article
+    +header(
+      "Twitter makes me feel bad <span class='emoji' role='img' aria-label='Sad face'>&#128531;</span>",
+      "I love Twitter because it allows me to keep up with the latest goings on in my industry. However, it also often leaves me feeling like a fake, a failure, and like I'm missing out. Here's why, and what I intend to do about it."
+    )
+    main
+      .inner-wrapper
+
+        h2 Not achieving enough
+
+        p Twitter feeds me a constant highight reel of work and life achievements. New code library and app releases, new product features, new blog posts, videos, interviews, and most frequently of all - hot new takes.
+
+        p When you've spent the entire week solving problems that aren't world changing, Twitter can leave you feeling like you've achieved nothing at all. The sad part is, this can even happen when you know you have done lots of important and valuable work.
+
+        h2 Not talented enough
+
+        p The basic premise of Twitter is that you follow people you're interested in, and share content you think people might find interesting. This can create a healthy platform for learning, socialising, and sharing your work.
+
+        p However, if like me, you use Twitter to follow the best and brightest in your industry, your perspective quickly becomes skewed towards feeling distinctly average about yourself. It's very easy to feel distinctly average when your view of your industry the top 1% of talent on the planet.
+
+        h2 Not social enough
+
+        p Twitter makes me feel like a shy kid at a party. I'm constantly wanting to say things, but don't in case something bad happens. What if I've misunderstood something? What if people don't find my joke funny? What if nobody cares about the thing I think is cool? Worst of all, what if I accidentally say something un-woke and have my career ruined over a misunderstanding?
+
+        p Twitter rewards confidence, extroversion, clear communication, and quick wit. If you're none of these things, using Twitter can actually be a tiring, even emotionally draining experience. You feel bad about not Tweeting enough, feel bad about Tweeting and getting no engagement, or feel anxious when someone takes something you've said the wrong way.
+
+        hr
+
+        h2 What can I do about this?
+
+        p Despite everything I've said above. I actually enjoy using Twitter on the whole. It's educational, succinct, and entertaining. I also believe that as a company owner, having some sort of social media presence is important.
+
+        p When I really get introspective, I also realise these aren't problems with Twitter at all. What I'm actually experiencing are my own character traits and insecurities that Twitter is incredibly effective at surfacing. In response, I've decided to remind myself of the following when using Twitter.
+
+        h3 Comparison is the thief of joy
+        p The only person I should be comparing myself to is my past self. Also, I need to remember that I've chosen to follow high achievers on Twitter because I want to learn and improve. I shouldn't be surprised or feel bad that they're outperforming me.
+
+        h3 Work doesn't need to be shareable to be valuable
+        p Some of the most valuable work I've done in my career is unbelieveably mundane, and that's fine. I should seek a sense of achievement from having on projects I care about, not feel I have to make dent in the universe to be worthwhile.
+
+        h3 Stop worrying so much about what people think
+        p People will disagree with me, that's fine. People won't find what I have to share interesting, that's fine too. Nobody is dwelling on my tweets or lack thereof, I shouldn't either.
+
+        h3 Nobody can define success for you
+        p Success isn't code written, content shared, a follower account, travelling for work, or hours worked per week. It certainly isn't money in the bank. Success is achieving what I put my mind to achieving, nothing more, nothing less.
+
+        hr
+
+        p If you enjoyed this blog post, you should follow me on <a href='https://twitter.com/mcarterj' target='_blank' rel='noopener'>Twitter</a>, where I'll be sharing similar content in the future. I promise not to make you feel bad about youself.
+
+  include ../includes/footer.pug
