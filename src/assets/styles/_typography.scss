@@ -1,0 +1,64 @@
+h1, h2 {
+  color: black;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+
+h1 {
+  color: $sea;
+  font-size: 1.6em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  color: $sea;
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+
+h3 {
+  color: $sea;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  letter-spacing: -0.5px;
+  font-size: 0.9em;
+}
+
+p, ul, ol {
+  font-family: 'Lato', system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-size: 0.9em;
+  line-height: 2em;
+  margin: 1em 0;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+a:link, a:visited {
+  border-radius: 4px;
+  color: $grey;
+  transition: box-shadow 0.3s;
+  padding: 0.2em;
+}
+
+a:hover, a:active {
+  background: $grey;
+  box-shadow: 5px 5px 0 0 #b1b1b1;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: $bp-md) {
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  h3 {
+    font-size: 0.7em;
+  }
+}

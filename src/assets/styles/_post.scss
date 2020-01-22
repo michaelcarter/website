@@ -1,0 +1,40 @@
+.post a:link, .post a:visited {
+  display: block;
+  border: 2px dashed $grey;
+  padding: 1em;
+  text-decoration: none;
+  height: 100%;
+}
+
+.post--external a:link, .post--external a:visited {
+  background-image: url("/assets/images/icons/external-link.svg");
+  background-repeat: no-repeat;
+  background-position: 97% 0.6em;
+  background-size: 1em 1em;
+}
+
+.post a:hover {
+  color: white;
+  box-shadow: 8px 8px 0 0 #b1b1b1;
+
+  h3 {
+    color: white;
+  }
+}
+
+.post h3 {
+  color: $grey;
+  margin-right: 1.5em;
+  line-height: 1.2em;
+}
+
+.post__date {
+  color: #aaa;
+  font-size: 0.8em;
+}
+
+.post__description {
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin: 0;
+}

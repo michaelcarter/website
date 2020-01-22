@@ -1,0 +1,38 @@
+body {
+  color: $grey;
+  background: #fff;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 1.4em;
+}
+
+.inner-wrapper {
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 42em;
+}
+
+.inner-wrapper--clear {
+  overflow: auto;
+}
+
+section, main, footer {
+  padding: 1em 0;
+}
+
+.left {
+  float: left;
+  width: 40%;
+}
+
+hr {
+  margin: 2em 0;
+}
+
+
+@media only screen and (max-width: $bp-md) {
+  .left {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}
