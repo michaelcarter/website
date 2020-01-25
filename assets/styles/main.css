@@ -98,9 +98,7 @@ header {
   margin: -4em -2em 0 -2em;
   padding: 6em 2em 2em 2em;
   transform: rotate(-3deg);
-  text-align: center;
-  position: relative;
-  z-index: -1; }
+  text-align: center; }
   header h1, header p {
     transform: rotate(3deg); }
   header p {
@@ -141,7 +139,9 @@ ul.nav {
 
 nav {
   background: #f8fcff;
-  padding: 1em 0; }
+  padding: 1em 0;
+  position: relative;
+  z-index: 10; }
 
 nav ul {
   float: right; }
