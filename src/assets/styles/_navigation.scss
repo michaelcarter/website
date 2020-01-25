@@ -6,18 +6,49 @@ ul.nav {
   li {
     display: inline-block;
     font-size: 0.8em;
-    margin: 0 0.5em 0 0;
-  }
+    margin: 0 1em 0 0;
 
-  a:link, a:visited {
-    font-weight: bold;
-    font-size: 1.1em;
-    text-decoration: none;
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      border-bottom: 2px solid rgba(255, 255, 255, 0);
+      padding: 0 0 0.4em 0;
+      text-decoration: none;
+      transition: color $duration-medium, border-bottom-color $duration-medium;
+
+      svg {
+        width: 1.2em;
+        height: 1.2em;
+        margin-right: 0.2em;
+        display: inline-block;
+        vertical-align: -9%;
+        transition: fill $duration-medium;
+      }
+
+      &:link, &:visited {
+        font-weight: bold;
+        font-size: 1.1em;
+        text-decoration: none;
+      }
+
+      &:hover {
+        border-bottom-color: $sea;
+
+        svg {
+          fill: $sea;
+        }
+      }
+    }
   }
 }
 
 nav {
+  background: $sky;
   padding: 1em 0;
+  position: relative;
+  z-index: 10;
 }
 
 nav ul {

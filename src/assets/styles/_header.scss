@@ -1,11 +1,19 @@
 header {
-  margin-top: 2em;
+  background: $sky;
+  border-bottom: 2px dashed $blueberry;
+  margin: -4em -2em 0 -2em;
+  padding: 6em 2em 2em 2em;
+  transform: rotate(-3deg);
   text-align: center;
+
+  h1, p {
+    transform: rotate(3deg);
+  }
 
   p {
     margin-bottom: 0.5em;
     font-size: 1.1em;
-    line-height: 1.5em;
+    line-height: 1.6em;
   }
 
 }

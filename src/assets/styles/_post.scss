@@ -1,40 +1,47 @@
-.post a:link, .post a:visited {
-  display: block;
-  border: 2px dashed $grey;
-  padding: 1em;
-  text-decoration: none;
-  height: 100%;
-}
+.post {
+  a:link, a:visited {
+    display: block;
+    border: 2px dashed #bbb;
+    border-radius: 4px;
+    padding: 1em;
+    text-decoration: none;
+    height: 100%;
+  }
 
-.post--external a:link, .post--external a:visited {
-  background-image: url("/assets/images/icons/external-link.svg");
-  background-repeat: no-repeat;
-  background-position: 97% 0.6em;
-  background-size: 1em 1em;
-}
+  a:hover {
+    background: $sky;
+    border-color: $blueberry;
+    color: black;
+    transition: color $duration-medium, background $duration-medium, border-color $duration-medium;
 
-.post a:hover {
-  color: white;
-  box-shadow: 8px 8px 0 0 #b1b1b1;
+    .post__date {
+      color: #888;
+    }
+  }
 
   h3 {
-    color: white;
+    color: $grey;
+    margin-right: 1.5em;
+    line-height: 1.2em;
   }
-}
 
-.post h3 {
-  color: $grey;
-  margin-right: 1.5em;
-  line-height: 1.2em;
-}
+  &__date {
+    color: #aaa;
+    font-size: 0.8em;
+  }
 
-.post__date {
-  color: #aaa;
-  font-size: 0.8em;
-}
+  &__description {
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin: 0;
+  }
 
-.post__description {
-  font-size: 0.8em;
-  line-height: 1.7em;
-  margin: 0;
+  &--external {
+    a:link, a:visited {
+      background-image: url("/assets/images/icons/external-link.svg");
+      background-repeat: no-repeat;
+      background-position: 97% 0.6em;
+      background-size: 1em 1em;
+    }
+  }
 }
