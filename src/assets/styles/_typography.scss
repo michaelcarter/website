@@ -4,27 +4,27 @@ body {
 
 h1, h2 {
   color: black;
-  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-family: 'Sriracha', system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 }
 
 h1 {
   color: $sea;
-  font-size: 1.6em;
+  font-size: 1.7em;
   margin-bottom: 0.5em;
 }
 
 h2 {
   color: $sea;
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin: 1.2em 0 1em 0;
 }
 
 
 h3 {
   color: $sea;
-  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-family: 'Sriracha', system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
   letter-spacing: -0.5px;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 p, ul, ol {

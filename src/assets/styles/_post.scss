@@ -13,20 +13,15 @@
     border-color: $blueberry;
     color: black;
     transition: color $duration-medium, background $duration-medium, border-color $duration-medium;
-
-    .post__date {
-      color: #888;
-    }
   }
 
   h3 {
-    color: $grey;
     margin-right: 1.5em;
     line-height: 1.2em;
   }
 
   &__date {
-    color: #aaa;
+    color: #888;
     font-size: 0.8em;
   }
 
