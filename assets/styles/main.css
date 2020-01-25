@@ -76,6 +76,9 @@ article p {
   font-size: 0.8em;
   margin: 0 0 1em 0; }
 
+.emoji {
+  margin-left: 0.2em; }
+
 footer p {
   font-size: 0.7em; }
 
@@ -90,12 +93,20 @@ footer ul {
     max-width: 100%; } }
 
 header {
-  margin-top: 2em;
-  text-align: center; }
+  background: #f8fcff;
+  border-bottom: 2px dashed #3779ce;
+  margin-top: -4em;
+  padding: 6em 0 2em 0;
+  transform: rotate(-3deg);
+  text-align: center;
+  position: relative;
+  z-index: -1; }
+  header h1, header p {
+    transform: rotate(3deg); }
   header p {
     margin-bottom: 0.5em;
     font-size: 1.1em;
-    line-height: 1.5em; }
+    line-height: 1.6em; }
 
 ul.nav {
   list-style: none;
@@ -104,13 +115,32 @@ ul.nav {
   ul.nav li {
     display: inline-block;
     font-size: 0.8em;
-    margin: 0 0.5em 0 0; }
-  ul.nav a:link, ul.nav a:visited {
-    font-weight: bold;
-    font-size: 1.1em;
-    text-decoration: none; }
+    margin: 0 1em 0 0; }
+    ul.nav li:last-child {
+      margin-right: 0; }
+    ul.nav li a {
+      border-bottom: 2px solid rgba(255, 255, 255, 0);
+      padding: 0 0 0.4em 0;
+      text-decoration: none;
+      transition: color 0.5s, border-bottom-color 0.5s; }
+      ul.nav li a svg {
+        width: 1.2em;
+        height: 1.2em;
+        margin-right: 0.2em;
+        display: inline-block;
+        vertical-align: -9%;
+        transition: fill 0.5s; }
+      ul.nav li a:link, ul.nav li a:visited {
+        font-weight: bold;
+        font-size: 1.1em;
+        text-decoration: none; }
+      ul.nav li a:hover {
+        border-bottom-color: #3d608d; }
+        ul.nav li a:hover svg {
+          fill: #3d608d; }
 
 nav {
+  background: #f8fcff;
   padding: 1em 0; }
 
 nav ul {
@@ -126,22 +156,19 @@ nav ul {
 
 .post a:link, .post a:visited {
   display: block;
-  border: 2px dashed #414141;
+  border: 2px dashed #bbb;
+  border-radius: 4px;
   padding: 1em;
   text-decoration: none;
   height: 100%; }
 
-.post--external a:link, .post--external a:visited {
-  background-image: url("/assets/images/icons/external-link.svg");
-  background-repeat: no-repeat;
-  background-position: 97% 0.6em;
-  background-size: 1em 1em; }
-
 .post a:hover {
-  color: white;
-  box-shadow: 8px 8px 0 0 #b1b1b1; }
-  .post a:hover h3 {
-    color: white; }
+  background: #f8fcff;
+  border-color: #3779ce;
+  color: black;
+  transition: color 0.5s, background 0.5s, border-color 0.5s; }
+  .post a:hover .post__date {
+    color: #888; }
 
 .post h3 {
   color: #414141;
@@ -157,8 +184,13 @@ nav ul {
   line-height: 1.7em;
   margin: 0; }
 
+.post--external a:link, .post--external a:visited {
+  background-image: url("/assets/images/icons/external-link.svg");
+  background-repeat: no-repeat;
+  background-position: 97% 0.6em;
+  background-size: 1em 1em; }
+
 .profile-picture {
-  border: 1px solid #ddd;
   border-radius: 3em;
   float: left;
   height: 3em;
@@ -170,7 +202,6 @@ nav ul {
     margin: 0 auto; } }
 
 body {
-  color: #414141;
   background: #fff;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 1.4em; }
@@ -178,7 +209,7 @@ body {
 .inner-wrapper {
   margin: 0 auto;
   padding: 0 1em;
-  max-width: 42em; }
+  max-width: 38em; }
 
 .inner-wrapper--clear {
   overflow: auto; }
@@ -199,6 +230,9 @@ hr {
     width: 100%;
     text-align: center; } }
 
+body {
+  color: #414141; }
+
 h1, h2 {
   color: black;
   font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; }
@@ -211,7 +245,7 @@ h1 {
 h2 {
   color: #3d608d;
   font-size: 1.2em;
-  margin: 1em 0; }
+  margin: 1.2em 0 1em 0; }
 
 h3 {
   color: #3d608d;
@@ -229,16 +263,11 @@ li {
   margin-bottom: 0.5em; }
 
 a:link, a:visited {
-  border-radius: 4px;
   color: #414141;
-  transition: box-shadow 0.3s;
-  padding: 0.2em; }
+  transition: color 0.5s; }
 
 a:hover, a:active {
-  background: #414141;
-  box-shadow: 5px 5px 0 0 #b1b1b1;
-  color: #fff;
-  text-decoration: none; }
+  color: #3d608d; }
 
 @media only screen and (max-width: 550px) {
   h1 {
