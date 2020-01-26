@@ -12,9 +12,17 @@ const pagePlugins = pages.map(page => {
     filename: page.replace('.pug', '.html')
   })
 })
+
 const filePlugins = new CopyPlugin([
   { from: './src/assets/images/', to: './assets/images/' },
-  { from: './src/robots.txt', to: './robots.txt' }
+  { from: './src/robots.txt', to: './robots.txt' },
+  { from: './src/site.webmanifest', to: './site.webmanifest' },
+  { from: './src/favicon.ico', to: './favicon.ico' },
+  { from: './src/favicon-32x32.png', to: './favicon-32x32.png' },
+  { from: './src/favicon-16x16.png', to: './favicon-16x16.png' },
+  { from: './src/apple-touch-icon.png', to: './apple-touch-icon.png' },
+  { from: './src/android-chrome-512x512.png', to: './android-chrome-512x512.png' },
+  { from: './src/android-chrome-192x192.png', to: './android-chrome-192x192.png' }
 ])
 
 const config = {
