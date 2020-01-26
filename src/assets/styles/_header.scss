@@ -1,8 +1,12 @@
+html, body {
+  overflow-x: hidden;
+}
+
 header {
   background: $sky;
   border-bottom: 2px dashed $blueberry;
-  margin: -4em -2em 0 -2em;
   padding: 6em 2em 2em 2em;
+  margin: -4em -2em 0 -2em;
   transform: rotate(-3deg);
   text-align: center;
 
@@ -14,6 +18,9 @@ header {
     margin-bottom: 0.5em;
     font-size: 1.1em;
     line-height: 1.6em;
-  }
 
+    @media only screen and (max-width: $bp-sm) {
+      font-size: 0.9em;
+    }
+  }
 }

@@ -1,4 +1,8 @@
 .post {
+  @media only screen and (max-width: $bp-sm) {
+    font-size: 1.1em;
+  }
+
   a:link, a:visited {
     display: block;
     border: 2px dashed #bbb;
