@@ -76,9 +76,10 @@ article p {
   font-size: 0.8em;
   margin: 0 0 1em 0; }
 
-.code-sample {
+img.code-sample {
   margin: 0 auto;
-  max-width: 20em; }
+  min-width: 15em;
+  width: 75%; }
 
 .emoji {
   margin-left: 0.2em; }

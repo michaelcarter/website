@@ -17,8 +17,6 @@ block pageContent
     )
     main
       .inner-wrapper
-        h2 First, some financial advice
-
         p When we save for the future, we tend to start by cutting out small and unnecessary expenses. Not buying $5 lattes, avoiding branded items at the supermarket, or getting in a couple of drinks at home before going out. These all seem like sensible ways to claw back a bit of cash at the end of each month.
 
         p However, most of us fail to take action on longer term opportunities for wealth creation. We pay compounding interest on bad debt, our savings get eroded by inflation, and we purchase liabilities rather than assets.
@@ -29,7 +27,7 @@ block pageContent
 
         p As developers, we tend to fix the wrong problems in our code too. Take the following basic example:
 
-        img.code-sample(src="/assets/images/posts/fix-the-right-problems/badcode.png" alt="Our badCode function, before refactoring")
+        img.code-sample(src="/assets/images/posts/fix-the-right-problems/badcode.png" alt="getsBigger - a slightly verbose, slightly hard to read function")
 
         p This function returns <span class="code">true</span> if each number in a given array increments by one from the number that preceeded it (e.g. 1, 2, 3), and <span class="code">false</span> if not (e.g. 1, 3, 2). It's a little verbose, but with 15 minutes of refactoring we could transform it into something more clear and concise.
 
