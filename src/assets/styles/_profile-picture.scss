@@ -1,4 +1,8 @@
 .profile-picture {
+  opacity: 0;
+  animation: reveal .5s ease-in-out .1s;
+  animation-fill-mode: forwards;
+
   box-shadow: 0 0 0.1em $sea;
   border-radius: 3em;
   float: left;
@@ -10,6 +14,6 @@
 @media only screen and (max-width: $bp-md) {
   .profile-picture {
     float: none;
-    margin: 0 auto;
+    margin: .5em auto 0;
   }
 }

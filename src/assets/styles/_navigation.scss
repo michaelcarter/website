@@ -1,4 +1,8 @@
 ul.nav-links {
+  opacity: 0;
+  animation: reveal .5s ease-in-out .1s;
+  animation-fill-mode: forwards;
+
   list-style: none;
   margin: 1em 0 0 0;
   padding: 0;

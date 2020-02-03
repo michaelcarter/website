@@ -4,14 +4,21 @@ html, body {
 
 header {
   background: $sky;
+  box-shadow: inset 0 0 1.5em $fog;
   border-bottom: 2px dashed $blueberry;
   padding: 6em 2em 2em 2em;
   margin: -4em -2em 0 -2em;
   transform: rotate(-3deg);
   text-align: center;
 
-  h1, p {
+  .inner-wrapper {
     transform: rotate(3deg);
+  }
+
+  h1, p {
+    opacity: 0;
+    animation: reveal .3s ease-in-out .4s;
+    animation-fill-mode: forwards;
   }
 
   p {

@@ -13,6 +13,8 @@
   }
 
   a:hover {
+    animation: scaleUp .2s ease-in-out;
+    animation-fill-mode: forwards;
     background: $sky;
     border-color: $blueberry;
     color: black;
