@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>Mike Carter</title>
-  <link>https://www.mcarter.me</link>
+  <link>https://mcarter.me</link>
   <description>I care deeply about making building high quality web applications using simple, scaleable code and proven, open technologies.</description>
   <image>
     <url>https://mcarter.me/assets/images/me.jpg</url>
     <title>Mike Carter</title>
-    <link>https://mcarter.me/assets/images/me.jpg</link>
+    <link>https://mcarter.me</link>
   </image>
   <atom:link href="https://mcarter.me/rss.xml" rel="self" type="application/rss+xml" />
   <item>
