@@ -78,13 +78,21 @@ select {
   from {
     transform: translateY(0); }
   to {
-    transform: translateY(-5%); } }
+    transform: translateY(-7%); } }
 
 @keyframes scaleUp {
   from {
     transform: scale(1, 1); }
   to {
     transform: scale(1.03, 1.03); } }
+
+@keyframes openOut {
+  0% {
+    transform: translate(0, 0); }
+  50% {
+    transform: translate(15%, -15%); }
+  100% {
+    transform: translate(0, 0); } }
 
 article h3 {
   font-family: 'Sriracha', system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
@@ -145,7 +153,7 @@ header {
 
 ul.nav-links {
   opacity: 0;
-  animation: reveal .5s ease-in-out .1s;
+  animation: reveal 0.5s ease-in-out 0.1s;
   animation-fill-mode: forwards;
   list-style: none;
   margin: 1em 0 0 0;
@@ -154,6 +162,9 @@ ul.nav-links {
     display: inline-block;
     font-size: 0.7em;
     margin: 0 0 0 1.2em; }
+    ul.nav-links li:hover {
+      animation: slideUp 0.2s ease-in;
+      animation-fill-mode: forwards; }
     ul.nav-links li a {
       border-bottom: 2px solid rgba(255, 255, 255, 0);
       padding: 0 0 0.4em 0;
@@ -205,7 +216,7 @@ nav ul {
   height: 100%; }
 
 .post a:hover {
-  animation: scaleUp .2s ease-in-out;
+  animation: scaleUp 0.2s ease-in-out;
   animation-fill-mode: forwards;
   background: #f8fcff;
   border-color: #3779ce;
@@ -225,11 +236,16 @@ nav ul {
   line-height: 1.7em;
   margin: 0; }
 
-.post--external a:link, .post--external a:visited {
-  background-image: url("/assets/images/icons/external-link.svg");
-  background-repeat: no-repeat;
-  background-position: 97% 0.6em;
-  background-size: 1em 1em; }
+.post__external-link-icon {
+  fill: #bbb;
+  float: right;
+  height: 1em;
+  transition: fill 0.5s;
+  width: 1em; }
+  a:hover .post__external-link-icon {
+    animation: openOut 0.5s ease-in-out;
+    animation-iteration-count: infinite;
+    fill: #3d608d; }
 
 .profile-picture {
   opacity: 0;
