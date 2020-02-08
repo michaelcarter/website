@@ -5,7 +5,7 @@
 
   a:link, a:visited {
     display: block;
-    border: 2px dashed #bbb;
+    border: 2px dashed $storm;
     border-radius: 4px;
     padding: 1em;
     text-decoration: none;
@@ -13,7 +13,7 @@
   }
 
   a:hover {
-    animation: scaleUp .2s ease-in-out;
+    animation: scaleUp $duration-short ease-in-out;
     animation-fill-mode: forwards;
     background: $sky;
     border-color: $blueberry;
@@ -37,12 +37,17 @@
     margin: 0;
   }
 
-  &--external {
-    a:link, a:visited {
-      background-image: url("/assets/images/icons/external-link.svg");
-      background-repeat: no-repeat;
-      background-position: 97% 0.6em;
-      background-size: 1em 1em;
+  &__external-link-icon {
+    fill: $storm;
+    float: right;
+    height: 1em;
+    transition: fill $duration-medium;
+    width: 1em;
+
+    a:hover & {
+      animation: openOut $duration-medium ease-in-out;
+      animation-iteration-count: infinite;
+      fill: $sea;
     }
   }
 }

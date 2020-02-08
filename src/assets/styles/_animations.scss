@@ -5,10 +5,16 @@
 
 @keyframes slideUp {
   from { transform: translateY(0) }
-  to { transform: translateY(-5%) }
+  to { transform: translateY(-7%) }
 }
 
 @keyframes scaleUp {
   from { transform: scale(1, 1) }
   to { transform: scale(1.03, 1.03) }
+}
+
+@keyframes openOut {
+  0% { transform: translate(0, 0) }
+  50% { transform: translate(15%, -15%) }
+  100% { transform: translate(0, 0) }
 }

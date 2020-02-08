@@ -1,6 +1,6 @@
 ul.nav-links {
   opacity: 0;
-  animation: reveal .5s ease-in-out .1s;
+  animation: reveal $duration-medium ease-in-out .1s;
   animation-fill-mode: forwards;
 
   list-style: none;
@@ -11,6 +11,11 @@ ul.nav-links {
     display: inline-block;
     font-size: 0.7em;
     margin: 0 0 0 1.2em;
+
+    &:hover {
+      animation: slideUp $duration-short ease-in;
+      animation-fill-mode: forwards;
+    }
 
     a {
       border-bottom: 2px solid rgba(255, 255, 255, 0);
