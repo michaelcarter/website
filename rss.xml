@@ -3,10 +3,9 @@
 <channel>
   <title>Mike Carter</title>
   <link>https://www.mcarter.me</link>
-  <guid>https://www.mcarter.me</guid>
   <description>I care deeply about making building high quality web applications using simple, scaleable code and proven, open technologies.</description>
+  <atom:link href="https://mcarter.me/rss.xml" rel="self" type="application/rss+xml" />
   <item>
-">
     <title>Fix the right problems</title>
     <pubDate>Sun, 02 Feb 2020 13:00:00 GMT</pubDate>
     <description>We spend too much time making vanity improvements to our code, while failing to make refactors that affect the long-term quality of our software. We need to do better.</description>
@@ -14,7 +13,6 @@
     <guid>https://mcarter.me/posts/fix-the-right-problems</guid>
   </item>
   <item>
-">
     <title>Twitter makes me feel bad</title>
     <pubDate>Sat, 04 Jan 2020 13:00:00 GMT</pubDate>
     <description>I love Twitter because it allows me to keep up with the latest goings on in my industry. However, it also often leaves me feeling like a fake, a failure, and like I'm missing out. Here's why, and what I intend to do about it.</description>
@@ -22,7 +20,6 @@
     <guid>https://mcarter.me/posts/twitter-makes-me-feel-bad</guid>
   </item>
   <item>
-">
     <title>Things I wish I understood before starting an agency</title>
     <pubDate>Sat, 26 Oct 2019 13:00:00 GMT</pubDate>
     <description>In 2015 I started Leaf, a digital product agency, with my co-founder, Chris. As an employee who made the switch to running their own business, here are some things I wish I'd understood before starting.</description>
@@ -30,7 +27,6 @@
     <guid>https://mcarter.me/posts/before-you-start-an-agency</guid>
   </item>
   <item>
-">
     <link>https://weareleaf.com/blog/putting-amazon-textract-to-the-test</link>
     <guid>https://weareleaf.com/blog/putting-amazon-textract-to-the-test</guid>
     <title>Putting Amazon Textract to the test</title>
@@ -38,7 +34,6 @@
     <description>Amazon Textract extracts text and structured data from scanned or photographed documents, but how reliably can it be used for business process automation? We put it to the test.</description>
   </item>
   <item>
-">
     <link>https://weareleaf.com/blog/how-to-thrive-in-an-automated-business-world</link>
     <guid>https://weareleaf.com/blog/how-to-thrive-in-an-automated-business-world</guid>
     <title>How to thrive in an automated business world</title>
@@ -46,7 +41,6 @@
     <description>How can your business thrive when you're constantly being disrupted by leaner, faster, more automated competition on a global scale?</description>
   </item>
   <item>
-">
     <link>https://weareleaf.com/blog/automate-where-it-matters-with-process-maps</link>
     <guid>https://weareleaf.com/blog/automate-where-it-matters-with-process-maps</guid>
     <title>Automate where it matters with process maps</title>
@@ -54,7 +48,6 @@
     <description>We've experienced how competing stakeholders, unclear ROIs, and uncertainty can make committing to business automation difficult. Process maps provide a powerful way to clear the fog.</description>
   </item>
   <item>
-">
     <link>https://weareleaf.com/blog/goals-matter</link>
     <guid>https://weareleaf.com/blog/goals-matter</guid>
     <title>Goals matter</title>
@@ -62,7 +55,6 @@
     <description>Without a clear definition of success, it's hard to know which direction to take, or whether you're making any progress. Goals provide direction and clarity for your teams.</description>
   </item>
   <item>
-">
     <link>https://weareleaf.com/blog/the-power-of-small-development-phases</link>
     <guid>https://weareleaf.com/blog/the-power-of-small-development-phases</guid>
     <title>The power of small development phases</title>
@@ -70,7 +62,6 @@
     <description>Imagine this scenario - someone in your company proposes a new software feature with the potential to save the business ...</description>
   </item>
   <item>
-">
     <link>https://weareleaf.com/blog/a-home-office-for-productivity</link>
     <guid>https://weareleaf.com/blog/a-home-office-for-productivity</guid>
     <title>A home office for productivity</title>
@@ -78,7 +69,6 @@
     <description>At Leaf, we embrace remote work to get a productive edge. However, it's easy for a remote environment to work against you.</description>
   </item>
   <item>
-">
     <link>https://weareleaf.com/blog/behavioural-traps-in-software-teams</link>
     <guid>https://weareleaf.com/blog/behavioural-traps-in-software-teams</guid>
     <title>Behavioural traps in software teams</title>
@@ -86,7 +76,6 @@
     <description>In my experience of software teams, there are a few behavioural traps that leaders (senior stakeholders ...</description>
   </item>
   <item>
-">
     <link>https://weareleaf.com/blog/working-too-much-please-stop</link>
     <guid>https://weareleaf.com/blog/working-too-much-please-stop</guid>
     <title>Working too much? Please stop</title>
@@ -94,7 +83,6 @@
     <description>These days, people in most organisations are encouraged to work in their personal time ...</description>
   </item>
   <item>
-">
     <link>https://weareleaf.com/blog/5-tips-for-actually-shipping-a-side-project</link>
     <guid>https://weareleaf.com/blog/5-tips-for-actually-shipping-a-side-project</guid>
     <title>5 tips for actually shipping a side project</title>
@@ -102,7 +90,6 @@
     <description>We took Howdy, our own little app, from an idea to a fully published SaaS application entirely in our spare time. During its development...</description>
   </item>
   <item>
-">
     <link>https://weareleaf.com/blog/there-are-no-excuses-for-poor-engineering-in-2017</link>
     <guid>https://weareleaf.com/blog/there-are-no-excuses-for-poor-engineering-in-2017</guid>
     <title>There are no excuses for poor engineering in 2017</title>
@@ -110,7 +97,6 @@
     <description>Writing great code is easier than ever, and yet we act like it doesn't matter.</description>
   </item>
   <item>
-">
     <link>http://tech.holidayextras.co.uk/2015/03/18/5-tips-for-a-smoother-code-review-process/</link>
     <guid>http://tech.holidayextras.co.uk/2015/03/18/5-tips-for-a-smoother-code-review-process/</guid>
     <title>5 tips for a smoother code review process</title>
@@ -118,7 +104,6 @@
     <description>Some tips for a better code review process based on my experiences working at Holiday Extras.</description>
   </item>
   <item>
-">
     <link>http://tech.holidayextras.co.uk/misc/2014/03/09/taming-technical-debt/</link>
     <guid>http://tech.holidayextras.co.uk/misc/2014/03/09/taming-technical-debt/</guid>
     <title>Taming your Technical Debt</title>
@@ -132,6 +117,5 @@
     <pubDate>Mon, 20 Jan 2014 13:00:00 GMT</pubDate>
     <description>Back from the days before React Native, some tips for getting the best performance possible from a Cordova based mobile app.</description>
   </item>
-  <atom:link href="https://mcarter.me/rss.xml" rel="self" type="application/rss+xml" />
 </channel>
 </rss>
