@@ -1,0 +1,66 @@
+extends ../../base.pug
+
+include ../mixins/nav.pug
+include ../mixins/header.pug
+
+block append vars
+  -var pageTitle = "The economics of of JavaScript - Mike Carter"
+  -var metaTitle = "The economics of of JavaScript"
+  -var metaDescription = "Your single page JavaScript app probably doesn't make you as much money as its old-school alternative. Sorry."
+
+block pageContent
+  +nav()
+  article
+    +header(
+      "The economics of of JavaScript <span class='emoji' role='img' aria-label='Sad face'>&#128201;</span>",
+      "Your single page JavaScript app probably doesn't make you as much money as its old-school alternative. Sorry."
+    )
+    main
+      .inner-wrapper
+
+        p A good portion of my career has been spent building single page JavaScript web applications, or otherwise working extensively with JavaScript to build things for the web. I was playing with Digg's API back when Web 2.0 was a thing, picked up jQuery when that got big, did my CoffeeScript phase (<span class='emoji' role='img' aria-label='Heart'>&#x1F496;</span>), spent a few years with Backbone, and now 6 years using React.
+
+        p <strong>In 13 years, I've learned that JavaScript is a very expensive way to build on the front end.</strong>
+
+        h2 Diminishing gains
+
+        p With web applications, quality gained for vs. money spent isn't exponential, or even linear - the gains are diminishing. Getting from 80% great to 100% great doesn't require an extra 20% of development time, it often requires an extra 100% (or more).
+
+        p Our industry is lead by hyper-profitable tech giants, for whom expending this additonal effort makes financial sense. A good example is Facebook, where JavaScript is used to build extremely advanced React front-ends, delivering maximum <del>personal data</del> revenue for the company.
+
+        p For Facebook, maximising revenue might mean hundreds of millions of dollars on their bottom line. The sheer scale of their operation means it's a total no brainer to go spend whatever money is required to build some incredibly advanced JavaScript front-ends that handle all of the following common JavaScript pitfalls:
+
+        ul
+          li What if the JavaScript is slow to arrive?
+          li What if the JavaScript doesn't load at all?
+          li What if the JavaScript isn't interpreted as intended by my browser?
+          li What if a cached version of the JavaScript is loaded that isn't compatible with a new API?
+          li What if the user has JavaScript disabled? (Yes, this is a thing)
+          li What if the user's connection is really slow, and data requests initiated by the JavaScript fail to respond?
+          li What if the user is using a very underpowered device that can't handle the JavaScript?
+          li What if the user has a browser extension installed that interferes with the JavaScript?
+
+
+        p A lot of us work with much smaller businesses where the cost of handling JavaScript's pitfalls properly is proportionally much higher than Facebook's. The economics don't work the same way, and a JavaScript web application becomes very expensive to support properly. So expensive, in fact, that instead of handling the pitfalls we usually just accept that some customers will be unable to use our app.
+
+        h2 Round trips and progressive enhancement
+
+        p Most small and medium sized organisations are better off building with <strong>plain old HTML and CSS</strong>, using <strong>round trips to the server</strong>, and a <em>sprinkling</em> of JavaScript that <strong>progressively enhances</strong> a solid, economically sound foundation.
+
+        p This old-school approach yields a nice binary page load; either the HTML loads, and can be interacted with, or it doesn't, and can't. It's much cheaper to get this working for all of your users, who you can bet will have lower-powered devices, on slower connections running older software than your development team.
+
+        p The biggest irony in taking this approach is that the perceived quality of the web application doesn't actually suffer at all. Pages still load fast, elements are still styled nicely, and JavaScript is still there doing its thing. The only difference is you're building from stable foundations by default, and putting in the extra time to progressively enhance where it makes economical sense.
+
+        h2 Keeping JavaScript in its place
+
+        p At a high level, most web applications being built today are basically user interfaces that store and retrieve data from a database. They typically do this for organisations where a developer's salary is a significant cost. Built well, these can deliver tremendous value to a business, but a single page JavaScript web app often isn't needed to realise that value.
+
+        p Additionally, most development teams starting JavaScript web apps today won't consider the pitfalls listed above at <strong>at all</strong>. As a result, some customers don't get to use their application, and the company assumes everything is fine with a severe case of survivorship bias in their analytics.
+
+        p Next time you're building a new web application, consider the economics of your approach, and then proceed accordingly. More often than not, you'll find you can get your project up to a brilliant production-ready standard just HTML/CSS, and from there you can progressively enhance with your favourite JavaScript library where there's clear value in doing so.
+
+        hr
+
+        p If you enjoyed this blog post, you should follow me on <a href='https://twitter.com/mcarterj' target='_blank' rel='noopener'>Twitter</a>, where I'll be sharing similar content in the future.
+
+  include ../includes/footer.pug
