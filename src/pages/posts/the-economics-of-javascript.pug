@@ -1,0 +1,65 @@
+extends ../../base.pug
+
+include ../mixins/nav.pug
+include ../mixins/header.pug
+
+block append vars
+  -var pageTitle = "The economics of JavaScript - Mike Carter"
+  -var metaTitle = "The economics of JavaScript"
+  -var metaDescription = "Your single page JavaScript app probably doesn't make you as much money as its old-school alternative. Sorry."
+
+block pageContent
+  +nav()
+  article
+    +header(
+      "The economics of JavaScript <span class='emoji' role='img' aria-label='Sad face'>&#128201;</span>",
+      "Your single page JavaScript app probably doesn't make you as much money as its old-school alternative. Sorry."
+    )
+    main
+      .inner-wrapper
+
+        p A good portion of my career has been spent building single page JavaScript web applications, or otherwise using JavaScript to build for the web. I was playing with Digg's API back when Web 2.0 was a thing, picked up jQuery when that got big, did my CoffeeScript phase (<span class='emoji' role='img' aria-label='Heart'>&#x1F496;</span>), spent a few years with Backbone, and now 6 years using React.
+
+        p In all this time, I've learned that while incredibly powerful, <strong>doing JavaScript properly on the front end can be very expensive.</strong>
+
+        h2 Diminishing gains
+
+        p With web applications, value gained vs. money spent isn't exponential, or even linear - the gains are often diminishing. Getting from 80% valuable to 100% valuable doesn't require an extra 20% of development spend, it often requires an extra 100% or more.
+
+        p Our industry is lead by hyper-profitable tech giants, for whom spending this additional money makes sense. A good example is Facebook, where React is used to build advanced front-ends, delivering maximum revenue for the company.
+
+        p For Facebook, maximising revenue might mean hundreds of millions of additional dollars on their bottom line. The sheer scale of their operation means it's a no-brainer to spend the money required to go full JavaScript, handling all of the following pitfalls:
+
+        ul
+          li What if the JavaScript is slow to arrive?
+          li What if the JavaScript doesn't load at all?
+          li What if the JavaScript isn't interpreted as intended by my browser?
+          li What if a cached version of the JavaScript is loaded that isn't compatible with a new API?
+          li What if the user has JavaScript disabled?
+          li What if the user's connection is really slow, and data requests initiated by the JavaScript fail to respond?
+          li What if the user is using a very underpowered device that can't handle the JavaScript?
+          li What if the user has a browser extension installed that interferes with the JavaScript?
+
+        p A lot of us aren't like Facebook though. We work with much smaller businesses where the cost of handling JavaScript's pitfalls is proportionally much higher. The economics don't work the same way, and a JavaScript web application is comparitively expensive to implement properly. So expensive, in fact, that instead of handling the pitfalls, we often just accept that some customers will be unable to use our app.
+
+        h2 Round trips and progressive enhancement
+
+        p Most small and medium sized organisations are better off building with <strong>plain old HTML and CSS</strong>, using <strong>round trips to the server</strong>, and a <em>sprinkling</em> of JavaScript that <strong><a href="https://www.smashingmagazine.com/2009/04/progressive-enhancement-what-it-is-and-how-to-use-it/" rel="noopener" target="_blank">progressively enhances</a></strong> a solid, economical foundation.
+
+        p This old-school approach yields a nice binary page load; either the HTML loads and can be interacted with, or it doesn't and can't. Rather than having to negotiate JavaScript's pitfalls, this approach makes it cheap to build a working web application for all of your users - users who you can bet will have lower-powered devices, on slower connections, running older software than your development team.
+
+        p In the vast majority of cases the quality of the web application doesn't suffer from this approach, it gets better instead. Pages still load quickly, elements are still styled nicely, and JavaScript is still there doing its thing. The only difference is you're building from stable foundations by default, and putting in the extra time to progressively enhance where it makes sense.
+
+        h2 Keeping JavaScript in its place
+
+        p This isn't to say single page JavaScript web applications never make sense, because they sometimes do. It's just that most web applications being built today are simply user interfaces that store and retrieve information from a database. They're not putting a dent in the universe, but they do need to deliver value in organisations where a developer's salary is a pretty significant source of cost.
+
+        p We developers need to be more cognizant of the economics of our work, and build our apps accordingly. Most development teams starting JavaScript web applications today won't consider the pitfalls listed above <strong>at all</strong>. They'll just start building, and assume their experience is everyone else's experience too. As a result, some of their customers won't get to use their application, and their business misses out. I am definitely guilty of making this mistake.
+
+        p So, next time you're building a new web application, consider the economics of your approach and then proceed accordingly. More often than not, you'll find you can create a high quality production-ready product using just HTML &amp; CSS. From there you can progressively enhance with something like React where there's clear value in doing so, safe in the knowledge you're not going to be turning customers away, or spending more of your company's money than necessary to deliver a great product.
+
+        hr
+
+        p If you enjoyed this blog post, you should follow me on <a href='https://twitter.com/mcarterj' target='_blank' rel='noopener'>Twitter</a>, where I'll be sharing similar content in the future.
+
+  include ../includes/footer.pug
