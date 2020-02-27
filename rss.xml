@@ -12,6 +12,13 @@
   <atom:link href="https://mcarter.me/rss.xml" rel="self" type="application/rss+xml" />
   <webfeeds:icon>https://mcarter.me/assets/images/me.jpg</webfeeds:icon>
   <item>
+    <title>The economics of JavaScript</title>
+    <pubDate>Sun, 23 Feb 2020 13:00:00 GMT</pubDate>
+    <description>Your single page JavaScript app probably doesn't make you as much money as its old-school alternative. Sorry.</description>
+    <link>https://mcarter.me/posts/the-economics-of-javascript</link>
+    <guid>https://mcarter.me/posts/the-economics-of-javascript</guid>
+  </item>
+  <item>
     <title>Fix the right problems</title>
     <pubDate>Sun, 02 Feb 2020 13:00:00 GMT</pubDate>
     <description>We spend too much time making vanity improvements to our code, while failing to make refactors that affect the long-term quality of our software. We need to do better.</description>
