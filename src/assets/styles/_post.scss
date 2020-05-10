@@ -4,6 +4,7 @@
   }
 
   a:link, a:visited {
+    animation: scaleDown $duration-short ease-out 0;
     display: block;
     border: 2px dashed $storm;
     border-radius: 4px;
@@ -13,7 +14,7 @@
   }
 
   a:hover {
-    animation: scaleUp $duration-short ease-in-out;
+    animation: scaleUp $duration-short ease-in 0;
     animation-fill-mode: forwards;
     background: $sky;
     border-color: $blueberry;

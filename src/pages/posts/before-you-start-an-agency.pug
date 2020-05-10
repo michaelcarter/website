@@ -4,16 +4,16 @@ include ../mixins/nav.pug
 include ../mixins/header.pug
 
 block append vars
-  -var pageTitle = "Things I wish I understood before starting an agency - Mike Carter"
+  -var pageTitle = "Things I wish I understood before starting an agency | Mike Carter"
   -var metaTitle = "Things I wish I understood before starting an agency"
-  -var metaDescription = "In 2015 I started Leaf, a digital product agency, with my co-founder, Chris. As an employee who made the switch to running their own business, here are some things I wish I'd understood before starting."
+  -var metaDescription = "In 2015 I started a digital agency. As an employee who made the switch to running a business, here are some things I wish I'd understood before starting."
 
 block pageContent
   +nav()
   article
     +header(
       "Things I wish I understood before starting an agency <span class='emoji' role='img' aria-label='Man facepalming'>&#x1F926;&#x1F3FB;&zwj;&male;&#xFE0F;</span>",
-      "In 2015 I started <a href='https://www.weareleaf.com' target='_blank' rel='noopener noreferrer'>Leaf</a>, a digital product agency, with my co-founder, Chris. As an employee who made the switch to running their own business, here are some things I wish I'd understood before starting."
+      "In 2015 I started a <a href='https://www.weareleaf.com' target='_blank' rel='noopener noreferrer'>digital agency</a>. As an employee who made the switch to running a business, here are some things I wish I'd understood before starting."
     )
     main
       .inner-wrapper

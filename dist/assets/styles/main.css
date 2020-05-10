@@ -66,6 +66,12 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important; } }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 @keyframes reveal {
   from {
     opacity: 0;
@@ -85,6 +91,12 @@ select {
     transform: scale(1, 1); }
   to {
     transform: scale(1.03, 1.03); } }
+
+@keyframes scaleDown {
+  from {
+    transform: scale(1.03, 1.03); }
+  to {
+    transform: scale(1, 1); } }
 
 @keyframes openOut {
   0% {
@@ -208,6 +220,7 @@ nav ul {
     font-size: 1.1em; } }
 
 .post a:link, .post a:visited {
+  animation: scaleDown 0.2s ease-out 0;
   display: block;
   border: 2px dashed #bbb;
   border-radius: 4px;
@@ -216,7 +229,7 @@ nav ul {
   height: 100%; }
 
 .post a:hover {
-  animation: scaleUp 0.2s ease-in-out;
+  animation: scaleUp 0.2s ease-in 0;
   animation-fill-mode: forwards;
   background: #f8fcff;
   border-color: #3779ce;
@@ -275,6 +288,11 @@ body {
 
 .inner-wrapper--clear {
   overflow: auto; }
+
+main {
+  opacity: 0;
+  animation: fadeIn .5s ease-in-out .6s;
+  animation-fill-mode: forwards; }
 
 section, main, footer {
   padding: 1em 0; }

@@ -4,16 +4,16 @@ include ../mixins/nav.pug
 include ../mixins/header.pug
 
 block append vars
-  -var pageTitle = "The economics of JavaScript - Mike Carter"
-  -var metaTitle = "The economics of JavaScript"
-  -var metaDescription = "Your single page JavaScript app probably doesn't make you as much money as its old-school alternative. Sorry."
+  -var pageTitle = "The economics of JavaScript web apps | Mike Carter"
+  -var metaTitle = "The economics of JavaScript web apps"
+  -var metaDescription = "Your single page JavaScript web app probably doesn't make you as much money as its old-school alternative. Sorry."
 
 block pageContent
   +nav()
   article
     +header(
-      "The economics of JavaScript <span class='emoji' role='img' aria-label='Sad face'>&#128201;</span>",
-      "Your single page JavaScript app probably doesn't make you as much money as its old-school alternative. Sorry."
+      "The economics of JavaScript web apps <span class='emoji' role='img' aria-label='Sad face'>&#128201;</span>",
+      "Your single page JavaScript web app probably doesn't make you as much money as its old-school alternative. Sorry."
     )
     main
       .inner-wrapper

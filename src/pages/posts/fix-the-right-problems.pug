@@ -4,16 +4,16 @@ include ../mixins/nav.pug
 include ../mixins/header.pug
 
 block append vars
-  -var pageTitle = "Fix the right problems - Mike Carter"
-  -var metaTitle = "Fix the right problems"
-  -var metaDescription = "We spend too much time making vanity improvements to our code, while failing to make refactors that affect the long-term quality of our software. We need to do better."
+  -var pageTitle = "Fix the right problems in your code | Mike Carter"
+  -var metaTitle = "Fix the right problems in your code"
+  -var metaDescription = "We spend too much time making vanity improvements to our code, while failing to make refactors that affect long-term quality. We need to do better."
 
 block pageContent
   +nav()
   article
     +header(
-      "Fix the right problems <span class='emoji' role='img' aria-label='Hammer and wrench'>&#128736;</span>",
-      "We spend too much time making vanity improvements to our code, while failing to make refactors that affect the long-term quality of our software. We need to do better."
+      "Fix the right problems in your code <span class='emoji' role='img' aria-label='Hammer and wrench'>&#128736;</span>",
+      "We spend too much time making vanity improvements to our code, while failing to make refactors that affect long-term quality. We need to do better."
     )
     main
       .inner-wrapper

@@ -26,13 +26,28 @@ const filePlugins = new CopyPlugin([
   { from: './src/android-chrome-192x192.png', to: './android-chrome-192x192.png' }
 ])
 
+const statsConfig = {
+  children: false,
+  chunks: false,
+  assets: false,
+  builtAt: false,
+  hash: false,
+  // timings: false,
+  entrypoints: false,
+  modules: false,
+  version: false,
+  warnings: false,
+}
+
 const config = {
+  stats: statsConfig,
   entry: {
-    app: './src/assets/scripts/main.js'
+    app: './src/assets/scripts/main.js',
+    css: './src/assets/styles/main.scss'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js',
+    filename: '[name].js',
     publicPath: '/'
   },
   devServer: {
@@ -51,7 +66,8 @@ const config = {
           }
         }
       ]
-    }
+    },
+    stats: statsConfig,
   },
   plugins: [].concat(pagePlugins, filePlugins),
   module: {
@@ -70,6 +86,21 @@ const config = {
             plugins: ['@babel/plugin-proposal-object-rest-spread']
           }
         }
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'assets/styles/[name].css',
+            }
+          },
+          { loader: 'extract-loader' },
+          { loader: 'css-loader?-url' },
+          { loader: 'postcss-loader' },
+          { loader: 'sass-loader' }
+        ]
       }
     ]
   }

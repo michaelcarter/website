@@ -14,6 +14,12 @@ body {
   overflow: auto;
 }
 
+main {
+  opacity: 0;
+  animation: fadeIn .5s ease-in-out .6s;
+  animation-fill-mode: forwards;
+}
+
 section, main, footer {
   padding: 1em 0;
 }
