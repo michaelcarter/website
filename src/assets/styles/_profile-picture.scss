@@ -1,14 +1,14 @@
 .profile-picture {
-  opacity: 0;
-  animation: reveal .5s ease-in-out .1s;
-  animation-fill-mode: forwards;
+  // opacity: 0;
+  // animation: reveal .5s ease-in-out .2s;
+  // animation-fill-mode: forwards;
 
   box-shadow: 0 0 0.1em $sea;
   border-radius: 3em;
   float: left;
   margin: 0.5em 0;
-  height: 3em;
-  width: 3em;
+  height: 4em;
+  width: 4em;
 }
 
 @media only screen and (max-width: $bp-md) {
