@@ -1,0 +1,9 @@
+mixin imageList(images)
+  ul.images
+    each image in images
+      li.post
+        a(href!=image.href)
+          h3!=image.title
+          span.post__date=image.date
+          img.post__image(src=image.src alt=image.description)
+          p.post__description!=image.description

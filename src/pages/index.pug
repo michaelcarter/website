@@ -2,6 +2,7 @@ extends ../base.pug
 
 include mixins/nav.pug
 include mixins/header.pug
+include mixins/imageList.pug
 include mixins/postList.pug
 
 block prepend vars
@@ -16,6 +17,40 @@ block pageContent
     .inner-wrapper
       h2 Work<span class='emoji' role='img' aria-label='Hand writing'>&#128736;</span>
       p I'm currently building <a href="https://www.weareleaf.com" target="_blank" rel="noopener">Leaf</a>, where we help organisations excel online by making it easy for their users to provide them with high quality information. I'm very lucky to work alongside a <a href="https://weareleaf.com/company" target="_blank" rel="noopener">fantastic, fully remote team</a> of designers and engineers.
+
+      h2 Infographics<span class='emoji' role='img' aria-label='Drawing'>&#127912;</span>
+      p I make infographics to help explain software engineering concepts in an easy to consume format.
+
+      +imageList([
+        {
+          title: "How technical debt ruins codebases",
+          date: "26th May 2020",
+          description: "A chart showing how missteps in the management and development of a software project can cause an exponential build up of technical debt.",
+          src: "/assets/images/infographics/how-technical-debt-ruins-codebases-thumb.jpg",
+          href: "/assets/images/infographics/how-technical-debt-ruins-codebases.jpg",
+        },
+        {
+          title: "Front-end development is easy",
+          date: "19th May 2020",
+          description: "An infographic showing how complex front-end development can be by explaining many of the considerations involved in producing a basic JavaScript lookup component.",
+          src: "/assets/images/infographics/front-end-development-is-hard-thumb.jpg",
+          href: "/assets/images/infographics/front-end-development-is-hard.jpg",
+        },
+        {
+          title: "Why software estimation is hard",
+          date: "16th May 2020",
+          description: "An infographic explaining the complexities involved in estimating software development accurately.",
+          src: "/assets/images/infographics/why-software-estimation-is-hard-thumb.jpg",
+          href: "/assets/images/infographics/why-software-estimation-is-hard.jpg",
+        },
+        {
+          title: "Web quality matters",
+          date: "13th May 2020",
+          description: "An annotated graph showing how user experience, performance and accessibility issues affect a user's willingness to continue attempting to use a website.",
+          src: "/assets/images/infographics/web-quality-matters-thumb.jpg",
+          href: "/assets/images/infographics/web-quality-matters.jpg",
+        },
+      ])
 
       h2 Writing<span class='emoji' role='img' aria-label='Hand writing'>&#x270D;&#xFE0F;</span>
       p I write about software engineering and good work habits, along with some of my own personal opinions to spice things up a bit.

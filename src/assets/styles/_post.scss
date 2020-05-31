@@ -29,7 +29,17 @@
 
   &__date {
     color: #888;
+    display: inline-block;
     font-size: 0.8em;
+    width: 100%;
+  }
+
+  &__image {
+    border: 1px solid $storm;
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    max-width: 127px;
   }
 
   &__description {
