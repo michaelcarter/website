@@ -11,6 +11,11 @@
     background: $green;
     color: $white;
 
+    &:hover {
+      background: darken($green, 10%);
+      transition: background $duration-short;
+    }
+
     &:link,
     &:visited {
       color: $white;

@@ -81,7 +81,7 @@
   stroke-dashoffset: 0;
   @media (prefers-reduced-motion: no-preference) {
     animation: path 10s linear forwards;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
   }
 }
 
@@ -109,7 +109,7 @@
   @media (prefers-reduced-motion: no-preference) {
     animation: growShrink 4s linear 0;
     animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 4;
   }
 
   &--1 {
@@ -146,16 +146,16 @@
   @media (prefers-reduced-motion: no-preference) {
     animation: spin 10s linear 0;
     animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
     transform-origin: 77.5% 38.45%;
   }
 }
 
 .cog2 {
   @media (prefers-reduced-motion: no-preference) {
-    animation: spinBackwards 6s linear 0;
+    animation: spinBackwards 5s linear 0;
     animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 4;
     transform-origin: 60.5% 13.35%;
   }
 }
