@@ -1,73 +1,39 @@
 ul.nav-links {
-  opacity: 0;
-  animation: reveal $duration-medium ease-in-out .1s;
-  animation-fill-mode: forwards;
-
   list-style: none;
-  margin: 1em 0 0 0;
-  padding: 0;
+  text-align: center;
+  padding: $spacing-2 0;
 
   li {
     display: inline-block;
-    font-size: 0.7em;
-    margin: 0 0 0 1.2em;
-
-    &:hover {
-      animation: slideUp $duration-short ease-in;
-      animation-fill-mode: forwards;
-    }
+    margin: 0 $spacing-2;
+    text-align: center;
 
     a {
-      border-bottom: 2px solid rgba(255, 255, 255, 0);
-      padding: 0 0 0.4em 0;
+      padding: 0 0 0.4rem 0;
       text-decoration: none;
       transition: color $duration-medium, border-bottom-color $duration-medium;
 
       svg {
-        width: 1.2em;
-        height: 1.2em;
-        margin-right: 0.2em;
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-right: $spacing-1;
         display: inline-block;
         vertical-align: -9%;
         transition: fill $duration-medium;
       }
 
-      &:link, &:visited {
-        font-weight: bold;
-        font-size: 1.1em;
+      &:link,
+      &:visited {
+        font-size: 1.1rem;
         text-decoration: none;
       }
 
       &:hover {
-        border-bottom-color: $sea;
-
+        border-bottom-color: $blue-dark;
         svg {
-          fill: $sea;
+          fill: $blue-dark;
         }
       }
     }
-  }
-}
-
-nav {
-  background: $sky;
-  padding: 0.5em 0;
-  position: relative;
-  z-index: 10;
-}
-
-nav ul {
-  float: right;
-}
-
-@media only screen and (max-width: $bp-md) {
-  nav {
-    float: none;
-  }
-
-  ul.nav-links {
-    float: none;
-    margin: 1em auto 0 auto;
-    text-align: center;
   }
 }

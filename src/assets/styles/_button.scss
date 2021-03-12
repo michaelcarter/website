@@ -1,0 +1,19 @@
+.button {
+  background: $grey-lightest;
+  border-radius: $border-radius-1;
+  display: block;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  padding: $spacing-2 $spacing-3;
+
+  &--primary {
+    background: $green;
+    color: $white;
+
+    &:link,
+    &:visited {
+      color: $white;
+    }
+  }
+}

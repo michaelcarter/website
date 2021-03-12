@@ -4,182 +4,78 @@ include mixins/nav.pug
 include mixins/header.pug
 include mixins/imageList.pug
 include mixins/postList.pug
+include mixins/testimonials.pug
+
+include mixins/svgs/guideThroughUnknown.pug
+include mixins/svgs/understandBusiness.pug
+include mixins/svgs/safePairOfHands.pug
 
 block prepend vars
 
 block pageContent
-  +nav()
+  +navLinks
+
   +header(
-    "Hi<span class='emoji' role='img' aria-label='Hand waving'>&#x1F44B</span>",
-    "I'm Mike Carter, a Software Engineer from the UK. I care deeply about building high quality web applications using simple scaleable code and proven open technologies."
+    "Digital products done properly",
+    "Hi, I’m Mike. I’ll help you bring your digital product to market with solid foundations, room to scale, and costs under control.",
+    true
   )
+
   main
     .inner-wrapper
-      h2 Work<span class='emoji' role='img' aria-label='Hand writing'>&#128736;</span>
-      p I'm currently building <a href="https://www.weareleaf.com" target="_blank" rel="noopener">Leaf</a>, where we help organisations excel online by making it easy for their users to provide them with high quality information. I'm very lucky to work alongside a <a href="https://weareleaf.com/company" target="_blank" rel="noopener">fantastic, fully remote team</a> of designers and engineers.
+      section.half-section
+        h2.half-section__title.half-section__title--right A guide through the unknown
 
-      h2 Infographics<span class='emoji' role='img' aria-label='Drawing'>&#127912;</span>
-      p I make infographics to help explain software engineering concepts in an easy to consume format.
+        .half-section__item-container
+          .half-section__graphic
+            +guideThroughUnknown()
 
-      +imageList([
-        {
-          title: "Why 80% busy is enough",
-          date: "9th June 2020",
-          description: "An infographic showing how easy it is for developers to get overwhelmed with work if they don't keep time available for the unexpected.",
-          src: "/assets/images/infographics/why-80-percent-busy-is-enough-thumb.jpg",
-          href: "/assets/images/infographics/why-80-percent-busy-is-enough.jpg",
-        },
-        {
-          title: "How technical debt ruins codebases",
-          date: "26th May 2020",
-          description: "A chart showing how missteps in the management and development of a software project can cause an exponential build up of technical debt.",
-          src: "/assets/images/infographics/how-technical-debt-ruins-codebases-thumb.jpg",
-          href: "/assets/images/infographics/how-technical-debt-ruins-codebases.jpg",
-        },
-        {
-          title: "Front-end development is easy",
-          date: "19th May 2020",
-          description: "An infographic showing how complex front-end development can be by explaining many of the considerations involved in producing a basic JavaScript lookup component.",
-          src: "/assets/images/infographics/front-end-development-is-hard-thumb.jpg",
-          href: "/assets/images/infographics/front-end-development-is-hard.jpg",
-        },
-        {
-          title: "Why software estimation is hard",
-          date: "16th May 2020",
-          description: "An infographic explaining the complexities involved in estimating software development accurately.",
-          src: "/assets/images/infographics/why-software-estimation-is-hard-thumb.jpg",
-          href: "/assets/images/infographics/why-software-estimation-is-hard.jpg",
-        },
-        {
-          title: "Web quality matters",
-          date: "13th May 2020",
-          description: "An annotated graph showing how user experience, performance and accessibility issues affect a user's willingness to continue attempting to use a website.",
-          src: "/assets/images/infographics/web-quality-matters-thumb.jpg",
-          href: "/assets/images/infographics/web-quality-matters.jpg",
-        },
-      ])
+          .half-section__content
+            p Traditionally, developing a digital product is an expensive and time consuming endeavour, and frequently offers little return on investment. What’s more, professional software development is completely unregulated, making choosing a competent development partner a risky proposition.
 
-      h2 Writing<span class='emoji' role='img' aria-label='Hand writing'>&#x270D;&#xFE0F;</span>
-      p I write about software engineering and good work habits, along with some of my own personal opinions to spice things up a bit.
-      +postList([
-        {
-          title: "The economics of JavaScript web apps",
-          date: "23rd February 2020",
-          description: "Your single page JavaScript web app probably doesn't make you as much money as its old-school alternative. Sorry.",
-          href: "/posts/the-economics-of-javascript",
-          external: false
-        },
-        {
-          title: "Fix the right problems in your code",
-          date: "2nd February 2020",
-          description: "We spend too much time making vanity improvements to our code, while failing to make refactors that affect the long-term quality of our software. We need to do better.",
-          href: "/posts/fix-the-right-problems",
-          external: false
-        },
-        {
-          title: "Twitter makes me feel bad",
-          date: "4th January 2020",
-          description: "Twitter has some great web development chatter. However, it also makes me feel like a fake and a failure. Here's why, and what I intend to do about it.",
-          href: "/posts/twitter-makes-me-feel-bad",
-          external: false
-        },
-        {
-          title: "Things I wish I understood before starting an agency",
-          date: "26th October 2019",
-          description: "In 2015 I started a digital agency. As an employee who made the switch to running a business, here are some things I wish I'd understood before starting.",
-          href: "/posts/before-you-start-an-agency",
-          external: false
-        },
-        {
-          href: "https://weareleaf.com/blog/putting-amazon-textract-to-the-test",
-          title: "Putting Amazon Textract to the test",
-          date: "17th September 2019",
-          description: "Amazon Textract extracts text and structured data from scanned or photographed documents, but how reliably can it be used for business process automation? We put it to the test.",
-          external: true
-        },
-        {
-          href: "https://weareleaf.com/blog/how-to-thrive-in-an-automated-business-world",
-          title: "How to thrive in an automated business world",
-          date: "20th August 2019",
-          description: "How can your business thrive when you&apos;re constantly being disrupted by leaner, faster, more automated competition on a global scale?",
-          external: true
-        },
-        {
-          href: "https://weareleaf.com/blog/automate-where-it-matters-with-process-maps",
-          title: "Automate where it matters with process maps",
-          date: "16th July 2019",
-          description: "We&apos;ve experienced how competing stakeholders, unclear ROIs, and uncertainty can make committing to business automation difficult. Process maps provide a powerful way to clear the fog.",
-          external: true
-        },
-        {
-          href: "https://weareleaf.com/blog/goals-matter",
-          title: "Goals matter",
-          date: "18th June 2019",
-          description: "Without a clear definition of success, it&apos;s hard to know which direction to take, or whether you&apos;re making any progress. Goals provide direction and clarity for your teams.",
-          external: true
-        },
-        {
-          href: "https://weareleaf.com/blog/the-power-of-small-development-phases",
-          title: "The power of small development phases",
-          date: "17th December 2018",
-          description: "Imagine this scenario&hairsp;&mdash;&hairsp;someone in your company proposes a new software feature with the potential to save the business &mldr;",
-          external: true
-        },
-        {
-          href: "https://weareleaf.com/blog/a-home-office-for-productivity",
-          title: "A home office for productivity",
-          date: "2nd August 2018",
-          description: "At Leaf, we embrace remote work to get a productive edge. However, it&rsquo;s easy for a remote environment to work against you.",
-          external: true
-        },
-        {
-          href: "https://weareleaf.com/blog/behavioural-traps-in-software-teams",
-          title: "Behavioural traps in software teams",
-          date: "21st May 2018",
-          description: "In my experience of software teams, there are a few behavioural traps that leaders (senior stakeholders &mldr;",
-          external: true
-        },
-        {
-          href: "https://weareleaf.com/blog/working-too-much-please-stop",
-          title: "Working too much? Please stop",
-          date: "20th November 2017",
-          description: "These days, people in most organisations are encouraged to work in their personal time &mldr;",
-          external: true
-        },
-        {
-          href: "https://weareleaf.com/blog/5-tips-for-actually-shipping-a-side-project",
-          title: "5 tips for actually shipping a side project",
-          date: "29th March 2017",
-          description: "We took Howdy, our own little app, from an idea to a fully published SaaS application entirely in our spare time. During its development&mldr;",
-          external: true
-        },
-        {
-          href: "https://weareleaf.com/blog/there-are-no-excuses-for-poor-engineering-in-2017",
-          title: "There are no excuses for poor engineering in 2017",
-          date: "2nd March 2017",
-          description: "Writing great code is easier than ever, and yet we act like it doesn&rsquo;t matter.",
-          external: true
-        },
-        {
-          href: "http://tech.holidayextras.co.uk/2015/03/18/5-tips-for-a-smoother-code-review-process/",
-          title: "5 tips for a smoother code review process",
-          date: "18th March 2015",
-          description: "Some tips for a better code review process based on my experiences working at Holiday Extras.",
-          external: true
-        },
-        {
-          href: "http://tech.holidayextras.co.uk/misc/2014/03/09/taming-technical-debt/",
-          title: "Taming your Technical Debt",
-          date: "9th March 2014",
-          description: "What I learned about getting technical debt within a large team under control while working at Holiday Extras.",
-          external: true
-        },
-        {
-          href: "http://tech.holidayextras.co.uk/mobile/2014/01/20/getting-performance-cordova-based-application/",
-          title: "5 tips for great performance from your Cordova app",
-          date: "20th January 2014",
-          description: "Back from the days before React Native, some tips for getting the best performance possible from a Cordova based mobile app.",
-          external: true
-        }
-      ])
+            p My goal is to de-risk your digital product development journey. I combine true technical expertise, extensive industry experience, and excellent communication skills to bring your product to market in the form of quality, scaleable piece of software that generates real value for your business.
+
+      section.half-section
+        h2.half-section__title.half-section__title--left Someone who understands business
+
+        .half-section__item-container.half-section__item-container--reverse
+          .half-section__graphic
+            +understandBusiness()
+
+          .half-section__content
+            p It can be hard to move quickly in a business environment. There are tradeoffs to be made, stakeholders to win over, value to prove, priorities that change, and blockers to avoid.
+
+            p I’ve spent the past decade working to become adept at delivering quality software in these conditions. I’ll work closely with the relevant stakeholders in your business to make sure there’s a clear shared vision for your product, and that it’s always aligned with your current objectives.
+
+      section.half-section
+        h2.half-section__title.half-section__title--right A safe pair of hands
+
+        .half-section__item-container
+          .half-section__graphic
+            +safePairOfHands()
+
+          .half-section__content
+            p It’s all too common for software development projects to go off the rails. Typically losing time, money and opportunity with with an inexperienced development partner.
+
+            p I’ve built products for businesses of many different sizes and in many different sectors over the past decade. I know my onions, but more importantly I know what I don’t know, and will safely defer to specific subject matter experts where necessary.
+
+    .inner-wrapper.inner-wrapper--semi-wide
+      section.full-section
+        h2 Services
+        .full-section__content
+          .full-section__sub-section
+            h3 Product audits
+            p If your digital product is slow, buggy, or simply not converting as well as you’d expected, then this is for you. For <strong>£749</strong> I’ll perform a deep dive into your digital product provide you with a <strong>bespoke analysis report</strong> detailing actions you can take to fix a specific issue.
+
+          .full-section__sub-section
+            h3 Product consultancy
+            p For if you’re looking to build a new digital product, or would like longer term technical in your business. I'll work closely with you to <strong>guide technical decision making</strong> in accordance with your organisation’s tactical and strategic objectives, while <strong>speaking a language you understand</strong>.
+
+          .full-section__sub-section
+            h3 Product development
+            p For a <strong>fixed price</strong>, I’ll work on your digital product for you. I’ll coordinate with stakeholders in your business to establish clear requirements, and then deliver expertly crafted software that fully realises your vision with a <strong>clear return on investment</strong> for your business.
+        .full-section__footer
+          a.button.button--primary(href="mailto:mike@mcarter.me") Make an enquiry
+          span.helper-text Or copy &amp; paste <strong>mike@mcarter.me</strong>
+
   include includes/footer.pug

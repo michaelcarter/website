@@ -1,13 +1,23 @@
 body {
-  background: #fff;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 1.4em;
+  background: $white;
+  font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
 .inner-wrapper {
   margin: 0 auto;
-  padding: 0 1em;
-  max-width: 38em;
+  max-width: $layout-width;
+
+  &--semi-wide {
+    max-width: $layout-width-semi-wide;
+  }
+
+  &--wide {
+    max-width: $layout-width-wide;
+  }
+
+  &--semi-narrow {
+    max-width: $layout-width-semi-narrow;
+  }
 }
 
 .inner-wrapper--clear {
@@ -15,30 +25,11 @@ body {
 }
 
 main {
-  opacity: 0;
-  animation: fadeIn .25s ease-in-out .4s;
-  animation-fill-mode: forwards;
-}
-
-section, main, footer {
-  padding: 1em 0;
-}
-
-.left {
-  float: left;
-  width: 35%;
+  margin: 0;
+  padding: $spacing-4 0;
 }
 
 hr {
-  border-top: 2px dashed $blueberry;
-  margin: 2em 0;
-}
-
-
-@media only screen and (max-width: $bp-md) {
-  .left {
-    float: none;
-    width: 100%;
-    text-align: center;
-  }
+  border: 0.1rem solid $grey-lighter;
+  margin: $spacing-4 0;
 }

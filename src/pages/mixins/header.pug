@@ -1,5 +1,15 @@
-mixin header(title, description)
-  header
+mixin header(title, subtitle, showShowcase)
+  header.header(class=showShowcase ? "" : "header--centered")
     .inner-wrapper
-      h1!=title
-      p!=description
+      .header__content
+        h1.header__title!=title
+        p.header__subtitle!=subtitle
+      if showShowcase
+        .header__showcase
+          ul.header__showcase-items
+            li.header__showcase-item.header__showcase-item--network
+              img(src="/assets/images/stack-animation/bottom.png")
+            li.header__showcase-item.header__showcase-item--code
+              img(src="/assets/images/stack-animation/middle.png")
+            li.header__showcase-item.header__showcase-item--product
+              img(src="/assets/images/stack-animation/top.png")

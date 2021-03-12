@@ -1,0 +1,12 @@
+mixin testimonials(testimonials)
+  section.testimonials
+    .inner-wrapper.inner-wrapper--wide
+      ul.testimonials__container
+        each test in testimonials
+          li.testimonials__testimonial
+            blockquote.testimonials__quote!=test.quote
+            .testimonials__testimonial-footer
+              img.testimonials__image(src=test.imageSrc alt=test.imageDescription)
+              .testimonials__source
+                span.testimonials__source-author!=test.author
+                span.testimonials__source-position!=test.position

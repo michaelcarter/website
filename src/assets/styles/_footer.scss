@@ -1,17 +1,7 @@
-footer p {
-  font-size: 0.7em;
-}
+footer {
+  text-align: center;
 
-footer ul {
-  float: right;
-}
-
-@media only screen and (max-width: $bp-md) {
-  footer p {
-    font-size: 0.6em;
-  }
-
-  footer nav {
-    max-width: 100%;
+  p {
+    font-size: 1rem;
   }
 }

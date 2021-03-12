@@ -1,82 +1,87 @@
 body {
-  color: $grey;
-}
-
-h1, h2 {
-  color: black;
-  font-family: 'Sriracha', system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  color: $grey-dark;
 }
 
 h1 {
-  color: $sea;
-  font-size: 1.7em;
-  margin-bottom: 0.5em;
-}
+  color: $blue-dark;
+  font-family: $serif-font-family;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 4rem;
+  margin: $spacing-3 0;
 
-h2 {
-  color: $sea;
-  font-size: 1.3em;
-  margin: 1.2em 0 1em 0;
-}
-
-
-h3 {
-  color: $sea;
-  font-family: 'Sriracha', system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-  letter-spacing: -0.5px;
-  font-size: 1em;
-}
-
-p, ul, ol {
-  font-family: 'Lato', system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-  font-size: 0.9em;
-  line-height: 2em;
-  margin: 1em 0;
-
-  @media only screen and (max-width: $bp-sm) {
-    font-size: 0.8em;
+  @media only screen and (min-width: $bp-md) {
+    font-size: 3.7rem;
   }
 }
 
-li {
-  font-size: 0.9em;
-  margin-bottom: 0.5em;
+h2 {
+  color: $blue-dark;
+  font-family: $serif-font-family;
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+  margin: $spacing-3 0;
+
+  @media only screen and (min-width: $bp-md) {
+    font-size: 2.5rem;
+  }
 }
 
-a:link, a:visited {
+h3 {
+  color: $blue-dark;
+  font-family: $sans-font-family;
+  font-size: 1.6rem;
+  margin: $spacing-2 0;
+  font-weight: 600;
+}
+
+p,
+ul,
+ol,
+span,
+a {
+  font-family: $sans-font-family;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+  margin: 1rem 0;
+
+  @media only screen and (max-width: $bp-md) {
+    font-size: 1rem;
+  }
+}
+
+p {
+  margin: $spacing-3 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+strong {
+  font-weight: 600;
+}
+
+a:link,
+a:visited {
   color: $grey;
   transition: color $duration-medium;
 }
 
-a:hover, a:active {
-  color: $sea;
+a:hover,
+a:active {
+  color: $blue-dark;
 }
 
 .code {
-  background: $cloud;
+  background: $grey-light;
   font-weight: bold;
-  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  font-family: $fixed-font-family;
   letter-spacing: -1px;
-  padding:0 0.1em;
+  padding: 0 0.1rem;
 }
 
 .good {
   color: #690;
 }
-
-
-@media only screen and (max-width: $bp-md) {
-  h1 {
-    font-size: 1.6em;
-  }
-
-  h2 {
-    font-size: 1.2em;
-  }
-
-  h3 {
-    font-size: 1em;
-  }
-}
-
-
