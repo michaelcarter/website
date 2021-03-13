@@ -6,9 +6,7 @@
   "scripts": {
     "build:assets": "webpack --mode=production",
     "watch:assets": "webpack-dev-server --mode=development",
-    "git:gh-pages": "gh-pages -d dist",
-    "start": "run-p watch:assets",
-    "deploy": "run-s build:assets git:gh-pages"
+    "start": "run-p watch:assets"
   },
   "keywords": [],
   "author": "",
@@ -26,7 +24,6 @@
     "file-loader": "^6.0.0",
     "flickity": "^2.1.2",
     "flickity-imagesloaded": "^2.0.0",
-    "gh-pages": "^2.0.1",
     "glob": "^7.1.4",
     "gsap": "^2.1.2",
     "html-loader": "^0.5.5",
@@ -44,6 +41,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "sass-loader": "^7.3.1",
+    "sitemap-webpack-plugin": "^1.1.0",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.11.0"

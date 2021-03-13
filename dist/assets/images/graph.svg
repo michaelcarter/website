@@ -1,0 +1,14 @@
+<svg class="biz-chart__chart" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+  <line class="a biz-chart__base" x1="0.5" y1="23.5" x2="23.5" y2="23.5"></line>
+  <path class="a biz-chart__bar biz-chart__bar--1" d="M4.5,19a.5.5,0,0,0-.5-.5H2a.5.5,0,0,0-.5.5v4.5h3Z"></path>
+  <path class="a biz-chart__bar biz-chart__bar--2" d="M10.5,14a.5.5,0,0,0-.5-.5H8a.5.5,0,0,0-.5.5v9.5h3Z"></path>
+  <path class="a biz-chart__bar biz-chart__bar--3" d="M16.5,16a.5.5,0,0,0-.5-.5H14a.5.5,0,0,0-.5.5v7.5h3Z"></path>
+  <path class="a biz-chart__bar biz-chart__bar--4" d="M22.5,9a.5.5,0,0,0-.5-.5H20a.5.5,0,0,0-.5.5V23.5h3Z"></path>
+  <ircle class="a biz-chart__point biz-chart__point--1" cx="3" cy="11.5" r="1.5"></ircle>
+  <circle class="a biz-chart__point biz-chart__point--2" cx="9" cy="6.5" r="1.5"></circle>
+  <circle class="a biz-chart__point biz-chart__point--3" cx="15" cy="8.5" r="1.5"></circle>
+  <circle class="a biz-chart__point biz-chart__point--4" cx="21" cy="2" r="1.5"></circle>
+  <line class="a biz-chart__connect biz-chart__connect--1" x1="4.261" y1="10.45" x2="7.848" y2="7.46"></line>
+  <line class="a biz-chart__connect biz-chart__connect--2" x1="10.424" y1="6.974" x2="13.577" y2="8.025"></line>
+  <line class="a biz-chart__connect biz-chart__connect--3" x1="19.8" y1="3.1" x2="16.041" y2="7.285"></line>
+</svg>
