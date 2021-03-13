@@ -46,6 +46,11 @@
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.11.0"
   },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
   "prettier": {
     "semi": false,
     "tabWidth": 2,

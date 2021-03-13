@@ -10,6 +10,7 @@ const pages = glob.sync('**/*.pug', {
 
 const pagePlugins = pages.map((page) => {
   return new HtmlWebpackPlugin({
+    inject: false,
     template: `./src/pages/${page}`,
     filename: page.replace('.pug', '.html'),
   })
@@ -58,7 +59,6 @@ const statsConfig = {
 const config = {
   stats: statsConfig,
   entry: {
-    app: './src/assets/scripts/main.js',
     css: './src/assets/styles/main.scss',
   },
   output: {

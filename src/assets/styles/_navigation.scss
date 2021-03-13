@@ -9,7 +9,7 @@ ul.nav-links {
     text-align: center;
 
     a {
-      padding: 0 0 0.4rem 0;
+      padding: $spacing-2 $spacing-1;
       text-decoration: none;
       transition: color $duration-medium, border-bottom-color $duration-medium;
 

@@ -22,8 +22,6 @@ function getLastLogicalModifiedDate(relativePath) {
   const lastModifiedFs = getLastModifiedFs(fullPath)
   const lastModifiedGit = getLastModifiedGit(fullPath)
 
-  console.log(lastModifiedFs, lastModifiedGit)
-
   return lastModifiedGit > lastModifiedFs ? lastModifiedGit : lastModifiedFs
 }
 

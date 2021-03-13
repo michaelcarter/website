@@ -25,12 +25,12 @@ mixin postList(posts)
               g
               g
 
-            h3!=post.title
+            h2!=post.title
             span.post__date=post.date
             p.post__description!=post.description
       else
         li.post
           a(href!=post.href)
-            h3!=post.title
+            h2!=post.title
             span.post__date=post.date
             p.post__description!=post.description
