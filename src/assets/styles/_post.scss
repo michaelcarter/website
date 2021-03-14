@@ -4,13 +4,12 @@
   a:link,
   a:visited {
     background: $purple-lightest;
-    animation: scaleDown $duration-short ease-in-out;
     display: block;
     margin: 0;
     padding: $spacing-3 $spacing-3;
     text-decoration: none;
     height: 100%;
-    transition: box-shadow $duration-short, background $duration-short;
+    transition: box-shadow $duration-short, transform $duration-short;
 
     @media only screen and (min-width: $bp-sm) {
       border-radius: $border-radius-2;
@@ -19,10 +18,11 @@
 
   a:hover {
     background: darken($purple-lightest, 1%);
-    animation: scaleUp $duration-short ease-in-out;
-    animation-fill-mode: forwards;
     box-shadow: 0 0 $spacing-1 darken($grey-lighter, 15%);
     color: $grey-dark;
+    transition: box-shadow $duration-short, background $duration-short,
+      transform $duration-short;
+    transform: scale(1.04);
   }
 
   h2 {

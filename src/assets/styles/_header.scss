@@ -29,10 +29,6 @@
 
   &__title,
   &__subtitle {
-    opacity: 0;
-    animation: fadeIn 0.3s ease-out 0.2s;
-    animation-fill-mode: forwards;
-
     .header--centered & {
       text-align: center;
     }
