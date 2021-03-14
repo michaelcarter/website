@@ -1,25 +1,38 @@
 ul.nav-links {
   list-style: none;
+  padding: $spacing-2 $spacing-2;
   text-align: center;
-  padding: $spacing-2 0;
 
   li {
     display: inline-block;
-    margin: 0 $spacing-2;
-    text-align: center;
+    margin: 0 $spacing-2 0 0;
+
+    @media only screen and (min-width: $bp-sm) {
+      margin: 0 $spacing-2;
+      text-align: center;
+    }
 
     a {
-      padding: $spacing-2 $spacing-1;
+      padding: $spacing-2 0;
       text-decoration: none;
-      transition: color $duration-medium, border-bottom-color $duration-medium;
+
+      @media only screen and (min-width: $bp-sm) {
+        padding: $spacing-2 $spacing-1;
+      }
 
       svg {
-        width: 1.2rem;
-        height: 1.2rem;
-        margin-right: $spacing-1;
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.3rem;
         display: inline-block;
-        vertical-align: -9%;
+        vertical-align: -8%;
         transition: fill $duration-medium;
+
+        @media only screen and (min-width: $bp-sm) {
+          margin-right: $spacing-1;
+          width: 1.2rem;
+          height: 1.2rem;
+        }
       }
 
       &:link,
@@ -29,7 +42,7 @@ ul.nav-links {
       }
 
       &:hover {
-        border-bottom-color: $blue-dark;
+        transition: color $duration-medium, border-bottom-color $duration-medium;
         svg {
           fill: $blue-dark;
         }

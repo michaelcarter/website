@@ -10,7 +10,7 @@ h1 {
   line-height: 4rem;
   margin: $spacing-3 0;
 
-  @media only screen and (min-width: $bp-md) {
+  @media only screen and (min-width: $bp-sm) {
     font-size: 3.7rem;
   }
 }
@@ -23,7 +23,7 @@ h2 {
   line-height: 2.5rem;
   margin: $spacing-3 0;
 
-  @media only screen and (min-width: $bp-md) {
+  @media only screen and (min-width: $bp-sm) {
     font-size: 2.5rem;
   }
 }
@@ -46,7 +46,7 @@ a {
   line-height: 1.9rem;
   margin: 1rem 0;
 
-  @media only screen and (max-width: $bp-md) {
+  @media only screen and (max-width: $bp-sm) {
     font-size: 1rem;
   }
 }
@@ -66,12 +66,12 @@ strong {
 a:link,
 a:visited {
   color: $grey;
-  transition: color $duration-medium;
 }
 
 a:hover,
 a:active {
   color: $blue-dark;
+  transition: color $duration-medium;
 }
 
 .code {
