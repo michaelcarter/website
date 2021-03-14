@@ -108,6 +108,11 @@
     left: 0;
 
     &--network {
+      img {
+        object-fit: none;
+        object-position: 0 100%;
+      }
+
       @media (prefers-reduced-motion: no-preference) {
         animation: addShadow 1.5s ease 0.4s, explodeBottom 1s ease 0.8s,
           explodeBottom2 1s ease 1.8s;
@@ -116,6 +121,11 @@
     }
 
     &--code {
+      img {
+        object-fit: none;
+        object-position: 0 50%;
+      }
+
       @media (prefers-reduced-motion: no-preference) {
         animation: addShadow 1.5s ease 0.4s, explodeMiddle 1s ease 1.8s;
         animation-fill-mode: forwards;
@@ -123,6 +133,11 @@
     }
 
     &--product {
+      img {
+        object-fit: none;
+        object-position: 0 0;
+      }
+
       @media (prefers-reduced-motion: no-preference) {
         animation: addShadow 1.5s ease 0.4s, explodeTop 1s ease 0.8s;
         animation-fill-mode: forwards;
