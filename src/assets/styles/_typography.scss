@@ -30,11 +30,11 @@ h2 {
 }
 
 h3 {
-  color: $blue-dark;
+  color: $purple-dark;
   font-family: $sans-font-family;
   font-size: 1.6rem;
   margin: $spacing-2 0;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 p,
@@ -54,6 +54,10 @@ a {
 
 p {
   margin: $spacing-3 0;
+
+  &.lead {
+    font-weight: 600;
+  }
 }
 
 li {
