@@ -4,6 +4,7 @@ $bp-md: 76rem;
 
 // Colours:
 
+$grey-darker: #333;
 $grey-dark: #555;
 $grey: #666;
 $grey-light: #aaa;
@@ -13,7 +14,7 @@ $grey-lightest: #fafafa;
 $purple-light: #ebdfed;
 $purple-lighter: #f5f0f7;
 $purple-lightest: #f9f7fa;
-$purple-dark: darken($purple-lightest, 60%);
+$purple-dark: darken($purple-lightest, 45%);
 
 $white: #fff;
 
@@ -26,6 +27,7 @@ $yellow: #ffe791;
 
 $blue-light: #c2e2ff;
 $blue-dark: #3d608d;
+$blue-darker: darken($blue-dark, 10%);
 
 $blueberry: #3779ce;
 $fog: #f0f6fa;
