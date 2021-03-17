@@ -18,7 +18,7 @@
 
   a:hover {
     background: darken($purple-lightest, 1%);
-    box-shadow: 0 0 $spacing-1 darken($grey-lighter, 15%);
+    box-shadow: 0 0 $spacing-1 $grey-lightest;
     color: $grey-dark;
     transition: box-shadow $duration-short, background $duration-short,
       transform $duration-short;
@@ -31,7 +31,7 @@
   }
 
   &__date {
-    color: $grey;
+    color: $grey-dark;
     display: inline-block;
     font-weight: 600;
     font-size: 0.9rem;

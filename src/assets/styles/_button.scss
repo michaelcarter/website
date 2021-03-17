@@ -8,11 +8,11 @@
   padding: $spacing-2 $spacing-3;
 
   &--primary {
-    background: $green;
+    background: $green-dark;
     color: $white;
 
     &:hover {
-      background: lighten($green, 10%);
+      background: $green;
       transition: background $duration-short;
     }
 

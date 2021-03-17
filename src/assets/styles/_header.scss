@@ -13,10 +13,12 @@
   .inner-wrapper {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 1;
   }
 
   &__content {
-    flex: 0 1 50%;
+    flex: 0 1 65%;
 
     .header--centered & {
       flex: 1 0 100%;
@@ -45,8 +47,17 @@
   &__subtitle {
     font-size: $font-size-xl;
     font-weight: 300;
-    line-height: 2.5rem;
+    line-height: 2.6rem;
     margin: 0;
+    max-width: 30.5rem;
+
+    .header--centered & {
+      max-width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      max-width: 100%;
+    }
   }
 
   &__showcase {
@@ -57,9 +68,9 @@
     opacity: 0;
     animation: fadeIn 0.3s ease-out 0.2s;
     animation-fill-mode: forwards;
-    flex: 0 1 31rem;
+    flex: 0 0 31rem;
     padding-left: 7rem;
-    margin-top: -1rem;
+    margin: -2rem -5rem 0 0;
   }
 
   $item-width: 15.36rem;

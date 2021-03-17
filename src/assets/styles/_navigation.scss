@@ -1,7 +1,9 @@
 ul.nav-links {
   list-style: none;
   padding: $spacing-2 $spacing-2;
+  position: relative;
   text-align: center;
+  z-index: 1;
 
   li {
     display: inline-block;

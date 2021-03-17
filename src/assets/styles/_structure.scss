@@ -1,6 +1,24 @@
 body {
   background: $white;
   font-family: Georgia, Times, 'Times New Roman', serif;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 30rem;
+    position: absolute;
+    z-index: 1;
+    width: 30%;
+    left: -20%;
+    top: 0;
+    z-index: 0;
+    background-image: linear-gradient(
+      -180deg,
+      lighten($grey-lightest, 12%) 0%,
+      $white 100%
+    );
+    transform: skew(-20deg);
+  }
 }
 
 .inner-wrapper {
@@ -26,10 +44,5 @@ body {
 
 main {
   margin: 0;
-  padding: $spacing-4 0;
-}
-
-hr {
-  border: 0.1rem solid $grey-lighter;
-  margin: $spacing-4 0;
+  padding: $spacing-4 0 0 0;
 }
