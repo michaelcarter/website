@@ -1,0 +1,40 @@
+extends ../../base.pug
+
+include ../mixins/nav.pug
+include ../mixins/header.pug
+
+block append vars
+  -var pageTitle = "Moving on from Leaf | Mike Carter"
+  -var metaTitle = "Moving on from Leaf"
+  -var metaDescription = "Leaf is closing its doors in April 2021. Here's why we're winding down a profitable agency business, and what I plan to do with myself next."
+
+block pageContent
+  +nav()
+  article
+    +header(
+      "Moving on from Leaf",
+      "Leaf is closing its doors in April 2021. Here's why we're winding down a profitable agency business, and what I plan to do next."
+    )
+    main
+      .inner-wrapper.inner-wrapper--semi-narrow
+        p In 2015, <a href="http://chrisannetts.com" target="_blank" rel="noopener">Chris Annetts</a> and I set up <a href="Leaf" target="_blank" rel="noopener">Leaf</a>, a small remote digitial agency, while we were still full time employed at our old jobs. We went full time with Leaf fairly quickly, and have enjoyed a great deal of success over the last several years thanks to a combination of fantastic clients, a smart and hard-working team, and loyal friends within the industry. However, a short while ago I approached Chris about wanting to wind the company down and my desires to pursue a solo development career.
+
+        h2 Why I'm moving on
+        p There wasn't a single reason behind the decision to move on from Leaf, but rather a multitude of factors that had been playing on my mind for a while. However, there are three leading things I want from my work that I've been struggling to get.
+
+        p First, my 20s passed me by in a blur. Much of this time was spent working hard to do things like buy a house, forge a decent career path, and save/invest any spare money I had. I'm now 32, and while I love my work and will continue to work hard at my career, I want to be <strong>more careful with how I spend my time</strong>. Going solo gives me more flexibility to take time off, and work at times I can be productive rather than within the bounds of a 9am-5:30pm 40 hour work week.
+
+        p Second, throughout my career to date I've always wanted to to take time to <strong>experiment with new technologies, ideas and directions</strong>, but the timing has never been right. Commitments to organisations and employees have rightfully always come first, and getting decisions made within a larger organisation rightfully involves a lot of back and forth with stakeholders. Going solo allows me to make quick decisions and take bigger risks with my work.
+
+        p Third, I like to work closely with others on code and product, and <strong>I'm naturally suited to long periods of singularly-focused effort</strong>. I'm good at this, and it's always made me happy, so it seems illogical to not craft a career for myself that lets me spend lots of time working this way. While I'm sure the opposite is true for some personality types, my experience has been that running an agency demanded a lot of shallow work time that just didn't gel with my particular brain chemistry.
+
+        h2 What I'll be doing next
+        p From April, I'll be working as a <strong>freelance development consultant</strong> with a focus on helping organisations get digital products to market with solid foundations, room to scale, and costs under control. I love all the new technologies available on the web today, but I believe we've over-complicated web application development to an absurd degree as an industry. I'd like to work against that trend by helping organisations get their digital products off to the best start.
+
+        p Alongside my freelancing, I'll be taking time each week to begin <strong>building my own digital product</strong>. This will dovetail nicely in with my client work, showing I practice what I preach, but hopefully will also help contribute towards a growing "portfolio of small bets" (thanks <a href="https://twitter.com/dvassallo" target="_blank", rel="noopener">Daniel Vassallo</a>!) that comprise my overall income. For now this portfolio is just Leaf and investment income, but by the end of the year I'm aiming to have grown that to income from consulting, investments, property rental and digital product revenue.
+
+        p Lastly, I'm going to be <strong>blogging about my journey</strong> as a solo developer. I'll keep things open by sharing details on the financials of the endeavour as I go, as well as other juicy insights as I build in public.
+
+        p If you'd like to follow me on my journey, I'll be sharing everything on <a href='https://twitter.com/mcarterj' target='_blank' rel='noopener'>Twitter</a>. I also have a RSS feed on this site if you're cool like that. There'll be more tweets than blog posts, but I aim to keep it valuable and non-grifty on both fronts.
+
+  include ../includes/footer.pug
