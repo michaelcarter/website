@@ -1,0 +1,9 @@
+include svg.pug
+
+mixin halfSection(title, image)
+  .half-section
+    .half-section__image
+      +svg(image)
+    h2.half-section__title=title
+    .half-section__content
+      block

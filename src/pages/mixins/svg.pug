@@ -1,0 +1,26 @@
+include svgs/guideThroughUnknown.pug
+include svgs/understandBusiness.pug
+include svgs/safePairOfHands.pug
+include svgs/heha.pug
+include svgs/holidayExtras.pug
+include svgs/laced.pug
+include svgs/rift.pug
+include svgs/zendesk.pug
+
+mixin svg(name)
+  if name === 'guide'
+    +guideThroughUnknown()
+  else if name === 'business'
+    +understandBusiness()
+  else if name === 'safe-hands'
+    +safePairOfHands()
+  else if name === 'heha'
+    +heha()
+  else if name === 'holiday-extras'
+    +holidayExtras()
+  else if name === 'laced'
+    +laced()
+  else if name === 'rift'
+    +rift()
+  else if name === 'zendesk'
+    +zendesk()

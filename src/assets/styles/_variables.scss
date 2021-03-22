@@ -54,8 +54,8 @@ $font-size-xs: 0.8rem;
 
 // Sizings
 $layout-width-semi-narrow: 55rem;
-$layout-width: 70rem;
-$layout-width-semi-wide: 90rem;
+$layout-width: 80rem;
+$layout-width-semi-wide: calc(80rem + #{$spacing-4} + #{$spacing-4});
 $layout-width-wide: 110rem;
 
 // Transitions
