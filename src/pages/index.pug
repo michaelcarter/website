@@ -2,13 +2,9 @@ extends ../base.pug
 
 include mixins/nav.pug
 include mixins/header.pug
-include mixins/imageList.pug
-include mixins/postList.pug
-include mixins/testimonials.pug
-
-include mixins/svgs/guideThroughUnknown.pug
-include mixins/svgs/understandBusiness.pug
-include mixins/svgs/safePairOfHands.pug
+include mixins/twoThirdsSection.pug
+include mixins/halfSection.pug
+include mixins/companyLogos.pug
 
 block prepend vars
 
@@ -23,41 +19,18 @@ block pageContent
 
   main
     .inner-wrapper
-      section.half-section
-        h2.half-section__title.half-section__title--right A guide through the unknown
+      +companyLogos()
 
-        .half-section__item-container
-          .half-section__graphic
-            +guideThroughUnknown()
+      .half-section__container
+        +halfSection("A guide through the unknown", "guide")
+          p.lead Traditionally, developing a digital product is an expensive, time consuming endeavour that frequently offers little return on investment. What’s more, professional software development is completely unregulated, making choosing a competent development partner a risky proposition.
 
-          .half-section__content
-            p.lead Traditionally, developing a digital product is an expensive, time consuming endeavour that frequently offers little return on investment. What’s more, professional software development is completely unregulated, making choosing a competent development partner a risky proposition.
+          p My goal is to de-risk your digital product development journey. I combine true technical expertise, extensive industry experience, and excellent communication skills to bring your product to market in the form of a quality, scaleable piece of software that generates real value for your business.
 
-            p My goal is to de-risk your digital product development journey. I combine true technical expertise, extensive industry experience, and excellent communication skills to bring your product to market in the form of a quality, scaleable piece of software that generates real value for your business.
+        +halfSection("Someone who understands", "business")
+          p.lead It can be hard to move quickly in a business environment. There are tradeoffs to be made, stakeholders to win over, value to prove, priorities that change, and blockers to avoid.
 
-      section.half-section
-        h2.half-section__title.half-section__title--left Someone who understands business
-
-        .half-section__item-container.half-section__item-container--reverse
-          .half-section__graphic
-            +understandBusiness()
-
-          .half-section__content
-            p.lead It can be hard to move quickly in a business environment. There are tradeoffs to be made, stakeholders to win over, value to prove, priorities that change, and blockers to avoid.
-
-            p I’ve spent the past decade working to become adept at delivering software in these conditions. I’ll work closely with the relevant stakeholders in your business to make sure there’s a clear shared vision for your product aligned with your strategic objectives.
-
-      section.half-section
-        h2.half-section__title.half-section__title--right A safe pair of hands
-
-        .half-section__item-container
-          .half-section__graphic
-            +safePairOfHands()
-
-          .half-section__content
-            p.lead It’s all too common for software development projects to go off the rails. Typically losing time, money and opportunity with with an inexperienced development partner.
-
-            p I’ve built products for businesses of many different sizes and in many different sectors over the past decade. I know my onions, but I also know when there's value in defering to subject matter experts for a second opinion or additional development support.
+          p I’ve spent the past decade working to become adept at delivering software in these conditions. I’ll work closely with the relevant stakeholders in your business to make sure there’s a clear shared vision for your product aligned with your strategic objectives.
 
     .inner-wrapper.inner-wrapper--semi-wide
       section.full-section
@@ -80,7 +53,13 @@ block pageContent
             p.lead For a fixed price, I’ll work on your digital product, helping you to achieve a clear return on investment for your business.
 
             p I’ll coordinate with stakeholders in your business to establish clear requirements, and then deliver expertly crafted software that fully realises your vision.
-        .full-section__footer
+
+      .inner-wrapper
+        +twoThirdsSection("A safe pair of hands", "safe-hands", false)
+          p.lead It’s all too common for software development projects to go off the rails. Typically losing time, money and opportunity with with an inexperienced development partner.
+
+          p I’ve built products for businesses of many different sizes and in many different sectors over the past decade. I know my onions, but I also know when there's value in defering to subject matter experts for a second opinion or additional development support.
+
           a.button.button--primary(href="mailto:mike@mcarter.me") Make an enquiry
           span.helper-text Or copy &amp; paste <strong>mike@mcarter.me</strong>
 

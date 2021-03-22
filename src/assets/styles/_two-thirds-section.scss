@@ -1,0 +1,75 @@
+.two-thirds-section {
+  margin: $spacing-5 0;
+  padding: 0 $spacing-3;
+
+  @media only screen and (min-width: $layout-width) {
+    padding: 0;
+  }
+
+  &__title {
+    @media only screen and (min-width: $bp-sm) {
+      max-width: calc(100vw - (2 * #{$spacing-3}) - #{$spacing-5} - 20rem);
+    }
+
+    &--right {
+      @media only screen and (min-width: $bp-sm) {
+        margin-left: calc(20rem + #{$spacing-5});
+      }
+    }
+  }
+
+  &__item-container {
+    @media only screen and (min-width: $bp-sm) {
+      display: flex;
+      justify-content: space-between;
+
+      div:first-child {
+        margin-right: $spacing-5;
+      }
+
+      &--reverse {
+        flex-direction: row-reverse;
+
+        div:first-child {
+          margin-right: 0;
+        }
+
+        div:nth-child(2) {
+          margin-right: $spacing-5;
+        }
+      }
+    }
+  }
+
+  &__content {
+    h2 {
+      margin-top: 0;
+    }
+
+    @media only screen and (min-width: $bp-sm) {
+      flex: 1 1 100%;
+
+      p:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__graphic {
+    @media only screen and (max-width: $bp-sm) {
+      float: right;
+      margin: 0 0 $spacing-2 $spacing-2;
+      width: 10rem;
+    }
+
+    @media only screen and (min-width: $bp-sm) {
+      flex: 0 0 20rem;
+      margin-top: -4rem;
+    }
+
+    svg {
+      display: block;
+      max-width: 20rem;
+    }
+  }
+}

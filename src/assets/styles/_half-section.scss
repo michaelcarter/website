@@ -1,75 +1,43 @@
-.half-section {
-  margin-bottom: $spacing-5;
+.half-section__container {
+  display: flex;
+  flex-direction: column;
   padding: 0 $spacing-3;
 
-  @media only screen and (min-width: $layout-width) {
+  @media only screen and (min-width: $bp-sm) {
+    flex-direction: row;
+  }
+
+  @media only screen and (min-width: $layout-width-semi-wide) {
     padding: 0;
+  }
+}
+
+.half-section {
+  flex: 0 1 50%;
+
+  @media only screen and (min-width: $bp-sm) {
+    &:first-child {
+      margin-right: $spacing-4;
+    }
+
+    &:last-child {
+      margin-left: $spacing-4;
+    }
   }
 
   &__title {
-    @media only screen and (min-width: $bp-sm) {
-      max-width: calc(100vw - (2 * #{$spacing-3}) - #{$spacing-5} - 20rem);
-    }
-
-    &--right {
-      @media only screen and (min-width: $bp-sm) {
-        margin-left: calc(20rem + #{$spacing-5});
-      }
-    }
-  }
-
-  &__item-container {
-    @media only screen and (min-width: $bp-sm) {
-      display: flex;
-      justify-content: space-between;
-
-      div:first-child {
-        margin-right: $spacing-5;
-      }
-
-      &--reverse {
-        flex-direction: row-reverse;
-
-        div:first-child {
-          margin-right: 0;
-        }
-
-        div:nth-child(2) {
-          margin-right: $spacing-5;
-        }
-      }
-    }
-  }
-
-  &__content {
-    h2 {
-      margin-top: 0;
-    }
-
-    @media only screen and (min-width: $bp-sm) {
-      flex: 1 1 100%;
-
-      p:first-child {
-        margin-top: 0;
-      }
-    }
-  }
-
-  &__graphic {
     @media only screen and (max-width: $bp-sm) {
-      float: right;
-      margin: 0 0 $spacing-2 $spacing-2;
-      width: 10rem;
+      margin-top: $spacing-1;
     }
+  }
 
-    @media only screen and (min-width: $bp-sm) {
-      flex: 0 0 20rem;
-      margin-top: -4rem;
-    }
-
+  &__image {
     svg {
-      display: block;
+      @media only screen and (max-width: $bp-sm) {
+        max-width: 10rem;
+      }
       max-width: 20rem;
+      max-height: 20rem;
     }
   }
 }

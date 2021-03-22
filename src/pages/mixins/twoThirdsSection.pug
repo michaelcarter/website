@@ -1,0 +1,22 @@
+include svg.pug
+
+
+mixin twoThirdsSection(title, image, contentRight=false)
+  section.two-thirds-section
+    if (contentRight)
+      h2.two-thirds-section__title.two-thirds-section__title--right=title
+    else
+      h2.two-thirds-section__title=title
+
+    if (contentRight)
+      .two-thirds-section__item-container
+        .two-thirds-section__graphic
+          +svg(image)
+        .two-thirds-section__content
+          block
+    else
+      .two-thirds-section__item-container.two-thirds-section__item-container--reverse
+        .two-thirds-section__graphic
+          +svg(image)
+        .two-thirds-section__content
+          block

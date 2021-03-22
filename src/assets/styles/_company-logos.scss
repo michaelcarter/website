@@ -1,0 +1,19 @@
+.company-logos {
+  margin: 0 0 $spacing-5 0;
+
+  &__list {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    display: block;
+    margin: 0 $spacing-3;
+  }
+
+  &__svg {
+    fill: darken($grey, 10%);
+  }
+}
