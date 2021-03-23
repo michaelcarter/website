@@ -4,6 +4,7 @@ mixin header(title, subtitle, showShowcase)
       .header__content
         h1.header__title!=title
         p.header__subtitle!=subtitle
+        block
       if showShowcase
         .header__showcase
           ul.header__showcase-items

@@ -1,3 +1,15 @@
+@mixin centered-header-styles {
+  .header__title,
+  .header__subtitle {
+    text-align: center;
+  }
+
+  .button--primary,
+  .helper-text {
+    display: none;
+  }
+}
+
 .header {
   margin: 0;
   padding: 0 $spacing-3;
@@ -8,6 +20,14 @@
 
   @media only screen and (min-width: $layout-width) {
     padding: $spacing-4 0;
+  }
+
+  @media only screen and (max-width: $bp-sm) {
+    @include centered-header-styles;
+  }
+
+  &--centered {
+    @include centered-header-styles;
   }
 
   .inner-wrapper {
@@ -33,22 +53,11 @@
     }
   }
 
-  &__title,
-  &__subtitle {
-    .header--centered & {
-      text-align: center;
-    }
-
-    @media only screen and (max-width: $bp-sm) {
-      text-align: center;
-    }
-  }
-
   &__subtitle {
     font-size: $font-size-xl;
     font-weight: 300;
     line-height: 2.6rem;
-    margin: 0;
+    margin: 0 0 $spacing-3 0;
     max-width: 30.5rem;
 
     .header--centered & {
@@ -70,7 +79,7 @@
     animation-fill-mode: forwards;
     flex: 0 0 31rem;
     padding-left: 7rem;
-    margin: -2rem -5rem 0 0;
+    margin: 0 -5rem 0 0;
   }
 
   $item-width: 15.36rem;

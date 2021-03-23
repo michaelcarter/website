@@ -1,19 +1,32 @@
 .company-logos {
-  margin: 0 0 $spacing-5 0;
-
+  margin: 0 0 $spacing-2 0;
   &__list {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $bp-sm) {
+      justify-content: center;
+    }
   }
 
   &__item {
     display: block;
-    margin: 0 $spacing-3;
+    margin: 0 $spacing-3 $spacing-1 $spacing-3;
+
+    svg {
+      max-width: 120px;
+      max-height: 48px;
+    }
   }
 
   &__svg {
-    fill: darken($grey, 10%);
+    fill: darken($purple, 10%);
+    transition: fill $duration-short;
+
+    a:hover & {
+      fill: $purple-dark;
+    }
   }
 }

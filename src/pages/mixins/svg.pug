@@ -6,6 +6,7 @@ include svgs/holidayExtras.pug
 include svgs/laced.pug
 include svgs/rift.pug
 include svgs/zendesk.pug
+include svgs/allocate.pug
 
 mixin svg(name)
   if name === 'guide'
@@ -24,3 +25,5 @@ mixin svg(name)
     +rift()
   else if name === 'zendesk'
     +zendesk()
+  else if name === 'allocate'
+    +allocate()
