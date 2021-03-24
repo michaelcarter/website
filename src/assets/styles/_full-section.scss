@@ -1,17 +1,19 @@
 .full-section {
   @include purple-container;
-  padding: 0 $spacing-3;
+  padding: 0 $spacing-2;
 
   @media only screen and (min-width: $bp-sm) {
-    margin: $spacing-4 $spacing-3;
+    padding: $spacing-1 $spacing-3;
+    margin: $spacing-4 $spacing-2;
   }
 
   @media only screen and (min-width: $bp-md) {
-    padding: $spacing-3 $spacing-4;
+    padding: $spacing-2 $spacing-3;
   }
 
   @media only screen and (min-width: $layout-width-semi-wide) {
     margin: $spacing-4 0;
+    padding: $spacing-3 $spacing-4;
   }
 
   h2 {

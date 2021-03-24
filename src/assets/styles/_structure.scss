@@ -20,7 +20,7 @@ body {
   }
 
   &--padded {
-    padding: 0 $spacing-3;
+    padding: 0 $spacing-2;
 
     @media only screen and (min-width: $layout-width-semi-narrow) {
       padding: 0;

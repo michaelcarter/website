@@ -1,33 +1,60 @@
+$item-width: 15.36rem;
+$item-height: 20.48rem;
+$item-padding: 0.5rem;
+$item-close-button-size: 0.5rem;
+$item-margin: $spacing-2;
+
+$screen-dark-edge-color: #bbb;
+$screen-light-edge-color: #888;
+$device-color: #f5f5f5;
+$device-light-edge-color: #ccc;
+
 @mixin centered-header-styles {
-  .header__title,
-  .header__subtitle {
-    text-align: center;
+  @media only screen and (max-width: $bp-sm) {
+    padding-left: $spacing-2;
+    padding-right: $spacing-2;
   }
 
   .button--primary,
-  .helper-text {
+  .helper-text,
+  .header__showcase {
     display: none;
+  }
+
+  .header {
+    &__title,
+    &__subtitle {
+      text-align: center;
+    }
+
+    &__subtitle {
+      margin: $spacing-3 auto;
+    }
+
+    &__content {
+      flex: 1 0 100%;
+      min-width: auto;
+    }
   }
 }
 
 .header {
   margin: 0;
-  padding: 0 $spacing-3;
 
-  @media only screen and (min-width: $bp-sm) {
-    padding: $spacing-4 $spacing-3;
-  }
-
-  @media only screen and (min-width: $layout-width) {
-    padding: $spacing-4 0;
+  &--centered {
+    @include centered-header-styles;
   }
 
   @media only screen and (max-width: $bp-sm) {
     @include centered-header-styles;
   }
 
-  &--centered {
-    @include centered-header-styles;
+  @media only screen and (min-width: $bp-sm) {
+    padding: $spacing-4 0 $spacing-4 $spacing-2;
+  }
+
+  @media only screen and (min-width: $layout-width) {
+    padding: $spacing-4 0;
   }
 
   .inner-wrapper {
@@ -38,19 +65,8 @@
   }
 
   &__content {
-    flex: 0 1 65%;
-
-    .header--centered & {
-      flex: 1 0 100%;
-      max-width: 40rem;
-      margin: 0 auto;
-    }
-
-    @media only screen and (max-width: $bp-sm) {
-      flex: 1 0 100%;
-      max-width: 40rem;
-      margin: 0 auto;
-    }
+    flex: 1 0 50%;
+    min-width: 32rem;
   }
 
   &__subtitle {
@@ -58,50 +74,24 @@
     font-weight: 300;
     line-height: 2.6rem;
     margin: 0 0 $spacing-3 0;
-    max-width: 30.5rem;
-
-    .header--centered & {
-      max-width: 100%;
-    }
-
-    @media only screen and (max-width: $bp-sm) {
-      max-width: 100%;
-    }
+    max-width: 40rem;
   }
 
   &__showcase {
-    @media only screen and (max-width: $bp-sm) {
-      display: none;
-    }
-
     opacity: 0;
     animation: fadeIn 0.3s ease-out 0.2s;
     animation-fill-mode: forwards;
-    flex: 0 0 31rem;
+    flex: 0 1 31rem;
+    overflow: hidden;
     padding-left: 7rem;
-    margin: 0 -5rem 0 0;
   }
 
-  $item-width: 15.36rem;
-  $item-height: 20.48rem;
-  $item-padding: 0.5rem;
-  $item-close-button-size: 0.5rem;
-  $item-margin: $spacing-2;
-
-  $screen-dark-edge-color: #bbb;
-  $screen-light-edge-color: #888;
-  $device-color: #f5f5f5;
-  $device-light-edge-color: #ccc;
-
   &__showcase-items {
-    @media (prefers-reduced-motion: no-preference) {
-      animation: twist 1.5s ease 0.4s;
-      animation-fill-mode: forwards;
-      backface-visibility: hidden;
-      transform-style: preserve-3d;
-      transform-origin: center center;
-    }
-
+    animation: twist 1.5s ease 0.4s;
+    animation-fill-mode: forwards;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform-origin: center center;
     display: block;
     position: relative;
     height: calc(
@@ -134,11 +124,9 @@
         object-position: 0 100%;
       }
 
-      @media (prefers-reduced-motion: no-preference) {
-        animation: addShadow 1.5s ease 0.4s, explodeBottom 1s ease 0.8s,
-          explodeBottom2 1s ease 1.8s;
-        animation-fill-mode: forwards;
-      }
+      animation: addShadow 1.5s ease 0.4s, explodeBottom 1s ease 0.8s,
+        explodeBottom2 1s ease 1.8s;
+      animation-fill-mode: forwards;
     }
 
     &--code {
@@ -147,10 +135,8 @@
         object-position: 0 50%;
       }
 
-      @media (prefers-reduced-motion: no-preference) {
-        animation: addShadow 1.5s ease 0.4s, explodeMiddle 1s ease 1.8s;
-        animation-fill-mode: forwards;
-      }
+      animation: addShadow 1.5s ease 0.4s, explodeMiddle 1s ease 1.8s;
+      animation-fill-mode: forwards;
     }
 
     &--product {
@@ -159,10 +145,8 @@
         object-position: 0 0;
       }
 
-      @media (prefers-reduced-motion: no-preference) {
-        animation: addShadow 1.5s ease 0.4s, explodeTop 1s ease 0.8s;
-        animation-fill-mode: forwards;
-      }
+      animation: addShadow 1.5s ease 0.4s, explodeTop 1s ease 0.8s;
+      animation-fill-mode: forwards;
     }
 
     &:before {

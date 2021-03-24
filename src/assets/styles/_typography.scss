@@ -3,7 +3,19 @@ body {
 }
 
 h1 {
-  color: $blue-dark;
+  // color: $blue-dark;
+  background-color: #f3ec78;
+  background-image: linear-gradient(
+    135deg,
+    darken($purple-dark, 5%) 10%,
+    $blue-dark
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+
   font-family: $sans-font-family;
   font-weight: 600;
   font-size: 2.4rem;
