@@ -46,17 +46,10 @@
 
   &__image {
     svg {
-      margin-bottom: $spacing-2;
-      max-width: 10rem;
-
-      @media only screen and (min-width: $bp-sm) {
-        margin-bottom: 0;
-        max-width: 15rem;
-      }
-
+      max-width: 20rem;
       @media only screen and (min-width: $bp-md) {
-        max-width: 20rem;
-        max-height: 20rem;
+        width: auto;
+        max-width: 100%;
       }
     }
   }

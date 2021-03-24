@@ -74,13 +74,13 @@
 
     @media only screen and (min-width: $bp-sm) {
       flex: 0 0 20rem;
-      margin: -4rem 0 0 0;
+      margin: -3rem 0 0 0;
       width: auto;
     }
 
     svg {
       display: block;
-      max-width: 20rem;
+      max-width: 25rem;
     }
   }
 }
