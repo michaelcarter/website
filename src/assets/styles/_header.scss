@@ -6,7 +6,7 @@ $item-margin: $spacing-2;
 
 $screen-dark-edge-color: #bbb;
 $screen-light-edge-color: #888;
-$device-color: #f5f5f5;
+$device-color: white;
 $device-light-edge-color: #ccc;
 
 @mixin centered-header-styles {
@@ -163,7 +163,7 @@ $device-light-edge-color: #ccc;
 
     &:before {
       content: '';
-      background: #f44;
+      background: $pink;
       border-radius: 10px;
       display: block;
       margin: 0 0 $item-padding 0.1rem;

@@ -1,5 +1,5 @@
-$device-dark-edge-color: #888;
-$device-shadow-color: #888;
+$device-dark-edge-color: #aaa;
+$device-shadow-color: #bbb;
 
 @keyframes twist {
   0% {
@@ -28,7 +28,7 @@ $device-shadow-color: #888;
     transform: translateZ(-4rem) translateX(0) translateY(0);
   }
   100% {
-    transform: translateZ(-4rem) translateX(-3rem) translateY(0);
+    transform: translateZ(-4rem) translateX(-2rem) translateY(0);
   }
 }
 
@@ -37,7 +37,7 @@ $device-shadow-color: #888;
     transform: translateX(0) translateY(0);
   }
   100% {
-    transform: translateX(-1.5rem) translateY(0);
+    transform: translateX(-1rem) translateY(0);
   }
 }
 
