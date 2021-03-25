@@ -6,14 +6,14 @@
   margin: 0 0 $spacing-1 0;
   text-align: center;
   text-decoration: none;
-  padding: $spacing-2 $spacing-3;
+  padding: 1.3rem $spacing-3;
 
   &--primary {
-    background: $green-darker;
+    background: $pink-dark;
     color: $white;
 
     &:hover {
-      background: lighten($green-darker, 10%);
+      background: $pink;
       transition: background $duration-short;
     }
 

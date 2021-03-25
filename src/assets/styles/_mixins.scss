@@ -36,3 +36,18 @@
     color: $purple-dark;
   }
 }
+
+@mixin rainbow-text {
+  background-color: #f3ec78;
+  background-image: linear-gradient(
+    135deg,
+    $blue-dark 0%,
+    $purple-dark 30%,
+    $pink-dark 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}

@@ -1,7 +1,7 @@
-$item-width: 15.36rem;
-$item-height: 20.48rem;
-$item-padding: 0.5rem;
-$item-close-button-size: 0.5rem;
+$item-width: 362px;
+$item-height: 482.8px;
+$item-padding: 0.75rem;
+$item-close-button-size: 0.75rem;
 $item-margin: $spacing-2;
 
 $screen-dark-edge-color: #bbb;
@@ -25,6 +25,10 @@ $device-light-edge-color: #ccc;
     &__title,
     &__subtitle {
       text-align: center;
+
+      br {
+        display: none;
+      }
     }
 
     &__subtitle {
@@ -40,6 +44,7 @@ $device-light-edge-color: #ccc;
 
 .header {
   margin: 0;
+  overflow: hidden;
 
   &--centered {
     @include centered-header-styles;
@@ -74,7 +79,11 @@ $device-light-edge-color: #ccc;
     font-weight: 300;
     line-height: 2.6rem;
     margin: 0 0 $spacing-3 0;
-    max-width: 40rem;
+    max-width: 30rem;
+
+    @media only screen and (min-width: $bp-md) {
+      max-width: 35rem;
+    }
   }
 
   &__showcase {
@@ -82,7 +91,6 @@ $device-light-edge-color: #ccc;
     animation: fadeIn 0.3s ease-out 0.2s;
     animation-fill-mode: forwards;
     flex: 0 1 31rem;
-    overflow: hidden;
     padding-left: 7rem;
   }
 
@@ -94,6 +102,7 @@ $device-light-edge-color: #ccc;
     transform-origin: center center;
     display: block;
     position: relative;
+    top: -2rem;
     height: calc(
       #{$item-height} + #{$item-padding} + #{$item-padding} + #{$item-margin} +
         #{$item-margin} + #{$item-padding} + #{$item-close-button-size}
@@ -113,15 +122,24 @@ $device-light-edge-color: #ccc;
     overflow: hidden;
     margin: $spacing-2;
     padding: $item-padding;
-    width: calc(#{$item-width} + #{$item-padding} + #{$item-padding});
+    width: calc(#{$item-width} + #{$item-padding} + #{$item-padding} + 0.5rem);
     position: absolute;
     top: 0;
     left: 0;
 
+    &-inner {
+      border-top: 0.2rem solid $screen-light-edge-color;
+      border-right: 0.2rem solid $screen-light-edge-color;
+      border-bottom: 0.1rem solid $screen-dark-edge-color;
+      border-left: 0.1rem solid $screen-dark-edge-color;
+      height: calc(#{$item-height} + 0.3rem);
+      width: calc(#{$item-width} + 0.3rem);
+      overflow: hidden;
+    }
+
     &--network {
       img {
-        object-fit: none;
-        object-position: 0 100%;
+        transform: translateY(-66.66%);
       }
 
       animation: addShadow 1.5s ease 0.4s, explodeBottom 1s ease 0.8s,
@@ -131,8 +149,7 @@ $device-light-edge-color: #ccc;
 
     &--code {
       img {
-        object-fit: none;
-        object-position: 0 50%;
+        transform: translateY(-33.33%);
       }
 
       animation: addShadow 1.5s ease 0.4s, explodeMiddle 1s ease 1.8s;
@@ -140,11 +157,6 @@ $device-light-edge-color: #ccc;
     }
 
     &--product {
-      img {
-        object-fit: none;
-        object-position: 0 0;
-      }
-
       animation: addShadow 1.5s ease 0.4s, explodeTop 1s ease 0.8s;
       animation-fill-mode: forwards;
     }
@@ -160,11 +172,7 @@ $device-light-edge-color: #ccc;
     }
 
     img {
-      border-top: 0.1rem solid $screen-light-edge-color;
-      border-right: 0.1rem solid $screen-light-edge-color;
-      border-bottom: 0.1rem solid $screen-dark-edge-color;
-      border-left: 0.1rem solid $screen-dark-edge-color;
-      height: $item-height;
+      height: $item-height * 3;
       width: $item-width;
     }
   }

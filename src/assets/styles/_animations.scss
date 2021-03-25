@@ -68,66 +68,6 @@ $device-shadow-color: #888;
   }
 }
 
-@keyframes fadeInOut {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes growShrink {
-  0% {
-    transform: scale(1);
-  }
-  16.6% {
-    transform: scale(1.2);
-  }
-  33.2% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes path {
-  100% {
-    stroke-dashoffset: 26000;
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes spinBackwards {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-
-@keyframes slideUp {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-7%);
-  }
-}
-
 @keyframes openOut {
   0% {
     transform: translate(0, 0);

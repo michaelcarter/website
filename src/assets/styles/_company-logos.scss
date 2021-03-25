@@ -1,5 +1,6 @@
 .company-logos {
   margin: 0 0 $spacing-2 0;
+
   &__list {
     align-items: center;
     display: flex;
@@ -22,7 +23,7 @@
   }
 
   &__svg {
-    fill: darken($purple, 10%);
+    fill: $purple-light;
     transition: fill $duration-short;
 
     a:hover & {

@@ -6,31 +6,23 @@ $bp-md: 76rem;
 $white: #fff;
 
 $grey: #999;
-$grey-darker: darken($grey, 40%);
-$grey-dark: darken($grey, 33%);
 $grey-light: lighten($grey, 5%);
 $grey-lighter: lighten($grey, 10%);
 $grey-lightest: lighten($grey, 25%);
+$grey-dark: darken($grey, 33%);
+$grey-darker: darken($grey, 40%);
 
-$purple: #ca8ee8;
-$purple-light: lighten($purple, 10%);
-$purple-lighter: lighten($purple, 20%);
-$purple-lightest: lighten($purple, 25%);
-$purple-dark: darken($purple, 25%);
+$purple: #7209b7;
+$purple-light: lighten($purple, 20%);
+$purple-lighter: lighten($purple, 50%);
+$purple-lightest: lighten($purple, 60%);
+$purple-dark: darken($purple, 5%);
 
-$green: #52d147;
-$green-lighter: lighten($green, 20%);
-$green-light: lighten($green, 5%);
-$green-dark: darken($green, 10%);
-$green-darker: darken($green, 21.5%);
+$blue: #4895ef;
+$blue-dark: darken($blue, 10%);
 
-$red-light: #ffb3b3;
-$yellow: #ffe791;
-
-$blue: #8ac7ff;
-$blue-light: lighten($blue, 10%);
-$blue-dark: darken($blue, 45%);
-$blue-darker: darken($blue, 80%);
+$pink: #f72585;
+$pink-dark: darken($pink, 10%);
 
 // Spacings
 $spacing-1: 0.5rem;

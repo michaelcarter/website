@@ -3,33 +3,29 @@ body {
 }
 
 h1 {
-  // color: $blue-dark;
-  background-color: #f3ec78;
-  background-image: linear-gradient(
-    135deg,
-    darken($purple-dark, 5%) 10%,
-    $blue-dark
-  );
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  @include rainbow-text;
 
   font-family: $sans-font-family;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 2.4rem;
   line-height: 3.7rem;
   margin: $spacing-3 0;
   text-rendering: optimizeLegibility;
 
   @media only screen and (min-width: $bp-sm) {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+
+  @media only screen and (min-width: $bp-md) {
+    font-size: 4.6rem;
+    line-height: 5rem;
   }
 }
 
 h2 {
-  color: $blue-dark;
+  @include rainbow-text;
+
   font-family: $sans-font-family;
   font-weight: 600;
   font-size: 1.9rem;
