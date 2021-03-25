@@ -15,11 +15,11 @@ body {
       }
 
       &::before {
-        border-left: 0.1rem solid lighten($pink, 20%);
+        border-left: 0.1rem solid lighten($purple, 38%);
         background-image: linear-gradient(
           -100deg,
           white 25%,
-          lighten($pink, 30%) 100%
+          lighten($purple, 45%) 100%
         );
         left: 47%;
         transform: skew(-10deg) translateX(5.1%);
