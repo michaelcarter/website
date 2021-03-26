@@ -1,6 +1,6 @@
 extends ../../base.pug
 
-include ../mixins/nav.pug
+include ../mixins/navigation.pug
 include ../mixins/header.pug
 
 block append vars
@@ -9,7 +9,7 @@ block append vars
   -var metaDescription = "In 2015 I started a digital agency. As an employee who made the switch to running a business, here are some things I wish I'd understood before starting."
 
 block pageContent
-  +nav()
+  +navigation()
   article
     +header(
       "Things I wish I understood before starting an agency",

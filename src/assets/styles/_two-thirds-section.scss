@@ -69,18 +69,18 @@
   }
 
   &__graphic {
-    width: 10rem;
-    margin-bottom: $spacing-2;
-
     @media only screen and (min-width: $bp-sm) {
       flex: 0 0 20rem;
       margin: -3rem 0 0 0;
-      width: auto;
     }
 
     svg {
       display: block;
-      max-width: 25rem;
+      margin: 0 auto;
+      max-width: 20rem;
+      @media only screen and (min-width: $bp-md) {
+        max-width: 30rem;
+      }
     }
   }
 }

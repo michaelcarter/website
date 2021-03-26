@@ -1,53 +1,112 @@
-ul.nav-links {
-  list-style: none;
-  padding: $spacing-2 $spacing-2;
-  position: relative;
-  text-align: center;
-  z-index: 1;
+.navigation {
+  margin: $spacing-2 0 0 0;
+  padding: 0 $spacing-2;
 
-  li {
-    display: inline-block;
-    margin: 0 $spacing-2 0 0;
+  @media only screen and (min-width: $layout-width-semi-wide) {
+    padding: 0;
+  }
+
+  .inner-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo-link {
+    box-sizing: content-box;
+    display: block;
+    margin: 0;
+    padding: $spacing-1 $spacing-1 $spacing-1 0;
+
+    height: 1.5rem;
+    width: 1.5rem;
 
     @media only screen and (min-width: $bp-sm) {
-      margin: 0 $spacing-2;
-      text-align: center;
+      height: 2rem;
+      width: 2rem;
     }
 
-    a {
-      padding: $spacing-2 0;
-      text-decoration: none;
+    svg {
+      fill: $grey-dark;
+      transition: fill $duration-medium;
+    }
+
+    &:hover {
+      svg {
+        fill: $pink-dark;
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+
+    list-style: none;
+    padding: $spacing-3 $spacing-2;
+    text-align: center;
+  }
+
+  &__links-item {
+    margin: 0 0 0 $spacing-1;
+
+    @media only screen and (min-width: $bp-sm) {
+      margin-left: $spacing-3;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    margin: 0;
+    padding: $spacing-1 $spacing-1 calc(#{$spacing-1} + 0.2rem) $spacing-1;
+    transition: color $duration-medium;
+    text-decoration: none;
+
+    &:after {
+      background: white;
+      border-radius: $border-radius-1;
+      content: '';
+      display: block;
+      height: 0.3rem;
+      margin: 0 auto -0.5rem auto;
+      transition: background $duration-short, width $duration-short;
+      width: 0;
+    }
+
+    svg {
+      fill: $grey-dark;
+      transition: fill $duration-medium;
+      width: 1rem;
+      height: 1rem;
+      margin-right: 0.3rem;
+      display: inline-block;
+      vertical-align: -8%;
 
       @media only screen and (min-width: $bp-sm) {
-        padding: $spacing-2 $spacing-1;
+        margin-right: $spacing-1;
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+    }
+
+    &:link,
+    &:visited {
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    &:hover {
+      &:after {
+        background: $pink-dark;
+        width: 100%;
       }
 
       svg {
-        width: 1rem;
-        height: 1rem;
-        margin-right: 0.3rem;
-        display: inline-block;
-        vertical-align: -8%;
-        transition: fill $duration-medium;
-
-        @media only screen and (min-width: $bp-sm) {
-          margin-right: $spacing-1;
-          width: 1.2rem;
-          height: 1.2rem;
-        }
-      }
-
-      &:link,
-      &:visited {
-        font-size: 1.1rem;
-        text-decoration: none;
-      }
-
-      &:hover {
-        transition: color $duration-medium, border-bottom-color $duration-medium;
-        svg {
-          fill: $blue-dark;
-        }
+        fill: $pink-dark;
       }
     }
   }

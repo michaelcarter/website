@@ -1,6 +1,6 @@
 extends ../base.pug
 
-include mixins/nav.pug
+include mixins/navigation.pug
 include mixins/header.pug
 include mixins/imageList.pug
 include mixins/postList.pug
@@ -8,7 +8,7 @@ include mixins/postList.pug
 block prepend vars
 
 block pageContent
-  +nav()
+  +navigation()
 
   +header(
     "Blog",

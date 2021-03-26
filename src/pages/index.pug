@@ -1,6 +1,6 @@
 extends ../base.pug
 
-include mixins/nav.pug
+include mixins/navigation.pug
 include mixins/header.pug
 include mixins/twoThirdsSection.pug
 include mixins/halfSection.pug
@@ -11,7 +11,7 @@ block prepend vars
   -var bodyClass = "home"
 
 block pageContent
-  +navLinks
+  +navigation
 
   +header(
     "Digital products<br/> done properly",

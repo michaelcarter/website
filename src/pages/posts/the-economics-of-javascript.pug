@@ -1,6 +1,6 @@
 extends ../../base.pug
 
-include ../mixins/nav.pug
+include ../mixins/navigation.pug
 include ../mixins/header.pug
 
 block append vars
@@ -9,7 +9,7 @@ block append vars
   -var metaDescription = "Your single page JavaScript web app probably doesn't make you as much money as its old-school alternative. Sorry."
 
 block pageContent
-  +nav()
+  +navigation()
   article
     +header(
       "The economics of JavaScript web apps",

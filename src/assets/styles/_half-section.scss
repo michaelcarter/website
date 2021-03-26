@@ -45,6 +45,12 @@
   }
 
   &__image {
+    margin: 0 auto;
+
+    @media only screen and (min-width: $bp-sm) {
+      margin: 0;
+    }
+
     svg {
       max-width: 20rem;
       @media only screen and (min-width: $bp-md) {

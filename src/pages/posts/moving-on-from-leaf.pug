@@ -1,6 +1,6 @@
 extends ../../base.pug
 
-include ../mixins/nav.pug
+include ../mixins/navigation.pug
 include ../mixins/header.pug
 
 block append vars
@@ -9,7 +9,7 @@ block append vars
   -var metaDescription = "Leaf is closing its doors in April 2021. Here's why we're winding down a profitable agency business, and what I plan to do with myself next."
 
 block pageContent
-  +nav()
+  +navigation()
   article
     +header(
       "Moving on from Leaf",
