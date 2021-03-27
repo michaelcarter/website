@@ -12,32 +12,6 @@
     justify-content: space-between;
   }
 
-  &__logo-link {
-    box-sizing: content-box;
-    display: block;
-    margin: 0;
-    padding: $spacing-1 $spacing-1 $spacing-1 0;
-
-    height: 1.5rem;
-    width: 1.5rem;
-
-    @media only screen and (min-width: $bp-sm) {
-      height: 2rem;
-      width: 2rem;
-    }
-
-    svg {
-      fill: $grey-dark;
-      transition: fill $duration-medium;
-    }
-
-    &:hover {
-      svg {
-        fill: $pink-dark;
-      }
-    }
-  }
-
   &__links {
     display: flex;
 
@@ -59,55 +33,15 @@
   }
 
   &__link {
+    @include nav-link;
+    @include bar-link;
     display: block;
     margin: 0;
     padding: $spacing-1 $spacing-1 calc(#{$spacing-1} + 0.2rem) $spacing-1;
-    transition: color $duration-medium;
-    text-decoration: none;
-
-    &:after {
-      background: white;
-      border-radius: $border-radius-1;
-      content: '';
-      display: block;
-      height: 0.3rem;
-      margin: 0 auto -0.5rem auto;
-      transition: background $duration-short, width $duration-short;
-      width: 0;
-    }
-
-    svg {
-      fill: $grey-dark;
-      transition: fill $duration-medium;
-      width: 1rem;
-      height: 1rem;
-      margin-right: 0.3rem;
-      display: inline-block;
-      vertical-align: -8%;
-
-      @media only screen and (min-width: $bp-sm) {
-        margin-right: $spacing-1;
-        width: 1.2rem;
-        height: 1.2rem;
-      }
-    }
 
     &:link,
     &:visited {
       font-size: 1.1rem;
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    &:hover {
-      &:after {
-        background: $pink-dark;
-        width: 100%;
-      }
-
-      svg {
-        fill: $pink-dark;
-      }
     }
   }
 }

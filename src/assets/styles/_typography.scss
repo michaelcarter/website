@@ -46,7 +46,7 @@ h3 {
 }
 
 h4 {
-  color: $grey-dark;
+  color: $purple-dark;
   font-family: $sans-font-family;
   font-size: 1rem;
   font-weight: 700;
@@ -56,11 +56,9 @@ h4 {
 
 p,
 ul,
-ol,
-span,
-a {
+ol {
   font-family: $sans-font-family;
-  font-size: 1.2rem;
+  font-size: $font-size-base;
   line-height: 1.9rem;
   margin: 0 0 1rem 0;
 

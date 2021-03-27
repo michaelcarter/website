@@ -2,8 +2,10 @@
   background: $grey-lightest;
   border-radius: $border-radius-1;
   display: inline-block;
+  font-family: $sans-font-family;
+  font-size: $font-size-base;
   font-weight: 600;
-  margin: 0 0 $spacing-1 0;
+  margin: 0 0 $spacing-2 0;
   text-align: center;
   text-decoration: none;
   padding: 1.3rem $spacing-3;
