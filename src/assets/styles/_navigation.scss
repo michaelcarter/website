@@ -1,20 +1,19 @@
 .navigation {
-  margin: $spacing-2 0 0 0;
+  @include inner-wrapper;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: $spacing-2;
   padding: 0 $spacing-2;
 
   @media only screen and (min-width: $layout-width-semi-wide) {
     padding: 0;
   }
 
-  .inner-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
   &__links {
     display: flex;
-
     list-style: none;
     padding: $spacing-3 $spacing-2;
     text-align: center;

@@ -1,19 +1,18 @@
 mixin header(title, subtitle, showShowcase)
   header.header(class=showShowcase ? "" : "header--centered")
-    .inner-wrapper
-      .header__content
-        h1.header__title!=title
-        p.header__subtitle!=subtitle
-        block
-      if showShowcase
-        .header__showcase
-          ul.header__showcase-items
-            li.header__showcase-item.header__showcase-item--network
-              .header__showcase-item-inner
-                img(src="/assets/images/stack-animation/sprite.png" alt="A web application I helped launch for RIFT.")
-            li.header__showcase-item.header__showcase-item--code
-              .header__showcase-item-inner
-                img(src="/assets/images/stack-animation/sprite.png" alt="An unstyled view of a web application I helped launch for RIFT.")
-            li.header__showcase-item.header__showcase-item--product
-              .header__showcase-item-inner
-                img(src="/assets/images/stack-animation/sprite.png" alt="The code behind a web application I helped launch for RIFT.")
+    .header__content
+      h1.header__title!=title
+      p.header__subtitle!=subtitle
+      block
+    if showShowcase
+      .header__showcase(aria-hidden="true")
+        .header__showcase-items
+          .header__showcase-item.header__showcase-item--network
+            .header__showcase-item-inner
+              img(src="/assets/images/stack-animation/sprite.jpg" alt="A web application I helped launch for RIFT.")
+          .header__showcase-item.header__showcase-item--code
+            .header__showcase-item-inner
+              img(src="/assets/images/stack-animation/sprite.jpg" alt="An unstyled view of a web application I helped launch for RIFT.")
+          .header__showcase-item.header__showcase-item--product
+            .header__showcase-item-inner
+              img(src="/assets/images/stack-animation/sprite.jpg" alt="The code behind a web application I helped launch for RIFT.")

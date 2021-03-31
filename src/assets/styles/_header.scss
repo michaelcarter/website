@@ -43,8 +43,11 @@ $device-light-edge-color: #ccc;
 }
 
 .header {
-  margin: 0;
-  overflow: hidden;
+  @include inner-wrapper;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
 
   &--centered {
     @include centered-header-styles;
@@ -60,13 +63,6 @@ $device-light-edge-color: #ccc;
 
   @media only screen and (min-width: $layout-width) {
     padding: $spacing-4 0;
-  }
-
-  .inner-wrapper {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    z-index: 1;
   }
 
   &__content {

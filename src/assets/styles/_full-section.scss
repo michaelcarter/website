@@ -1,5 +1,7 @@
 .full-section {
+  @include inner-wrapper;
   @include purple-container;
+
   padding: 0 $spacing-2;
 
   @media only screen and (min-width: $bp-sm) {
@@ -12,7 +14,7 @@
   }
 
   @media only screen and (min-width: $layout-width-semi-wide) {
-    margin: $spacing-4 0;
+    margin: $spacing-4 auto;
     padding: $spacing-3 $spacing-4;
   }
 

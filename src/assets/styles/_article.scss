@@ -1,4 +1,8 @@
 article {
+  .article__content {
+    @include inner-wrapper;
+  }
+
   .article-image {
     margin: 0 auto $spacing-5 auto;
     max-height: 20em;

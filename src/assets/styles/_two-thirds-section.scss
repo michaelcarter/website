@@ -1,5 +1,7 @@
 .two-thirds-section {
-  margin: $spacing-5 0;
+  @include inner-wrapper;
+
+  margin: $spacing-5 auto;
   padding: 0 $spacing-2;
 
   @media only screen and (min-width: $layout-width) {

@@ -1,3 +1,8 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background: $white;
   font-family: Georgia, Times, 'Times New Roman', serif;
@@ -44,28 +49,7 @@ body {
 }
 
 .inner-wrapper {
-  margin: 0 auto;
-  max-width: $layout-width;
-
-  &--semi-wide {
-    max-width: $layout-width-semi-wide;
-  }
-
-  &--wide {
-    max-width: $layout-width-wide;
-  }
-
-  &--semi-narrow {
-    max-width: $layout-width-semi-narrow;
-  }
-
-  &--padded {
-    padding: 0 $spacing-2;
-
-    @media only screen and (min-width: $layout-width-semi-narrow) {
-      padding: 0;
-    }
-  }
+  @include inner-wrapper;
 }
 
 .inner-wrapper--clear {

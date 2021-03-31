@@ -1,12 +1,11 @@
 .footer {
+  @include inner-wrapper;
+
+  display: flex;
   padding: $spacing-5 $spacing-2 $spacing-3 $spacing-2;
 
   @media only screen and (min-width: $layout-width-semi-wide) {
-    padding: $spacing-5 0 $spacing-3 $spacing-2;
-  }
-
-  .inner-wrapper {
-    display: flex;
+    padding: $spacing-5 0 $spacing-3 0;
   }
 
   &__section {
