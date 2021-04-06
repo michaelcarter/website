@@ -24,6 +24,8 @@ $device-light-edge-color: #ccc;
   .header {
     &__title,
     &__subtitle {
+      margin-left: auto;
+      margin-right: auto;
       text-align: center;
 
       br {
@@ -71,7 +73,6 @@ $device-light-edge-color: #ccc;
   }
 
   &__title {
-    margin: 0 auto;
     max-width: $bp-sm;
   }
 
