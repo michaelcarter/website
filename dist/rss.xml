@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>Mike Carter</title>
   <link>https://mcarter.me</link>
-  <description>I care deeply about building high quality web applications using simple scaleable code and proven open technologies.</description>
+  <description>Feed of Mike Carter, a development consultant who brings digital products to market with solid foundations, room to scale, and costs under control.</description>
   <image>
     <url>https://mcarter.me/assets/images/me.jpg</url>
     <title>Mike Carter</title>
