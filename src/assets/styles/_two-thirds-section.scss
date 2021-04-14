@@ -4,18 +4,32 @@
   margin: $spacing-5 auto;
   padding: 0 $spacing-2;
 
+  &:first-child {
+    margin-top: 0;
+  }
+
   @media only screen and (min-width: $layout-width) {
     padding: 0;
   }
 
   &__title {
+    margin-top: 0;
+
     @media only screen and (min-width: $bp-sm) {
-      max-width: calc(100vw - (2 * #{$spacing-3}) - #{$spacing-5} - 20rem);
+      max-width: 45rem;
     }
 
     &--right {
+      display: block;
+      max-width: 45rem;
+      margin-left: auto;
+
       @media only screen and (min-width: $bp-sm) {
-        margin-left: calc(20rem + #{$spacing-5});
+        margin-left: 21rem;
+      }
+
+      @media only screen and (min-width: 68rem) {
+        margin-left: auto;
       }
     }
   }
@@ -70,7 +84,7 @@
     }
   }
 
-  &__graphic {
+  &__image {
     @media only screen and (min-width: $bp-sm) {
       flex: 0 0 20rem;
       margin: -3rem 0 0 0;

@@ -7,7 +7,11 @@ include svgs/allocate.pug
 
 include svgs/map.pug
 include svgs/presentation.pug
+include svgs/presentation_2.pug
 include svgs/desk.pug
+include svgs/report.pug
+include svgs/consulting.pug
+include svgs/coding.pug
 
 mixin svg(name)
   if name === 'heha'
@@ -26,5 +30,13 @@ mixin svg(name)
     +map()
   else if name === 'presentation'
     +presentation()
+  else if name === 'presentation2'
+    +presentationTwo()
   else if name === 'desk'
     +desk()
+  else if name === 'report'
+    +report()
+  else if name === 'consulting'
+    +consulting()
+  else if name === 'coding'
+    +coding()

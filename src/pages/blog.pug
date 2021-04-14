@@ -5,7 +5,11 @@ include mixins/header.pug
 include mixins/imageList.pug
 include mixins/postList.pug
 
-block prepend vars
+block append vars
+  -var pageTitle = "Blog | Mike Carter | Digital products derisked"
+  -var metaTitle = "Blog"
+  -var metaDescription = "I write about software engineering and good work habits, along with some of my own personal opinions to spice things up a bit."
+  -var metaUrl = "https://mcarter.me/blog"
 
 block pageContent
   +navigation()
@@ -16,7 +20,6 @@ block pageContent
   )
 
   main
-    section
     .inner-wrapper.inner-wrapper--semi-wide
       +postList([
         {

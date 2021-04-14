@@ -1,0 +1,92 @@
+extends ../base.pug
+
+include mixins/navigation.pug
+include mixins/header.pug
+include mixins/twoThirdsSection.pug
+include mixins/halfSection.pug
+include mixins/companyLogos.pug
+include mixins/contactButton.pug
+
+block prepend vars
+
+block append vars
+  -var pageTitle = "Services | Mike Carter | Digital products derisked"
+  -var metaTitle = "How I can help you"
+  -var metaDescription = "If you're looking to develop and launch a new digital product, I can help get you there and set you on the right path for years to come."
+  -var metaUrl = "https://mcarter.me/services"
+
+block pageContent
+  +navigation
+
+  +header(
+    "How I can help you",
+    "If you're looking to develop and launch a new digital product, I can help get you there and set you on the right path for years to come."
+  )
+
+  main
+    +twoThirdsSection("Your development partner", "presentation2", false)
+      p.lead Software development is full of unforeseen diversions and slowdowns. Projects often run late, over budget, and are full of bugs at launch, pushing any return on investment far off into the future.
+
+      p I act as a guide on this journey. I'll help you avoid roadblocks, navigate unfamiliar territory, and challenge unwise decisions as you go. I'll supplement your business knowledge with my technical and product expertise to keep everything progressing efficiently towards your goal.
+
+      p To do this, I offer three services; <strong>technical product audits</strong>, <strong>product consultancy</strong>, and <strong>product development</strong>.
+
+    +twoThirdsSection("Technical product audits", "report", true)
+      p.lead If you're not sure why your digital product is slow, buggy, or simply not converting as well, then this is for you.
+
+      p For <strong>just £749</strong> I’ll perform a deep audit on your digital product, and provide you with a bespoke report detailing actions you can take to fix a specific issue.
+
+      p The report will be preceeded by a video call which I can use to fully understand the product and the problem you're trying to solve. Once the report is completed, we'll have another call for me to run through my findings and ensure you know what to do next to get things back on track.
+
+      a.button.button--primary.button--small(href="mailto:mike@mcarter.me") Get in touch
+
+    +twoThirdsSection("Product consultancy", "consulting", false)
+      p.lead If you’re looking to start something new, or would like long-term technical help with your digital product, I can help guide decision making.
+
+      p I'll work closely with you to help you deliver top quality digital products in less time, at less cost, and to a higher quality. I'll speak a language you understand, and keep your return on investment front of mind.
+
+      p By constantly re-assessing the needs and constraints in your business, I'll ensure your development team or agency continue smoothly towards their goal as new issues and blockers are uncovered, and keep you constantly informed of the progress along the way.
+
+      a.button.button--primary.button--small(href="mailto:mike@mcarter.me") Get in touch
+
+
+    +twoThirdsSection("Product development", "coding", true)
+      p.lead For a fixed price, I’ll work on your digital product directly, helping you to achieve a clear return on investment for your business.
+
+      p I’ll coordinate with stakeholders to establish clear requirements, and then deliver expertly crafted software that fully realises your vision for launch, but with solid foundations for further development and scaling.
+
+      p All of my work is carefully documented, and uses technologies with a proven track record but promising trajectory in order to ensure you're able to continue to develop and grow your product long into the future.
+
+      a.button.button--primary.button--small(href="mailto:mike@mcarter.me") Get in touch
+
+    section.full-section.full-section--semi-wide
+      h2 Frequently asked questions
+      .full-section__content
+        .full-section__sub-section
+          h3 What languages do you work with?
+          p I primarily work with <strong>JavaScript</strong> (<strong>Node</strong>, <strong>React</strong>, vanilla JS) and <strong>Ruby</strong> these days, but I'm happy picking up new languages when required. As a web devleoper, my <strong>HTML</strong> and <strong>CSS</strong> skills are top-notch too.
+
+        .full-section__sub-section
+          h3 What will it cost to work with you?
+          p I'll charge a fixed price for the scope of the problem you're trying to solve. If you're unsure, my £749 technical product audit package offers a low-risk starting point to get things moving.
+
+        .full-section__sub-section
+          h3 Do you offer ongoing support?
+          p Any development I do comes with 30 days of complimentary bug fixes and support. Anything beyond that will need to be arranged with me on a per-engagement basis.
+
+      .full-section__content
+        .full-section__sub-section
+          h3 Will you come to our offices?
+          p Yes. I primarily work remotely, but I'm happy to travel to work with you and your team in-person should the project require it. Just keep in mind I'll need to charge for travel expenses.
+
+        .full-section__sub-section
+          h3 What if we need more people?
+          p I have a wide network of skilled developers, designers, and project managers in my network. If the scope of your project grows I can help pull in the right people to keep things running smoothly.
+
+        .full-section__sub-section
+          h3 Are you available now?
+          p I'm afraid I'm unavailable for development work until <strong>September 2021</strong>. However, I am available for consultancy projects and technical product audits until then, just <a href="mailto:mike@mcarter.me">contact me</a> and I'll get back to you.
+
+
+
+  include includes/footer.pug
