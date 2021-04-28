@@ -1,0 +1,90 @@
+extends ../../base.pug
+
+include ../mixins/navigation.pug
+include ../mixins/header.pug
+
+block append vars
+  -var pageTitle = "My first month of freelancing | Mike Carter"
+  -var metaTitle = "My first month of freelancing"
+  -var metaDescription = "When developing new software, timelines, cost, and quality can be hard to control. Here's how to choose the right development partner to keep things on track."
+  -var metaUrl = "https://mcarter.me/posts/update-april-2021"
+
+block pageContent
+  +navigation()
+  article.article
+    +header(
+      "My first month of freelancing",
+      "I shut down a successful development agency to freelance full time from April 2021. Here's how my first month has gone."
+    )
+
+
+    main.article__content.article__content--semi-narrow.article__content--padded
+      h2 Revenue and work
+
+      h3 Revenue
+      p In my first month of freelancing, I issued invoices for <strong>£6,250</strong>. This has come from a mixture of consulting and development work for three different clients at roughly a <strong>50:40:10</strong> split.
+
+      p It's not crazy money as far as software consulting goes, but I think it's a good start. My household expenses are covered for April, and there's enough there that I can also meet my saving and investment goals. Importantly, it also leaves some left over that I can keep in the business account for rainy days.
+
+      p I should stress this work was with clients I've worked with before. If this were a complete cold start for me, I'd almost certainly have invoiced nothing in April and would be using savings to cover household expenses.
+
+      h3 Enquiries
+      p I also received <strong>2 new work enquiries</strong> in April - a nice surprise! I think they were probably triggered by me announcing myself going freelance, and in doing so, hinting at some sort of availability to the world.
+
+      p One of the enquries was a referral from a former colleague. The prospect was looking for consultancy and development for a new digital product for their mid-sized national organisation. Unfortunately I had to politely turn this down, due to lack of my own availability over the coming months.
+
+      p The second enquiry was for some light consulting work from a company I've worked with previously. This looks like it will go somewhere, as the work is a good fit for me, the trust with the client exists already, and the time commitment isn't huge. Happy days!
+
+      h2 Analytics
+
+      h3 Website
+      p Excluding blog post views, my site received <strong>993 unique</strong> visitors in April. I'm not too bothered about numbers here right now, I'm just trying to grow organic traffic to the site through good SEO and targeted content creation.
+
+      h3 Blog posts
+      p My blog posts received a combined total of <strong>867 views</strong>. Again, it's the first month, so the numbers don't mean much yet.
+
+      p I need to set up some sort of time-on-page analytics for these, so I can tell if people are actually reading my posts. If they are, this signals to me that I'm publishing things that are worth their time, and generating some sort of value.
+
+      h3 Twitter
+      p I'm not a natural self promoter, so I find any sort of regular Twitter presence very difficult to stick to. However, it's proven to be a great tool for audience building for a lot of people, so I've made a real effort to Tweet more in April.
+
+      p I've tweeted at least once almost every day, and have tried to focus on sharing relevant, useful content with a bit of "real life" stuff mixed in to humanise things. It feels like a lot of hard work for not much return right now - I've had a few likes here here, the odd reply there, but I've actually managed to lose 3 followers over the month which made me laugh out loud when I noticed it:
+
+      p
+
+
+      p Rather than let this deter me, I've been using <a href="https://analytics.twitter.com" target="_blank" rel="noopener">Twitter analytics</a> to monitor impressions, engagements and profile views on the content I share. My thinking is that if I can drive engagement up with useful content, the profile views and followers will, eventually, build... let's see.
+
+      h2 Goals for May
+
+      p If you put the above sections in reverse order, you can begin to see the makings of a crude marketing funnel:
+
+      table
+        thead
+          tr
+            th Twitter profile views
+            th Blog post views
+            th Site views
+            th Enquiries
+            th Revenue
+        tbody
+          tr
+            td 3.7%
+            td 867
+            td 993
+            td 2
+            td £6,250
+
+      p My objectives for May are to formalise this funnel, and beating April's view numbers across the board using a couple of pieces of great content. If revenue drops a bit next month while I focus on this, so be it.
+
+      p With that in mind, my goals for May are as follows:
+
+      ol
+        li Write two blog posts focused on product engineering that provide good answers to commonly googled questions.
+        li Tweet twice every day, focusing on quality over quantity.
+        li Formalise a marketing plan I can follow in later months.
+        li Add a contact page and testmimonials to my site.
+
+      p That's all for this month. If you'd like to follow me on my journey, I'll be sharing everything I'm doing on <a href="https://twitter.com/mcarterj" rel="noopener" target="_blank">Twitter</a>. I also have a <a href="https://mcarter.me/rss.xml" rel="noopener" target="_blank">RSS feed</a> on this site if you're cool like that. There'll be more tweets than blog posts, but I aim to keep it valuable and non-grifty on both fronts.
+
+  include ../includes/footer.pug
