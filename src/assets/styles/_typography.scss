@@ -65,7 +65,7 @@ ol {
   font-family: $sans-font-family;
   font-size: $font-size-base;
   line-height: 1.9rem;
-  margin: 0 0 1rem 0;
+  margin: 0 0 $spacing-3 0;
 
   @media only screen and (max-width: $bp-sm) {
     font-size: 1rem;
