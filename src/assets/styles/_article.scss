@@ -4,7 +4,13 @@ article {
   }
 
   .article-image {
-    margin: 0 auto $spacing-5 auto;
+    margin: $spacing-3 auto;
     max-height: 20em;
+
+    &--bordered {
+      border: 0.1rem solid $grey-lightest;
+      border-radius: $border-radius-1;
+      padding: $spacing-1;
+    }
   }
 }
