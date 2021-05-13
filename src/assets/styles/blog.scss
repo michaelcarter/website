@@ -3,3 +3,12 @@
 
 @import 'article';
 @import 'post';
+@import 'writings';
+@import 'code-sample';
+
+.code {
+  background: $purple-lighter;
+  font-family: $fixed-font-family;
+  letter-spacing: -1px;
+  padding: 0 0.2rem;
+}

@@ -1,3 +1,5 @@
+/* autoprefixer: off */
+
 $device-dark-edge-color: #aaa;
 $device-shadow-color: #bbb;
 
@@ -79,3 +81,5 @@ $device-shadow-color: #bbb;
     transform: translate(0, 0);
   }
 }
+
+/* autoprefixer: on */

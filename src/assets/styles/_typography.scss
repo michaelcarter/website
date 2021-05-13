@@ -54,11 +54,6 @@ h4 {
   margin: 0 0 $spacing-2 0;
 }
 
-table {
-  font-family: $sans-font-family;
-  font-size: $font-size-base;
-}
-
 p,
 ul,
 ol {
@@ -98,15 +93,4 @@ a:hover,
 a:active {
   color: $pink-dark;
   transition: color $duration-medium;
-}
-
-.code {
-  background: $purple-lighter;
-  font-family: $fixed-font-family;
-  letter-spacing: -1px;
-  padding: 0 0.2rem;
-}
-
-.good {
-  color: #690;
 }
