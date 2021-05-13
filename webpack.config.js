@@ -59,7 +59,8 @@ const statsConfig = {
 const config = {
   stats: statsConfig,
   entry: {
-    css: './src/assets/styles/main.scss',
+    main: './src/assets/styles/main.scss',
+    blog: './src/assets/styles/blog.scss',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),

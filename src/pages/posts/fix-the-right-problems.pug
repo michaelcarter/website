@@ -9,6 +9,9 @@ block append vars
   -var metaDescription = "We spend too much time making vanity improvements to our code, while failing to make refactors that affect long-term quality. We need to do better."
   -var metaUrl = "https://mcarter.me/posts/fix-the-right-problems"
 
+block cssIncludes
+  link(rel='stylesheet' type='text/css' href='/assets/styles/blog.css' media='screen')
+
 block pageContent
   +navigation()
   article.article

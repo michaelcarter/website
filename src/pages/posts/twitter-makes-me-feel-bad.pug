@@ -9,6 +9,9 @@ block append vars
   -var metaDescription = "Twitter has some great web development chatter. However, it also makes me feel like a fake and a failure. Here's why, and what I intend to do about it."
   -var metaUrl = "https://mcarter.me/posts/twitter-makes-me-feel-bad"
 
+block cssIncludes
+  link(rel='stylesheet' type='text/css' href='/assets/styles/blog.css' media='screen')
+
 block pageContent
   +navigation()
   article.article
