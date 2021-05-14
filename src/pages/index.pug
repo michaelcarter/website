@@ -11,7 +11,9 @@ block prepend vars
   -var bodyClass = "home"
 
 block cssIncludes
-  link(rel='stylesheet' type='text/css' href='/assets/styles/showcase.css' media='screen')
+  link(rel="preload" href="/assets/styles/showcase.css" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'")
+  noscript
+    link(rel="stylesheet" media="screen" href="/assets/styles/showcase.css")
 
 block pageContent
   +navigation
