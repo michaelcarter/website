@@ -82,6 +82,7 @@ $device-shadow-color: #bbb;
 
 .header {
   &__showcase {
+    display: block;
     opacity: 0;
     animation: fadeIn 0.3s ease-out 0.2s;
     animation-fill-mode: forwards;
