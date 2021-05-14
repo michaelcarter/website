@@ -61,6 +61,7 @@ const config = {
   entry: {
     main: './src/assets/styles/main.scss',
     blog: './src/assets/styles/blog.scss',
+    showcase: './src/assets/styles/showcase.scss',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
