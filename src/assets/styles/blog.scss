@@ -2,9 +2,11 @@
 @import 'mixins';
 
 @import 'article';
+@import 'code-sample';
+@import 'gallery';
 @import 'post';
 @import 'writings';
-@import 'code-sample';
+@import 'table';
 
 .code {
   background: $purple-lighter;

@@ -1,0 +1,30 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    flex: 0 0 100%;
+    padding: $spacing-1 0;
+
+    @media only screen and (min-width: $bp-xs) {
+      flex: 0 0 50%;
+      padding: $spacing-1 $spacing-2;
+    }
+
+    @media only screen and (min-width: $bp-sm) {
+      flex: 0 0 33%;
+    }
+  }
+
+  &__caption {
+    font-family: $sans-font-family;
+    font-size: $font-size-xs;
+    margin: $spacing-1 0;
+    text-align: center;
+  }
+
+  &__image {
+    border: 1px solid $grey-lighter;
+    border-radius: $border-radius-1;
+  }
+}
