@@ -4,6 +4,7 @@ include mixins/navigation.pug
 include mixins/header.pug
 include mixins/imageList.pug
 include mixins/postList.pug
+include mixins/updateList.pug
 
 block append vars
   -var pageTitle = "Blog | Mike Carter | Digital products derisked"
@@ -23,15 +24,8 @@ block pageContent
   )
 
   main
-    .inner-wrapper.wrapper-semi-wide
+    .inner-wrapper.wrapper-60-40
       +postList([
-        {
-          title: "Freelancing update - May 2021",
-          date: "7th June 2021",
-          description: "I started working as a freelance development consultant full time in April 2021. Here are the numbers and reflections on my second month.",
-          href: "/posts/update-may-2021",
-          external: false
-        },
         {
           title: "For a better web, let developers learn",
           date: "31st May 2021",
@@ -40,24 +34,10 @@ block pageContent
           external: false
         },
         {
-          title: "My first month of freelancing",
-          date: "4th May 2021",
-          description: "I started working as a freelance development consultant full time in April 2021. Here are the numbers and reflections on my first month.",
-          href: "/posts/update-april-2021",
-          external: false
-        },
-        {
           title: "Choosing a good development partner",
           date: "6th April 2021",
           description: "When developing new software, timelines, cost, and quality can be hard to control. Here's how to choose the right development partner to keep things on track.",
           href: "/posts/choosing-a-good-development-partner",
-          external: false
-        },
-        {
-          title: "Moving on from Leaf",
-          date: "19th March 2021",
-          description: "Leaf is closing its doors in April 2021. Here's why we're winding down a profitable agency business, and what I plan to do next.",
-          href: "/posts/moving-on-from-leaf",
           external: false
         },
         {
@@ -179,6 +159,26 @@ block pageContent
           description: "Back from the days before React Native, some tips for getting the best performance possible from a Cordova based mobile app.",
           external: true
         }
+      ])
+      +updateList("Personal updates", [
+        {
+          title: "Freelancing update - May 2021",
+          date: "7th June 2021",
+          description: "I started working as a freelance development consultant full time in April 2021. Here are the numbers and reflections on my second month.",
+          href: "/posts/update-may-2021"
+        },
+        {
+          title: "My first month of freelancing",
+          date: "4th May 2021",
+          description: "I started working as a freelance development consultant full time in April 2021. Here are the numbers and reflections on my first month.",
+          href: "/posts/update-april-2021"
+        },
+        {
+          title: "Moving on from Leaf",
+          date: "19th March 2021",
+          description: "Leaf is closing its doors in April 2021. Here's why we're winding down a profitable agency business, and what I plan to do next.",
+          href: "/posts/moving-on-from-leaf"
+        },
       ])
 
   include includes/footer.pug

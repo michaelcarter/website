@@ -1,0 +1,10 @@
+mixin updateList(title, updates)
+  .update-list
+    h2.capitalised.update-list__title=title
+    ul.update-list__list
+      each update in updates
+        li.update-list__item
+          a(href!=update.href)
+            h3!=update.title
+            span.update-list__date=update.date
+            p.update-list__description!=update.description

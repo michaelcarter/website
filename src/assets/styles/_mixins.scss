@@ -113,4 +113,15 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
   }
+
+  a:hover & {
+    color: $pink;
+    transition: color $duration-short;
+
+    @supports not (-ms-high-contrast: none) {
+      background-color: $pink;
+      background-image: none;
+      transition: background-color $duration-medium;
+    }
+  }
 }

@@ -1,11 +1,12 @@
 .company-logos {
-  margin: 0 0 $spacing-2 0;
+  margin: 0;
 
   &__list {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0;
 
     @media only screen and (max-width: $bp-sm) {
       justify-content: center;
