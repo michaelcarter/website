@@ -1,0 +1,117 @@
+extends ../../base.pug
+
+include ../mixins/navigation.pug
+include ../mixins/header.pug
+include ../mixins/tip.pug
+
+block append vars
+  -var pageTitle = "How much does it cost to make an app? | Mike Carter"
+  -var metaTitle = "How much does it cost to make an app?"
+  -var metaDescription = "It&#39;s simple to ask, but difficult to answer. In this post, we explore factors affecting software cost so you can get more value from your development projects."
+  -var metaUrl = "https://mcarter.me/posts/update-april-2021"
+
+block cssIncludes
+  link(rel='stylesheet' type='text/css' href='/assets/styles/blog.css' media='screen')
+
+block pageContent
+  +navigation()
+  article.article
+    +header(
+      "How much does it cost to make an app?",
+      "It&#39;s simple to ask, but difficult to answer. In this post, we explore factors affecting software cost so you can get more value from your development projects."
+    )
+
+    main.article__content.wrapper-article
+      p I recently received an enquiry about developing a new app for a local company. The email contained a clear description of a product followed by a question - &#8220;How much would something like this cost?&#8221;. The answer? It depends.
+
+      p Software development is very difficult to cost accurately. Developers need a clear understanding of the final vision, the work, the unknowns, the company, and any risk factors involved. It&#39;s rare that these are all known before work begins, and so costs usually get estimated based on the limited information available and past experience.
+
+      p For clients, this estimation process can give them a price that&#39;s frustratingly opaque. It can be difficult to see how a developer arrived at the number they did, why seemingly small additions increase cost so much, or why big cuts to scope might not mean paying much less.
+
+      p To help you understand how different factors contribute towards software development costs, I&#39;ve listed some of the main considerations I make when pricing development work below. Each factor includes a helpful tip for getting as much value for money as possible:
+
+
+      h2 Technical factors
+
+      h3 Technologies in use
+
+      p A developer who&#39;s familiar with the technology your company uses will be more confident in their ability to deliver your project efficiently. This reduces uncertainty for them, and development costs for you. An exception here is when you&#39;re hiring a developer who&#39;s very well known for their expertise in a particular technology. In this situation, high demand for their services usually means a premium price.
+
+      +tip("Tip:", "Aim to find a developer with a prior experience working with technologies your company uses. Better still, find one who has also successfully delivered a project similar to yours in the past.")
+
+      h3 Quality of existing systems
+      p If a developer needs to work with your existing systems, they&#39;re likely factor the difficulty involved in working with those systems into their price. If your systems are well built, with low levels of technical debt and quality documentation, they&#39;ll be much easier for a developer to work with, reducing your development costs.
+
+      +tip("Tip:", "Before a price is given for a large project, allow a prospective developer to conduct a small technical investigation on any systems they&#39;ll need to work with to reduce their levels of uncertainty.")
+
+
+      h3 Device support
+      p Needing to support a wide range of old devices often creates significantly more coding and testing work for developers. This drives development costs up. Conversely, being able to focus on a supporting newer devices means less work, and will bring costs down.
+
+      +tip("Tip:", "Make sure to agree on device support before you&#39;re given a price for a development project. You may find there are devices the developer assumed they&#39;d need to support that aren&#39;t a concern for your product.")
+
+      h3 New or existing codebase
+      p Building within an existing codebase will often be cheaper than starting fresh, but this isn&#39;t always the case. The type of project, as well as the quality of an existing codebase may mean starting something new more cost-effective in the long run.
+
+      +tip("Tip:", "Talk to your developer and figure out what makes most sense for your business here. Ask them to explain the trade-offs to cost, as well as long-term maintainability and scalability of your software.")
+
+      h2 Product factors
+
+      h3 Feature set
+      p More features will increase cost in any software development project. However, it&#39;s common for some valuable features to be cheap to implement, and also for less valuable features to be very expensive to implement. You can reduce costs by dropping features that are low value and expensive to implement.
+
+      +tip("Tip:", "Let your developer know which features are a low priority, and ask them if there are any that could reduce costs significantly if they were removed from the project.")
+
+      h3 Design complexity
+      p Designs are becoming more complex as internet-connected devices spread into every corner of our daily lives. The intricate visual elements and custom user interface components they require can be very expensive to build.
+
+      +tip("Tip:", "Ask your developer to pair with your designer and consider trade-offs between design complexity and development cost. They&#39;ll likely find small amendments and ready-made components can reduce costs without sacrificing design quality.")
+
+      h3 Support and administration
+
+      p Software with complex support or administration requirements often needs additional features and integrations to be developed to diagnose problems and keep product settings up to date. Like any feature development though, these can be a significant source of cost.
+
+      +tip("Tip:", "Consider using off-the-shelf support and administration services and ask your developer about the feasibility of integrating them with your software. These will almost always be much cheaper than building your own.")
+
+      h3 Value to the business
+      p Developers will charge more to build a valuable product, because when there&#39;s large amounts of money at stake, the developer needs to take extra care to make sure everything works properly at launch. The price also makes the risk of working on a high stakes project worth their while.
+
+      +tip("Tip:", "You can sometimes negotiate a cheaper price by using a staggered launch to lower the stakes for your developer. Just remember that having them heavily invested in your success has its benefits too!")
+
+      h3 Unknowns
+      p When there are many unanswered questions in the development of a digitial product, scope is prone to increase massively over time. In order to account for this risk, developers working on projects with a lot of unknowns will charge a much higher price.
+
+      +tip("Tip:", "While unknowns are normal, eliminating as many as you reasonably can before a project starts is always a good idea. If the unknowns are technical in nature, your developer can often help you unpick them for a small fixed fee ahead of the main project.")
+
+      h2 Business factors
+
+      h3 Company size
+      p If your company is large, software development will generally cost you more. Large companies always have more stakeholders, more constraints, legacy systems, legacy process, and communication overheads that can make developing software for them more challenging.
+
+      +tip("Tip:", "Ensure your project has as few stakeholders involved as possible, and have clear decision makers within the group. When a developer knows they&#39;re working with a 5-person team rather the entire business, they&#39;ll be comfortable charging less.")
+
+      h3 Company culture
+      p Separate from the size of your company, the culture can also have a significant impact on software development costs. Cultures of indecision, disorganisation, and poor communication can make it very hard to make progress in complex projects, and costs will rise as a result.
+
+      +tip("Tip:", "Keep things running smoothly by pairing weaknesses in your company with strengths in your development partner. Changing culture is hard, so compensate by hiring a developer with the right complimentary skills.")
+
+      h3 Brand and sector
+      p Developers will charge less to work with a well known brand or within a sector that&#39;s complimentary to their specialism, because these projects provide them with an easy marketing opportunity. Conversely, developers will charge more if your brand is &#8220;well known&#8221; for the wrong reasons.
+
+      +tip("Tip:", "Seek out development partners who will get a little something extra from working with you. Whether that&#39;s a big name to show on their website, a project aligned to their specialism they can write a case study for, or a testimonial from a well known person within your company.")
+
+      h3 Existing internal development teams
+
+      p Depending on how they&#39;re managed, the involvement of your internal development team can raise or lower the cost of a project being undertaken by an external developer. Your internal development team will be a fountain of knowledge, but embedded processes and preferred technical choices can also get in the way of moving quickly, raising costs.
+
+      +tip("Tip:", "Give your external developer direct access to knowledgeable internal developers for questions, but ask your internal developers to communicate processes and preferred technical approaches back to your external developer early on to avoid rework.")
+
+      h2 Wrapping up
+
+      p So, how much does it cost to make an app? It still depends, but by understanding how different factors contribute to cost, you can begin to have a proactive conversation about lowering development costs with your development partner. Plans can be made quickly, all of the right questions can be answered early, and subsequent adjustments to scope can be made by you with a clear understanding of their cost implications.
+
+      <hr />
+
+      p I make a living by helping companies bring digital products to market with solid foundations, room to scale, and costs under control. If it sounds like I could help you, have a look over <a href="/services">my services</a>. If you&#39;d like to hear more from me, you should follow me on <a href='https://twitter.com/mcarterj' target='_blank' rel='noopener'>Twitter</a>, for more product development content in future.
+
+  include ../includes/footer.pug

@@ -14,6 +14,10 @@
     padding: $spacing-3 $spacing-4;
   }
 
+  h2 {
+    margin: $spacing-2 0;
+  }
+
   &__content {
     @media only screen and (min-width: $bp-sm) {
       display: flex;
