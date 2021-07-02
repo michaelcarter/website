@@ -3,7 +3,6 @@ extends ../base.pug
 include mixins/navigation.pug
 include mixins/header.pug
 include mixins/twoThirdsSection.pug
-include mixins/halfSection.pug
 include mixins/companyLogos.pug
 include mixins/contactButton.pug
 
@@ -26,16 +25,24 @@ block pageContent
     +contactButton()
 
   main
-    .half-section__container
-      +halfSection("A guide through the unknown", "map")
-        p.lead Developing a digital product is often expensive, slow, and offers little return on investment. In an unregulated industry, choosing a competent development partner is risky.
+    section.half-section
+      .half-section__inner
+        .half-section__image-title-container
+          h2.half-section__title A guide through the unknown
+          .half-section__image
+            +svg("map")
+        .half-section__content
+          p.lead Developing a digital product is often expensive, slow, and offers little return on investment. In an unregulated industry, choosing a competent development partner is risky.
+          p My goal is to de-risk your digital product development journey. I combine true technical expertise, extensive industry experience, and excellent communication skills to bring quality, scaleable software to market that generates real value for your business.
 
-        p My goal is to de-risk your digital product development journey. I combine true technical expertise, extensive industry experience, and excellent communication skills to bring quality, scaleable software to market that generates real value for your business.
-
-      +halfSection("Someone who understands", "presentation")
-        p.lead It can be hard to move quickly in a business environment. There are tradeoffs to be made, stakeholders to win over, value to prove, priorities that change, and blockers to avoid.
-
-        p I’ve spent the past decade working to become adept at delivering software in these conditions. I’ll work closely with the relevant stakeholders in your business to make sure there’s a clear shared vision for your product that's aligned with your strategic objectives.
+      .half-section__inner
+        .half-section__image-title-container
+          h2.half-section__title Someone who understands
+          .half-section__image
+            +svg("presentation")
+        .half-section__content
+          p.lead It can be hard to move quickly in a business environment. There are tradeoffs to be made, stakeholders to win over, value to prove, priorities that change, and blockers to avoid.
+          p I’ve spent the past decade working to become adept at delivering software in these conditions. I’ll work closely with the relevant stakeholders in your business to make sure there’s a clear shared vision for your product that's aligned with your strategic objectives.
 
     section.full-section.wrapper-semi-wide
       h2.capitalised Services
