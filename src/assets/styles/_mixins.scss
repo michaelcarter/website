@@ -1,7 +1,32 @@
+@mixin viewport-padding {
+  padding-left: $spacing-gutter;
+  padding-right: $spacing-gutter;
+
+  @media only screen and (min-width: $layout-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@mixin vertical-section {
+  margin-top: $spacing-3;
+  margin-bottom: $spacing-3;
+
+  @media only screen and (min-width: $bp-sm) {
+    margin-top: $spacing-4;
+    margin-bottom: $spacing-4;
+  }
+}
+
 @mixin inner-wrapper {
   margin-left: auto;
   margin-right: auto;
   max-width: $layout-width;
+  // border: 1px solid #900;
+
+  // & > * {
+  //  border: 1px solid #9c3; 
+  // }
 }
 
 @mixin nav-link {

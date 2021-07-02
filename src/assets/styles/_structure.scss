@@ -59,13 +59,15 @@ body {
 
 .wrapper-article {
   max-width: $layout-width-semi-narrow !important;
-  padding: 0 $spacing-2 !important;
+  padding: 0 $spacing-gutter;
   @media only screen and (min-width: $layout-width-semi-narrow) {
-    padding: 0 !important;
+    padding: 0;
   }
 }
 
 .wrapper-60-40 {
+  @include viewport-padding;
+
   display: flex;
   flex-direction: column;
 
@@ -77,11 +79,6 @@ body {
     align-items: flex-start;
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  padding: 0 $spacing-2;
-  @media only screen and (min-width: $layout-width) {
-    padding: 0;
   }
 
   > div {
@@ -107,11 +104,6 @@ body {
       }
     }
   }
-}
-
-main {
-  margin: 0;
-  padding: $spacing-4 0 0 0;
 }
 
 hr {

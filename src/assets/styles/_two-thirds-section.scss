@@ -1,15 +1,10 @@
 .two-thirds-section {
   @include inner-wrapper;
-
-  margin: $spacing-5 auto;
-  padding: 0 $spacing-2;
+  @include viewport-padding;
+  @include vertical-section;
 
   &:first-child {
     margin-top: 0;
-  }
-
-  @media only screen and (min-width: $layout-width) {
-    padding: 0;
   }
 
   &__title {

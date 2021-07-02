@@ -1,7 +1,7 @@
 .tip {
   background: $purple-lightest;
-  margin: 0 calc(0rem - #{$spacing-2}) $spacing-3 calc(0rem - #{$spacing-2});
-  padding: $spacing-2;
+  margin: 0 calc(0rem - #{$spacing-gutter}) $spacing-3 calc(0rem - #{$spacing-gutter});
+  padding: $spacing-2 $spacing-gutter; 
 
   @media only screen and (min-width: $bp-sm) {
     border-bottom: 0.1rem solid lighten($purple-lighter, 4%);

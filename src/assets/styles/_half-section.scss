@@ -1,16 +1,13 @@
 .half-section__container {
   @include inner-wrapper;
+  @include viewport-padding;
+  @include vertical-section;
 
   display: flex;
   flex-direction: column;
-  padding: 0 $spacing-2;
 
   @media only screen and (min-width: $bp-sm) {
     flex-direction: row;
-  }
-
-  @media only screen and (min-width: $layout-width-semi-wide) {
-    padding: 0;
   }
 }
 
@@ -35,6 +32,10 @@
     &:last-child {
       margin-left: $spacing-4;
     }
+  }
+
+  h2 {
+    margin-top: 0;
   }
 
   &__image-title-container {
