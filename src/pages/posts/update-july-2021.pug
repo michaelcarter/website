@@ -1,0 +1,112 @@
+extends ../../base.pug
+
+include ../mixins/navigation.pug
+include ../mixins/header.pug
+
+block append vars
+  -var pageTitle = "Freelancing update - July 2021 | Mike Carter"
+  -var metaTitle = "Freelancing update - July 2021"
+  -var metaDescription = "Revenue and reflections on my fourth month of working as a freelance development consultant."
+  -var metaUrl = "https://mcarter.me/posts/update-july-2021"
+
+block cssIncludes
+  link(rel='stylesheet' type='text/css' href='/assets/styles/blog.css' media='screen')
+
+block pageContent
+  +navigation()
+  article.article
+    +header(
+      "Freelancing update - July 2021",
+      "Revenue and reflections on my fourth month of working as a freelance development consultant."
+    )
+
+    main.article__content.wrapper-article
+      p July was difficult. I failed several of my goals, changed my mind on the product I want to build, and neglected my social media activity. July was also my most profitable month to date, invoicing almost double my average revenue for April, May and June.  
+
+      h2 Stats for July
+
+      .table__container
+        table.table
+          tr
+            th Month
+            th Site views
+            th Post views
+            th Twitter profile views
+            th Enquiries
+            th Days off
+            th Revenue
+          tr
+            th April 2021
+            td 1,137
+            td 749
+            td 4,800
+            td 2
+            td 0
+            td £7,800
+          tr
+            th May 2021
+            td 1,263
+            td 3,144
+            td 4,660
+            td 1
+            td 5
+            td £4,200
+          tr
+            th June 2021
+            td 1,192
+            td 549
+            td 6,620
+            td 1
+            td 0
+            td £6,700
+          tr
+            th July 2021
+            td 1,160
+            td 596
+            td 3,330
+            td 1
+            td 2
+            td £11,800
+
+      h3 Revenue
+      p I issued invoices for <strong>£11,800</strong> (~$15,575) excluding <a href="https://www.gov.uk/vat-businesses" rel="noopener" target="_blank">VAT</a> in July. These came from a mixture of consulting and development work for two different clients. My revenue was so much higher in July because I was finally able to invoice for a long-running piece of fixed cost work I&#39;d been doing part-time since April. This single invoice accounted for about 50% of the total revenue for July.
+
+      h3 Enquiries
+      p I received <strong>1 new work enquiry</strong> in July from a semi-local company looking for some straight-forward React development help. I had to turn them down due to lack of availability, but it&#39;s important I keep these enquiries coming in as knowing the opportunity is there gives me the confidence to say no to things I don&#39;t want to do, and a peace of mind that&#39;s hard to come by for the self-employed!
+
+      h3 Marketing
+      p One of my goals for July was to write a blog post focussed on product engineering. I&#39;m disappointed to say I failed to make the time to write anything, and so unsurprisingly my site and blog posts received about the same number of views as they did in previous months - <strong>1,160 views</strong> for the website, and <strong>596</strong> for blog posts. 
+
+      p I also neglected my social media activity in July. On Twitter, my tweets, impressions, profile visits and mentions were all between 50-80% lower than June - eek!
+      
+      img.article-image.article-image--bordered(src="/assets/images/posts/update-july-2021/twitter-stats.jpg" alt="A screenshot of my Twitter analytics for July 2021. It shows 41 tweets, 17,500 tweet impressions, 3,329 profile visits, 12 mentions, and 392 followers (3 more than last month).")
+
+      h2 Building a different product
+      p In June&#39;s update I wrote an entire section on a product idea I wanted to pursue. The product was going to allow people to sell online events or content in an auction-style setup, with customers bidding for access.
+      
+      p After reflecting on this, I&#39;ve changed my mind, and am instead going to look at building a small indie analytics platform that helps writers monitor and build an audience by providing some deep insight into who&#39;s reading their posts. This was my runner-up idea in June, but I&#39;ve decided it&#39;s actually the best option for me personally: 
+
+      ul
+        li Analytics is a proven market.
+        li The idea excites me more.
+        li The idea is easier to explain.
+        li It&#39;s a product I would use myself.
+        li It&#39;s more visual, and so easier to share progress on.
+
+      p I intend to break ground on this in August, defining a tight scope for a first launch, and making some technology choices.
+
+      h2 Flirting with burnout
+      p I felt a little like I was flirting with burnout for much of July. Trying to wrap up old projects, continue ongoing work, move forward a product idea, write blog posts, and think of insightful things to Tweet about all got a little much at times.
+
+      p Rather than trying to keep up with it all, I made the sensible call and let my writing and Twitter activity slide in order to keep working hours normal. Although this is probably good for me, it often doesn&#39;t <em>feel</em> good. I&#39;m someone who gets job satisfaction from completing tasks, so accepting I won&#39;t finish something I set out to achieve can often be stressful in itself.
+
+      h2 Goals for August
+      p With that in mind, I&#39;ve decided I&#39;m only going to set goals each month that contribute towards my long term objectives of building an audience for my consulting work, and growing a successful digital product. This way, I can put something off for a month without it being perceived as a failure, because the goals will always be relevant. Here are my goals for August:
+
+      ol
+        li Write a blog post focused on product engineering.
+        li Scope out a first release and make technology choices for my analytics product.
+
+      p That&#39;s all for July! You should <a href="https://twitter.com/mcarterj" rel="noopener" target="_blank">follow me on Twitter</a> if you want to see how this freelancing adventure develops for me. I also have a <a href="https://mcarter.me/rss.xml" rel="noopener" target="_blank">RSS feed</a> on this site if you&#39;d just like to keep track of new posts on this blog.
+
+  include ../includes/footer.pug
