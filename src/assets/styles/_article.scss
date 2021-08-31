@@ -12,5 +12,16 @@ article {
       border-radius: $border-radius-1;
       padding: $spacing-1;
     }
+
+    &--subtitled {
+      margin-bottom: 0;
+    }
+  }
+
+  .article-image-subtitle {
+    color: $grey-dark;
+    font-size: $font-size-sm;
+    margin: 0 0 $spacing-3 0;
+    text-align: center;
   }
 }
