@@ -1,24 +1,8 @@
 include svg.pug
 
-mixin companyLogos(c)
-  .company-logos
-    ul.company-logos__list
+mixin companyLogos(logos)
+  ul.company-logos
+    each logo in logos
       li.company-logos__item
-        a(href="https://riftrefunds.co.uk" rel="noopener" target="_blank" alt="RIFT's website" aria-label="RIFT")
-          +svg("rift")
-      li.company-logos__item
-        a(href="https://laced.co.uk" rel="noopener" target="_blank" alt="Laced's website" aria-label="Laced")
-          +svg("laced")
-      li.company-logos__item
-        a(href="https://holidayextras.co.uk" rel="noopener" target="_blank" alt="Holiday Extras' website" aria-label="Holiday Extras")
-          +svg("holiday-extras")
-      li.company-logos__item
-        a(href="https://zendesk.co.uk" rel="noopener" target="_blank" alt="Zendesk's website" aria-label="Zendesk")
-          +svg("zendesk")
-      li.company-logos__item
-        a(href="https://heha.com" rel="noopener" target="_blank" alt="HEHA's website" aria-label="HEHA")
-          +svg("heha")
-      li.company-logos__item
-        a(href="https://allocate.co.uk" rel="noopener" target="_blank" alt="Allocate's website" aria-label="Allocate")
-          +svg("allocate")
-
+        a(href=logo.url rel="noopener" target="_blank" aria-label=logo.ariaLabel)
+          img(src=`/assets/images/${logo.fileName}` alt=logo.alt width=logo.width height=logo.height loading="lazy")

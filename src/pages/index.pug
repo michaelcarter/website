@@ -59,7 +59,56 @@ block pageContent
 
       .full-section__footer
         h4 Trusted by
-        +companyLogos()
+        +companyLogos([
+          {
+            alt: "RIFT’s website",
+            url: "https://riftrefunds.co.uk",
+            fileName: "client-logos/myrift.svg",
+            ariaLabel: "RIFT",
+            width: 138,
+            height: 56,
+          },
+          {
+            alt: "Allocate’s website",
+            url: "https://allocate.co.uk",
+            fileName: "client-logos/allocate.svg",
+            ariaLabel: "Allocate",
+            width: 123,
+            height: 56
+          },
+          {
+            alt: "Laced’s website",
+            url: "https://laced.co.uk",
+            fileName: "client-logos/laced.svg",
+            ariaLabel: "Laced",
+            width: 160,
+            height: 32
+          },
+          {
+            alt: "Holiday Extras’ website",
+            url: "https://holidayextras.co.uk",
+            fileName: "client-logos/holiday-extras.svg",
+            ariaLabel: "Holiday Extras",
+            width: 160,
+            height: 27
+          },
+          {
+            alt: "HEHA’s website",
+            url: "https://heha.com",
+            fileName: "client-logos/heha.svg",
+            ariaLabel: "HEHA",
+            width: 84,
+            height: 48
+          },
+          {
+            alt: "Zendesk’s website",
+            url: "https://zendesk.co.uk",
+            fileName: "client-logos/zendesk.svg",
+            ariaLabel: "Zendesk",
+            width: 136,
+            height: 28
+          }
+        ])
 
     +twoThirdsSection("A safe pair of hands", "desk", false)
       p.lead It’s all too common for software development projects to go off the rails. Typically losing time, money and opportunity with with an inexperienced development partner.

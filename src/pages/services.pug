@@ -3,8 +3,8 @@ extends ../base.pug
 include mixins/navigation.pug
 include mixins/header.pug
 include mixins/twoThirdsSection.pug
-include mixins/companyLogos.pug
 include mixins/contactButton.pug
+include mixins/companyLogos.pug
 
 block prepend vars
 
@@ -23,36 +23,23 @@ block pageContent
   )
 
   main
-    +twoThirdsSection("Your product development partner", "presentation2", false)
+    +twoThirdsSection("Your product partner", "presentation2", false)
       p.lead Software development is full of unforeseen diversions and slowdowns. Projects often run late, over budget, and are full of bugs at launch. This can push any return on investment far off into the future.
-
       p I’m here to keep things on track. I'll help you avoid roadblocks, navigate unfamiliar territory, and challenge unwise decisions as you go. I'll supplement your business knowledge with my technical and product expertise to keep everything progressing efficiently towards your goal.
-
       p To do this, I offer two services; <strong>product development</strong> and <strong>product consultancy</strong>.
 
+    +twoThirdsSection("Product development", "coding", true)
+      p.lead For a fixed price or daily rate, I’ll work on your digital product directly, helping you to achieve a clear return on investment for your business.
+      p I’ll coordinate with stakeholders to establish clear requirements, and then deliver expertly crafted software that fully realises your vision for launch, but with solid foundations for further development and scaling.
+      p All of my work is carefully documented, and uses technologies with a proven track record and promising trajectory in order to ensure you're able to continue to find talented developers to grow your product long into the future.
+      a.button.button--primary.button--small(href="mailto:mike@mcarter.me") Email me
 
-    section.half-section
-      .half-section__inner
-        .half-section__image-title-container
-          h2.half-section__title Product development
-          .half-section__image
-            +svg("coding")
-        .half-section__content
-          p.lead For a fixed price or daily rate, I’ll work on your digital product directly, helping you to achieve a clear return on investment for your business.
-          p I’ll coordinate with stakeholders to establish clear requirements, and then deliver expertly crafted software that fully realises your vision for launch, but with solid foundations for further development and scaling.
-          p All of my work is carefully documented, and uses technologies with a proven track record and promising trajectory in order to ensure you're able to continue to find talented developers to grow your product long into the future.
-          a.button.button--primary.button--small(href="mailto:mike@mcarter.me") Email me
-
-      .half-section__inner
-        .half-section__image-title-container
-          h2.half-section__title Product consultancy
-          .half-section__image
-            +svg("consulting")
-        .half-section__content
-          p.lead If you’re looking to build something new, or would like long-term technical help, I can help guide decision making.
-          p I'll work closely with you to help you deliver top quality digital products in less time, at less cost, and to a higher quality. I'll speak a language you understand, and keep your return on investment front of mind.
-          p By constantly re-assessing the needs and constraints in your business, I'll ensure your development team or agency continue smoothly towards their goal as new issues and blockers are uncovered, and keep you informed of progress along the way.
-          a.button.button--primary.button--small(href="mailto:mike@mcarter.me") Email me
+    +twoThirdsSection("Product consultancy", "consulting", false)
+      p.lead If you’re looking to build something new, or would like long-term technical help, I can help guide decision making.
+      p I'll work closely with you to help you deliver top quality digital products in less time, at less cost, and to a higher quality. I'll speak a language you understand, and keep your return on investment front of mind.
+      p By constantly re-assessing the needs and constraints in your business, I'll ensure your development team or agency continue smoothly towards their goal as new issues and blockers are uncovered, and keep you informed of progress along the way.
+      a.button.button--primary.button--small(href="mailto:mike@mcarter.me") Email me
+    
 
     section.full-section.wrapper-semi-wide
       h2.capitalised Frequently asked questions
@@ -63,11 +50,11 @@ block pageContent
 
         .full-section__sub-section
           h3 Can  you charge a fixed price?
-          p I <em>prefer</em> to charge a fixed price for projects, because you know exactly what you’re getting, and what you’re paying. Invoiced 50% up front, and 50% prior to go-live. 
+          p I actually <em>prefer</em> to charge a fixed price for projects, because clients prefer the certainty. I invoice fixed-price work on a 50% up-front, 50% prior to go-live basis. 
 
         .full-section__sub-section 
           h3 What about a day rate?
-          p Where a fixed cost is not practical for a project, I charge a rate of <strong>£700 per day</strong>. At the end of each month I’ll issue an invoice for days worked.
+          p Where a fixed cost is not practical or desired, I charge a rate of <strong>£700 per day</strong>. At the end of each month I’ll issue an invoice for days worked.
 
       .full-section__content
         .full-section__sub-section
@@ -76,17 +63,13 @@ block pageContent
 
         .full-section__sub-section 
           h3 Will you work with our developers?
-          p Yes! I love to work with other developers. Collaboration is great for knowledge share and quality software. Just remember I don't offer explicit developer training as a service.
+          p Yes! I love to work with other developers. Collaboration is great for knowledge share and quality software. Just remember I don't offer one-on-one developer training as a service.
 
-        .full-section__sub-section 
-          h3 What about progress updates?
-          p At a minimum, I’ll provide you with a written weekly progress update on your project so you’ll always have up-to-date information on how things are going.
-
-      .full-section__content
         .full-section__sub-section 
           h3 What if our plans change?
           p If your plans change at any point, we can negotiate something new or cancel the project completely. Cancellations will mean no deliverables from me, and no 50% final payment for you.
 
+      .full-section__content
         .full-section__sub-section
           h3 Will you come to our offices?
           p Yes! I primarily work remotely, but I'm happy to travel to work with you and your team in-person should the project require it. This can be factored into the scope of your project, or billed for at my hourly rate.
@@ -95,11 +78,120 @@ block pageContent
           h3 What if we need more people?
           p I have a wide network of skilled developers, designers, and project managers in my network. If the scope of your project grows I can help pull in the right people to keep things running smoothly.
 
-      .full-section__content
         .full-section__sub-section
-          h3 Are you available now?
-          p I'm unavailable for new work until <strong>April 2022</strong>. Regrettably, I’m often booked out several months ahead. If you’re planning something, contact me early to avoid disappointment.
+          h3 Do you have availability?
+          p I’m fairly going to be fairly busy until <strong>April 2022</strong>. I’m often booked out several months ahead. If you’re planning something, contact me early to avoid disappointment.
 
+      .full-section__footer
+        h4 Technology
+        +companyLogos([
+          {
+            alt: "JavaScript’s website",
+            url: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript",
+            fileName: "tech-logos/javascript.svg",
+            ariaLabel: "JavaScript",
+            width: 56,
+            height: 56
+          },
+          {
+            alt: "Node.js’ website",
+            url: "https://nodejs.org/en/",
+            fileName: "tech-logos/nodejs.svg",
+            ariaLabel: "Node.js",
+            width: 91,
+            height: 56
+          },
+          {
+            alt: "React’s website",
+            url: "https://reactjs.org",
+            fileName: "tech-logos/react.svg",
+            ariaLabel: "React",
+            width: 63,
+            height: 56
 
+          },
+          {
+            alt: "Next.js’ website",
+            url: "https://nextjs.org",
+            fileName: "tech-logos/nextjs.svg",
+            ariaLabel: "Next.js",
+            width: 93,
+            height: 56
+          },
+          {
+            alt: "GraphQL’s website",
+            url: "https://graphql.org",
+            fileName: "tech-logos/graphql.svg",
+            ariaLabel: "GraphQL",
+            width: 50,
+            height: 56
+          },
+          {
+            alt: "Ruby’s website",
+            url: "https://www.ruby-lang.org/",
+            fileName: "tech-logos/ruby.svg",
+            ariaLabel: "Ruby",
+            width: 52,
+            height: 56
+          },
+          {
+            alt: "Ruby on Rails’ website",
+            url: "https://rubyonrails.org",
+            fileName: "tech-logos/rails.svg",
+            ariaLabel: "Ruby on Rails",
+            width: 159,
+            height: 56
+          }
+        ])
+        +companyLogos([
+          {
+            alt: "Heroku’s website",
+            url: "https://heroku.com",
+            fileName: "tech-logos/heroku.svg",
+            ariaLabel: "Heroku",
+            width: 160,
+            height: 45
+          },
+          {
+            alt: "Amazon Web Services’ website",
+            url: "https://aws.amazon.com",
+            fileName: "tech-logos/aws.svg",
+            ariaLabel: "Amazon Web Services",
+            width: 94,
+            height: 56
+          },
+          {
+            alt: "Cloudflare’s website",
+            url: "https://cloudflare.com",
+            fileName: "tech-logos/cloudflare.svg",
+            ariaLabel: "Cloudflare",
+            width: 124,
+            height: 56
+          },
+          {
+            alt: "Paypal’s website",
+            url: "https://paypal.com",
+            fileName: "tech-logos/paypal.svg",
+            ariaLabel: "Paypal",
+            width: 124,
+            height: 33,
+          },
+          {
+            alt: "Stripe website",
+            url: "https://stripe.com/",
+            fileName: "tech-logos/stripe.svg",
+            ariaLabel: "Stripe",
+            width: 134,
+            height: 56
+          },
+          {
+            alt: "Docker's website",
+            url: "https://www.docker.com",
+            fileName: "tech-logos/docker.svg",
+            ariaLabel: "Docker",
+            width: 160,
+            height: 40
+          }
+        ])
 
   include includes/footer.pug
