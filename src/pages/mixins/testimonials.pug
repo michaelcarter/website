@@ -1,0 +1,11 @@
+mixin testimonials(testimonials)
+  ul.testimonials
+    each testimonial in testimonials
+      li.testimonials__item
+        figure.testimonial
+          img.testimonial__image(src=testimonial.src alt=testimonial.alt)
+          p.testimonial__text=testimonial.text
+          figcaption.testimonial__citation
+            cite=testimonial.author
+
+

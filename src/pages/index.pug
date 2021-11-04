@@ -5,6 +5,7 @@ include mixins/header.pug
 include mixins/twoThirdsSection.pug
 include mixins/companyLogos.pug
 include mixins/contactButton.pug
+include mixins/testimonials.pug
 
 block prepend vars
   -var bodyClass = "home"
@@ -58,8 +59,42 @@ block pageContent
           p I'll work closely with you to help you deliver top quality digital products in less time, at less cost, and to a higher quality. I'll speak a language you understand, and keep your return on investment front of mind. <a href="/services">Read more...</a>
 
       .full-section__footer
-        h4 Trusted by
-        +companyLogos([
+        h4 Testimonials
+        +testimonials([
+          {
+            src: "/assets/images/testimonials/annadivers.jpeg",
+            alt: "Anna Divers",
+            author: "Anna Divers, Product Director at Holiday Extras (now Purple Bricks)",
+            text: "Mike's a super genius engineer and you should definitely hire him."
+          },
+          {
+            src: "/assets/images/testimonials/bradleypost.jpeg",
+            alt: "Bradley Post",
+            author: "Bradley Post, CEO at RIFT Group",
+            text: "Mike's a pretty good at what he does, you wouldn't regret hiring him."
+          },
+          {
+            src: "/assets/images/testimonials/chrisgibbons.jpg",
+            alt: "Chris Gibbons",
+            author: "Chris Gibbons, CEO and Founder at Laced",
+            text: "Mike's a pretty good at what he does, you wouldn't regret hiring him."
+          },
+          {
+            src: "/assets/images/testimonials/charlesholdsworth.jpeg",
+            alt: "Charles Holdsworth",
+            author: "Charles Holdsworth, CEO at Airspace Software",
+            text: "Mike's not that great, you might want to give him a miss."
+          }
+        ])
+
+    +twoThirdsSection("A safe pair of hands", "desk", false)
+      p.lead It’s all too common for software development projects to go off the rails. Typically losing time, money and opportunity with with an inexperienced development partner.
+
+      p I’ve built products for businesses of many different sizes and in many different sectors over the past decade. I know my onions, but I also know when there's value in defering to subject matter experts for a second opinion or additional development support.
+
+      +contactButton()
+
+      +companyLogos([
           {
             alt: "RIFT’s website",
             url: "https://riftrefunds.co.uk",
@@ -109,13 +144,6 @@ block pageContent
             height: 28
           }
         ])
-
-    +twoThirdsSection("A safe pair of hands", "desk", false)
-      p.lead It’s all too common for software development projects to go off the rails. Typically losing time, money and opportunity with with an inexperienced development partner.
-
-      p I’ve built products for businesses of many different sizes and in many different sectors over the past decade. I know my onions, but I also know when there's value in defering to subject matter experts for a second opinion or additional development support.
-
-      +contactButton()
 
 
   include includes/footer.pug
