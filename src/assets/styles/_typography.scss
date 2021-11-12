@@ -2,6 +2,17 @@ body {
   color: $grey-dark;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  &.hidden {
+    @media only screen and (min-width: $bp-sm) {
+      display: none;
+    }
+  }
+}
+
 h1 {
   @include rainbow-text;
 

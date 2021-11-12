@@ -8,12 +8,7 @@
   margin: 0 0 $spacing-2 0;
   text-align: center;
   text-decoration: none;
-  padding: 1.3rem $spacing-3;
-
-  &--small {
-    font-size: $font-size-base;
-    padding: 0.8rem $spacing-2;
-  }
+  padding: 0.8rem $spacing-2;
 
   &--primary {
     background: $pink-dark;

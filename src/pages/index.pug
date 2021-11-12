@@ -20,10 +20,10 @@ block pageContent
 
   +header(
     "Digital products<br/> derisked",
-    "I’m Mike Carter, a web application development consultant who brings digital products to market with solid foundations, room to scale, and costs under control.",
+    "I’m Mike Carter, a <strong>web application development consultant</strong> who brings digital products to market with solid foundations, room to scale, and costs under control.",
     true
   )
-    +contactButton()
+    a.button.button--primary(href="/services") Services &amp; Contact
 
   main
     section.half-section
@@ -46,104 +46,79 @@ block pageContent
           p I’ve spent the past decade working to become adept at delivering software in these conditions. I’ll work closely with the relevant stakeholders in your business to make sure there’s a clear shared vision for your product that's aligned with your strategic objectives.
 
     section.full-section.wrapper-semi-wide
-      h2.capitalised Services
-      .full-section__content
-        .full-section__sub-section
-          h3 Product development
-          p.lead For a fixed price or daily rate, I’ll work on your digital product directly, helping you to achieve a clear return on investment.
-          p I’ll coordinate with stakeholders to establish clear requirements, and then deliver expertly crafted software that fully realises your vision for launch, but with solid foundations for further development and scaling. <a href="/services">Read more...</a>
+      h3.hidden Testimonials
 
-        .full-section__sub-section
-          h3 Product consultancy
-          p.lead If you’re looking to build something new, or would like long-term technical help, I can help guide decision making.
-          p I'll work closely with you to help you deliver top quality digital products in less time, at less cost, and to a higher quality. I'll speak a language you understand, and keep your return on investment front of mind. <a href="/services">Read more...</a>
+      +testimonials([
+        {
+          src: "/assets/images/testimonials/bradleypost.jpeg",
+          alt: "Bradley Post",
+          author: "Bradley Post, CEO of RIFT",
+          text: "Mike has been brilliant for RIFT; he has led numerous successful development projects, and his calm, measured and pragmatic delivery approach immediately instils confidence. He quickly understands the business issues we’re trying to solve and develops practical solutions to drive the business forwards."
+        },
+        {
+          src: "/assets/images/testimonials/charlesholdsworth.jpeg",
+          alt: "Charles Holdsworth",
+          author: "Charles Holdsworth, Director of Airspace Software",
+          text: "Mike has not only performed exceptionally well on two projects for me, but stepped in to help when an issue arose with a former developer.  Without assistance he methodically unravelled older systems in order to understand their structure and setup. His assistance has been invaluable."
+        }
+      ])
 
-      .full-section__footer
-        h4 Testimonials
-        +testimonials([
-          {
-            src: "/assets/images/testimonials/annadivers.jpeg",
-            alt: "Anna Divers",
-            author: "Anna Divers, Product Director at Holiday Extras (now Purple Bricks)",
-            text: "Mike's a super genius engineer and you should definitely hire him."
-          },
-          {
-            src: "/assets/images/testimonials/bradleypost.jpeg",
-            alt: "Bradley Post",
-            author: "Bradley Post, CEO at RIFT Group",
-            text: "Mike's a pretty good at what he does, you wouldn't regret hiring him."
-          },
-          {
-            src: "/assets/images/testimonials/chrisgibbons.jpg",
-            alt: "Chris Gibbons",
-            author: "Chris Gibbons, CEO and Founder at Laced",
-            text: "Mike's a pretty good at what he does, you wouldn't regret hiring him."
-          },
-          {
-            src: "/assets/images/testimonials/charlesholdsworth.jpeg",
-            alt: "Charles Holdsworth",
-            author: "Charles Holdsworth, CEO at Airspace Software",
-            text: "Mike's not that great, you might want to give him a miss."
-          }
-        ])
+      h4.hidden Trusted by
+
+      +companyLogos([
+        {
+          alt: "RIFT’s website",
+          url: "https://riftrefunds.co.uk",
+          fileName: "client-logos/myrift.svg",
+          ariaLabel: "RIFT",
+          width: 138,
+          height: 56,
+        },
+        {
+          alt: "Allocate’s website",
+          url: "https://allocate.co.uk",
+          fileName: "client-logos/allocate.svg",
+          ariaLabel: "Allocate",
+          width: 123,
+          height: 56
+        },
+        {
+          alt: "Laced’s website",
+          url: "https://laced.co.uk",
+          fileName: "client-logos/laced.svg",
+          ariaLabel: "Laced",
+          width: 160,
+          height: 32
+        },
+        {
+          alt: "Holiday Extras’ website",
+          url: "https://holidayextras.co.uk",
+          fileName: "client-logos/holiday-extras.svg",
+          ariaLabel: "Holiday Extras",
+          width: 160,
+          height: 27
+        },
+        {
+          alt: "HEHA’s website",
+          url: "https://heha.com",
+          fileName: "client-logos/heha.svg",
+          ariaLabel: "HEHA",
+          width: 84,
+          height: 48
+        },
+        {
+          alt: "Zendesk’s website",
+          url: "https://zendesk.co.uk",
+          fileName: "client-logos/zendesk.svg",
+          ariaLabel: "Zendesk",
+          width: 136,
+          height: 28
+        }
+      ])
 
     +twoThirdsSection("A safe pair of hands", "desk", false)
       p.lead It’s all too common for software development projects to go off the rails. Typically losing time, money and opportunity with with an inexperienced development partner.
-
       p I’ve built products for businesses of many different sizes and in many different sectors over the past decade. I know my onions, but I also know when there's value in defering to subject matter experts for a second opinion or additional development support.
-
-      +contactButton()
-
-      +companyLogos([
-          {
-            alt: "RIFT’s website",
-            url: "https://riftrefunds.co.uk",
-            fileName: "client-logos/myrift.svg",
-            ariaLabel: "RIFT",
-            width: 138,
-            height: 56,
-          },
-          {
-            alt: "Allocate’s website",
-            url: "https://allocate.co.uk",
-            fileName: "client-logos/allocate.svg",
-            ariaLabel: "Allocate",
-            width: 123,
-            height: 56
-          },
-          {
-            alt: "Laced’s website",
-            url: "https://laced.co.uk",
-            fileName: "client-logos/laced.svg",
-            ariaLabel: "Laced",
-            width: 160,
-            height: 32
-          },
-          {
-            alt: "Holiday Extras’ website",
-            url: "https://holidayextras.co.uk",
-            fileName: "client-logos/holiday-extras.svg",
-            ariaLabel: "Holiday Extras",
-            width: 160,
-            height: 27
-          },
-          {
-            alt: "HEHA’s website",
-            url: "https://heha.com",
-            fileName: "client-logos/heha.svg",
-            ariaLabel: "HEHA",
-            width: 84,
-            height: 48
-          },
-          {
-            alt: "Zendesk’s website",
-            url: "https://zendesk.co.uk",
-            fileName: "client-logos/zendesk.svg",
-            ariaLabel: "Zendesk",
-            width: 136,
-            height: 28
-          }
-        ])
-
+      a.button.button--primary(href="/services") Services &amp; Contact
 
   include includes/footer.pug
