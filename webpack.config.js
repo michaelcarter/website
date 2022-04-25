@@ -69,7 +69,7 @@ const config = {
     publicPath: '/',
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    static: { directory: path.join(__dirname, 'dist') },
     port: 3000,
     historyApiFallback: {
       rewrites: [
@@ -85,7 +85,7 @@ const config = {
         },
       ],
     },
-    stats: statsConfig,
+    devMiddleware: { stats: statsConfig },
   },
   plugins: [].concat(pagePlugins, filePlugins, sitemapPlugin),
   module: {
