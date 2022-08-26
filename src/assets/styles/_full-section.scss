@@ -1,20 +1,17 @@
 .full-section {
-  @include inner-wrapper;
-  @include purple-container;
   @include vertical-section;
 
   padding: $spacing-gutter;
 
-  @media only screen and (min-width: $bp-sm) {
-    padding: $spacing-2 $spacing-3;
-    margin-left: $spacing-gutter;
-    margin-right: $spacing-gutter;
+  &--highlight {
+    @include purple-container;
   }
 
-  @media only screen and (min-width: $layout-width-semi-wide) {
-    margin-left: auto;
-    margin-right: auto;
-    padding: $spacing-3 $spacing-4;
+  &__inner {
+    @include inner-wrapper;
+    &--wide {
+      max-width: $layout-width-semi-wide;
+    }
   }
 
   h2 {

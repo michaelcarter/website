@@ -8,5 +8,7 @@ mixin testimonials(testimonials)
             p.testimonial__quote=testimonial.text
             figcaption.testimonial__citation
               cite=testimonial.author
+            a(href=testimonial.logoHref)
+              img.testimonial__logo(src=`/assets/images/${testimonial.logoSrc}` alt=testimonial.logoTitle)
 
 
