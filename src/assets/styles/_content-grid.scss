@@ -20,14 +20,13 @@
 
   &--highlight {
     .content-grid__item {
-      @media only screen and (min-width: $bp-sm) {
-        background: $beige;
-        padding: $spacing-3;
-      }
+      background: $beige;
+      padding: $spacing-3;
     }
   }
 
   &__item {
     @include normalize-typography-margins;
+    position: relative;
   }
 }
