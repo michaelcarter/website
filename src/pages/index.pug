@@ -2,7 +2,6 @@ extends ../base.pug
 
 include mixins/navigation.pug
 include mixins/header.pug
-include mixins/twoThirdsSection.pug
 include mixins/companyLogos.pug
 include mixins/contactButton.pug
 include mixins/testimonials.pug
@@ -26,34 +25,41 @@ block pageContent
     a.button.button--primary(href="/services") Services &amp; Contact
 
   main
-    section.half-section
-      .half-section__inner
-        .half-section__image-title-container
-          h2.half-section__title A guide through the unknown
-          .half-section__image
-            +svg("map")
-        .half-section__content
-          p.lead Developing a digital product is often expensive, slow, and offers little return on investment. In an unregulated industry, choosing a competent development partner is risky.
-          p My goal is to derisk your digital product development journey. I combine true technical expertise, extensive industry experience, and excellent communication skills to bring quality, scaleable software to market that generates real value for your business.
+    section.full-section
+      .full-section__inner
+        h2 How I can help
+        .content-grid
+          .content-grid__item
+            h3 Derisking web application development
+            p.lead Developing a digital product can be expensive, slow, and offer little return on investment.
+            p My goal is to derisk your digital product development journey. I combine true technical expertise, extensive industry experience, and excellent communication skills to bring quality, scaleable software to market that generates real value for your business.
 
-      .half-section__inner
-        .half-section__image-title-container
-          h2.half-section__title Someone who understands
-          .half-section__image
-            +svg("presentation")
-        .half-section__content
-          p.lead It can be hard to move quickly in a business environment. There are tradeoffs to be made, stakeholders to win over, value to prove, priorities that change, and blockers to avoid.
-          p I’ve spent the past decade working to become adept at delivering software in these conditions. I’ll work closely with the relevant stakeholders in your business to make sure there’s a clear shared vision for your product that's aligned with your strategic objectives.
+          .content-grid__item
+            h3 Results in challenging environments
+            p.lead Delivering efficiently and consistently in a business environment can be tough for software engineers.
+            p I’ve spent the past 15 years becoming adept at helping stakeholders settle on clear shared visions for their software products, and consistently delivering results that are aligned with their strategic objectives.
+
+        h2 My services
+        .content-grid
+          .content-grid__item
+            h3 Development consultancy
+            p.lead If you’re looking to build something new, or would like long-term technical help, I can help guide decision making.
+            p I’ll work closely with you to deliver top quality digital products using the best technology for the job. I’ll speak a language you understand, and keep your return on investment front of mind.
+            p By continuously re-assessing the needs and constraints in your business, I’ll ensure your development team or agency continue smoothly towards their goal as new issues and blockers are uncovered, and keep you informed of progress along the way.
+          .content-grid__item
+            h3 Product development
+            p.lead For a fixed price or daily rate, I’ll work on your digital product directly, helping you to achieve a clear return on investment for your business.
+            p I’ll coordinate with stakeholders to establish clear requirements, and then deliver expertly crafted software that fully realises your vision for launch with solid foundations for further development and scaling.
+            p All of my work is carefully documented, and uses technologies with a proven track record and promising trajectory in order to ensure you’re able to continue to find talented developers to grow your product long into the future.
 
     section.full-section.full-section--highlight
       .full-section__inner.full-section__inner--wide
         h3.hidden Testimonials
-
         +testimonials([
           {
             src: "/assets/images/testimonials/bradleypost.jpeg",
             alt: "Bradley Post",
-            author: "Bradley Post, CEO",
+            author: "Bradley Post, CEO at",
             text: "Mike has been brilliant for RIFT; he has led numerous successful development projects, and his calm, measured and pragmatic delivery approach immediately instils confidence. He quickly understands the business issues we’re trying to solve and develops practical solutions to drive the business forwards.",
             logoSrc: "client-logos/myrift.svg",
             logoTitle: "RIFT Limited",
@@ -62,7 +68,7 @@ block pageContent
           {
             src: "/assets/images/testimonials/annadivers.jpeg",
             alt: "Anna Divers",
-            author: "Anna Divers, Product & Design Director",
+            author: "Anna Divers, Product Director at",
             text: "Mike’s experience, pragmatism and humility helped him immediately gain the trust and respect of our team. As a legacy from his engagement, we’re equipped with understanding how to improve our product development cycles, front-end developement environment and approach.",
             logoSrc: "client-logos/purplebricks.svg",
             logoTitle: "Purplebricks",
@@ -71,7 +77,7 @@ block pageContent
           {
             src: "/assets/images/testimonials/charlesholdsworth.jpeg",
             alt: "Charles Holdsworth",
-            author: "Charles Holdsworth, CEO",
+            author: "Charles Holdsworth, CEO at",
             text: "Mike has not only performed exceptionally well on two projects for me, but stepped in to help when an issue arose with a former developer.  Without assistance he methodically unravelled older systems in order to understand their structure and setup. His assistance has been invaluable.",
             logoSrc: "client-logos/allocate.svg",
             logoTitle: "Allocate",
@@ -79,9 +85,45 @@ block pageContent
           }
         ])
 
-    +twoThirdsSection("A safe pair of hands", "desk", false)
-      p.lead It’s all too common for software development projects to go off the rails, costing time, money and opportunity with an inexperienced development partner.
-      p I’ve built products for businesses of many different sizes and in many different sectors over the past decade. I know my onions, but I also know when there's value in defering to subject matter experts for a second opinion or additional development support.
-      a.button.button--primary(href="/services") Services &amp; Contact
+    section.full-section
+      .full-section__inner
+        h2 Frequently asked questions
+        .content-grid.content-grid--3col.content-grid--highlight
+          .content-grid__item
+            h3.small What languages do you work with?
+            p I primarily work with <strong>JavaScript</strong>, <strong>Ruby</strong> and their popular frameworks (React, Express, Rails, etc). Naturally my <strong>HTML</strong> and <strong>CSS</strong> are strong too.
+          .content-grid__item
+            h3.small Can  you charge a fixed price?
+            p Yes. I prefer to charge a fixed price for projects, because my clients prefer price certainty. I invoice on a 50% up-front, 50% prior to go-live basis. 
+          .content-grid__item 
+            h3.small What’s your day rate?
+            p Where a fixed cost is not practical or desired, I charge a rate of <strong>£800 per day</strong>. At the end of each month I’ll issue an invoice for days worked.
+          .content-grid__item
+            h3.small Do you offer ongoing support?
+            p My work comes with <strong>30 days</strong> of complimentary bug fixes and support from the point it goes live. Outside of this, support can be negotiated on a per-engagement basis.
+          .content-grid__item 
+            h3.small Will you work with our developers?
+            p Yes, I love to work with other developers. Collaboration is great for quality software, allows it allows me to share best practices your business can benefit from after I’m gone.
+          .content-grid__item 
+            h3.small What if our plans change?
+            p In the event of a change of plans, we can negotiate something new or cancel the project completely. Cancellations will mean no deliverables from me, and no 50% final payment for you.
+          .content-grid__item
+            h3.small Will you come to our offices?
+            p Yes. I primarily work remotely, but I’m happy to be with you in-person when it makes sense to do so. This can be factored into the scope of your project, or billed for at my hourly rate.
+          .content-grid__item
+            h3.small What if we need more people?
+            p I have a wide network of skilled developers, designers, and project managers I’ve worked with previously. If necessary, I can pull in the right people to keep things running smoothly.
+          .content-grid__item
+            h3.small Do you have availability?
+            p I’m currently booked until <strong>the end of 2022</strong>. I’m often booked out several months ahead, so if you’re planning something, contact me early to avoid disappointment.
 
+    section.full-section
+      .full-section__inner
+        .content-grid
+          .content-grid__item
+            h2 Contact
+            p.lead It’s all too common for software development projects to go off the rails, costing time, money and opportunity with an inexperienced development partner.
+            p I’ve built products for businesses of many different sizes and in many different sectors over the past decade. I know my onions, but I also know when there’s value in defering to subject matter experts for a second opinion or additional development support.
+            a.button.button--primary(href="mailto: mike@mcarter.me") Email me
+    
   include includes/footer.pug

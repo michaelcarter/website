@@ -1,5 +1,5 @@
 .tip {
-  @include purple-container;
+  @include highlight-container;
   margin: 0 calc(0rem - #{$spacing-gutter}) $spacing-3
     calc(0rem - #{$spacing-gutter});
   padding: $spacing-2 $spacing-gutter;

@@ -28,6 +28,9 @@ $pink-lightest: lighten($pink, 40%);
 $pink-dark: darken($pink, 10%);
 
 $beige: #f5f4f2;
+$beige-dark: darken($beige, 50%);
+$beige-darker: darken($beige, 65%);
+$beige-darkest: darken($beige, 75%);
 
 // Spacings
 $spacing-1: 0.5rem;

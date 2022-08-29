@@ -1,11 +1,14 @@
 body {
-  color: $grey-dark;
+  color: $beige-darkest;
 }
 
 h1,
 h2,
 h3,
 h4 {
+  font-family: $sans-font-family;
+  font-weight: 600;
+
   &.hidden {
     @media only screen and (min-width: $bp-sm) {
       display: none;
@@ -14,14 +17,9 @@ h4 {
 }
 
 h1 {
-  @include rainbow-text;
-
-  font-family: $sans-font-family;
-  font-weight: 700;
   font-size: 2.4rem;
   line-height: 3.7rem;
   margin: $spacing-3 0;
-  text-rendering: optimizeLegibility;
 
   @media only screen and (min-width: $bp-sm) {
     font-size: 3.5rem;
@@ -35,44 +33,28 @@ h1 {
 }
 
 h2 {
-  @include rainbow-text;
-
-  font-family: $sans-font-family;
-  font-weight: 600;
   font-size: 1.9rem;
   line-height: 2.5rem;
-  margin: $spacing-4 0 $spacing-2 0;
+  margin: $spacing-2 0;
 
   @media only screen and (min-width: $bp-sm) {
     font-size: 2.2rem;
-  }
-
-  &.capitalised {
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 1.3rem;
-
-    @media only screen and (min-width: $bp-sm) {
-      margin-bottom: $spacing-2;
-    }
+    margin: $spacing-4 0;
   }
 }
 
 h3 {
-  color: $grey-dark;
-  font-family: $sans-font-family;
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin: 0;
+  font-size: 1.6rem;
+  margin: $spacing-2 0;
+
+  &.small {
+    font-size: 1.3rem;
+  }
 }
 
 h4 {
-  color: $purple-dark;
-  font-family: $sans-font-family;
   font-size: $font-size-base;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 0 0 $spacing-2 0;
+  margin: $spacing-2 0;
 
   @media only screen and (max-width: $bp-sm) {
     font-size: 1rem;
@@ -98,7 +80,6 @@ p {
 
   &.lead {
     font-weight: 600;
-    color: $grey-darker;
   }
 }
 
@@ -112,11 +93,11 @@ strong {
 
 a:link,
 a:visited {
-  color: $grey-dark;
+  color: $beige-darkest;
 }
 
 a:hover,
 a:active {
-  color: $pink-dark;
+  color: $beige-dark;
   transition: color $duration-medium;
 }

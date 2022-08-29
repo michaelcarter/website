@@ -11,7 +11,7 @@
     flex-direction: row;
     padding-top: $spacing-gutter;
   }
-  
+
   &__links {
     display: flex;
     list-style: none;
@@ -34,10 +34,28 @@
 
   &__link {
     @include nav-link;
-    @include bar-link;
+
     display: block;
     margin: 0;
     padding: $spacing-1 $spacing-1 calc(#{$spacing-1} + 0.2rem) $spacing-1;
+
+    &:after {
+      background: white;
+      border-radius: $border-radius-1;
+      content: '';
+      display: block;
+      height: 0.3rem;
+      margin: 0 auto -0.5rem auto;
+      transition: background $duration-short, width $duration-short;
+      width: 0;
+    }
+
+    &:hover {
+      &:after {
+        background: $beige-dark;
+        width: 100%;
+      }
+    }
 
     &:link,
     &:visited {

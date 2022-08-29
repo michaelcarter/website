@@ -1,5 +1,5 @@
 .update-list {
-  @include purple-container;
+  @include highlight-container;
   margin-left: -$spacing-gutter;
   margin-right: -$spacing-gutter;
   padding: $spacing-2 $spacing-gutter;
@@ -50,14 +50,14 @@
       h3,
       .update-list__date,
       .update-list__description {
-        color: $pink;
+        color: $beige-dark;
         transition: color $duration-short;
       }
     }
   }
 
   &__date {
-    color: $grey-dark;
+    color: $beige-darkest;
     display: inline-block;
     font-weight: 600;
     font-size: 0.9rem;

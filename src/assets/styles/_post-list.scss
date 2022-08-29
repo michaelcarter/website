@@ -45,7 +45,7 @@
     a:hover {
       .post-list__date,
       .post-list__description {
-        color: $pink;
+        color: $beige-dark;
         transition: color $duration-short;
       }
     }
@@ -58,7 +58,6 @@
   }
 
   &__date {
-    color: $grey-dark;
     display: inline-block;
     font-weight: 600;
     font-size: $font-size-md;
@@ -72,7 +71,7 @@
 
   &__external-link-icon {
     display: inline-block;
-    fill: $grey-dark;
+    fill: $beige-darkest;
     height: 1rem;
     margin-left: $spacing-1;
     transition: fill $duration-medium;

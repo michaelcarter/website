@@ -1,0 +1,33 @@
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: $spacing-2;
+  grid-row-gap: $spacing-3;
+
+  @media only screen and (min-width: $bp-sm) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media only screen and (min-width: $bp-md) {
+    grid-column-gap: $spacing-3;
+  }
+
+  &--3col {
+    @media only screen and (min-width: $bp-sm) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  &--highlight {
+    .content-grid__item {
+      @media only screen and (min-width: $bp-sm) {
+        background: $beige;
+        padding: $spacing-3;
+      }
+    }
+  }
+
+  &__item {
+    @include normalize-typography-margins;
+  }
+}

@@ -6,7 +6,7 @@ body {
 
 body {
   background: $white;
-  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-family: $sans-font-family;
 
   &.home {
     @media only screen and (min-width: $bp-md) {
@@ -20,12 +20,8 @@ body {
       }
 
       &::before {
-        border-left: 0.1rem solid lighten($purple, 57%);
-        background-image: linear-gradient(
-          -100deg,
-          white 25%,
-          lighten($purple, 59%) 100%
-        );
+        border-left: 0.1rem solid darken($beige, 5%);
+        background-image: linear-gradient(-100deg, white 25%, $beige 100%);
         left: 45.5%;
         transform: skew(-10deg) translateX(1.5%);
         width: 5000px;

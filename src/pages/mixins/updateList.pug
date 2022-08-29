@@ -1,6 +1,6 @@
 mixin updateList(title, updates)
   .update-list
-    h2.capitalised.update-list__title=title
+    h2=title
     ul.update-list__list
       each update in updates
         li.update-list__item
