@@ -1,9 +1,3 @@
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 body {
   background: $white;
   font-family: $sans-font-family;
@@ -22,9 +16,9 @@ body {
       &::before {
         border-left: 0.1rem solid darken($beige, 5%);
         background-image: linear-gradient(-100deg, white 25%, $beige 100%);
-        left: 45.5%;
+        left: 50%;
         transform: skew(-10deg) translateX(1.5%);
-        width: 5000px;
+        width: 100%;
       }
 
       &::after {

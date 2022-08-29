@@ -29,8 +29,19 @@
 }
 
 .header {
-  @include vertical-section;
   padding: $spacing-gutter;
+  padding-top: $spacing-1;
+  padding-bottom: $spacing-1;
+
+  @media only screen and (min-width: $bp-xs) {
+    padding-top: $spacing-2;
+    padding-bottom: $spacing-2;
+  }
+
+  @media only screen and (min-width: $bp-sm) {
+    padding-top: $spacing-3;
+    padding-bottom: $spacing-3;
+  }
 
   @media only screen and (max-width: $bp-sm) {
     @include centered-header-styles;

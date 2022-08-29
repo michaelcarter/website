@@ -9,11 +9,6 @@ include mixins/testimonials.pug
 block prepend vars
   -var bodyClass = "home"
 
-block cssIncludes
-  link(rel="preload" href="/assets/styles/showcase.css" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'")
-  noscript
-    link(rel="stylesheet" media="screen" href="/assets/styles/showcase.css")
-
 block pageContent
   +navigation
 
@@ -30,24 +25,24 @@ block pageContent
         h2 How I can help
         .content-grid
           .content-grid__item
-            h3 Derisking web application development
+            h3 <img class="heading-icon" src="assets/images/icons/risk.svg" alt="Risk" /> Removing risk from projects
             p.lead Developing a digital product can be expensive, slow, and offer little return on investment.
             p My goal is to derisk your digital product development journey. I combine true technical expertise, extensive industry experience, and excellent communication skills to bring quality, scaleable software to market that generates real value for your business.
 
           .content-grid__item
-            h3 Results in challenging environments
+            h3 <img class="heading-icon" src="assets/images/icons/results.svg" alt="Results" /> Results in challenging environments
             p.lead Delivering efficiently and consistently in a business environment can be tough for software engineers.
             p I’ve spent the past 15 years becoming adept at helping stakeholders settle on clear shared visions for their software products, and consistently delivering results that are aligned with their strategic objectives.
 
         h2 My services
         .content-grid
           .content-grid__item
-            h3 Development consultancy
+            h3 <img class="heading-icon" src="assets/images/icons/consultancy.svg" alt="Consultancy" /> Development consultancy
             p.lead If you’re looking to build something new, or would like long-term technical help, I can help guide decision making.
             p I’ll work closely with you to deliver top quality digital products using the best technology for the job. I’ll speak a language you understand, and keep your return on investment front of mind.
             p By continuously re-assessing the needs and constraints in your business, I’ll ensure your development team or agency continue smoothly towards their goal as new issues and blockers are uncovered, and keep you informed of progress along the way.
           .content-grid__item
-            h3 Product development
+            h3 <img class="heading-icon" src="assets/images/icons/development.svg" alt="Development" /> Product development
             p.lead For a fixed price or daily rate, I’ll work on your digital product directly, helping you to achieve a clear return on investment for your business.
             p I’ll coordinate with stakeholders to establish clear requirements, and then deliver expertly crafted software that fully realises your vision for launch with solid foundations for further development and scaling.
             p All of my work is carefully documented, and uses technologies with a proven track record and promising trajectory in order to ensure you’re able to continue to find talented developers to grow your product long into the future.
@@ -122,8 +117,8 @@ block pageContent
         .content-grid
           .content-grid__item
             h2 Contact
-            p.lead It’s all too common for software development projects to go off the rails, costing time, money and opportunity with an inexperienced development partner.
-            p I’ve built products for businesses of many different sizes and in many different sectors over the past decade. I know my onions, but I also know when there’s value in defering to subject matter experts for a second opinion or additional development support.
+            p.lead Drop me an email you're interested in working with me, have a question, or just want to say hi.
+            p I’m currently booked up for the rest of 2022, but I’m open to new projects from January 2023 onwards.
             a.button.button--primary(href="mailto: mike@mcarter.me") Email me
     
   include includes/footer.pug

@@ -32,6 +32,10 @@ $beige-dark: darken($beige, 50%);
 $beige-darker: darken($beige, 65%);
 $beige-darkest: darken($beige, 75%);
 
+$orange: #f09c35;
+$orange-dark: darken($orange, 15%);
+$orange-light: lighten($orange, 15%);
+
 // Spacings
 $spacing-1: 0.5rem;
 $spacing-2: 1rem;

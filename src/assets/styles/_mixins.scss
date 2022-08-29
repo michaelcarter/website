@@ -99,3 +99,15 @@
     z-index: 2;
   }
 }
+
+@mixin font-sizes($smallest-up, $xsmall-up, $small-up) {
+  font-size: $smallest-up;
+
+  @media only screen and (min-width: $bp-xs) {
+    font-size: $xsmall-up;
+  }
+
+  @media only screen and (min-width: $bp-sm) {
+    font-size: $small-up;
+  }
+}
