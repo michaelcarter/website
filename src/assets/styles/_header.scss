@@ -1,9 +1,4 @@
 @mixin centered-header-styles {
-  @media only screen and (max-width: $bp-sm) {
-    padding-left: $spacing-gutter;
-    padding-right: $spacing-gutter;
-  }
-
   .button--primary,
   .helper-text,
   .header__showcase {
@@ -34,21 +29,25 @@
 }
 
 .header {
-  @include inner-wrapper;
-  @include viewport-padding;
   @include vertical-section;
+  padding: $spacing-gutter;
 
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  z-index: 1;
+  @media only screen and (max-width: $bp-sm) {
+    @include centered-header-styles;
+  }
 
   &--centered {
     @include centered-header-styles;
   }
 
-  @media only screen and (max-width: $bp-sm) {
-    @include centered-header-styles;
+  &__inner {
+    @include inner-wrapper;
+    @include normalize-typography-margins;
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
   }
 
   &__content {

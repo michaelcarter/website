@@ -1,10 +1,13 @@
 .footer {
-  @include inner-wrapper;
-  @include viewport-padding;
-  @include vertical-section;
+  padding: $spacing-gutter;
 
-  display: flex;
-  margin-bottom: $spacing-2 !important;
+  &__inner {
+    @include inner-wrapper;
+    @include normalize-typography-margins;
+
+    display: flex;
+    margin-bottom: $spacing-2 !important;
+  }
 
   &__section {
     margin-right: $spacing-2;
