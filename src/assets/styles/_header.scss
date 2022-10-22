@@ -32,13 +32,18 @@
   }
 
   &__subtitle {
-    font-size: $font-size-xl;
+    font-size: $font-size-md;
     font-weight: 300;
-    line-height: 2.6rem;
-    margin: $spacing-3 auto;
+    margin: $spacing-2 auto;
     max-width: 30rem;
 
-    @media only screen and (min-width: $bp-md) {
+    @media only screen and (min-width: $bp-sm) {
+      line-height: 2.6rem;
+      font-size: $font-size-xl;
+      margin: $spacing-2 auto;
+    }
+
+    @media only screen and (min-width: $bp-xs) {
       max-width: 35rem;
     }
   }
