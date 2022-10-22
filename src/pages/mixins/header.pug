@@ -1,10 +1,8 @@
-mixin header(title, subtitle, showShowcase)
-  header.header(class=showShowcase ? "" : "header--centered")
+mixin header(title, subtitle)
+  header.header.header--centered
     .header__inner
       .header__content
         h1.header__title!=title
         p.header__subtitle!=subtitle
         block
-      if showShowcase
-        .header__showcase
 

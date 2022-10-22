@@ -1,33 +1,3 @@
-@mixin centered-header-styles {
-  .button--primary,
-  .helper-text,
-  .header__showcase {
-    display: none;
-  }
-
-  .header {
-    &__title,
-    &__subtitle {
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-
-      br {
-        display: none;
-      }
-    }
-
-    &__subtitle {
-      margin: $spacing-3 auto;
-    }
-
-    &__content {
-      flex: 1 0 100%;
-      min-width: auto;
-    }
-  }
-}
-
 .header {
   padding: $spacing-gutter;
   padding-top: $spacing-1;
@@ -43,14 +13,6 @@
     padding-bottom: $spacing-3;
   }
 
-  @media only screen and (max-width: $bp-sm) {
-    @include centered-header-styles;
-  }
-
-  &--centered {
-    @include centered-header-styles;
-  }
-
   &__inner {
     @include inner-wrapper;
     @include normalize-typography-margins;
@@ -62,8 +24,7 @@
   }
 
   &__content {
-    flex: 1 0 50%;
-    min-width: 32rem;
+    flex: 1 0 100%;
   }
 
   &__title {
@@ -74,7 +35,7 @@
     font-size: $font-size-xl;
     font-weight: 300;
     line-height: 2.6rem;
-    margin: 0 0 $spacing-3 0;
+    margin: $spacing-3 auto;
     max-width: 30rem;
 
     @media only screen and (min-width: $bp-md) {
@@ -82,7 +43,14 @@
     }
   }
 
-  &__showcase {
-    display: none;
+  &__title,
+  &__subtitle {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    br {
+      display: none;
+    }
   }
 }

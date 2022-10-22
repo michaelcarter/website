@@ -1,17 +1,21 @@
 .navigation {
+  border-bottom: 1px solid $grey-lightest;
   padding-left: $spacing-gutter;
   padding-right: $spacing-gutter;
+
+  @media only screen and (min-width: $bp-xs) {
+    border-bottom: none;
+  }
 
   &__inner {
     @include inner-wrapper;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
     @media only screen and (min-width: $bp-sm) {
-      flex-direction: row;
       padding-top: $spacing-gutter;
     }
   }
@@ -25,14 +29,14 @@
   }
 
   &__links-item {
-    margin: 0 0 0 $spacing-1;
-
-    @media only screen and (min-width: $bp-sm) {
-      margin-left: $spacing-3;
-    }
+    margin: 0 $spacing-1;
 
     &:first-child {
       margin-left: 0;
+    }
+    
+    &:last-child {
+      margin-right: 0;
     }
   }
 
@@ -40,24 +44,12 @@
     @include nav-link;
 
     display: block;
-    margin: 0;
-    padding: $spacing-1 $spacing-1 calc(#{$spacing-1} + 0.2rem) $spacing-1;
+    padding: $spacing-1;
 
-    &:after {
-      background: white;
-      border-radius: $border-radius-1;
-      content: '';
-      display: block;
-      height: 0.3rem;
-      margin: 0 auto -0.5rem auto;
-      transition: background $duration-short, width $duration-short;
-      width: 0;
-    }
-
-    &:hover {
-      &:after {
-        background: $orange-dark;
-        width: 100%;
+    span {
+      display: none;
+      @media only screen and (min-width: $bp-xs) {
+        display: inline;
       }
     }
 
