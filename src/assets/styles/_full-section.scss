@@ -1,7 +1,8 @@
 .full-section {
   @include vertical-section;
 
-  padding: $spacing-gutter;
+  padding-left: $spacing-gutter;
+  padding-right: $spacing-gutter;
 
   &--highlight {
     @include highlight-container;

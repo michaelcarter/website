@@ -4,8 +4,8 @@
 }
 
 @mixin vertical-section {
-  padding-top: $spacing-3;
-  padding-bottom: $spacing-3;
+  padding-top: $spacing-4;
+  padding-bottom: $spacing-4;
 
   @media only screen and (min-width: $bp-sm) {
     padding-top: $spacing-5;
@@ -71,7 +71,8 @@
 
 @mixin highlight-container {
   background: $beige;
-  box-shadow: inset 0 0 $spacing-2 0 darken($beige, 6%);
+  border-top: 1px solid darken($beige, 5%);
+  border-bottom: 1px solid darken($beige, 5%);
   border-radius: 0;
   display: block;
   overflow: hidden;
@@ -80,14 +81,14 @@
   &::after {
     background-image: linear-gradient(
       -180deg,
-      $beige 0%,
-      darken($beige, 4%) 100%
+      darken($beige, 1%) 0%,
+      darken($beige, 3.5%) 100%
     );
     bottom: 0;
     content: '';
     display: block;
-    height: 70%;
-    left: 48%;
+    height: 100%;
+    left: 47%;
     position: absolute;
     transform: skew(-10deg) translateX(2.9%);
     width: 100%;

@@ -1,51 +1,6 @@
 body {
   background: $white;
   font-family: $sans-font-family;
-  overflow-x: hidden;
-  
-  &::before,
-  &::after {
-    top: 0;
-    content: '';
-    display: block;
-    height: 45rem;
-    position: absolute;
-  }
-
-  &::before {
-    border-left: 1px solid darken($beige, 5%);
-    background-image: linear-gradient(-100deg, white 25%, $beige 100%);
-    left: 40%;
-    transform: skew(-10deg);
-    width: 100%;
-
-    @media only screen and (min-width: $bp-sm) {
-      left: 48%;
-    }
-  }
-
-  &::after {
-    background-image: linear-gradient(
-      -180deg,
-      rgba(255, 255, 255, 0) 0%,
-      white 100%
-    );
-    width: 100%;
-    left: 0;
-  }
-
-  > * {
-    position: relative;
-    z-index: 2;
-  }
-}
-
-.inner-wrapper {
-  @include inner-wrapper;
-}
-
-.wrapper-semi-wide {
-  max-width: $layout-width-semi-wide !important;
 }
 
 .wrapper-article {

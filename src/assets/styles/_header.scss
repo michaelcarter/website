@@ -1,28 +1,19 @@
 .header {
-  padding: $spacing-gutter;
-  padding-top: $spacing-1;
-  padding-bottom: $spacing-1;
-
-  @media only screen and (min-width: $bp-xs) {
-    padding-top: $spacing-2;
-    padding-bottom: $spacing-2;
-  }
-
-  @media only screen and (min-width: $bp-sm) {
-    padding-top: $spacing-2;
-    padding-bottom: $spacing-3;
-  }
-
+  @include highlight-container;
+  padding: 0 $spacing-gutter;
+  
   &__inner {
     @include inner-wrapper;
     @include normalize-typography-margins;
   }
 
   &__content {
-    flex: 1 0 100%;
+    text-align: center;
+    @include vertical-section;
   }
 
   &__title {
+    margin: 0 auto;
     max-width: $bp-sm;
   }
 
@@ -39,22 +30,8 @@
     @media only screen and (min-width: $bp-sm) {
       line-height: 2.6rem;
       font-size: $font-size-xl;
-      margin: $spacing-2 auto;
-    }
-
-    @media only screen and (min-width: $bp-xs) {
+      margin: $spacing-3 auto;
       max-width: 35rem;
-    }
-  }
-
-  &__title,
-  &__subtitle {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-
-    br {
-      display: none;
     }
   }
 }
