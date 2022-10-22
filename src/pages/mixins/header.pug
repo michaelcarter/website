@@ -1,5 +1,6 @@
 mixin header(title, subtitle)
-  header.header.header--centered
+  header.header
+    +navigation
     .header__inner
       .header__content
         h1.header__title!=title

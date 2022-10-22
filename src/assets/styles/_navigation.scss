@@ -1,24 +1,13 @@
 .navigation {
-  // border-bottom: 1px solid $grey-lightest;
-  padding-left: $spacing-gutter;
-  padding-right: $spacing-gutter;
+  @include inner-wrapper;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: $spacing-1 0;
 
-  // @media only screen and (min-width: $bp-xs) {
-  //   border-bottom: none;
-  // }
-
-  &__inner {
-    @include inner-wrapper;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: $spacing-1 0;
-
-    @media only screen and (min-width: $bp-sm) {
-      padding: $spacing-gutter 0;
-    }
+  @media only screen and (min-width: $bp-sm) {
+    padding: $spacing-gutter 0;
   }
 
   &__links {

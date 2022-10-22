@@ -9,18 +9,13 @@
   }
 
   @media only screen and (min-width: $bp-sm) {
-    padding-top: $spacing-3;
+    padding-top: $spacing-2;
     padding-bottom: $spacing-3;
   }
 
   &__inner {
     @include inner-wrapper;
     @include normalize-typography-margins;
-
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    z-index: 1;
   }
 
   &__content {
@@ -33,9 +28,13 @@
 
   &__subtitle {
     font-size: $font-size-md;
-    font-weight: 300;
+    font-weight: 400;
     margin: $spacing-2 auto;
     max-width: 30rem;
+
+    strong {
+      font-weight: 500;
+    }
 
     @media only screen and (min-width: $bp-sm) {
       line-height: 2.6rem;

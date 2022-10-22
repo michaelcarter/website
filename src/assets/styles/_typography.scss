@@ -69,8 +69,8 @@ h4 {
 
 .heading-icon {
   display: inline;
-  width: 1em;
-  vertical-align: -10%;
+  width: 1.2em;
+  vertical-align: -14%;
 
   @media only screen and (min-width: $bp-md) {
     width: 1.3em;
@@ -91,7 +91,7 @@ p {
   margin: $spacing-1 0 $spacing-3 0;
 
   &.lead {
-    font-weight: 600;
+    font-weight: 500;
   }
 }
 
