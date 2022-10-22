@@ -14,9 +14,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: $spacing-1 0;
 
     @media only screen and (min-width: $bp-sm) {
-      padding-top: $spacing-gutter;
+      padding: $spacing-gutter 0;
     }
   }
 
