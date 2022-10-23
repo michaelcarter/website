@@ -20,7 +20,7 @@ h1 {
   line-height: 2.4rem;
   margin: $spacing-3 0;
 
-  @include font-sizes(2rem, 3rem, 4rem);
+  @include font-sizes(2.3rem, 3rem, 4rem);
 
   @media only screen and (min-width: $bp-xs) {
     line-height: 3.5rem;
