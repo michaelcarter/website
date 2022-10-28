@@ -11,9 +11,67 @@ block prepend vars
 
 block pageContent
   +header(
-    "Digital products derisked",
-    "I’m Mike Carter, a <strong>web application development consultant</strong> who brings digital products to market with solid foundations, room to scale, and costs under control."
+    "Digital transformation <em>derisked</em>.",
+    "I'm Mike, I lead and deliver web applications with <strong>solid foundations</strong>, with <strong>room to scale</strong>, and with <strong>costs under control</strong>. My clients include..."
   )
+    +companyLogos([
+        {
+          alt: "RIFT’s website",
+          url: "https://riftrefunds.co.uk",
+          fileName: "client-logos/myrift.svg",
+          ariaLabel: "RIFT",
+          width: 138,
+          height: 50,
+        },
+        {
+          alt: "Purplebrick’s website",
+          url: "https://purplebricks.co.uk",
+          fileName: "client-logos/purplebricks.svg",
+          ariaLabel: "Purplebricks",
+          width: 150,
+          height: 50
+        },
+        {
+          alt: "Allocate’s website",
+          url: "https://allocate.co.uk",
+          fileName: "client-logos/allocate.svg",
+          ariaLabel: "Allocate",
+          width: 123,
+          height: 56
+        },
+        {
+          alt: "Laced’s website",
+          url: "https://laced.co.uk",
+          fileName: "client-logos/laced.svg",
+          ariaLabel: "Laced",
+          width: 160,
+          height: 32
+        },
+        {
+          alt: "Holiday Extras’ website",
+          url: "https://holidayextras.co.uk",
+          fileName: "client-logos/holiday-extras.svg",
+          ariaLabel: "Holiday Extras",
+          width: 160,
+          height: 27
+        },
+        {
+          alt: "Zendesk’s website",
+          url: "https://zendesk.co.uk",
+          fileName: "client-logos/zendesk.svg",
+          ariaLabel: "Zendesk",
+          width: 136,
+          height: 28
+        },
+        {
+          alt: "HEHA’s website",
+          url: "https://heha.com",
+          fileName: "client-logos/heha.svg",
+          ariaLabel: "HEHA",
+          width: 84,
+          height: 48
+        }
+      ])
 
   main
     section.full-section
@@ -50,29 +108,20 @@ block pageContent
           {
             src: "/assets/images/testimonials/bradleypost.jpeg",
             alt: "Bradley Post",
-            author: "Bradley Post, CEO at",
+            author: "Bradley Post, CEO at <a href='https://www.riftrefunds.co.uk' rel='noopener' target='_blank'>RIFT Limited</a>",
             text: "Mike has been brilliant for RIFT; he has led numerous successful development projects, and his calm, measured and pragmatic delivery approach immediately instils confidence. He quickly understands the business issues we’re trying to solve and develops practical solutions to drive the business forwards.",
-            logoSrc: "client-logos/myrift.svg",
-            logoTitle: "RIFT Limited",
-            logoHref: "https://www.riftrefunds.co.uk"
           },
           {
             src: "/assets/images/testimonials/annadivers.jpeg",
             alt: "Anna Divers",
-            author: "Anna Divers, Product Director at",
+            author: "Anna Divers, Product Director at <a href='https://www.purplebricks.co.uk' rel='noopener' target='_blank'>Purplebricks</a>",
             text: "Mike’s experience, pragmatism and humility helped him immediately gain the trust and respect of our team. As a legacy from his engagement, we’re equipped with understanding how to improve our product development cycles, front-end developement environment and approach.",
-            logoSrc: "client-logos/purplebricks.svg",
-            logoTitle: "Purplebricks",
-            logoHref: "https://www.purplebricks.co.uk"
           },
           {
             src: "/assets/images/testimonials/charlesholdsworth.jpeg",
             alt: "Charles Holdsworth",
-            author: "Charles Holdsworth, CEO at",
-            text: "Mike has not only performed exceptionally well on two projects for me, but stepped in to help when an issue arose with a former developer.  Without assistance he methodically unravelled older systems in order to understand their structure and setup. His assistance has been invaluable.",
-            logoSrc: "client-logos/allocate.svg",
-            logoTitle: "Allocate",
-            logoHref: "https://www.allocate.co.uk"
+            author: "Charles Holdsworth, CEO at <a href='https://www.allocate.co.uk' rel='noopener' target='_blank'>Allocate</a>",
+            text: "Mike has not only performed exceptionally well on two projects for me, but stepped in to help when an issue arose with a former developer.  Without assistance he methodically unravelled older systems in order to understand their structure and setup. His assistance has been invaluable."
           }
         ])
 

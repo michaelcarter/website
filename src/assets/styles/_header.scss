@@ -15,23 +15,29 @@
   &__title {
     margin: 0 auto;
     max-width: $bp-sm;
+
+    em {
+      font-style: normal;
+      text-decoration: underline;
+      text-decoration-color: $orange;
+    }
   }
 
   &__subtitle {
-    font-size: $font-size-md;
-    font-weight: 400;
-    margin: $spacing-2 auto;
-    max-width: 30rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: $spacing-3 auto;
+    max-width: $bp-sm;
 
     strong {
-      font-weight: 500;
+      font-weight: 400;
+      color: $orange-dark;
     }
 
     @media only screen and (min-width: $bp-sm) {
       line-height: 2.6rem;
-      font-size: $font-size-xl;
+      font-size: 1.5rem;
       margin: $spacing-3 auto;
-      max-width: 35rem;
     }
   }
 }
