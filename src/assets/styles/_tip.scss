@@ -1,8 +1,8 @@
 .tip {
   @include highlight-container;
-  margin: 0 calc(0rem - #{$spacing-gutter}) $spacing-3
-    calc(0rem - #{$spacing-gutter});
-  padding: $spacing-2 $spacing-gutter;
+  margin: 0 calc(0rem - #{$spacing-gutter-sm}) $spacing-3
+    calc(0rem - #{$spacing-gutter-sm});
+  padding: $spacing-2 $spacing-gutter-sm;
 
   @media only screen and (min-width: $bp-sm) {
     margin: 0.5rem calc(0rem - #{$spacing-2}) $spacing-3

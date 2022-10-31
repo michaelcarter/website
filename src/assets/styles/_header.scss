@@ -1,6 +1,10 @@
 .header {
   @include highlight-container;
-  padding: 0 $spacing-gutter;
+  padding: 0 $spacing-gutter-sm;
+
+  @media only screen and (min-width: $bp-sm) {      
+    padding: 0 $spacing-gutter;
+  }
   
   &__inner {
     @include inner-wrapper;
@@ -14,7 +18,10 @@
 
   &__title {
     margin: 0 auto;
-    max-width: $bp-sm;
+
+    @media only screen and (min-width: $bp-sm) {
+      max-width: $bp-sm;
+    }
 
     em {
       font-style: normal;

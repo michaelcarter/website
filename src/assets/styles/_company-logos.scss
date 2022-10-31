@@ -121,7 +121,7 @@
 
     img {
       filter: saturate(0%);
-      opacity: 75%;
+      opacity: 50%;
       transition: filter .25s, opacity .25s;
       transition-timing-function: ease-in-out;
     }
@@ -132,5 +132,17 @@
         opacity: 100%;
       }
     }
+  }
+}
+
+.company-logos-lead {
+  color: $beige-dark;
+  font-weight: 500;
+  font-size: $font-size-xs;
+  margin: -1rem 0 0 0;
+
+  @media only screen and (min-width: $bp-xs) {
+    font-size: $font-size-sm;
+    margin: $spacing-3 0;
   }
 }
