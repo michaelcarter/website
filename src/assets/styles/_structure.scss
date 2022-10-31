@@ -5,7 +5,8 @@ body {
 
 .wrapper-article {
   max-width: $layout-width-semi-narrow !important;
-  padding: 0 $spacing-gutter;
+  padding: 0 $spacing-gutter-sm;
+
   @media only screen and (min-width: $layout-width-semi-narrow) {
     padding: 0;
   }

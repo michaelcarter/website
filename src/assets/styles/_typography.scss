@@ -37,7 +37,6 @@ h2 {
   margin: $spacing-3 0;
   text-decoration: underline;
   text-decoration-color: $orange;
-  text-decoration-thickness: 0.3rem;
 
   @media only screen and (min-width: $bp-sm) {
     margin: $spacing-5 0 $spacing-4 0;
@@ -74,8 +73,18 @@ h4 {
   vertical-align: -20%;
   opacity: 0.4;
 
+  &--large {
+    width: 1.5em;
+    vertical-align: -25%;
+  }
+
   @media only screen and (min-width: $bp-md) {
     width: 1.5em;
+
+    &--large {
+      width: 1.65em;
+      vertical-align: -30%;
+    }
   }
 }
 

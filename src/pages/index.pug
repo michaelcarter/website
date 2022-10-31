@@ -11,65 +11,58 @@ block prepend vars
 
 block pageContent
   +header(
-    "Digital transformation <em>derisked</em>.",
-    "I'm Mike, I lead and deliver web applications with <strong>solid foundations</strong>, with <strong>room to scale</strong>, and with <strong>costs under control</strong>. My clients include..."
+    "Digital products <em>derisked</em>.",
+    "I'm Mike Carter, I lead development on digital products with <strong>solid foundations</strong>, <strong>room to scale</strong>, and <strong>costs under control</strong>."
   )
+    p.company-logos-lead I’ve worked with...
     +companyLogos([
         {
           alt: "RIFT’s website",
           url: "https://riftrefunds.co.uk",
           fileName: "client-logos/myrift.svg",
-          ariaLabel: "RIFT",
-          width: 138,
-          height: 50,
+          ariaLabel: "RIFT"
         },
         {
           alt: "Purplebrick’s website",
           url: "https://purplebricks.co.uk",
           fileName: "client-logos/purplebricks.svg",
-          ariaLabel: "Purplebricks",
-          width: 150,
-          height: 50
+          ariaLabel: "Purplebricks"
         },
         {
           alt: "Allocate’s website",
           url: "https://allocate.co.uk",
           fileName: "client-logos/allocate.svg",
-          ariaLabel: "Allocate",
-          width: 123,
-          height: 56
+          ariaLabel: "Allocate"
         },
         {
           alt: "Laced’s website",
           url: "https://laced.co.uk",
           fileName: "client-logos/laced.svg",
-          ariaLabel: "Laced",
-          width: 160,
-          height: 32
+          ariaLabel: "Laced"
         },
         {
           alt: "Holiday Extras’ website",
           url: "https://holidayextras.co.uk",
           fileName: "client-logos/holiday-extras.svg",
-          ariaLabel: "Holiday Extras",
-          width: 160,
-          height: 27
+          ariaLabel: "Holiday Extras"
         },
         {
           alt: "Zendesk’s website",
           url: "https://zendesk.co.uk",
           fileName: "client-logos/zendesk.svg",
-          ariaLabel: "Zendesk",
-          width: 136,
-          height: 28
+          ariaLabel: "Zendesk"
         },
         {
           alt: "HEHA’s website",
           url: "https://heha.com",
           fileName: "client-logos/heha.svg",
           ariaLabel: "HEHA",
-          width: 84,
-          height: 48
+        },
+        {
+          alt: "Sprint.ly's website",
+          url: "https://sprint.ly",
+          fileName: "client-logos/sprintly.svg",
+          ariaLabel: "Sprint.ly"
         }
       ])
 
@@ -78,15 +71,37 @@ block pageContent
       .full-section__inner
         h2 How I can help
         .content-grid
+          .content-grid__item 
+            h3 <img class="heading-icon heading-icon--large" src="assets/images/icons/expertise.svg" alt="Expertise" /> Experience and expertise
+            p.lead Software is a booming industry, but it can be hard to find seasoned experts among the rush of newcomers.
+
+            p With 17 years under my belt, I’ve focused my career on developing robust, scaleable web applications that deliver real value for businesses in multiple sectors, and on multiple continents.
+            
+            p I know my technical fundamentals from my higher level frameworks, and make it my business to keep up to date with the latest technologies and best practices.
+
+          .content-grid__item 
+            h3 <img class="heading-icon heading-icon--large" src="assets/images/icons/leadership.svg" alt="Leadership" /> Clear, pragmatic leadership
+            p.lead Software engineers aren’t renowned for their brilliant communication skills or strategic thinking. 
+
+            p I use clear written communication and appropriate visual aids to achieve a shared understanding between technical and non-technical stakeholders.
+            
+            p Where stategic decisions need to be made, I’ll prioritise your business objectives alongside team strengths and weaknesses, and guide everyone to a well considered development plan.
+            
           .content-grid__item
-            h3 <img class="heading-icon" src="assets/images/icons/risk.svg" alt="Risk" /> Removing risk from projects
-            p.lead Developing a digital product can be expensive, slow, and offer little return on investment.
-            p My goal is to derisk your digital product development journey. I combine true technical expertise, extensive industry experience, and excellent communication skills to bring quality, scaleable software to market that generates real value for your business.
+            h3 <img class="heading-icon" src="assets/images/icons/risk.svg" alt="Removing risk" /> Removing risk and uncertainty
+            p.lead Done poorly, developing digital products can be expensive, slow, and offer little return on investment.
+
+            p I derisk digital product development by keeping solutions simple, scaleable, and complimentary to your development team’s current skillsets.
+            
+            p This avoids common pitfalls and long-term maintenance costs, resulting in products that are cost effective, delivered promptly, and provide a top return on investment.
 
           .content-grid__item
-            h3 <img class="heading-icon" src="assets/images/icons/results.svg" alt="Results" /> Results in challenging environments
-            p.lead Delivering efficiently and consistently in a business environment can be tough for software engineers.
-            p I’ve spent the past 15 years becoming adept at helping stakeholders settle on clear shared visions for their software products, and consistently delivering results that are aligned with their strategic objectives.
+            h3 <img class="heading-icon" src="assets/images/icons/results.svg" alt="Delivering results" /> Delivering results
+            p.lead Getting decisions made and work completed in a dynamic business environment can be tough.
+
+            p I work efficiently by understanding the needs of different stakeholders, systematically eliminating concerns, and making it easy for people to say “yes”.
+
+            p This removes friction between stakeholders, delivers results quickly, and helps to keep everyone invested in the digital product development process.
 
         h2 My services
         .content-grid

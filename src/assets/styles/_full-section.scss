@@ -1,8 +1,13 @@
 .full-section {
   @include vertical-section;
 
-  padding-left: $spacing-gutter;
-  padding-right: $spacing-gutter;
+  padding-left: $spacing-gutter-sm;
+  padding-right: $spacing-gutter-sm;
+
+  @media only screen and (min-width: $bp-sm) {      
+    padding-left: $spacing-gutter;
+    padding-right: $spacing-gutter;
+  }
 
   &--highlight {
     @include highlight-container;
