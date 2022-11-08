@@ -14,10 +14,10 @@
   }
 
   &--3col {
-    grid-column-gap: $spacing-3;
+    grid-column-gap: $spacing-4;
     grid-row-gap: $spacing-3;
 
-    @media only screen and (min-width: $bp-sm) {
+    @media only screen and (min-width: $bp-md) {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }

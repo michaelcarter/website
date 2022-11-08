@@ -1,39 +1,72 @@
 .testimonial {
+  display: flex;
+  flex-direction: row;
+  margin: $spacing-2 0;
+
+  @media only screen and (min-width: $bp-sm) {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
   &__image {
     box-shadow: 0 0 $spacing-1 $grey-lighter;
-    float: left;
-    border-radius: $border-radius-1;
-    max-height: 3rem;
-    max-width: 3rem;
-    margin: 0 $spacing-2 $spacing-2 auto;
+    border-radius: 4rem;
+    max-height: 4rem;
+    max-width: 4rem;
+    margin: $spacing-2 $spacing-3 0 0;
 
     @media only screen and (min-width: $bp-sm) {
-      margin: 0 $spacing-3 $spacing-2 auto;
-      max-height: 4rem;
-      max-width: 4rem;
+      margin: 0 0 $spacing-2 0;
+      max-height: 5rem;
+      max-width: 5rem;
     }
   }
 
   &__citation {
     color: $beige-darker;
-    font-weight: 400;
-    font-size: $font-size-sm;
-    line-height: $font-size-sm;
+    font-size: $font-size-xs;
+    line-height: $font-size-xs;
+
+    @media only screen and (min-width: $bp-sm) {
+      font-size: $font-size-sm;
+      line-height: $font-size-sm;
+      text-align: center;
+    }
 
     cite {
+      font-weight: 500;
       font-style: normal;
+    }
+
+    img {
+      filter: saturate(0%);
+      opacity: 75%;
+      display: inline;
+      margin-left: 0.2rem;
+      vertical-align: middle;
+      transition: filter 0.25s, opacity 0.25s;
+      transition-timing-function: ease-in-out;
+      width: 6rem;
+    }
+
+    a:hover {
+      img {
+        filter: saturate(100%);
+        opacity: 100%;
+      }
     }
   }
 
   &__quote {
     margin: $spacing-2 0;
-    font-style: italic;
     font-size: $font-size-sm;
-    line-height: $font-size-lg;
+    font-weight: 400;
+    line-height: 160%;
 
     @media only screen and (min-width: $bp-sm) {
       font-size: $font-size-md;
-      line-height: $font-size-xl;
+      text-align: center;
     }
 
     @media only screen and (min-width: $bp-md) {
@@ -41,7 +74,7 @@
     }
 
     &:before {
-      color: darken($beige, 8%);
+      color: darken($beige, 10%);
       content: '“';
       font-family: $serif-font-family;
       font-weight: bold;

@@ -1,0 +1,8 @@
+mixin testimonial({ imageSrc, imageAlt, text, author })
+  figure.testimonial
+    img.testimonial__image(src=imageSrc alt=imageAlt)
+    .testimonial__text
+      p.testimonial__quote=text
+      figcaption.testimonial__citation
+        cite
+          != author
