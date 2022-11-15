@@ -2,10 +2,10 @@
   @include highlight-container;
   padding: 0 $spacing-gutter-sm;
 
-  @media only screen and (min-width: $bp-sm) {      
+  @media only screen and (min-width: $bp-sm) {
     padding: 0 $spacing-gutter;
   }
-  
+
   &__inner {
     @include inner-wrapper;
     @include normalize-typography-margins;
@@ -25,12 +25,12 @@
 
     em {
       font-style: normal;
-      text-decoration: underline;
-      text-decoration-color: $orange;
+      @include strike-under(0.8rem, -0.5rem);
     }
   }
 
   &__subtitle {
+    font-family: $header-font-family;
     font-size: 1.2rem;
     font-weight: 300;
     margin: $spacing-3 auto;
@@ -44,7 +44,6 @@
     @media only screen and (min-width: $bp-sm) {
       line-height: 2.6rem;
       font-size: 1.5rem;
-      margin: $spacing-3 auto;
     }
   }
 }

@@ -4,11 +4,14 @@ body {
 }
 
 .wrapper-article {
-  max-width: $layout-width-semi-narrow !important;
-  padding: 0 $spacing-gutter-sm;
+  @include inner-wrapper;
+  max-width: $layout-width-semi-narrow;
+  padding-left: $spacing-gutter-sm;
+  padding-right: $spacing-gutter-sm;
 
   @media only screen and (min-width: $layout-width-semi-narrow) {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -54,6 +57,7 @@ body {
 }
 
 hr {
-  border-color: $purple-lighter;
+  border-bottom: none;
+  border-color: $beige;
   margin: $spacing-3 0;
 }

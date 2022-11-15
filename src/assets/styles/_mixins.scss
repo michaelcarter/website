@@ -2,7 +2,7 @@
   padding-left: $spacing-gutter-sm;
   padding-right: $spacing-gutter-sm;
 
-  @media only screen and (min-width: $bp-sm) {      
+  @media only screen and (min-width: $bp-sm) {
     padding-left: $spacing-gutter;
     padding-right: $spacing-gutter;
   }
@@ -115,5 +115,26 @@
 
   @media only screen and (min-width: $bp-sm) {
     font-size: $small-up;
+  }
+}
+
+@mixin strike-under($height, $topMargin) {
+  position: relative;
+
+  &:after {
+    content: '';
+    border-radius: 0.2rem;
+    display: block;
+    height: $height;
+    background: linear-gradient(
+      -90deg,
+      transparentize($orange-light, 0.7),
+      $orange-light
+    );
+    width: 100%;
+    position: absolute;
+    transform: rotate(-2deg);
+    margin-top: $topMargin;
+    z-index: -1;
   }
 }

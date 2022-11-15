@@ -67,12 +67,14 @@ $layout-width-semi-wide: calc(80rem + #{$spacing-4} + #{$spacing-4});
 $layout-width-wide: 110rem;
 
 // Transitions
-$duration-short: 0.25s;
+$duration-short: 0.15s;
 $duration-medium: 0.5s;
 
 // Fonts:
-$sans-font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+$header-font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
   helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+$sans-font-family: 'Lato', helvetica neue, helvetica, Ubuntu, roboto, noto,
+  segoe ui, arial, sans-serif;
 $fixed-font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
   monospace;
 $serif-font-family: Georgia, 'Times New Roman', Times, serif;

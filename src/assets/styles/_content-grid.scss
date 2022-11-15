@@ -14,7 +14,7 @@
   }
 
   &--3col {
-    grid-column-gap: $spacing-4;
+    grid-column-gap: $spacing-3;
     grid-row-gap: $spacing-3;
 
     @media only screen and (min-width: $bp-md) {

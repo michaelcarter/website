@@ -1,6 +1,25 @@
 article {
   .article__content {
-    @include inner-wrapper;
+    padding-bottom: $spacing-4;
+    padding-top: $spacing-4;
+
+    & > *:first-child {
+      margin-top: 0;
+    }
+
+    h2 {
+      margin: $spacing-3 0;
+      @media only screen and (min-width: $bp-sm) {
+        margin: $spacing-4 0 $spacing-3 0;
+      }
+    }
+
+    h3 {
+      margin: $spacing-3 0;
+      @media only screen and (min-width: $bp-sm) {
+        margin: $spacing-3 0 $spacing-2 0;
+      }
+    }
   }
 
   .article-image {

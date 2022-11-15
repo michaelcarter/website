@@ -15,24 +15,30 @@
 .post {
   display: block;
   background: $beige;
+  border-radius: $border-radius-1;
+  border: 1px solid darken($beige, 4%);
   padding: $spacing-3;
   text-decoration: none;
+  transform: scale(1);
+  transition: transform $duration-short ease-in-out;
 
   h3 {
-    margin-bottom: 0;
+    margin: $spacing-1 0;
+    font-size: 1.4rem;
   }
 
   &__date {
     color: $beige-dark;
     display: inline-block;
-    font-weight: 600;
-    font-size: $font-size-md;
-    margin: $spacing-1 0;
+    font-weight: 500;
+    font-size: $font-size-sm;
+    margin: 0 0 $spacing-1 0;
     width: 100%;
+    text-align: center;
   }
 
   &__description {
-    font-size: $font-size-md;
+    font-size: $font-size-sm;
     margin: 0;
   }
 
@@ -46,14 +52,15 @@
   }
 
   &:hover {
-    .post__date {
-      color: $orange-dark;
-    }
+    background: darken($beige, 2%);
+    color: $beige-darkest;
+    transform: scale(1.05);
+    transition: transform $duration-short ease-in-out,
+      background-color $duration-short ease-in-out;
 
     svg {
       animation: openOut $duration-medium ease-in-out;
       animation-iteration-count: infinite;
-      fill: $orange-dark;
     }
   }
 }

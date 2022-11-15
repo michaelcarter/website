@@ -3,6 +3,7 @@ mixin postLinks(posts)
     each post in posts
       if post.external
           a.content-grid__item.post(href!=post.href, target="_blank" rel="noopener")
+            span.post__date=post.date
             h3
               !=post.title
               svg#Capa_1.post-list__external-link-icon(xmlns='http://www.w3.org/2000/svg' version='1.1' x='0px' y='0px' viewbox='0 0 26 26' style='enable-background:new 0 0 26 26;' xml:space='preserve')
@@ -25,10 +26,9 @@ mixin postLinks(posts)
                 g
                 g
                 g
-            span.post__date=post.date
             p.post__description!=post.description
       else
           a.content-grid__item.post(href!=post.href)
-            h3!=post.title
             span.post__date=post.date
+            h3!=post.title
             p.post__description!=post.description
