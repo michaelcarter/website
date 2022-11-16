@@ -27,11 +27,6 @@ block pageContent
 
       p Tests cost money to write, money to maintain, and can be painfully slow to run at scale. In many teams, intermittent failures also hold up deployments for hours each week while frustrated developers fix temperamental tests.
 
-      figure
-        img.article-image.article-image--subtitled(src="/assets/images/posts/testing-and-tradeoffs/first-try.gif" alt="Lego batman throws knives at a button trying to press it. After several attempts he hits the button, and shouts 'First try!'" loading="lazy")
-        figcaption
-          p.article-image-subtitle The average test suite
-
       p We also often forget that tests don&#39;t actually guarantee anything. When they pass, they&#39;re just telling us that our potentially buggy test code has determined our potentially buggy application code is behaving as expected under the conditions we thought to check. There&#39;s a lot of room for false positives (and negatives) there.
 
       p Unfortunately, relying on poorly maintained test suites as the only means of quality control means many teams suffer through 50% or more of their developer&#39;s time being lost to test maintenance. To improve the situation, we need to recognise our tests are just one of many tools we have available. 
