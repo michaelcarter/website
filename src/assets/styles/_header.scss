@@ -24,6 +24,7 @@
     }
 
     em {
+      display: inline-block;
       font-style: normal;
       @include strike-under(0.7rem, -0.5rem);
     }
