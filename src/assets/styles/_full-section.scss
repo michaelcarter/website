@@ -9,6 +9,10 @@
     padding-right: $spacing-gutter;
   }
 
+  &--top {
+    padding-top: 0;
+  }
+
   &--highlight {
     @include highlight-container;
   }

@@ -1,19 +1,6 @@
 .header {
-  @include highlight-container;
-  padding: 0 $spacing-gutter-sm;
-
-  @media only screen and (min-width: $bp-sm) {
-    padding: 0 $spacing-gutter;
-  }
-
-  &__inner {
-    @include inner-wrapper;
-    @include normalize-typography-margins;
-  }
-
   &__content {
     text-align: center;
-    @include vertical-section;
   }
 
   &__title {

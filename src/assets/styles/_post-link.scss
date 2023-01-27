@@ -15,8 +15,6 @@
 .post {
   display: block;
   background: $beige;
-  border-radius: $border-radius-1;
-  border: 1px solid darken($beige, 4%);
   padding: $spacing-3;
   text-decoration: none;
   transform: scale(1);
@@ -31,14 +29,14 @@
     color: $beige-dark;
     display: inline-block;
     font-weight: 500;
-    font-size: $font-size-sm;
+    font-size: $font-size-md;
     margin: 0 0 $spacing-1 0;
     width: 100%;
     text-align: center;
   }
 
   &__description {
-    font-size: $font-size-sm;
+    font-size: $font-size-md;
     margin: 0;
   }
 

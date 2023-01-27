@@ -5,11 +5,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: $spacing-gutter-sm 0 0 0;
-
-  @media only screen and (min-width: $bp-sm) {
-    padding-top: $spacing-gutter;
-  }
+  padding: $spacing-2 0 $spacing-4 0;
 
   &__links {
     display: flex;
@@ -46,7 +42,7 @@
 
     &:link,
     &:visited {
-      font-size: 1.1rem;
+      font-size: $font-size-md;
     }
   }
 }

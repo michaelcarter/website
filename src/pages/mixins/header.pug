@@ -1,7 +1,7 @@
 mixin header(title, subtitle)
-  header.header
-    +navigation
-    .header__inner
+  header.full-section.full-section--top.header
+    .full-section__inner
+      +navigation
       .header__content
         h1.header__title!=title
         p.header__subtitle!=subtitle

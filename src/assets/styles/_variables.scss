@@ -13,20 +13,6 @@ $grey-lightest: lighten($grey, 25%);
 $grey-dark: darken($grey, 33%);
 $grey-darker: darken($grey, 40%);
 
-$purple: #7209b7;
-$purple-light: lighten($purple, 20%);
-$purple-lighter: lighten($purple, 50%);
-$purple-lightest: lighten($purple, 60%);
-$purple-dark: darken($purple, 5%);
-
-$blue: #4895ef;
-$blue-dark: darken($blue, 10%);
-
-$pink: #f72585;
-$pink-lighter: lighten($pink, 30%);
-$pink-lightest: lighten($pink, 40%);
-$pink-dark: darken($pink, 10%);
-
 $beige: #f5f4f2;
 $beige-dark: darken($beige, 50%);
 $beige-darker: darken($beige, 65%);
@@ -44,7 +30,7 @@ $spacing-4: 4rem;
 $spacing-5: 6rem;
 $spacing-6: 10rem;
 
-$spacing-gutter-sm: 1.5rem;
+$spacing-gutter-sm: 1rem;
 $spacing-gutter: 2rem;
 
 // Border radiuses
@@ -55,15 +41,15 @@ $border-radius-3: 1rem;
 // Font-sizings
 $font-size-xl: 1.8rem;
 $font-size-lg: 1.5rem;
-$font-size-base: 1.2rem;
-$font-size-md: 1.1rem;
-$font-size-sm: 1rem;
+$font-size-base: 1.1rem;
+$font-size-md: 1.0rem;
+$font-size-sm: 0.9rem;
 $font-size-xs: 0.8rem;
 
 // Sizings
 $layout-width-semi-narrow: 55rem;
-$layout-width: 80rem;
-$layout-width-semi-wide: calc(80rem + #{$spacing-4} + #{$spacing-4});
+$layout-width: 70rem;
+$layout-width-semi-wide: calc(70rem + #{$spacing-4} + #{$spacing-4});
 $layout-width-wide: 110rem;
 
 // Transitions
