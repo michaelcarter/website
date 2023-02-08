@@ -32,12 +32,12 @@ article {
       padding: $spacing-1;
     }
 
-    &--subtitled {
-      margin-bottom: 0;
+    &--captioned {
+      margin-bottom: $spacing-1;
     }
   }
 
-  .article-image-subtitle {
+  .article-image-caption {
     font-size: $font-size-sm;
     margin: 0 0 $spacing-3 0;
     text-align: center;
