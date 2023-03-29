@@ -45,7 +45,7 @@
   transition: color $duration-medium;
   text-decoration: none;
 
-  svg {
+  svg, img {
     fill: $beige-darkest;
     transition: fill $duration-medium;
     width: 1em;

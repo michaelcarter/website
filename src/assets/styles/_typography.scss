@@ -107,6 +107,10 @@ p {
   &.lead {
     font-weight: 500;
   }
+
+  &.small {
+    font-size: $font-size-sm;
+  }
 }
 
 li {

@@ -13,6 +13,10 @@
     padding-top: 0;
   }
 
+  &--bottom {
+    padding-bottom: 0;
+  }
+
   &--highlight {
     @include highlight-container;
   }
