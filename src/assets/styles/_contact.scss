@@ -67,6 +67,7 @@
         font-size: $font-size-md;
       }
       input, textarea {
+        appearance: none;
         border: 1px solid darken($beige, 10%);
         border-radius: $border-radius-1;
         display: block;
