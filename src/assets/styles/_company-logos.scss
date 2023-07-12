@@ -12,8 +12,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: $spacing-2 auto 0 auto;
-  max-width: $bp-sm;
+  margin: 0 auto;
+  max-width: 900px;
 
   &__item {
     animation: fadeIn 0.35s ease-in;
@@ -36,123 +36,48 @@
 
     &:nth-child(1) {
       animation-delay: 0.1s;
-      img {
-        // RIFT
-        width: 5rem;
-        @media only screen and (min-width: $bp-xs) {
-          width: 6rem;
-        }
-        @media only screen and (min-width: $bp-sm) {
-          width: 7rem;
-        }
-      }
     }
     &:nth-child(2) {
       animation-delay: 0.2s;
-      img {
-        // Purplebricks
-        width: 7rem;
-        @media only screen and (min-width: $bp-xs) {
-          width: 8.5rem;
-        }
-        @media only screen and (min-width: $bp-sm) {
-          width: 10rem;
-        }
-      }
     }
     &:nth-child(3) {
       animation-delay: 0.3s;
-      img {
-        // Allocate
-        width: 5rem;
-        @media only screen and (min-width: $bp-xs) {
-          width: 6rem;
-        }
-        @media only screen and (min-width: $bp-sm) {
-          width: 7rem;
-        }
-      }
     }
     &:nth-child(4) {
       animation-delay: 0.4s;
-      img {
-        // Laced
-        width: 6rem;
-        @media only screen and (min-width: $bp-xs) {
-          width: 7rem;
-        }
-        @media only screen and (min-width: $bp-sm) {
-          width: 8rem;
-        }
-      }
     }
     &:nth-child(5) {
       animation-delay: 0.5s;
-      img {
-        // Holiday Extras
-        width: 8rem;
-        @media only screen and (min-width: $bp-xs) {
-          width: 10rem;
-        }
-        @media only screen and (min-width: $bp-sm) {
-          width: 12rem;
-        }
-      }
     }
     &:nth-child(6) {
       animation-delay: 0.6s;
-      img {
-        // Zendesk
-        width: 6rem;
-        @media only screen and (min-width: $bp-xs) {
-          width: 7rem;
-        }
-        @media only screen and (min-width: $bp-sm) {
-          width: 8rem;
-        }
-      }
     }
     &:nth-child(7) {
       animation-delay: 0.7s;
-      img {
-        // HEHA
-        width: 3.5rem;
-        @media only screen and (min-width: $bp-xs) {
-          width: 4.25rem;
-        }
-        @media only screen and (min-width: $bp-sm) {
-          width: 5rem;
-        }
-      }
     }
-
     &:nth-child(8) {
       animation-delay: 0.7s;
-      img {
-        // Sprint.ly
-        width: 4.5rem;
-
-        @media only screen and (min-width: $bp-xs) {
-          width: 5.5rem;
-        }
-        @media only screen and (min-width: $bp-sm) {
-          width: 6.5rem;
-        }
-      }
     }
 
     img {
-      filter: saturate(0%);
-      opacity: 50%;
-      transition: filter 0.25s, opacity 0.25s;
-      transition-timing-function: ease-in-out;
-    }
+      // Company logos:
+      &.rift { @include widths(5rem, 6rem, 7rem); }
+      &.purplebricks { @include widths(7rem, 8.5rem, 10rem); }
+      &.allocate { @include widths(5rem, 6rem, 7rem); }
+      &.laced { @include widths(6rem, 7rem, 8rem); }
+      &.holiday-extras { @include widths(8rem, 10rem, 12rem); }
+      &.zendesk { @include widths(6rem, 7rem, 8rem); }
+      &.heha { @include widths(3.5rem, 4.25rem, 5rem); }
+      &.sprintly { @include widths(4.5rem, 5.5rem, 6.5rem); }
 
-    a:hover {
-      img {
-        filter: saturate(100%);
-        opacity: 100%;
-      }
+      // Tech logos
+      &.rails { @include widths(4.5rem, 5.5rem, 6.5rem); }
+      &.ruby { @include widths(2rem, 2.5rem, 3.5rem); }
+      &.react { @include widths(2rem, 3rem, 4rem); }
+      &.nextjs { @include widths(4rem, 5rem, 6rem); }
+      &.nodejs { @include widths(4rem, 5rem, 6rem); }
+      &.javascript { @include widths(2rem, 2.5rem, 3.5rem); }
+      &.typescript { @include widths(2rem, 2.5rem, 3.5rem); }
     }
   }
 }
@@ -160,11 +85,11 @@
 .company-logos-lead {
   color: $beige-dark;
   font-weight: 500;
-  font-size: $font-size-xs;
-  margin: -1rem 0 0 0;
+  font-size: $font-size-sm;
+  text-align: center;
 
   @media only screen and (min-width: $bp-xs) {
-    font-size: $font-size-sm;
-    margin: $spacing-3 0;
+    font-size: $font-size-md;
+    margin: $spacing-1 0;
   }
 }

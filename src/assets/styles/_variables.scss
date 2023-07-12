@@ -18,17 +18,20 @@ $beige-dark: darken($beige, 50%);
 $beige-darker: darken($beige, 65%);
 $beige-darkest: darken($beige, 75%);
 
-$orange: #f09c35;
+$orange: #fa9a25;
 $orange-dark: darken($orange, 15%);
+$orange-darker: darken($orange, 30%);
+$orange-darkest: darken($orange, 40%);
 $orange-light: lighten($orange, 15%);
+$orange-lighter: lighten($orange, 30%);
 
 // Spacings
 $spacing-1: 0.5rem;
 $spacing-2: 1rem;
 $spacing-3: 2rem;
-$spacing-4: 4rem;
-$spacing-5: 6rem;
-$spacing-6: 10rem;
+$spacing-4: 3rem;
+$spacing-5: 5rem;
+$spacing-6: 8rem;
 
 $spacing-gutter-sm: 1rem;
 $spacing-gutter: 2rem;
@@ -41,6 +44,7 @@ $border-radius-3: 1rem;
 // Font-sizings
 $font-size-xl: 1.8rem;
 $font-size-lg: 1.5rem;
+$font-size-semi-lg: 1.3rem;
 $font-size-base: 1.1rem;
 $font-size-md: 1.0rem;
 $font-size-sm: 0.9rem;

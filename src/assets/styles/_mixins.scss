@@ -118,6 +118,18 @@
   }
 }
 
+@mixin widths($smallest-up, $xsmall-up, $small-up) {
+  width: $smallest-up;
+
+  @media only screen and (min-width: $bp-xs) {
+    width: $xsmall-up;
+  }
+
+  @media only screen and (min-width: $bp-sm) {
+    width: $small-up;
+  }
+}
+
 @mixin strike-under($height, $topMargin) {
   position: relative;
 

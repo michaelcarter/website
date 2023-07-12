@@ -14,57 +14,6 @@ block pageContent
     "Digital products <em>derisked</em>.",
     "I'm Mike Carter, I lead development on digital products with <strong>solid foundations</strong>, <strong>room to scale</strong>, and <strong>costs under control</strong>."
   )
-    p.company-logos-lead I’ve worked with...
-    +companyLogos([
-        {
-          alt: "RIFT’s website",
-          url: "https://riftrefunds.co.uk",
-          fileName: "client-logos/myrift.svg",
-          ariaLabel: "RIFT"
-        },
-        {
-          alt: "Purplebrick’s website",
-          url: "https://purplebricks.co.uk",
-          fileName: "client-logos/purplebricks.svg",
-          ariaLabel: "Purplebricks"
-        },
-        {
-          alt: "Allocate’s website",
-          url: "https://allocate.co.uk",
-          fileName: "client-logos/allocate.svg",
-          ariaLabel: "Allocate"
-        },
-        {
-          alt: "Laced’s website",
-          url: "https://laced.co.uk",
-          fileName: "client-logos/laced.svg",
-          ariaLabel: "Laced"
-        },
-        {
-          alt: "Holiday Extras’ website",
-          url: "https://holidayextras.co.uk",
-          fileName: "client-logos/holiday-extras.svg",
-          ariaLabel: "Holiday Extras"
-        },
-        {
-          alt: "Zendesk’s website",
-          url: "https://zendesk.co.uk",
-          fileName: "client-logos/zendesk.svg",
-          ariaLabel: "Zendesk"
-        },
-        {
-          alt: "HEHA’s website",
-          url: "https://heha.com",
-          fileName: "client-logos/heha.svg",
-          ariaLabel: "HEHA",
-        },
-        {
-          alt: "Sprint.ly's website",
-          url: "https://sprint.ly",
-          fileName: "client-logos/sprintly.svg",
-          ariaLabel: "Sprint.ly"
-        }
-      ])
 
   main
     section.full-section
@@ -72,58 +21,111 @@ block pageContent
         h2 How I can help
         .content-grid
           .content-grid__item
-            h3 <img class="heading-icon heading-icon--large" src="assets/images/icons/expertise.svg" alt="Expertise" /> Experience and expertise
-            p.lead Software is a booming industry, but it can be hard to find seasoned experts among the rush of newcomers.
+            h3 Experience and expertise
 
-            p With 17 years under my belt, I’ve focused my career on developing robust, scaleable web applications that deliver real value for businesses in multiple sectors, and on multiple continents.
+            p.lead Software developers aren’t hard to find, but seasoned experts are.
 
-            p I know my technical fundamentals from my higher level frameworks, and make it my business to keep up to date with the latest technologies and best practices.
+            p With 17 years experience, I’ve focused my career on developing robust, scaleable web applications that deliver real value for businesses in multiple sectors, and on multiple continents.
 
-          .content-grid__item
-            h3 <img class="heading-icon heading-icon--large" src="assets/images/icons/leadership.svg" alt="Leadership" /> Clear, pragmatic leadership
-            p.lead Strong communication and strategic thinking skills are a superpower for software engineers.
+            h3 Communication and leadership
+
+            p.lead Strong communication and strategic thinking skills are a workplace superpower.
 
             p I use clear written, verbal and visual communication to achieve a shared understanding between technical and non-technical stakeholders.
 
-            p Where stategic decisions need to be made, I’ll prioritise your business objectives alongside team strengths and weaknesses, and guide everyone to a well considered development plan.
+          .content-grid__item
+            +testimonial({
+                logoSrc: "/assets/images/client-logos/purplebricks.svg",
+                logoAlt: "Purplebricks",
+                logoWidth: 160,
+                imageSrc: "/assets/images/testimonials/annadivers.jpeg",
+                imageAlt: "Anna Divers",
+                author: "<b>Anna Divers</b><br>Product Director at <a href='https://www.purplebricks.co.uk' rel='noopener' target='_blank'>Purplebricks</a>",
+                text: "Mike’s experience, pragmatism and humility helped him immediately gain the trust and respect of our team. As a legacy from his engagement, we’re equipped with understanding how to improve our product development cycles, front-end developement environment and approach.",
+              })
 
           .content-grid__item
-            h3 <img class="heading-icon" src="assets/images/icons/risk.svg" alt="Removing risk" /> Removing risk and uncertainty
+            +testimonial({
+              logoSrc: "/assets/images/client-logos/myrift.svg",
+              logoAlt: "RIFT Limited",
+              logoWidth: 100,
+              imageSrc: "/assets/images/testimonials/bradleypost.jpeg",
+              imageAlt: "Bradley Post",
+              author: "<b>Bradley Post</b><br>CEO at <a href='https://www.riftrefunds.co.uk' rel='noopener' target='_blank'>RIFT Limited</a>",
+              text: "Mike has been brilliant for RIFT; he has led numerous successful development projects, and his calm, measured and pragmatic approach immediately instils confidence. He understands the business issues we’re trying to solve and develops practical solutions to drive us forwards.",
+              borderRight: true
+            })
+
+          .content-grid__item
+            h3 Removing risk and uncertainty
             p.lead Done poorly, developing digital products can be expensive, slow, and offer little return on investment.
 
             p I derisk digital product development by keeping solutions simple, scaleable, and complimentary to your development team’s current skillsets.
 
-            p This avoids common pitfalls and long-term maintenance costs, resulting in products that are cost effective, delivered promptly, and provide a top return on investment.
-
-          .content-grid__item
-            h3 <img class="heading-icon" src="assets/images/icons/results.svg" alt="Delivering results" /> Delivering results
+            h3 Delivering results
             p.lead Getting decisions made and work completed in a dynamic business environment can be tough.
 
             p I work efficiently by understanding the needs of different stakeholders, systematically eliminating concerns, and making it easy for people to say “yes”.
 
-            p This removes friction between stakeholders, delivers results quickly, and helps to keep everyone invested in the digital product development process.
-
-    section.full-section.full-section--highlight
-      .full-section__inner.full-section__inner--wide
-        h3.hidden Testimonials
-        +testimonials([
+    section.full-section
+      .full-section__inner
+        p.company-logos-lead Clients I’ve worked with
+        +companyLogos([
           {
-            src: "/assets/images/testimonials/bradleypost.jpeg",
-            alt: "Bradley Post",
-            author: "Bradley Post, CEO at <a href='https://www.riftrefunds.co.uk' rel='noopener' target='_blank'><img src='/assets/images/client-logos/myrift.svg' alt='RIFT Limited' /></a>",
-            text: "Mike has been brilliant for RIFT; he has led numerous successful development projects, and his calm, measured and pragmatic approach immediately instils confidence. He understands the business issues we’re trying to solve and develops practical solutions to drive us forwards.",
+            alt: "RIFT’s website",
+            url: "https://riftrefunds.co.uk",
+            fileName: "client-logos/myrift.svg",
+            ariaLabel: "RIFT",
+            utilityClass: "rift"
           },
           {
-            src: "/assets/images/testimonials/annadivers.jpeg",
-            alt: "Anna Divers",
-            author: "Anna Divers, Product Director at <a href='https://www.purplebricks.co.uk' rel='noopener' target='_blank'><img src='/assets/images/client-logos/purplebricks.svg' alt='Purplebricks' /></a>",
-            text: "Mike’s experience, pragmatism and humility helped him immediately gain the trust and respect of our team. As a legacy from his engagement, we’re equipped with understanding how to improve our product development cycles, front-end developement environment and approach.",
+            alt: "Purplebrick’s website",
+            url: "https://purplebricks.co.uk",
+            fileName: "client-logos/purplebricks.svg",
+            ariaLabel: "Purplebricks",
+            utilityClass: "purplebricks"
           },
           {
-            src: "/assets/images/testimonials/charlesholdsworth.jpeg",
-            alt: "Charles Holdsworth",
-            author: "Charles Holdsworth, CEO at <a href='https://www.allocate.co.uk' rel='noopener' target='_blank'><img src='/assets/images/client-logos/allocate.svg' alt='Allocate' /></a>",
-            text: "Mike has not only performed exceptionally well on two projects for me, but stepped in to help when an issue arose with a former developer.  Without assistance he methodically unravelled older systems in order to understand their structure and setup. His assistance has been invaluable."
+            alt: "Allocate’s website",
+            url: "https://allocate.co.uk",
+            fileName: "client-logos/allocate.svg",
+            ariaLabel: "Allocate",
+            utilityClass: "allocate"
+          },
+          {
+            alt: "Laced’s website",
+            url: "https://laced.co.uk",
+            fileName: "client-logos/laced.svg",
+            ariaLabel: "Laced",
+            utilityClass: "laced"
+          },
+          {
+            alt: "Holiday Extras’ website",
+            url: "https://holidayextras.co.uk",
+            fileName: "client-logos/holiday-extras.svg",
+            ariaLabel: "Holiday Extras",
+            utilityClass: "holiday-extras"
+          },
+          {
+            alt: "Zendesk’s website",
+            url: "https://zendesk.co.uk",
+            fileName: "client-logos/zendesk.svg",
+            ariaLabel: "Zendesk",
+            utilityClass: "zendesk"
+          },
+          {
+            alt: "HEHA’s website",
+            url: "https://heha.com",
+            fileName: "client-logos/heha.svg",
+            ariaLabel: "HEHA",
+            utilityClass: "heha"
+          },
+          {
+            alt: "Sprint.ly's website",
+            url: "https://sprint.ly",
+            fileName: "client-logos/sprintly.svg",
+            ariaLabel: "Sprint.ly",
+            utilityClass: "sprintly"
           }
         ])
 
@@ -132,17 +134,82 @@ block pageContent
         h2 My services
         .content-grid
           .content-grid__item
-            h3 <img class="heading-icon" src="assets/images/icons/consultancy.svg" alt="Consultancy" /> Development consultancy
+            h3 Development consultancy
             p.lead If you’re looking to build something new, or would like long-term technical help, I can help guide decision making.
             p I’ll work closely with you to deliver top quality digital products using the best technology for the job. I’ll speak a language you understand, and keep your return on investment front of mind.
             p By continuously re-assessing the needs and constraints in your business, I’ll ensure your development team or agency continue smoothly towards their goal as new issues and blockers are uncovered, and keep you informed of progress along the way.
-          .content-grid__item
-            h3 <img class="heading-icon" src="assets/images/icons/development.svg" alt="Development" /> Product development
+
+            h3 Product development
             p.lead For a fixed price or daily rate, I’ll work on your digital product directly, helping you to achieve a clear return on investment for your business.
             p I’ll coordinate with stakeholders to establish clear requirements, and then deliver expertly crafted software that fully realises your vision for launch with solid foundations for further development and scaling.
             p All of my work is carefully documented, and uses technologies with a proven track record and promising trajectory in order to ensure you’re able to continue to find talented developers to grow your product long into the future.
+          .content-grid__item
+            +testimonial({
+              logoSrc: "/assets/images/client-logos/allocate.svg",
+              logoAlt: "Allocate",
+              logoWidth: 130,
+              imageSrc: "/assets/images/testimonials/charlesholdsworth.jpeg",
+              imageAlt: "Charles Holdsworth",
+              author: "<b>Charles Holdsworth</b><br>CEO at <a href='https://www.allocate.co.uk' rel='noopener' target='_blank'>Allocate</a>",
+              text: "Mike has not only performed exceptionally well on two projects for me, but stepped in to help when an issue arose with a former developer.  Without assistance he methodically unravelled older systems in order to understand their structure and setup. His assistance has been invaluable.",
+            })
 
-        h3 FAQs
+    section.full-section
+      .full-section__inner
+        p.company-logos-lead Languages and technologies I work with
+        +companyLogos([
+          {
+            alt: "Ruby on Rails",
+            url: "https://rubyonrails.org/",
+            fileName: "tech-logos/rails.svg",
+            ariaLabel: "Ruby on Rails Framework",
+            utilityClass: "rails"
+          },
+          {
+            alt: "Ruby",
+            url: "https://www.ruby-lang.org",
+            fileName: "tech-logos/ruby.svg",
+            ariaLabel: "Ruby Language",
+            utilityClass: "ruby"
+          },
+          {
+            alt: "React.js",
+            url: "https://react.dev/",
+            fileName: "tech-logos/react.svg",
+            ariaLabel: "React Library",
+            utilityClass: "react"
+          },
+          {
+            alt: "Next.js",
+            url: "https://nextjs.org/",
+            fileName: "tech-logos/nextjs.svg",
+            ariaLabel: "Next.js Framework",
+            utilityClass: "nextjs"
+          },
+          {
+            alt: "Node.js",
+            url: "https://nodejs.org",
+            fileName: "tech-logos/nodejs.svg",
+            ariaLabel: "NodeJS Runtime",
+            utilityClass: "nodejs"
+          },
+          {
+            alt: "JavaScript",
+            url: "https://javascript.info/js",
+            fileName: "tech-logos/javascript.svg",
+            ariaLabel: "JavaScript Language",
+            utilityClass: "javascript"
+          },
+          {
+            alt: "Typescript",
+            url: "https://www.typescriptlang.org/",
+            fileName: "tech-logos/typescript.svg",
+            ariaLabel: "Typescript Language",
+            utilityClass: "typescript"
+          }
+        ])
+
+        h2 FAQs
         .content-grid.content-grid--3col.content-grid--highlight
           .content-grid__item
             h3.small What languages do you work with?

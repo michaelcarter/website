@@ -1,29 +1,37 @@
 .testimonial {
+  border: 1px solid darken($beige, 2%);
+  background: lighten($beige, 2%);
+  border-radius: $border-radius-1;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   margin: $spacing-2 0;
+  padding: $spacing-3;
 
   @media only screen and (min-width: $bp-sm) {
-    flex-direction: column;
-    align-items: center;
     margin: 0;
+    padding: $spacing-4;
   }
 
-  &__image {
-    box-shadow: 0 0 $spacing-1 $grey-lighter;
-    border-radius: 4rem;
-    max-height: 4rem;
-    max-width: 4rem;
-    margin: $spacing-2 $spacing-3 0 0;
+  &__logo {;
+    display: block;
+  }
+
+  &__quote {
+    font-size: $font-size-base;
+    line-height: 170%;
+    margin: $spacing-2 0;
 
     @media only screen and (min-width: $bp-sm) {
-      margin: 0 0 $spacing-2 0;
-      max-height: 5rem;
-      max-width: 5rem;
+      font-size: $font-size-semi-lg;
+      margin: $spacing-3 0;
     }
   }
 
   &__citation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     color: $beige-darker;
     font-size: $font-size-xs;
     line-height: $font-size-xs;
@@ -31,23 +39,36 @@
     @media only screen and (min-width: $bp-sm) {
       font-size: $font-size-sm;
       line-height: $font-size-sm;
-      text-align: center;
+    }
+
+    &-image {
+      border-radius: 4rem;
+      max-height: 2rem;
+      max-width: 2rem;
+      margin: 0 $spacing-2 0 0;
+
+      @media only screen and (min-width: $bp-sm) {
+        max-height: 50px;
+        max-width: 50px;
+      }
     }
 
     cite {
-      font-weight: 500;
+      color: $beige-dark;
+      line-height: 140%;
       font-style: normal;
-    }
+      font-size: $font-size-md;
 
-    img {
-      filter: saturate(0%);
-      opacity: 75%;
-      display: inline;
-      margin-left: 0.2rem;
-      vertical-align: middle;
-      transition: filter 0.25s, opacity 0.25s;
-      transition-timing-function: ease-in-out;
-      width: 6rem;
+      a {
+        color: $beige-dark;
+        text-decoration-color: $beige-dark;
+      }
+
+      b {
+        color: $beige-darkest;
+        font-weight: 800;
+      }
+
     }
 
     a:hover {
@@ -55,34 +76,6 @@
         filter: saturate(100%);
         opacity: 100%;
       }
-    }
-  }
-
-  &__quote {
-    margin: $spacing-2 0;
-    font-size: $font-size-sm;
-    font-weight: 400;
-    line-height: 160%;
-
-    @media only screen and (min-width: $bp-sm) {
-      font-size: $font-size-md;
-      text-align: center;
-    }
-
-    @media only screen and (min-width: $bp-md) {
-      font-size: $font-size-base;
-    }
-
-    &:before {
-      color: darken($beige, 10%);
-      content: '“';
-      font-family: $serif-font-family;
-      font-weight: bold;
-      font-size: 6rem;
-      margin-left: -1rem;
-      margin-top: 1rem;
-      position: absolute;
-      z-index: -1;
     }
   }
 }

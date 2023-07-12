@@ -1,12 +1,8 @@
+include testimonial.pug
+
 mixin testimonials(testimonials)
-  .content-grid.content-grid--3col
+  .content-grid.content-grid--2col
     each testimonial in testimonials
       .content-grid__item
-        figure.testimonial
-          img.testimonial__image(src=testimonial.src alt=testimonial.alt)
-          .testimonial__text
-            p.testimonial__quote=testimonial.text
-            figcaption.testimonial__citation
-              cite
-                !=testimonial.author
+        +testimonial(testimonial)
 
