@@ -61,23 +61,53 @@
 
     img {
       // Company logos:
-      &.rift { @include widths(5rem, 6rem, 7rem); }
-      &.purplebricks { @include widths(7rem, 8.5rem, 10rem); }
-      &.allocate { @include widths(5rem, 6rem, 7rem); }
-      &.laced { @include widths(6rem, 7rem, 8rem); }
-      &.holiday-extras { @include widths(8rem, 10rem, 12rem); }
-      &.zendesk { @include widths(6rem, 7rem, 8rem); }
-      &.heha { @include widths(3.5rem, 4.25rem, 5rem); }
-      &.sprintly { @include widths(4.5rem, 5.5rem, 6.5rem); }
+      &.rift {
+        @include widths(5rem, 6rem, 7rem);
+      }
+      &.purplebricks {
+        @include widths(7rem, 8.5rem, 10rem);
+      }
+      &.allocate {
+        @include widths(5rem, 6rem, 7rem);
+      }
+      &.laced {
+        @include widths(5rem, 6rem, 7rem);
+      }
+      &.holiday-extras {
+        @include widths(8rem, 10rem, 12rem);
+      }
+      &.zendesk {
+        @include widths(6rem, 7rem, 8rem);
+      }
+      &.heha {
+        @include widths(3.5rem, 4.25rem, 5rem);
+      }
+      &.sprintly {
+        @include widths(4.5rem, 5.5rem, 6.5rem);
+      }
 
       // Tech logos
-      &.rails { @include widths(4.5rem, 5.5rem, 6.5rem); }
-      &.ruby { @include widths(2rem, 2.5rem, 3.5rem); }
-      &.react { @include widths(2rem, 3rem, 4rem); }
-      &.nextjs { @include widths(4rem, 5rem, 6rem); }
-      &.nodejs { @include widths(4rem, 5rem, 6rem); }
-      &.javascript { @include widths(2rem, 2.5rem, 3.5rem); }
-      &.typescript { @include widths(2rem, 2.5rem, 3.5rem); }
+      &.rails {
+        @include widths(4.5rem, 5.5rem, 6.5rem);
+      }
+      &.ruby {
+        @include widths(2rem, 2.5rem, 3.5rem);
+      }
+      &.react {
+        @include widths(2rem, 3rem, 4rem);
+      }
+      &.nextjs {
+        @include widths(4rem, 5rem, 6rem);
+      }
+      &.nodejs {
+        @include widths(4rem, 5rem, 6rem);
+      }
+      &.javascript {
+        @include widths(2rem, 2.5rem, 3.5rem);
+      }
+      &.typescript {
+        @include widths(2rem, 2.5rem, 3.5rem);
+      }
     }
   }
 }
