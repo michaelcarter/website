@@ -1,9 +1,0 @@
-mixin testimonial({ logoSrc, logoAlt, logoWidth, imageSrc, imageAlt, text, author, borderRight })
-  figure.testimonial(class=borderRight ? 'testimonial--border-right' : '')
-    img.testimonial__logo(src=logoSrc alt=logoAlt width=logoWidth)
-    p.testimonial__quote=`“${text}”`
-    figure.testimonial__citation
-      img.testimonial__citation-image(src=imageSrc alt=imageAlt)
-      figcaption
-        cite
-          !=author

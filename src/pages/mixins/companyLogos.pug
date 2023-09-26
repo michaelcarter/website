@@ -1,6 +1,0 @@
-mixin companyLogos(logos)
-  ul.company-logos
-    each logo in logos
-      li.company-logos__item
-        a(href=logo.url rel="noopener" target="_blank" aria-label=logo.ariaLabel)
-          img(class=logo.utilityClass src=`/assets/images/${logo.fileName}` alt=logo.alt loading="lazy")

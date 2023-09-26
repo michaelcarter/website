@@ -46,11 +46,12 @@ $font-size-xl: 1.8rem;
 $font-size-lg: 1.5rem;
 $font-size-semi-lg: 1.3rem;
 $font-size-base: 1.1rem;
-$font-size-md: 1.0rem;
+$font-size-md: 1rem;
 $font-size-sm: 0.9rem;
 $font-size-xs: 0.8rem;
 
 // Sizings
+$layout-width-narrow: 35rem;
 $layout-width-semi-narrow: 55rem;
 $layout-width: 70rem;
 $layout-width-semi-wide: calc(70rem + #{$spacing-4} + #{$spacing-4});

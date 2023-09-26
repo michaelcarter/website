@@ -2,241 +2,33 @@ extends ../base.pug
 
 include mixins/navigation.pug
 include mixins/header.pug
-include mixins/companyLogos.pug
-include mixins/contactButton.pug
-include mixins/testimonials.pug
 
 block prepend vars
   -var bodyClass = "home"
 
 block pageContent
   +header(
-    "Digital products <em>derisked</em>.",
-    "I'm Mike Carter, I lead development on digital products with <strong>solid foundations</strong>, <strong>room to scale</strong>, and <strong>costs under control</strong>."
+    "Mike Carter",
+    "A software <strong>developer</strong>, company <strong>founder</strong> and technical <strong>leader</strong> from the UK."
   )
 
   main
     section.full-section
       .full-section__inner
-        h2 How I can help
         .content-grid
-          .content-grid__item
-            h3 Experience and expertise
+          .content-grid__item.content-grid__item--bordered
+            h2 About me
+            p.lead I'm an experienced developer and technical leader, building on the web since 2006.
+            img.text-image.text-image--small.text-image--centered(src="/assets/images/me.webp", alt="Mike Carter" width="208" height="208" loading="lazy")
+            p I’ve worked in both small and large technology teams, and have led the digtal transformation of multiple fast-growing businesses. I’m a creative product focussed engineer at heart.
+            p.centered
+              a.button.button--primary.button--large(href="mailto:mike@mcarter.me") Email Me
 
-            p.lead Software developers aren’t hard to find, but seasoned experts are.
+          .content-grid__item.content-grid__item--bordered
+            h2 What I'm working on
+            p.lead I’m growing BitBrawn, a web application studio that transforms businesses with brilliant software.
+            img.text-image.text-image--centered.text-image--borderless(src="/assets/images/bitbrawn-logo.png", alt="Bitbrawn" width="242" height="224" loading="lazy")
+            p We offer web application development and consultancy, and focus primarily on SMEs looking to transform their businesses with bespoke web applications.
+            p.centered
+              a.button.button--primary.button--large(href="https://bitbrawn.com" target="_blank" rel="noopener") Visit BitBrawn
 
-            p With 17 years experience, I’ve focused my career on developing robust, scaleable web applications that deliver real value for businesses in multiple sectors, and on multiple continents.
-
-            h3 Communication and leadership
-
-            p.lead Strong communication and strategic thinking skills are a workplace superpower.
-
-            p I use clear written, verbal and visual communication to achieve a shared understanding between technical and non-technical stakeholders.
-
-          .content-grid__item
-            +testimonial({
-                logoSrc: "/assets/images/client-logos/purplebricks.svg",
-                logoAlt: "Purplebricks",
-                logoWidth: 160,
-                imageSrc: "/assets/images/testimonials/annadivers.jpeg",
-                imageAlt: "Anna Divers",
-                author: "<b>Anna Divers</b><br>Product Director at <a href='https://www.purplebricks.co.uk' rel='noopener' target='_blank'>Purplebricks</a>",
-                text: "Mike’s experience, pragmatism and humility helped him immediately gain the trust and respect of our team. As a legacy from his engagement, we’re equipped with understanding how to improve our product development cycles, front-end developement environment and approach.",
-              })
-
-          .content-grid__item
-            +testimonial({
-              logoSrc: "/assets/images/client-logos/myrift.svg",
-              logoAlt: "RIFT Limited",
-              logoWidth: 100,
-              imageSrc: "/assets/images/testimonials/bradleypost.jpeg",
-              imageAlt: "Bradley Post",
-              author: "<b>Bradley Post</b><br>CEO at <a href='https://www.riftrefunds.co.uk' rel='noopener' target='_blank'>RIFT Limited</a>",
-              text: "Mike has been brilliant for RIFT; he has led numerous successful development projects, and his calm, measured and pragmatic approach immediately instils confidence. He understands the business issues we’re trying to solve and develops practical solutions to drive us forwards.",
-              borderRight: true
-            })
-
-          .content-grid__item
-            h3 Removing risk and uncertainty
-            p.lead Done poorly, developing digital products can be expensive, slow, and offer little return on investment.
-
-            p I derisk digital product development by keeping solutions simple, scaleable, and complimentary to your development team’s current skillsets.
-
-            h3 Delivering results
-            p.lead Getting decisions made and work completed in a dynamic business environment can be tough.
-
-            p I work efficiently by understanding the needs of different stakeholders, systematically eliminating concerns, and making it easy for people to say “yes”.
-
-    section.full-section
-      .full-section__inner
-        p.company-logos-lead Clients I’ve worked with
-        +companyLogos([
-          {
-            alt: "RIFT’s website",
-            url: "https://riftrefunds.co.uk",
-            fileName: "client-logos/myrift.svg",
-            ariaLabel: "RIFT",
-            utilityClass: "rift"
-          },
-          {
-            alt: "Purplebrick’s website",
-            url: "https://purplebricks.co.uk",
-            fileName: "client-logos/purplebricks.svg",
-            ariaLabel: "Purplebricks",
-            utilityClass: "purplebricks"
-          },
-          {
-            alt: "Allocate’s website",
-            url: "https://allocate.co.uk",
-            fileName: "client-logos/allocate.svg",
-            ariaLabel: "Allocate",
-            utilityClass: "allocate"
-          },
-          {
-            alt: "Laced’s website",
-            url: "https://laced.com",
-            fileName: "client-logos/laced.svg",
-            ariaLabel: "Laced",
-            utilityClass: "laced"
-          },
-          {
-            alt: "Holiday Extras’ website",
-            url: "https://holidayextras.co.uk",
-            fileName: "client-logos/holiday-extras.svg",
-            ariaLabel: "Holiday Extras",
-            utilityClass: "holiday-extras"
-          },
-          {
-            alt: "Zendesk’s website",
-            url: "https://zendesk.co.uk",
-            fileName: "client-logos/zendesk.svg",
-            ariaLabel: "Zendesk",
-            utilityClass: "zendesk"
-          },
-          {
-            alt: "HEHA’s website",
-            url: "https://heha.com",
-            fileName: "client-logos/heha.svg",
-            ariaLabel: "HEHA",
-            utilityClass: "heha"
-          },
-          {
-            alt: "Sprint.ly's website",
-            url: "https://sprint.ly",
-            fileName: "client-logos/sprintly.svg",
-            ariaLabel: "Sprint.ly",
-            utilityClass: "sprintly"
-          }
-        ])
-
-    section.full-section
-      .full-section__inner
-        h2 My services
-        .content-grid
-          .content-grid__item
-            h3 Development consultancy
-            p.lead If you’re looking to build something new, or would like long-term technical help, I can help guide decision making.
-            p I’ll work closely with you to deliver top quality digital products using the best technology for the job. I’ll speak a language you understand, and keep your return on investment front of mind.
-            p By continuously re-assessing the needs and constraints in your business, I’ll ensure your development team or agency continue smoothly towards their goal as new issues and blockers are uncovered, and keep you informed of progress along the way.
-
-            h3 Product development
-            p.lead For a fixed price or daily rate, I’ll work on your digital product directly, helping you to achieve a clear return on investment for your business.
-            p I’ll coordinate with stakeholders to establish clear requirements, and then deliver expertly crafted software that fully realises your vision for launch with solid foundations for further development and scaling.
-            p All of my work is carefully documented, and uses technologies with a proven track record and promising trajectory in order to ensure you’re able to continue to find talented developers to grow your product long into the future.
-          .content-grid__item
-            +testimonial({
-              logoSrc: "/assets/images/client-logos/allocate.svg",
-              logoAlt: "Allocate",
-              logoWidth: 130,
-              imageSrc: "/assets/images/testimonials/charlesholdsworth.jpeg",
-              imageAlt: "Charles Holdsworth",
-              author: "<b>Charles Holdsworth</b><br>CEO at <a href='https://www.allocate.co.uk' rel='noopener' target='_blank'>Allocate</a>",
-              text: "Mike has not only performed exceptionally well on two projects for me, but stepped in to help when an issue arose with a former developer.  Without assistance he methodically unravelled older systems in order to understand their structure and setup. His assistance has been invaluable.",
-            })
-
-    section.full-section
-      .full-section__inner
-        p.company-logos-lead Languages and technologies I work with
-        +companyLogos([
-          {
-            alt: "Ruby on Rails",
-            url: "https://rubyonrails.org/",
-            fileName: "tech-logos/rails.svg",
-            ariaLabel: "Ruby on Rails Framework",
-            utilityClass: "rails"
-          },
-          {
-            alt: "Ruby",
-            url: "https://www.ruby-lang.org",
-            fileName: "tech-logos/ruby.svg",
-            ariaLabel: "Ruby Language",
-            utilityClass: "ruby"
-          },
-          {
-            alt: "React.js",
-            url: "https://react.dev/",
-            fileName: "tech-logos/react.svg",
-            ariaLabel: "React Library",
-            utilityClass: "react"
-          },
-          {
-            alt: "Next.js",
-            url: "https://nextjs.org/",
-            fileName: "tech-logos/nextjs.svg",
-            ariaLabel: "Next.js Framework",
-            utilityClass: "nextjs"
-          },
-          {
-            alt: "Node.js",
-            url: "https://nodejs.org",
-            fileName: "tech-logos/nodejs.svg",
-            ariaLabel: "NodeJS Runtime",
-            utilityClass: "nodejs"
-          },
-          {
-            alt: "JavaScript",
-            url: "https://javascript.info/js",
-            fileName: "tech-logos/javascript.svg",
-            ariaLabel: "JavaScript Language",
-            utilityClass: "javascript"
-          },
-          {
-            alt: "Typescript",
-            url: "https://www.typescriptlang.org/",
-            fileName: "tech-logos/typescript.svg",
-            ariaLabel: "Typescript Language",
-            utilityClass: "typescript"
-          }
-        ])
-
-        h2 FAQs
-        .content-grid.content-grid--3col.content-grid--highlight
-          .content-grid__item
-            h3.small What languages do you work with?
-            p I primarily work with <strong>JavaScript</strong>, <strong>Ruby</strong> and their popular frameworks (React, Express, Rails, etc). Naturally my <strong>HTML</strong> and <strong>CSS</strong> are strong too.
-          .content-grid__item
-            h3.small Can  you charge a fixed price?
-            p Yes. I prefer to charge a fixed price for projects, because my clients prefer price certainty. I invoice on a 50% up-front, 50% prior to go-live basis.
-          .content-grid__item
-            h3.small What’s your day rate?
-            p Where a fixed cost is not practical or desired, I charge a rate of <strong>£800 per day</strong>. At the end of each month I’ll issue an invoice for days worked.
-          .content-grid__item
-            h3.small Do you offer ongoing support?
-            p My work comes with <strong>30 days</strong> of complimentary bug fixes and support from the point it goes live. Outside of this, support can be negotiated on a per-engagement basis.
-          .content-grid__item
-            h3.small Will you work with our developers?
-            p Yes, I love to work with other developers. Collaboration is great for quality software, it allows me to share best practices your business can benefit from after I’m gone.
-          .content-grid__item
-            h3.small What if our plans change?
-            p In the event of a change of plans, we can negotiate something new or cancel the project completely. Cancellations will mean no deliverables from me, and no 50% final payment for you.
-          .content-grid__item
-            h3.small Will you come to our offices?
-            p Yes. I primarily work remotely, but I’m happy to be with you in-person when it makes sense to do so. This can be factored into the scope of your project, or billed for at my hourly rate.
-          .content-grid__item
-            h3.small What if we need more people?
-            p I have a wide network of skilled developers, designers, and project managers I’ve worked with previously. If necessary, I can pull in the right people to keep things running smoothly.
-          .content-grid__item
-            h3.small Do you have availability?
-            p I’m currently booked until <strong>May 2023</strong>. I’m often booked out several months ahead, so if you’re planning something, contact me early to avoid disappointment.
-
-  include includes/footer.pug

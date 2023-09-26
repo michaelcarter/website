@@ -1,62 +1,24 @@
 .full-section {
-  @include vertical-section;
+  padding: $spacing-3 $spacing-gutter-sm;
 
-  padding-left: $spacing-gutter-sm;
-  padding-right: $spacing-gutter-sm;
-
-  @media only screen and (min-width: $bp-sm) {      
-    padding-left: $spacing-gutter;
-    padding-right: $spacing-gutter;
+  @media only screen and (min-width: $bp-sm) {
+    padding: $spacing-4 $spacing-gutter;
   }
 
   &--top {
     padding-top: 0;
   }
 
-  &--bottom {
-    padding-bottom: 0;
-  }
-
-  &--highlight {
-    @include highlight-container;
-  }
-
   &__inner {
     @include inner-wrapper;
     @include normalize-typography-margins;
 
+    &--narrow {
+      max-width: $layout-width-narrow;
+    }
+
     &--wide {
       max-width: $layout-width-semi-wide;
-    }
-  }
-
-  &__content {
-    @media only screen and (min-width: $bp-sm) {
-      display: flex;
-    }
-  }
-
-  &__sub-section {
-    flex: 1;
-    margin-right: $spacing-3;
-
-    @media only screen and (min-width: $bp-md) {
-      margin-right: $spacing-4;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  &__footer {
-    margin-top: $spacing-3;
-    text-align: center;
-
-    a.button {
-      display: block;
-      margin: 0 auto;
-      max-width: 35rem;
     }
   }
 }

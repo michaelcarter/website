@@ -1,6 +1,7 @@
 .content-grid {
   display: grid;
   grid-template-columns: 1fr;
+  grid-row-gap: $spacing-1;
   grid-column-gap: $spacing-4;
 
   @media only screen and (min-width: $bp-sm) {
@@ -9,8 +10,8 @@
   }
 
   @media only screen and (min-width: $bp-md) {
-    grid-column-gap: $spacing-5;
-    grid-row-gap: $spacing-5;
+    grid-column-gap: $spacing-3;
+    grid-row-gap: $spacing-3;
   }
 
   &--3col {
@@ -22,17 +23,15 @@
     }
   }
 
-  &--highlight {
-    .content-grid__item {
-      border: 1px solid darken($beige, 2%);
-      background: lighten($beige, 2%);
-      border-radius: $border-radius-1;
-      padding: $spacing-3;
-    }
-  }
-
   &__item {
     @include normalize-typography-margins;
     position: relative;
+
+    &--bordered {
+      border: 1px solid darken($beige, 2%);
+      border-radius: $border-radius-2;
+      background: lighten($beige, 3%);
+      padding: $spacing-2 $spacing-3;
+    }
   }
 }

@@ -2,12 +2,11 @@ extends ../base.pug
 
 include mixins/navigation.pug
 include mixins/header.pug
-include mixins/imageList.pug
 include mixins/postLink.pug
 
 block append vars
-  -var pageTitle = "Blog | Mike Carter | Digital products derisked"
-  -var metaTitle = "Blog"
+  -var pageTitle = "Writing | Mike Carter | Software developer & founder"
+  -var metaTitle = "Writing"
   -var metaDescription = "I write about software engineering and good work habits, along with some of my own personal opinions to spice things up a bit."
   -var metaUrl = "https://mcarter.me/blog"
 
@@ -16,7 +15,7 @@ block cssIncludes
 
 block pageContent
   +header(
-    "Blog",
+    "Writing",
     "I write about software engineering and good work habits, along with some of my own personal opinions to spice things up a bit."
   )
 
@@ -40,11 +39,11 @@ block pageContent
             external: false
           },
           {
-            title: "How much does it cost to make an app?",
+            title: "How much does a web application cost?",
             date: "1st July 2021",
             description: "It’s simple to ask, but difficult to answer. In this post, we explore factors affecting software cost so you can get more value from your development projects.",
-            href: "/posts/how-much-does-it-cost-to-make-an-app",
-            external: false
+            href: "https://bitbrawn.com/posts/how-much-does-it-cost-to-make-an-app",
+            external: true
           },
           {
             title: "For a better web, let developers learn",
@@ -57,15 +56,15 @@ block pageContent
             title: "Choosing a good development partner",
             date: "6th April 2021",
             description: "When developing new software, timelines, cost, and quality can be hard to control. Here's how to choose the right development partner to keep things on track.",
-            href: "/posts/choosing-a-good-development-partner",
-            external: false
+            href: "https://bitbrawn.com/posts/choosing-a-good-development-partner",
+            external: true
           },
           {
             title: "The economics of JavaScript web apps",
             date: "23rd February 2020",
             description: "Your single page JavaScript web app probably doesn't make you as much money as its old-school alternative. Sorry.",
-            href: "/posts/the-economics-of-javascript",
-            external: false
+            href: "https://bitbrawn.com/posts/the-economics-of-javascript",
+            external: true
           },
           {
             title: "Fix the right problems in your code",
@@ -226,5 +225,3 @@ block pageContent
             href: "/posts/moving-on-from-leaf"
           },
         ])
-
-  include includes/footer.pug

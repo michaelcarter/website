@@ -1,5 +1,7 @@
 .tip {
-  @include highlight-container;
+  background: $beige;
+  border-top: 1px solid darken($beige, 5%);
+  border-bottom: 1px solid darken($beige, 5%);
   margin: 0 calc(0rem - #{$spacing-gutter-sm}) $spacing-3
     calc(0rem - #{$spacing-gutter-sm});
   padding: $spacing-2 $spacing-gutter-sm;
