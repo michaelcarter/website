@@ -11,11 +11,11 @@
   padding: 0.8rem $spacing-2;
 
   &--primary {
-    background: $beige-darkest;
+    background: $blue-darkest;
     color: $white;
 
     &:hover {
-      background: $orange-dark;
+      background: $blue-dark;
       transition: background $duration-short;
     }
 

@@ -28,9 +28,9 @@
     position: relative;
 
     &--bordered {
-      border: 1px solid darken($beige, 2%);
-      border-radius: $border-radius-2;
-      background: lighten($beige, 3%);
+      // border: 1px solid $blue-lighter;
+      // border-radius: $border-radius-2;
+      background: $blue-lightest;
       padding: $spacing-2 $spacing-3;
     }
   }

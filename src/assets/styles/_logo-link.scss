@@ -13,13 +13,13 @@
   }
 
   svg {
-    fill: $beige-darkest;
+    fill: $blue-darkest;
     transition: fill $duration-medium;
   }
 
   &:hover {
     svg {
-      fill: $orange-dark;
+      fill: $blue-dark;
     }
   }
 }

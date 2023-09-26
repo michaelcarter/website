@@ -1,5 +1,5 @@
 body {
-  color: $beige-darkest;
+  color: $grey-darker;
 }
 
 h1,
@@ -131,18 +131,17 @@ strong {
 
 a:link,
 a:visited {
-  color: $beige-darkest;
+  color: $blue-darkest;
 }
 
 a:hover,
 a:active {
-  color: $orange-dark;
+  color: $blue-dark;
   transition: color $duration-medium;
 }
 
 .text-image {
   border: 6.5px solid black;
-  box-shadow: 0 0 5px $beige;
   border-radius: 10rem;
   margin: $spacing-3 0;
   height: auto;

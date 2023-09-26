@@ -14,7 +14,7 @@
 
 .post {
   display: block;
-  background: $beige;
+  background: $blue-lightest;
   padding: $spacing-3;
   text-decoration: none;
   transform: scale(1);
@@ -26,7 +26,7 @@
   }
 
   &__date {
-    color: $beige-dark;
+    color: $blue-dark;
     display: inline-block;
     font-weight: 500;
     font-size: $font-size-md;
@@ -42,7 +42,7 @@
 
   svg {
     display: inline;
-    fill: $beige-darkest;
+    fill: $blue-darkest;
     height: 1rem;
     margin-left: $spacing-1;
     transition: fill $duration-medium;
@@ -50,8 +50,8 @@
   }
 
   &:hover {
-    background: darken($beige, 2%);
-    color: $beige-darkest;
+    background: darken($blue-lightest, 2%);
+    color: $blue-darkest;
     transform: scale(1.05);
     transition: transform $duration-short ease-in-out,
       background-color $duration-short ease-in-out;
