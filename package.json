@@ -4,7 +4,7 @@
   "description": "Mike Personal Website",
   "private": true,
   "scripts": {
-    "build:assets": "webpack --mode=production",
+    "build:assets": "webpack --mode=production && cp ./src/_redirects ./dist/",
     "watch:assets": "webpack-dev-server --mode=development",
     "start": "run-p watch:assets"
   },

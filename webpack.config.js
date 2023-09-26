@@ -17,7 +17,6 @@ const pagePlugins = pages.map((page) => {
 })
 
 const filePlugins = new CopyPlugin([
-  { from: './src/_redirects', to: './_redirects' },
   { from: './src/assets/images/', to: './assets/images/' },
   { from: './src/robots.txt', to: './robots.txt' },
   { from: './src/pages/rss.xml', to: './rss.xml' },
