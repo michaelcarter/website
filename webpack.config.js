@@ -33,6 +33,10 @@ const filePlugins = new CopyPlugin([
     from: './src/android-chrome-192x192.png',
     to: './android-chrome-192x192.png',
   },
+  {
+    from: './src/_redirects',
+    to: './_redirects',
+  },
 ])
 
 const sitemapPlugin = new SitemapPlugin({
