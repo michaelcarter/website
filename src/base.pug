@@ -41,5 +41,15 @@ html(lang="en-GB")
 
     title=pageTitle
 
-  body(class=bodyClass)
-    block pageContent
+  body
+    .container
+      section
+        +header(
+          "Mike Carter",
+          "Digital product developer, founder and technical leader.",
+          true
+        )
+      block pageContent
+      footer
+        p &copy; 2024 Mike Carter
+

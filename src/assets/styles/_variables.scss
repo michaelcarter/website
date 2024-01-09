@@ -4,22 +4,10 @@ $bp-sm: 47.9rem; // Portrait iPad
 $bp-md: 76rem;
 
 // Colours:
-$white: #fff;
-
-$grey: #999;
-$grey-light: lighten($grey, 5%);
-$grey-lighter: lighten($grey, 10%);
-$grey-lightest: lighten($grey, 25%);
-$grey-dark: darken($grey, 33%);
-$grey-darker: darken($grey, 40%);
-
-$blue: #007acc;
-$blue-dark: darken($blue, 15%);
-$blue-darker: darken($blue, 22%);
-$blue-darkest: darken($blue, 25%);
-$blue-light: lighten($blue, 30%);
-$blue-lighter: lighten($blue, 48%);
-$blue-lightest: lighten($blue, 57%);
+$charcoal: #333;
+$ash: #aaa;
+$snow: #f9f9f9;
+$orange: orange;
 
 // Spacings
 $spacing-1: 0.5rem;
@@ -27,41 +15,19 @@ $spacing-2: 1rem;
 $spacing-3: 2rem;
 $spacing-4: 3rem;
 $spacing-5: 5rem;
-$spacing-6: 8rem;
-
-$spacing-gutter-sm: 1rem;
-$spacing-gutter: 2rem;
 
 // Border radiuses
 $border-radius-1: 0.3rem;
 $border-radius-2: 0.5rem;
-$border-radius-3: 1rem;
 
 // Font-sizings
-$font-size-xl: 1.8rem;
-$font-size-lg: 1.5rem;
+$font-size-lg: 1.6rem;
 $font-size-semi-lg: 1.3rem;
 $font-size-base: 1.1rem;
 $font-size-md: 1rem;
 $font-size-sm: 0.9rem;
 $font-size-xs: 0.8rem;
 
-// Sizings
-$layout-width-narrow: 35rem;
-$layout-width-semi-narrow: 55rem;
-$layout-width: 70rem;
-$layout-width-semi-wide: calc(70rem + #{$spacing-4} + #{$spacing-4});
-$layout-width-wide: 110rem;
-
-// Transitions
-$duration-short: 0.15s;
-$duration-medium: 0.5s;
-
 // Fonts:
-$header-font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
-  helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 $sans-font-family: 'Lato', helvetica neue, helvetica, Ubuntu, roboto, noto,
   segoe ui, arial, sans-serif;
-$fixed-font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
-  monospace;
-$serif-font-family: Georgia, 'Times New Roman', Times, serif;

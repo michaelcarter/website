@@ -1,6 +1,6 @@
 extends ../../base.pug
 
-include ../mixins/navigation.pug
+
 include ../mixins/header.pug
 
 block append vars
@@ -10,88 +10,88 @@ block append vars
   -var metaUrl = "https://mcarter.me/posts/for-a-better-web-let-developers-learn"
   -var metaType = "article"
 
-block cssIncludes
-  link(rel='stylesheet' type='text/css' href='/assets/styles/blog.css' media='screen')
+
 
 block pageContent
-  article.article
-    +header(
-      "For a better web, let developers learn",
-      "Systemic demands on developers prevent them from building deep expertise, and it&#39;s holding back the web on an industry-wide scale. Here&#39;s why."
-    )
-    main.article__content.wrapper-article
-      h2 A software revolution
+  section
+    article
+      +header(
+        "For a better web, let developers learn",
+        "Systemic demands on developers prevent them from building deep expertise, and it&#39;s holding back the web on an industry-wide scale. Here&#39;s why."
+      )
+      main
+        h2 A software revolution
 
-      p When I started working on the web in the mid-noughties, we lived in a world of separate applications and technology stacks. The web was widely accessible on desktop computers, but the mobile web wasn&#39;t really a thing yet, and other Internet connected devices like tablets and smart speakers were still years away from becoming mainstream.
+        p When I started working on the web in the mid-noughties, we lived in a world of separate applications and technology stacks. The web was widely accessible on desktop computers, but the mobile web wasn&#39;t really a thing yet, and other Internet connected devices like tablets and smart speakers were still years away from becoming mainstream.
 
-      p In the noughties, web developers were expected to have good HTML and CSS knowledge, and with a back-end language and some light JavaScript and SQL thrown into the mix, you could comfortably build quality web applications. You still can, in fact, but building in directly in these languages was much more common back then.
+        p In the noughties, web developers were expected to have good HTML and CSS knowledge, and with a back-end language and some light JavaScript and SQL thrown into the mix, you could comfortably build quality web applications. You still can, in fact, but building in directly in these languages was much more common back then.
 
-      p From 2008 to now, mobile devices have become the default way the web is used, and the Internet has become a sort of &#8220;extension of consciousness&#8221; for many people. The proliferation of the web has led to new performance, UX, and accessibility concerns, as well as expectations of instant handoffs between devices and seamless integrations between the complementary products.
+        p From 2008 to now, mobile devices have become the default way the web is used, and the Internet has become a sort of &#8220;extension of consciousness&#8221; for many people. The proliferation of the web has led to new performance, UX, and accessibility concerns, as well as expectations of instant handoffs between devices and seamless integrations between the complementary products.
 
-      p Changing expectations and advances in technology have meant the past 13 years has seen a tremendous surge in demand for web application development, but also for technologies that allow us to build digital products that do more, run across multiple platforms, and connect seamlessly with everything else. Boundaries have become increasingly blurred, and the demands on the web as a platform and the developers building for it have grown significantly.
+        p Changing expectations and advances in technology have meant the past 13 years has seen a tremendous surge in demand for web application development, but also for technologies that allow us to build digital products that do more, run across multiple platforms, and connect seamlessly with everything else. Boundaries have become increasingly blurred, and the demands on the web as a platform and the developers building for it have grown significantly.
 
-      h2 Changing priorities
+        h2 Changing priorities
 
-      p New languages, tools, frameworks, services, platforms, architectures and development approaches have quickly gained widespread traction to make building for the modern web easier. Many of the most well known of these have grown out of large tech companies, who develop them to solve their own problems and then nurture them into the mainstream where they become de-facto industry standards.
+        p New languages, tools, frameworks, services, platforms, architectures and development approaches have quickly gained widespread traction to make building for the modern web easier. Many of the most well known of these have grown out of large tech companies, who develop them to solve their own problems and then nurture them into the mainstream where they become de-facto industry standards.
 
-      p These technologies abstract away from low-level detail so developers can build more efficiently across a wider range of devices in a connected way. They protect developers from solved problems, and integrate seamlessly with pre-packaged solutions for common problems. This lets developers spend more time writing code that tells systems what to do, and less time writing code that tells systems how it should be done.
+        p These technologies abstract away from low-level detail so developers can build more efficiently across a wider range of devices in a connected way. They protect developers from solved problems, and integrate seamlessly with pre-packaged solutions for common problems. This lets developers spend more time writing code that tells systems what to do, and less time writing code that tells systems how it should be done.
 
-      p This abstraction has, in turn, led to a subtle change in skills valued by organisations hiring new developers. Nowadays, breadth of experience in shipping solutions is generally valued over depth of expertise in specific areas of technology. In short, knowing that a solution works is seen as more useful than understanding why a solution works.
+        p This abstraction has, in turn, led to a subtle change in skills valued by organisations hiring new developers. Nowadays, breadth of experience in shipping solutions is generally valued over depth of expertise in specific areas of technology. In short, knowing that a solution works is seen as more useful than understanding why a solution works.
 
-      p On the web, I&#39;ve seen this change in values reflected most strikingly in junior developers. When I started working in the industry, I&#39;d see other junior developers like me starting work with decent programming language experience, but little framework or tooling experience. In 2021, it&#39;s more common to see a specific set of platform and framework experience, with little, or sometimes no experience in the underlying languages involved.
+        p On the web, I&#39;ve seen this change in values reflected most strikingly in junior developers. When I started working in the industry, I&#39;d see other junior developers like me starting work with decent programming language experience, but little framework or tooling experience. In 2021, it&#39;s more common to see a specific set of platform and framework experience, with little, or sometimes no experience in the underlying languages involved.
 
-      h2 The quality problem
+        h2 The quality problem
 
-      p Most would agree that having a chef who can reliably produce a tasty meal is more useful than a chef who understands the chemistry of cooking but produces inedible food. In the same way, we&#39;re right to value developers who can produce working software, but I believe we&#39;ve crossed a line into a &#8220;too much of a good thing&#8221; situation with the tools we use.
+        p Most would agree that having a chef who can reliably produce a tasty meal is more useful than a chef who understands the chemistry of cooking but produces inedible food. In the same way, we&#39;re right to value developers who can produce working software, but I believe we&#39;ve crossed a line into a &#8220;too much of a good thing&#8221; situation with the tools we use.
 
-      p Today, many developers are consistently working several automated abstractions removed from the code they&#39;re actually shipping, and doing so without the knowledge required to diagnose and resolve quality at lower levels when they inevitably do occur. I see this causing the following major problems all over the web:
+        p Today, many developers are consistently working several automated abstractions removed from the code they&#39;re actually shipping, and doing so without the knowledge required to diagnose and resolve quality at lower levels when they inevitably do occur. I see this causing the following major problems all over the web:
 
-      ul
-        li <strong>Poor application performance:</strong> Nested webs of dependencies, transpilation and bundling steps mean many megabytes of unnecessary assets end up in production where they need to be downloaded and processed on connections and devices much slower than the ones they were developed on.
-        li <strong>Poor user experience and accessibility:</strong> UI frameworks and component libraries allow developers to build user interfaces without knowledge of HTML and CSS, leading to div soup, inaccessible markup, and unmaintainable stylesheets. This is done without any consideration given to UX or accessibility.
-        li <strong>Persistent bugs that linger without a fix:</strong> A lack of low level knowledge means that often nobody in a team is able to competently dig into their stack to figure out what&#39;s going wrong. It&#39;s less costly to just ignore the bugs until they become a bigger issue.
-        li <strong>Gaping holes in application security:</strong> A lack of awareness of the underlying technologies leaves applications and APIs littered with security vulnerabilities that put confidential data at risk.
+        ul
+          li <strong>Poor application performance:</strong> Nested webs of dependencies, transpilation and bundling steps mean many megabytes of unnecessary assets end up in production where they need to be downloaded and processed on connections and devices much slower than the ones they were developed on.
+          li <strong>Poor user experience and accessibility:</strong> UI frameworks and component libraries allow developers to build user interfaces without knowledge of HTML and CSS, leading to div soup, inaccessible markup, and unmaintainable stylesheets. This is done without any consideration given to UX or accessibility.
+          li <strong>Persistent bugs that linger without a fix:</strong> A lack of low level knowledge means that often nobody in a team is able to competently dig into their stack to figure out what&#39;s going wrong. It&#39;s less costly to just ignore the bugs until they become a bigger issue.
+          li <strong>Gaping holes in application security:</strong> A lack of awareness of the underlying technologies leaves applications and APIs littered with security vulnerabilities that put confidential data at risk.
 
-      p The interesting thing about these issues is that organisations are generally aware of them, but blame them on individual laziness or limitations in capability. Ironically though, this conclusion is itself the result of lazy thinking.
+        p The interesting thing about these issues is that organisations are generally aware of them, but blame them on individual laziness or limitations in capability. Ironically though, this conclusion is itself the result of lazy thinking.
 
-      p The reality is most developers have areas they&#39;d love to build deep expertise in, but for many teams, the constant pressure to ship combined with the routine demands of of their personal lives means they&#39;re forced to work in a feature factory, only ever picking up tidbits of &#8220;how to do x&#8221; knowledge here and there as they go, and leaving a trail of unfortunate quality issues in their wake.
+        p The reality is most developers have areas they&#39;d love to build deep expertise in, but for many teams, the constant pressure to ship combined with the routine demands of of their personal lives means they&#39;re forced to work in a feature factory, only ever picking up tidbits of &#8220;how to do x&#8221; knowledge here and there as they go, and leaving a trail of unfortunate quality issues in their wake.
 
-      h2 Improving the situation
+        h2 Improving the situation
 
-      p It&#39;s common to see purist influencers advocate for a back to basics approach to solving quality problems. They encourage developers to build applications using clean hand-crafted code and few external dependencies that really get them working close to the browser or some server-side environment - &#8220;Look how far you can get with just the basics!&#8221;.
+        p It&#39;s common to see purist influencers advocate for a back to basics approach to solving quality problems. They encourage developers to build applications using clean hand-crafted code and few external dependencies that really get them working close to the browser or some server-side environment - &#8220;Look how far you can get with just the basics!&#8221;.
 
-      p Back to basics is a great way to learn, but it&#39;s an uneconomical approach for building larger applications in most businesses. The frameworks and libraries people bemoan for their wastefulness are so popular because they&#39;re actually not wasteful at all. They&#39;re highly efficient on developer time, which is usually a much more significant cost than an inaccessible or slow web application in your average-sized company.
+        p Back to basics is a great way to learn, but it&#39;s an uneconomical approach for building larger applications in most businesses. The frameworks and libraries people bemoan for their wastefulness are so popular because they&#39;re actually not wasteful at all. They&#39;re highly efficient on developer time, which is usually a much more significant cost than an inaccessible or slow web application in your average-sized company.
 
-      p With time in mind, we need to approach the quality problem in a way that preserves the flexibility and bang-for-buck efficiency of modern development, while enabling developers to steadily grow the lower level expertise they&#39;re missing within work hours. In my experience, this works well through a combination of <strong>automated monitoring</strong>, <strong>deep learning time</strong> and <strong>personalised learning areas</strong>.
+        p With time in mind, we need to approach the quality problem in a way that preserves the flexibility and bang-for-buck efficiency of modern development, while enabling developers to steadily grow the lower level expertise they&#39;re missing within work hours. In my experience, this works well through a combination of <strong>automated monitoring</strong>, <strong>deep learning time</strong> and <strong>personalised learning areas</strong>.
 
-      h3 Automated monitoring
+        h3 Automated monitoring
 
-      p Automated monitoring tools are fantastic for detecting and alerting developers to quality issues with their web applications. User acceptance testing, cross-browser compatibility, performance monitoring, bug tracking, accessibility and UX regressions can all be automatically monitored to varying degrees.
+        p Automated monitoring tools are fantastic for detecting and alerting developers to quality issues with their web applications. User acceptance testing, cross-browser compatibility, performance monitoring, bug tracking, accessibility and UX regressions can all be automatically monitored to varying degrees.
 
-      p When the pressure is on, automated tooling helps to keep everyone aware of the overall health of a suite of applications, and enables teams to focus on shipping with their favourite high level frameworks while being alerted to many major quality issues ahead of time.
+        p When the pressure is on, automated tooling helps to keep everyone aware of the overall health of a suite of applications, and enables teams to focus on shipping with their favourite high level frameworks while being alerted to many major quality issues ahead of time.
 
-      h3 Deep learning time
+        h3 Deep learning time
 
-      p Many companies make nominal gestures towards supporting employee learning, but it usually comes second to everything else.
+        p Many companies make nominal gestures towards supporting employee learning, but it usually comes second to everything else.
 
-      p Learning is important, and to build deep expertise, developers need dedicated time and support from employers to build their knowledge within work hours. This dedicated learning time can be combined with a small budget for books, courses, workshops, and conference presentations for even greater effect.
+        p Learning is important, and to build deep expertise, developers need dedicated time and support from employers to build their knowledge within work hours. This dedicated learning time can be combined with a small budget for books, courses, workshops, and conference presentations for even greater effect.
 
-      p Lastly, the importance of this learning time needs to be elevated to a position whereby it isn&#39;t skipped the moment a minor issue occurs, or the team falls slightly behind on their sprint.
+        p Lastly, the importance of this learning time needs to be elevated to a position whereby it isn&#39;t skipped the moment a minor issue occurs, or the team falls slightly behind on their sprint.
 
-      h3 Personalised learning areas
+        h3 Personalised learning areas
 
-      p Rather than encouraging everyone to learn everything, speak to your team members and figure out what interests them on an individual basis. From there, you can set goals for building deep expertise in specific technical areas that align with quality issues the team is struggling with.
+        p Rather than encouraging everyone to learn everything, speak to your team members and figure out what interests them on an individual basis. From there, you can set goals for building deep expertise in specific technical areas that align with quality issues the team is struggling with.
 
-      p This way, even a small team can build real expertise in areas like performance, user experience, accessibility and security. They can begin to keep on top of quality issues while still shipping features quickly.
+        p This way, even a small team can build real expertise in areas like performance, user experience, accessibility and security. They can begin to keep on top of quality issues while still shipping features quickly.
 
-      h2 Wrapping up
+        h2 Wrapping up
 
-      p By fostering an environment that promotes developing deep expertise alongside higher level productivity, you&#39;re creating a team that&#39;s better equipped to efficiently build modern, highly integrated applications across a diverse range of technologies and high level frameworks that shine as examples of quality software.
+        p By fostering an environment that promotes developing deep expertise alongside higher level productivity, you&#39;re creating a team that&#39;s better equipped to efficiently build modern, highly integrated applications across a diverse range of technologies and high level frameworks that shine as examples of quality software.
 
-      p What&#39;s more, you&#39;re also taking an active role in aligning your developer&#39;s interests and desire for mastery of their craft with benefits to your organisation. This is a major motivator for employees in an industry where impostor syndrome or a general feeling of falling behind are very real fears for many.
+        p What&#39;s more, you&#39;re also taking an active role in aligning your developer&#39;s interests and desire for mastery of their craft with benefits to your organisation. This is a major motivator for employees in an industry where impostor syndrome or a general feeling of falling behind are very real fears for many.
 
-      p If you&#39;re still not convinced, just remember that these benefits compound over time. Individual learning builds into very real expertise that spreads to others in the organisation, and happier, more fulfilled employees will attract higher quality applicants to your business who will in turn do the same to others. It&#39;s a virtuous cycle that starts by giving people room to learn.
+        p If you&#39;re still not convinced, just remember that these benefits compound over time. Individual learning builds into very real expertise that spreads to others in the organisation, and happier, more fulfilled employees will attract higher quality applicants to your business who will in turn do the same to others. It&#39;s a virtuous cycle that starts by giving people room to learn.
 
-      hr
+        hr
 
-      p I make a living by helping companies bring digital products to market with solid foundations, room to scale, and costs under control. If you enjoyed this blog post, you should follow me on <a href='https://twitter.com/mcarterj' target='_blank' rel='noopener'>Twitter</a>, for more product development content in future.
+        p I make a living by helping companies bring digital products to market with solid foundations, room to scale, and costs under control. If you enjoyed this blog post, you should follow me on <a href='https://twitter.com/mcarterj' target='_blank' rel='noopener'>Twitter</a>, for more product development content in future.

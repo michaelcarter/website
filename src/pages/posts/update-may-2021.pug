@@ -1,6 +1,6 @@
 extends ../../base.pug
 
-include ../mixins/navigation.pug
+
 include ../mixins/header.pug
 
 block append vars
@@ -10,26 +10,25 @@ block append vars
   -var metaUrl = "https://mcarter.me/posts/update-june-2021"
   -var metaType = "article"
 
-block cssIncludes
-  link(rel='stylesheet' type='text/css' href='/assets/styles/blog.css' media='screen')
+
 
 block pageContent
-  article.article
-    +header(
-      "Freelancing update - May 2021",
-      "I started working as a freelance development consultant full time in April 2021. Here are the numbers and reflections on my second month."
-    )
+  section
+    article
+      +header(
+        "Freelancing update - May 2021",
+        "I started working as a freelance development consultant full time in April 2021. Here are the numbers and reflections on my second month."
+      )
 
-    main.article__content.wrapper-article
-      p Time was a major theme in May. Between handling client work, content production, legal to-dos, and various other admin tasks, it&#39;s becoming clear that successful freelancing is going to need me to be deliberate (and a bit ruthless) about where I give my time.
+      main
+        p Time was a major theme in May. Between handling client work, content production, legal to-dos, and various other admin tasks, it&#39;s becoming clear that successful freelancing is going to need me to be deliberate (and a bit ruthless) about where I give my time.
 
-      p I mentioned in April&#39;s update that I was working more than full time hours in order to keep up with everything. That was still the case in May, but I was able to spot a few low value requests early, and either delegate or refuse them. Progress!
+        p I mentioned in April&#39;s update that I was working more than full time hours in order to keep up with everything. That was still the case in May, but I was able to spot a few low value requests early, and either delegate or refuse them. Progress!
 
-      p Despite working more hours than I&#39;d like, May was still enjoyable. Getting comfortable with the idea that I&#39;m no longer tied to a 9-5 schedule has lead to some nice spontaneous dog walks, early starts, late starts, and outdoor lunches. I even took a week off!
+        p Despite working more hours than I&#39;d like, May was still enjoyable. Getting comfortable with the idea that I&#39;m no longer tied to a 9-5 schedule has lead to some nice spontaneous dog walks, early starts, late starts, and outdoor lunches. I even took a week off!
 
-      h2 The stats
+        h2 The stats
 
-      .table__container
         table.table
           tr
             th Month
@@ -56,112 +55,112 @@ block pageContent
             td 5
             td £4,200
 
-      h3 Revenue
-      p I issued invoices for <strong>£4,200</strong> (~$5,950) excluding <a href="https://www.gov.uk/vat-businesses" rel="noopener" target="_blank">VAT</a> in May. These came from a mixture of consulting and development work for three different clients. If you read the <a href="/posts/update-april-2021">April update</a>, you&#39;ll probably have noticed this is a £3,600 drop from last month. There are a couple of reasons for this:
+        h3 Revenue
+        p I issued invoices for <strong>£4,200</strong> (~$5,950) excluding <a href="https://www.gov.uk/vat-businesses" rel="noopener" target="_blank">VAT</a> in May. These came from a mixture of consulting and development work for three different clients. If you read the <a href="/posts/update-april-2021">April update</a>, you&#39;ll probably have noticed this is a £3,600 drop from last month. There are a couple of reasons for this:
 
-      ol
-        li <strong>Time off:</strong> I took a week off in May, and when your income relies on you being at your computer, weeks off are <em>expensive</em>. I only took 5 days, but the time lost travelling, catching up on emails, and other small non-billable tasks in addition to those days really put a dent in my billable hours.
-        li <strong>Fixed cost work:</strong> One of the projects I&#39;m working on is priced on a fixed-cost basis. I put many hours into it in May, but I won&#39;t be paid for it until later this year. My other work is invoiced on an hourly basis, and so I invoice whatever time I&#39;ve spent on it at the end of each month. It&#39;s this that you see invoiced for May above.
+        ol
+          li <strong>Time off:</strong> I took a week off in May, and when your income relies on you being at your computer, weeks off are <em>expensive</em>. I only took 5 days, but the time lost travelling, catching up on emails, and other small non-billable tasks in addition to those days really put a dent in my billable hours.
+          li <strong>Fixed cost work:</strong> One of the projects I&#39;m working on is priced on a fixed-cost basis. I put many hours into it in May, but I won&#39;t be paid for it until later this year. My other work is invoiced on an hourly basis, and so I invoice whatever time I&#39;ve spent on it at the end of each month. It&#39;s this that you see invoiced for May above.
 
-      p Despite the lower number, I&#39;m happy with revenue for May. It&#39;s enough to cover my saving and investment goals, and the drop was entirely expected and normal.
+        p Despite the lower number, I&#39;m happy with revenue for May. It&#39;s enough to cover my saving and investment goals, and the drop was entirely expected and normal.
 
-      h3 Enquiries
-      p I received <strong>1 new work enquiry</strong> in May. It was a respectable lead, and one that I was incredibly well positioned to help. However, there was a direct conflict of interest with my largest client, and so I turned them down gently in order to avoid a situation I&#39;d feel morally uneasy about.
+        h3 Enquiries
+        p I received <strong>1 new work enquiry</strong> in May. It was a respectable lead, and one that I was incredibly well positioned to help. However, there was a direct conflict of interest with my largest client, and so I turned them down gently in order to avoid a situation I&#39;d feel morally uneasy about.
 
-      p The consulting enquiry that I previously mentioned I was keen to move forward with in April&#39;s update seems to have lost its momentum in May. Knowing the company, I suspect this is them just being busy with other things rather than changing their mind, so I&#39;m going to reach back out to them in June to see if they&#39;re ready to move forwards.
+        p The consulting enquiry that I previously mentioned I was keen to move forward with in April&#39;s update seems to have lost its momentum in May. Knowing the company, I suspect this is them just being busy with other things rather than changing their mind, so I&#39;m going to reach back out to them in June to see if they&#39;re ready to move forwards.
 
-      h3 Website visits
-      p My site homepage received <strong>1263 page views</strong> in May. This is a few more eyeballs than last month, but nothing significant. I expect driving this number up in a significant way will take months and years of effort.
+        h3 Website visits
+        p My site homepage received <strong>1263 page views</strong> in May. This is a few more eyeballs than last month, but nothing significant. I expect driving this number up in a significant way will take months and years of effort.
 
-      h3 Posts visits
-      p My blog posts received a combined total of <strong>3144 views</strong> in May. This is a huge 2.8x improvement on my April numbers, and largely comes down to some lucky retweets:
+        h3 Posts visits
+        p My blog posts received a combined total of <strong>3144 views</strong> in May. This is a huge 2.8x improvement on my April numbers, and largely comes down to some lucky retweets:
 
-      img.article-image.article-image--bordered(src="/assets/images/posts/update-may-2021/blog-post-tweet.jpg" alt="A screenshot of a Tweet I wrote about a blog blog post on this website, showing 13 retweets, 1 quote tweet, and 20 likes.")
+        img.article-image.article-image--bordered(src="/assets/images/posts/update-may-2021/blog-post-tweet.jpg" alt="A screenshot of a Tweet I wrote about a blog blog post on this website, showing 13 retweets, 1 quote tweet, and 20 likes.")
 
-      p I&#39;m obviously pleased with this, but it&#39;s important for me to remember these people aren&#39;t <em>my</em> readers. I need to keep my head down and keep producing valuable things to build an audience of my own.
+        p I&#39;m obviously pleased with this, but it&#39;s important for me to remember these people aren&#39;t <em>my</em> readers. I need to keep my head down and keep producing valuable things to build an audience of my own.
 
-      h3 Twitter
-      p I managed to tweet every working day in May. It continues to feel like hard work, but I did manage to gain <strong>26 new followers</strong> this month, so maybe that&#39;s progress:
+        h3 Twitter
+        p I managed to tweet every working day in May. It continues to feel like hard work, but I did manage to gain <strong>26 new followers</strong> this month, so maybe that&#39;s progress:
 
 
-      img.article-image.article-image--bordered(src="/assets/images/posts/update-may-2021/twitter-stats.png" alt="A screenshot of my Twitter analytics for May 2021. It shows 66 tweets, 45,600 tweet impressions, 4,660 profile visits, 55 mentions, and 385 followers (26 more than last month).")
+        img.article-image.article-image--bordered(src="/assets/images/posts/update-may-2021/twitter-stats.png" alt="A screenshot of my Twitter analytics for May 2021. It shows 66 tweets, 45,600 tweet impressions, 4,660 profile visits, 55 mentions, and 385 followers (26 more than last month).")
 
-      p My new followers seem to have come early in the month as a result of some well received Tweets, plus a some chance retweets from 2020. Apart from the new followers though, my stats are down across the board for May due to the week off.
+        p My new followers seem to have come early in the month as a result of some well received Tweets, plus a some chance retweets from 2020. Apart from the new followers though, my stats are down across the board for May due to the week off.
 
-      p All things considered, I&#39;m pleased with my Twitter progress for May, I&#39;ll keep at it throughout June and see where I end up!
+        p All things considered, I&#39;m pleased with my Twitter progress for May, I&#39;ll keep at it throughout June and see where I end up!
 
-      h2 Goals from last month
+        h2 Goals from last month
 
-      p I set myself 5 goals for May based on my reflections from April. I&#39;m pleased to say that I managed to complete all 5:
+        p I set myself 5 goals for May based on my reflections from April. I&#39;m pleased to say that I managed to complete all 5:
 
-      ol
-        li Take a week off.
-        li Write a blog post focused on product engineering.
-        li Tweet every working day, trying to be insightful.
-        li Generating 3 product ideas that I think could work, and analyse the viability of each.
-        li Generate enough revenue to cover living expenses and investment goals again.
+        ol
+          li Take a week off.
+          li Write a blog post focused on product engineering.
+          li Tweet every working day, trying to be insightful.
+          li Generating 3 product ideas that I think could work, and analyse the viability of each.
+          li Generate enough revenue to cover living expenses and investment goals again.
 
-      p There&#39;s no need to go into detail on most of these, but I thought you might be interested in my week off and product ideas.
+        p There&#39;s no need to go into detail on most of these, but I thought you might be interested in my week off and product ideas.
 
-      h3 Taking a week off
+        h3 Taking a week off
 
-      p After living indoors since November, we spent a week in Cornwall eating pasties, drinking cider, and doing big clifftop walks. It was <em>beautiful</em>:
+        p After living indoors since November, we spent a week in Cornwall eating pasties, drinking cider, and doing big clifftop walks. It was <em>beautiful</em>:
 
-      section.gallery
-        figure.gallery__item
-          a.gallery__image-link(href="/assets/images/posts/update-may-2021/trip-1.jpg" target="_blank" rel="noopener")
-            img.gallery__image(src="/assets/images/posts/update-may-2021/trip-1-thumb.jpg" alt="The woods were in bloom.")
-          figcaption.gallery__caption The woods were in bloom.
-        figure.gallery__item
-          a.gallery__image-link(href="/assets/images/posts/update-may-2021/trip-2.jpg" target="_blank" rel="noopener")
-            img.gallery__image(src="/assets/images/posts/update-may-2021/trip-2-thumb.jpg" alt="There were some stunning houses.")
-          figcaption.gallery__caption There were some stunning houses.
-        figure.gallery__item
-          a.gallery__image-link(href="/assets/images/posts/update-may-2021/trip-3.jpg" target="_blank" rel="noopener")
-            img.gallery__image(src="/assets/images/posts/update-may-2021/trip-3-thumb.jpg" alt="A coastal path atop cliffs near St. Ives.")
-          figcaption.gallery__caption A coastal path atop cliffs near St. Ives.
-        figure.gallery__item
-          a.gallery__image-link(href="/assets/images/posts/update-may-2021/trip-4.jpg" target="_blank" rel="noopener")
-            img.gallery__image(src="/assets/images/posts/update-may-2021/trip-4-thumb.jpg" alt="A lighthouse and cliffs near St. Ives.")
-          figcaption.gallery__caption A lighthouse and cliffs near St. Ives.
-        figure.gallery__item
-          a.gallery__image-link(href="/assets/images/posts/update-may-2021/trip-5.jpg" target="_blank" rel="noopener")
-            img.gallery__image(src="/assets/images/posts/update-may-2021/trip-5-thumb.jpg" alt="Bramley monitoring the situation in Fowey harbour.")
-          figcaption.gallery__caption Bramley monitoring the situation in Fowey harbour.
-        figure.gallery__item
-          a.gallery__image-link(href="/assets/images/posts/update-may-2021/trip-6.jpg" target="_blank" rel="noopener")
-            img.gallery__image(src="/assets/images/posts/update-may-2021/trip-6-thumb.jpg" alt="Things got a bit treacherous here. Worth it!")
-          figcaption.gallery__caption Things got a bit treacherous here. Worth it!
+        .gallery
+          figure.gallery__item
+            a.gallery__image-link(href="/assets/images/posts/update-may-2021/trip-1.jpg" target="_blank" rel="noopener")
+              img.gallery__image(src="/assets/images/posts/update-may-2021/trip-1-thumb.jpg" alt="The woods were in bloom.")
+            figcaption.gallery__caption The woods were in bloom.
+          figure.gallery__item
+            a.gallery__image-link(href="/assets/images/posts/update-may-2021/trip-2.jpg" target="_blank" rel="noopener")
+              img.gallery__image(src="/assets/images/posts/update-may-2021/trip-2-thumb.jpg" alt="There were some stunning houses.")
+            figcaption.gallery__caption There were some stunning houses.
+          figure.gallery__item
+            a.gallery__image-link(href="/assets/images/posts/update-may-2021/trip-3.jpg" target="_blank" rel="noopener")
+              img.gallery__image(src="/assets/images/posts/update-may-2021/trip-3-thumb.jpg" alt="A coastal path atop cliffs near St. Ives.")
+            figcaption.gallery__caption A coastal path atop cliffs near St. Ives.
+          figure.gallery__item
+            a.gallery__image-link(href="/assets/images/posts/update-may-2021/trip-4.jpg" target="_blank" rel="noopener")
+              img.gallery__image(src="/assets/images/posts/update-may-2021/trip-4-thumb.jpg" alt="A lighthouse and cliffs near St. Ives.")
+            figcaption.gallery__caption A lighthouse and cliffs near St. Ives.
+          figure.gallery__item
+            a.gallery__image-link(href="/assets/images/posts/update-may-2021/trip-5.jpg" target="_blank" rel="noopener")
+              img.gallery__image(src="/assets/images/posts/update-may-2021/trip-5-thumb.jpg" alt="Bramley monitoring the situation in Fowey harbour.")
+            figcaption.gallery__caption Bramley monitoring the situation in Fowey harbour.
+          figure.gallery__item
+            a.gallery__image-link(href="/assets/images/posts/update-may-2021/trip-6.jpg" target="_blank" rel="noopener")
+              img.gallery__image(src="/assets/images/posts/update-may-2021/trip-6-thumb.jpg" alt="Things got a bit treacherous here. Worth it!")
+            figcaption.gallery__caption Things got a bit treacherous here. Worth it!
 
-      p If you&#39;re feeling a spot of burnout from the past 18 months, I&#39;d highly recommend doing something like this to get perspective and clarity. It always takes me a few days to get out of work mode, but once I do, I can really begin to decompress. Within days, my brain begins to make sense of things that have been bothering me, and the way forward becomes much clearer on various fronts.
+        p If you&#39;re feeling a spot of burnout from the past 18 months, I&#39;d highly recommend doing something like this to get perspective and clarity. It always takes me a few days to get out of work mode, but once I do, I can really begin to decompress. Within days, my brain begins to make sense of things that have been bothering me, and the way forward becomes much clearer on various fronts.
 
-      h3 Generating 3 viable product ideas
+        h3 Generating 3 viable product ideas
 
-      p I really struggled with this goal. Ideas come to me easily, but I usually convince myself they&#39;re not worth pursuing for one reason or another. To ovecome this, I introduced some constraints to act as a filter for ideas that could work well for someone like me - a technical solo founder looking to build an additional revenue stream:
+        p I really struggled with this goal. Ideas come to me easily, but I usually convince myself they&#39;re not worth pursuing for one reason or another. To ovecome this, I introduced some constraints to act as a filter for ideas that could work well for someone like me - a technical solo founder looking to build an additional revenue stream:
 
-      ul
-        li <strong>Simple but growable:</strong> The product needs to be simple enough that I can launch and develop it on my own, but have some trajectory for growth.
-        li <strong>Clear value:</strong> The product&#39;s value needs to be clear to see so it can be effectively marketed.
-        li <strong>Low support needs:</strong> The product needs to have low support needs, or support that I could easily outsource.
-        li <strong>In a proven market:</strong> Finding product-market fit is hard, better to build a fresh take on an existing product which has done that work already.
-        li <strong>That I will use:</strong> I&#39;d like to solve a problem that I have myself so I can spot bugs, issues, and opportunities in the product.
+        ul
+          li <strong>Simple but growable:</strong> The product needs to be simple enough that I can launch and develop it on my own, but have some trajectory for growth.
+          li <strong>Clear value:</strong> The product&#39;s value needs to be clear to see so it can be effectively marketed.
+          li <strong>Low support needs:</strong> The product needs to have low support needs, or support that I could easily outsource.
+          li <strong>In a proven market:</strong> Finding product-market fit is hard, better to build a fresh take on an existing product which has done that work already.
+          li <strong>That I will use:</strong> I&#39;d like to solve a problem that I have myself so I can spot bugs, issues, and opportunities in the product.
 
-      p With those constraints in mind, here are the 3 front-runners from a series of ideas I had this month:
+        p With those constraints in mind, here are the 3 front-runners from a series of ideas I had this month:
 
-      ul
-        li <strong>A simple, private analytics platform for long-form content.</strong> This would allow content marketers and bloggers to see how much people are actually reading their content, and where readers drop off, skip sections, etc.
-        li <strong>A blogging platform that allows you to own your content.</strong> Too many popular blogging platforms don&#39;t allow users to truly own their content. I&#39;d like to see a compelling product solve that, and a few other common blogging platform issues.
-        li <strong>A product that lets people to put together online events that can be bid upon.</strong> For example, to let a consultant sell an hour of their time to the highest bidder, or let an tech influencer run a workshop for the 10 highest bidders.
+        ul
+          li <strong>A simple, private analytics platform for long-form content.</strong> This would allow content marketers and bloggers to see how much people are actually reading their content, and where readers drop off, skip sections, etc.
+          li <strong>A blogging platform that allows you to own your content.</strong> Too many popular blogging platforms don&#39;t allow users to truly own their content. I&#39;d like to see a compelling product solve that, and a few other common blogging platform issues.
+          li <strong>A product that lets people to put together online events that can be bid upon.</strong> For example, to let a consultant sell an hour of their time to the highest bidder, or let an tech influencer run a workshop for the 10 highest bidders.
 
-      p I&#39;ve not made a decision on any of these yet, I&#39;m going to do more thinking and investigation over June with a view to comitting to giving one a try.
+        p I&#39;ve not made a decision on any of these yet, I&#39;m going to do more thinking and investigation over June with a view to comitting to giving one a try.
 
-      h2 Goals for June
-      p I&#39;m feeling fairly refreshed and motivated at the moment, but have a busy couple of months ahead with client work. With that in mind, I&#39;ve given myself just 4 goals for June:
+        h2 Goals for June
+        p I&#39;m feeling fairly refreshed and motivated at the moment, but have a busy couple of months ahead with client work. With that in mind, I&#39;ve given myself just 4 goals for June:
 
-      ol
-        li Write another blog post focused on product engineering.
-        li Tweet every working day, trying to be insightful.
-        li Choose a product idea to build.
-        li Outsource or stop doing 3 low value, time consuming activities.
+        ol
+          li Write another blog post focused on product engineering.
+          li Tweet every working day, trying to be insightful.
+          li Choose a product idea to build.
+          li Outsource or stop doing 3 low value, time consuming activities.
 
-      p That&#39;s all for May! You should <a href="https://twitter.com/mcarterj" rel="noopener" target="_blank">follow me on Twitter</a> if you want to see how this freelancing adventure develops for me. I also have a <a href="https://mcarter.me/rss.xml" rel="noopener" target="_blank">RSS feed</a> on this site if you&#39;d just like to keep track of new posts on this blog.
+        p That&#39;s all for May! You should <a href="https://twitter.com/mcarterj" rel="noopener" target="_blank">follow me on Twitter</a> if you want to see how this freelancing adventure develops for me. I also have a <a href="https://mcarter.me/rss.xml" rel="noopener" target="_blank">RSS feed</a> on this site if you&#39;d just like to keep track of new posts on this blog.

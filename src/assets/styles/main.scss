@@ -1,12 +1,13 @@
 @import 'reset';
 @import 'variables';
-@import 'mixins';
 
-@import 'button';
-@import 'header';
-@import 'logo-link';
-@import 'navigation';
 @import 'structure';
-@import 'full-section';
 @import 'typography';
-@import 'content-grid';
+
+@import 'header';
+@import 'card';
+@import 'posts';
+@import 'gallery';
+@import 'figure';
+@import 'table';
+@import 'footer';

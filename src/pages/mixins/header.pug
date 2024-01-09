@@ -1,9 +1,14 @@
-mixin header(title, subtitle)
-  header.full-section.full-section--top.header
-    .full-section__inner
-      +navigation
+mixin header(title, subtitle, mainHeader)
+  header.header
+    if mainHeader
       .header__content
-        h1.header__title!=title
-        p.header__subtitle!=subtitle
-        block
+        h1
+          a(href="/")!=title
+        p!=subtitle
+      .header__aside
+        img(src="/assets/images/me.webp", alt="Mike Carter" width="208" height="208" loading="lazy")
+    else
+      .header__content
+        h1!=title
+        p!=subtitle
 

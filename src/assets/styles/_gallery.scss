@@ -15,16 +15,4 @@
       flex: 0 0 33%;
     }
   }
-
-  &__caption {
-    font-family: $sans-font-family;
-    font-size: $font-size-xs;
-    margin: $spacing-1 0;
-    text-align: center;
-  }
-
-  &__image {
-    border: 1px solid $grey-lighter;
-    border-radius: $border-radius-1;
-  }
 }

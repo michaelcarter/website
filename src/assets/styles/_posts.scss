@@ -1,0 +1,22 @@
+.posts {
+  margin: $spacing-2 0 $spacing-2 $spacing-2;
+
+  &__post {
+    list-style-type: square;
+    margin-bottom: 0.3rem;
+  }
+
+  &__post-date {
+    color: $ash;
+    font-size: $font-size-md;
+    margin-left: $spacing-1;
+  }
+
+  &__post-external-icon {
+    fill: $ash;
+    display: inline-block;
+    margin-left: $spacing-1;
+    width: 1em;
+    height: 1em;
+  }
+}

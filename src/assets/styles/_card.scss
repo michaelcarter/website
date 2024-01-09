@@ -1,0 +1,42 @@
+.card {
+  display: flex;
+  margin: $spacing-5 0;
+
+  &__aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__content {
+    margin-left: $spacing-3;
+  }
+
+  h3 {
+    margin-bottom: $spacing-1;
+  }
+
+  p {
+    margin-bottom: $spacing-1;
+  }
+
+  &__dates {
+    color: $ash;
+    margin-left: $spacing-1;
+  }
+
+  &__image {
+    height: auto;
+    max-width: 5rem;
+    margin-top: $spacing-1;
+
+    &--rounded {
+      border-radius: 50%;
+    }
+  }
+}
+
+h2 + .card,
+p + .card {
+  margin-top: $spacing-4;
+}
