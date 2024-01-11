@@ -5,9 +5,12 @@ $bp-md: 76rem;
 
 // Colours:
 $charcoal: #333;
+$soot: #999;
 $ash: #aaa;
+$smoke: #e1e1e1e1;
 $snow: #f9f9f9;
 $orange: orange;
+$peach: lighten($orange, 15%);
 
 // Spacings
 $spacing-1: 0.5rem;
@@ -22,12 +25,15 @@ $border-radius-2: 0.5rem;
 
 // Font-sizings
 $font-size-lg: 1.6rem;
-$font-size-semi-lg: 1.3rem;
-$font-size-base: 1.1rem;
+$font-size-semi-lg: 1.4rem;
+$font-size-base: 1.25rem;
 $font-size-md: 1rem;
 $font-size-sm: 0.9rem;
 $font-size-xs: 0.8rem;
 
+// Durations:
+$duration-short: 0.25s;
+
 // Fonts:
-$sans-font-family: 'Lato', helvetica neue, helvetica, Ubuntu, roboto, noto,
-  segoe ui, arial, sans-serif;
+$sans-font-family: 'Larsseit-Light', sans-serif;
+$header-font-family: 'Larsseit-Medium', sans-serif;

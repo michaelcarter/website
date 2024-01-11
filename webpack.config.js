@@ -18,6 +18,7 @@ const pagePlugins = pages.map((page) => {
 
 const filePlugins = new CopyPlugin([
   { from: './src/assets/images/', to: './assets/images/' },
+  { from: './src/assets/fonts/', to: './assets/fonts' },
   { from: './src/robots.txt', to: './robots.txt' },
   { from: './src/pages/rss.xml', to: './rss.xml' },
   { from: './src/site.webmanifest', to: './site.webmanifest' },

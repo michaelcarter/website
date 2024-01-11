@@ -1,31 +1,48 @@
 h1 {
+  color: $ash;
   font-size: $font-size-lg;
+  font-family: $header-font-family;
+  letter-spacing: 0.5px;
 }
 
 h2 {
   font-size: $font-size-semi-lg;
   margin: $spacing-1 0 $spacing-2;
+  font-family: $header-font-family;
+  letter-spacing: 0.5px;
 }
 
 h3 {
   font-size: $font-size-base;
   margin: $spacing-1 0 $spacing-2;
+  font-family: $header-font-family;
+  letter-spacing: 0.5px;
 }
 
 p,
 ul,
 ol {
+  color: $smoke;
   font-size: $font-size-md;
   margin: $spacing-1 0 $spacing-2;
+}
+
+p.lead {
+  color: $snow;
+  font-size: $font-size-base;
 }
 
 a:link,
 a:visited {
   color: $orange;
+  line-height: 2rem;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+  text-decoration-style: dotted;
+  transition: color $duration-short ease-in-out;
 }
 
 a:hover,
 a:active {
-  color: $orange;
-  text-decoration: none;
+  color: $peach;
 }
