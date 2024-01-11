@@ -1,13 +1,14 @@
 mixin header(title, subtitle, mainHeader)
-  header.header
-    if mainHeader
+  if mainHeader
+    header.header
       .header__content
         h1
           a(href="/")!=title
         p!=subtitle
       .header__aside
         img(src="/assets/images/me.webp", alt="Mike Carter" width="208" height="208" loading="lazy")
-    else
+  else
+    header.header.header--blog
       .header__content
         h1!=title
         p!=subtitle

@@ -2,7 +2,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: $spacing-3 0;
+  margin: $spacing-2 0;
+
+  &--blog {
+    margin: $spacing-3 0 $spacing-4 0;
+    text-align: center;
+
+    h1 {
+      font-size: $font-size-xl;
+    }
+
+    p {
+      font-size: $font-size-base;
+    }
+  }
 
   .header__aside {
     img {
@@ -14,9 +27,12 @@
   }
 
   a:link,
-  a:visited,
-  a:hover {
+  a:visited {
     color: $snow;
     text-decoration: none;
+  }
+
+  a:hover {
+    color: $smoke;
   }
 }
