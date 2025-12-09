@@ -1,6 +1,6 @@
 .card {
   display: flex;
-  margin: $spacing-5 0;
+  margin: $spacing-4 0;
 
   &__aside {
     display: flex;
@@ -18,21 +18,17 @@
 
   &__dates {
     color: $soot;
-    font-family: $sans-font-family;
     margin-left: $spacing-1;
   }
 
   &__image {
     height: auto;
-    max-width: 3rem;
+    width: 2.5rem;
+    max-width: 2.5rem;
     margin: $spacing-1 $spacing-2 0 0;
 
     @media only screen and (min-width: $bp-sm) {
-      max-width: 5rem;
-    }
-
-    &--rounded {
-      border-radius: 50%;
+      max-width: 4rem;
     }
   }
 }

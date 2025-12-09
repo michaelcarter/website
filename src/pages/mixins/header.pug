@@ -4,12 +4,12 @@ mixin header(title, subtitle, mainHeader)
       .header__content
         h1
           a(href="/")!=title
-        p!=subtitle
+        p.lead!=subtitle
       .header__aside
         img(src="/assets/images/me.webp", alt="Mike Carter" width="208" height="208" loading="lazy")
   else
     header.header.header--blog
       .header__content
         h1!=title
-        p!=subtitle
+        p.lead!=subtitle
 

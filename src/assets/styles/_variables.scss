@@ -1,15 +1,14 @@
 // Breakpoints:
 $bp-xs: 30rem;
-$bp-sm: 47.9rem; // Portrait iPad
-$bp-md: 76rem;
+$bp-sm: 47.9rem; // iPad portrait
 
 // Colours:
-$charcoal: #333;
+$charcoal: #222;
 $soot: #999;
 $ash: #aaa;
 $smoke: #e1e1e1e1;
 $snow: #f9f9f9;
-$orange: orange;
+$orange: rgb(214, 169, 85);
 $peach: lighten($orange, 15%);
 
 // Spacings
@@ -20,21 +19,16 @@ $spacing-4: 3rem;
 $spacing-5: 5rem;
 
 // Border radiuses
-$border-radius-1: 0.3rem;
 $border-radius-2: 0.5rem;
 
 // Font-sizings
 $font-size-xl: 2.7rem;
-$font-size-lg: 1.6rem;
-$font-size-semi-lg: 1.4rem;
-$font-size-base: 1.25rem;
-$font-size-md: 1rem;
+$font-size-lg: 2rem;
+$font-size-semi-lg: 1.6rem;
+$font-size-base: 1.1rem;
+$font-size-md: 1.1rem;
 $font-size-sm: 0.9rem;
 $font-size-xs: 0.8rem;
 
 // Durations:
 $duration-short: 0.25s;
-
-// Fonts:
-$sans-font-family: 'Larsseit-Light', sans-serif;
-$header-font-family: 'Larsseit-Medium', sans-serif;

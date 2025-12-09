@@ -15,4 +15,23 @@
       flex: 0 0 33%;
     }
   }
+
+  &__image-link {
+    display: block;
+  }
+
+  &__image {
+    border-radius: $border-radius-2;
+    transition: opacity $duration-short ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__caption {
+    font-size: $font-size-xs;
+    margin-top: $spacing-1;
+    text-align: center;
+  }
 }

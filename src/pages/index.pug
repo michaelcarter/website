@@ -6,10 +6,19 @@ include mixins/postLinks.pug
 block pageContent
   main
     section
-      h2 About me
-      p.lead I'm an experienced developer and technical leader, building on the web since 2006.
-      p I’ve worked in both small and large technology teams, and have led the digtal transformation of multiple new and established businesses with pragmatic technological decision making.
-      p I'm a creative engineer at heart, and I’m at my best getting hands-on in the teams I work with, talking to customers and iterating towards success. <a href="mailto:mike@mcarter.me">Email Me</a>.
+      h2 Me and my skills
+      p.lead I’ve worked in teams of many sizes, and have led the digital transformation of multiple businesses through 2 companies I’ve founded.
+
+      p At heart I’m a creative engineer, designing and delivering high-performance platforms across web and mobile, with deep experience spanning backend API engineering, frontend engineering, light mobile engineering, cloud infrastructure, and systems integration:
+
+      ul
+        li Backend API engineering with <strong>Node.js</strong>/<strong>TypeScript</strong> and <strong>Ruby</strong>, <strong>MySQL/PostgreSQL</strong>, <strong>Redis</strong>.
+        li Frontend engineering with <strong>React</strong>/<strong>TypeScript</strong>, <strong>SPA architecture</strong>, <strong>state management</strong>, and <strong>high-volume user flows</strong>.
+        li Mobile engineering using <strong>React Native</strong> &amp; <strong>Hotwire Native</strong>, including push notifications, authentication, and real-time messaging.
+        li Cloud infrastructure, <strong>CI/CD</strong>, <strong>automated testing</strong>, <strong>monitoring</strong>, and <strong>scalability practices</strong> across distributed systems.
+        li Systems integration with third-party providers including authentication services, payment platforms, and booking/channel manager APIs.
+
+      p If you’d like to work with me, <a href="mailto:mike@mcarter.me">Email Me</a>
 
     section
       h2 Work history
@@ -20,16 +29,32 @@ block pageContent
           img.card__image(src="/assets/images/bitbrawn-logo.png", alt="Bitbrawn logo" width="80" height="74" loading="lazy")
         .card__content
           h3 BitBrawn <span class="card__dates">2021 - Present</span>
-          p I’m growing BitBrawn, a web application studio that transforms businesses with brilliant software.
-          p We offer web application development and consultancy, and focus primarily on SMEs looking to transform their businesses with bespoke web applications. <a href="https://bitbrawn.com" target="_blank" rel="noopener">Visit BitBrawn</a>.
+          p I founded BitBrawn, which builds and modernises the software that scaling SMEs rely on when off the shelf tools and spreadsheets can no longer keep up. We design, develop, and support custom web applications that remove operational friction, eliminate rigid workflows, and create the clarity teams need to grow with confidence. Every project is delivered by senior specialists and structured around fixed price milestones so outcomes stay predictable. <a href="https://bitbrawn.com" target="_blank" rel="noopener">Visit BitBrawn</a>.
+
+          p Recent work includes:
+
+          ul
+            li Supporting <a href="https://laced.com" target="_blank" rel="noopener">Laced</a> as they expanded into European markets post Brexit with a platform built for scale.
+            li Partnering with <a href="https://riftrefunds.co.uk" target="_blank" rel="noopener">RIFT</a> to digitise and streamline their Tax Refund claims process.
+            li Helping <a href="https://purplebricks.com" target="_blank" rel="noopener">Purplebricks</a> increase customer self service through a new property information intake system.
+            li Rebuilding <a href="https://dcthomsonshop.co.uk" target="_blank" rel="noopener">DC Thomson’s</a> subscription purchase platform using Next.js, Tailwind, and a custom headless CMS.
+            li Leading modernisation and ongoing development for <a href="https://allocate.co.uk" target="_blank" rel="noopener">Allocate</a>, improving their core web application and API.
 
       .card
         .card__aside
           img.card__image(src="/assets/images/logos/leaf.svg", alt="Leaf logo" width="80" height="48" loading="lazy")
         .card__content
           h3 Leaf <span class="card__dates">2016 - 2021</span>
-          p I founded Leaf, a digital product agency, with my designer friend <a href="https://chrisannetts.com/" target="_blank" rel="noopener">Chris Annetts</a>.
-          p We grew the team to 7, and helped build brilliant digital products for several UK and US businesses. We shut down Leaf in 2021 to pursue other endeavours. <a href="https://weareleaf.com" target="_blank" rel="noopener">Visit Leaf</a>.
+          p I founded Leaf, a digital product agency, with my designer partner <a href="https://chrisannetts.com/" target="_blank" rel="noopener">Chris Annetts</a>. We grew the team to seven and delivered high impact digital products for UK and US companies before closing the studio in 2021 to pursue new paths. <a href="https://weareleaf.com" target="_blank" rel="noopener">Visit Leaf</a>.
+
+          p Highlights:
+
+          ul
+            li Improved <a href="https://holidayextras.co.uk" target="_blank" rel="noopener">Holiday Extras’</a> insurance quote journey for thousands of customers and supported the launch of their trip planning app, HEHA.
+            li Led the digital transformation of <a href="https://riftrefunds.co.uk" target="_blank" rel="noopener">RIFT</a>, enabling hundreds of thousands of customers to self service their tax refund claims.
+            li Built <a href="https://laced.com" target="_blank" rel="noopener">Laced’s</a> digital platform from the ground up and helped them scale to handle hundreds of millions in transactions.
+            li Pulled <a href="https://allocate.co.uk" target="_blank" rel="noopener">Allocate</a> out of a technical debt crisis and put a sustainable, modern foundation in place.
+            li Completed numerous smaller engagements with similar impact.
 
       .card.card--last
         .card__aside
@@ -38,6 +63,37 @@ block pageContent
           h3 Holiday Extras <span class="card__dates">2013 - 2016</span>
           p I joined Holiday Extras as a Web Developer in 2013, working primarily on their airport hotel and parking booking system.
           p During my employment I was promoted to Software Engineer, and then Software Architect, where I helped to technical decision making across the organisation. <a href="https://bitbrawn.com" target="_blank" rel="noopener">Visit Holiday Extras</a>.
+
+    section
+      h2 Products
+      p.lead I’ve built a few things over the years. Mostly side-projects, some more substantial.
+
+      .card
+        .card__aside
+          img.card__image(src="/assets/images/logos/istheresomebody.webp", alt="IsThereSomebody logo" width="80" height="80" loading="lazy")
+        .card__content
+          h3 IsThereSomebody <span class="card__dates">2023 - Now</span>
+          p I’m the technical co-founder on IsThereSomebody, a private, anonymous app that connects people who are supporting someone through addiction. It matches you with others in similar situations and lets you talk one-to-one through encrypted chat, share experiences in a small community space, and access curated resources when you need more structured help.
+
+          p IsThereSomebody has 500+ active users and is growing steadily. <a href="https://istheresomebody.com" target="_blank" rel="noopener">Visit IsThereSomebody</a>
+
+      .card
+        .card__aside
+          img.card__image(src="/assets/images/logos/parable.svg", alt="Parable logo" width="101" height="71" loading="lazy")
+        .card__content
+          h3 Parable <span class="card__dates">2022 - 2023</span>
+          p Parable is an analytics platform for blog posts and articles. It tracks how many people actually read your content, and provides analytics useful to writers trying to grow an audience.
+          p I built Parable in my free time over the course of a year, and launched it in 2022. It was a fun project to build, and I learned a lot about product development and marketing.
+          p Unfortunately, Parable didn’t find product-market fit and I <a href="/posts/my-first-failed-product">shut it down in 2023</a>.
+
+      .card
+        .card__aside
+          img.card__image(src="/assets/images/logos/howdy.svg", alt="Howdy logo" width="38" height="29" loading="lazy")
+        .card__content
+          h3 Howdy <span class="card__dates">2017 - 2022</span>
+          p Howdy was a simple tool that identifies contact forms on web pages and brings them to life, validating input and emailing submissions to the form owner.
+          p Designed for the small businesses who just want a functional contact form. Howdy offered a cheap but effective solution to the problem of setting up contact forms. We developed it at Leaf in our spare time, and watched it organically grow to over 100 users before its eventual winding down in 2022.
+
     section
       h2 Writing
       p.lead I write about software and product engineering, with an occasional personal update.
@@ -180,19 +236,19 @@ block pageContent
               external: true
             },
             {
-              href: "http://tech.holidayextras.co.uk/2015/03/18/5-tips-for-a-smoother-code-review-process/",
+              href: "https://web.archive.org/web/20200803100158/http://tech.holidayextras.co.uk/2015/03/18/5-tips-for-a-smoother-code-review-process/",
               title: "5 tips for a smoother code review process",
               date: "18th March 2015",
               external: true
             },
             {
-              href: "http://tech.holidayextras.co.uk/misc/2014/03/09/taming-technical-debt/",
+              href: "https://web.archive.org/web/20200803085822/http://tech.holidayextras.co.uk/misc/2014/03/09/taming-technical-debt/",
               title: "Taming your Technical Debt",
               date: "9th March 2014",
               external: true
             },
             {
-              href: "http://tech.holidayextras.co.uk/mobile/2014/01/20/getting-performance-cordova-based-application/",
+              href: "https://web.archive.org/web/20200803091549/http://tech.holidayextras.co.uk/mobile/2014/01/20/getting-performance-cordova-based-application/",
               title: "5 tips for great performance from your Cordova app",
               date: "20th January 2014",
               external: true

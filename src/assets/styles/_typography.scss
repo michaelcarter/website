@@ -1,20 +1,26 @@
+body {
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 h1 {
   font-size: $font-size-lg;
-  font-family: $header-font-family;
   letter-spacing: 0.5px;
+  font-weight: 600;
 }
 
 h2 {
   font-size: $font-size-semi-lg;
+  font-weight: 600;
   margin: $spacing-1 0 $spacing-2;
-  font-family: $header-font-family;
-  letter-spacing: 0.5px;
 }
 
 h3 {
-  font-size: $font-size-base;
+  font-size: 1.3rem;
+  font-weight: 600;
   margin: $spacing-1 0 $spacing-2;
-  font-family: $header-font-family;
   letter-spacing: 0.5px;
 }
 
@@ -23,12 +29,29 @@ ul,
 ol {
   color: $smoke;
   font-size: $font-size-md;
-  margin: $spacing-1 0 $spacing-2;
+  font-weight: 300;
+  margin: $spacing-1 0 $spacing-3;
+  line-height: 1.45rem;
+}
+
+strong {
+  color: $snow;
+  font-weight: 500;
+}
+
+li {
+  margin-bottom: 0.5rem;
 }
 
 p.lead {
   color: $snow;
+  font-weight: 400;
   font-size: $font-size-base;
+  margin: 0 0 $spacing-3 0;
+}
+
+h2 + p.lead {
+  margin-top: -0.7rem;
 }
 
 a:link,

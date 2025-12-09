@@ -20,3 +20,30 @@
     height: 1em;
   }
 }
+
+.tip {
+  background: rgba(255, 165, 0, 0.1);
+  border-left: 3px solid $orange;
+  padding: $spacing-2;
+  margin: $spacing-2 0;
+  border-radius: $border-radius-2;
+
+  &__title {
+    font-size: $font-size-base;
+    margin: 0 0 $spacing-1;
+    color: $snow;
+  }
+
+  &__text {
+    margin: 0;
+  }
+}
+
+.article-image {
+  margin: $spacing-2 0;
+  border-radius: $border-radius-2;
+
+  &--bordered {
+    border: 1px solid $soot;
+  }
+}

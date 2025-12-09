@@ -3,7 +3,9 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 const SitemapPlugin = require('sitemap-webpack-plugin').default
-const glob = require('glob')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const { glob } = require('glob')
+
 const pages = glob.sync('**/*.pug', {
   cwd: path.resolve(__dirname, 'src/pages'),
 })
@@ -16,25 +18,27 @@ const pagePlugins = pages.map((page) => {
   })
 })
 
-const filePlugins = new CopyPlugin([
-  { from: './src/assets/images/', to: './assets/images/' },
-  { from: './src/assets/fonts/', to: './assets/fonts' },
-  { from: './src/robots.txt', to: './robots.txt' },
-  { from: './src/pages/rss.xml', to: './rss.xml' },
-  { from: './src/site.webmanifest', to: './site.webmanifest' },
-  { from: './src/favicon.ico', to: './favicon.ico' },
-  { from: './src/favicon-32x32.png', to: './favicon-32x32.png' },
-  { from: './src/favicon-16x16.png', to: './favicon-16x16.png' },
-  { from: './src/apple-touch-icon.png', to: './apple-touch-icon.png' },
-  {
-    from: './src/android-chrome-512x512.png',
-    to: './android-chrome-512x512.png',
-  },
-  {
-    from: './src/android-chrome-192x192.png',
-    to: './android-chrome-192x192.png',
-  },
-])
+const filePlugins = new CopyPlugin({
+  patterns: [
+    { from: './src/assets/images/', to: './assets/images/' },
+    { from: './src/assets/fonts/', to: './assets/fonts' },
+    { from: './src/robots.txt', to: './robots.txt' },
+    { from: './src/pages/rss.xml', to: './rss.xml' },
+    { from: './src/site.webmanifest', to: './site.webmanifest' },
+    { from: './src/favicon.ico', to: './favicon.ico' },
+    { from: './src/favicon-32x32.png', to: './favicon-32x32.png' },
+    { from: './src/favicon-16x16.png', to: './favicon-16x16.png' },
+    { from: './src/apple-touch-icon.png', to: './apple-touch-icon.png' },
+    {
+      from: './src/android-chrome-512x512.png',
+      to: './android-chrome-512x512.png',
+    },
+    {
+      from: './src/android-chrome-192x192.png',
+      to: './android-chrome-192x192.png',
+    },
+  ],
+})
 
 const sitemapPlugin = new SitemapPlugin({
   base: 'https://mcarter.me',
@@ -42,6 +46,10 @@ const sitemapPlugin = new SitemapPlugin({
   options: {
     filename: 'sitemap.xml',
   },
+})
+
+const cssPlugin = new MiniCssExtractPlugin({
+  filename: 'assets/styles/[name].css',
 })
 
 const statsConfig = {
@@ -59,6 +67,9 @@ const statsConfig = {
 
 const config = {
   stats: statsConfig,
+  performance: {
+    hints: false,
+  },
   entry: {
     main: './src/assets/styles/main.scss',
   },
@@ -86,12 +97,20 @@ const config = {
     },
     devMiddleware: { stats: statsConfig },
   },
-  plugins: [].concat(pagePlugins, filePlugins, sitemapPlugin),
+  plugins: [].concat(pagePlugins, filePlugins, sitemapPlugin, cssPlugin),
   module: {
     rules: [
       {
         test: /\.pug$/,
-        use: ['html-loader?attrs=false', 'pug-html-loader'],
+        use: [
+          {
+            loader: 'html-loader',
+            options: {
+              sources: false,
+            },
+          },
+          'pug-html-loader',
+        ],
       },
       {
         test: /\.js$/,
@@ -100,23 +119,24 @@ const config = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env', '@babel/preset-react'],
-            plugins: ['@babel/plugin-proposal-object-rest-spread'],
           },
         },
       },
       {
         test: /\.scss$/,
         use: [
+          MiniCssExtractPlugin.loader,
+          { loader: 'css-loader', options: { url: false } },
+          { loader: 'postcss-loader' },
           {
-            loader: 'file-loader',
+            loader: 'sass-loader',
             options: {
-              name: 'assets/styles/[name].css',
+              api: 'modern-compiler',
+              sassOptions: {
+                silenceDeprecations: ['legacy-js-api', 'import', 'global-builtin', 'color-functions'],
+              },
             },
           },
-          { loader: 'extract-loader' },
-          { loader: 'css-loader?-url' },
-          { loader: 'postcss-loader' },
-          { loader: 'sass-loader' },
         ],
       },
     ],
