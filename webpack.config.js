@@ -102,15 +102,7 @@ const config = {
     rules: [
       {
         test: /\.pug$/,
-        use: [
-          {
-            loader: 'html-loader',
-            options: {
-              sources: false,
-            },
-          },
-          'pug-html-loader',
-        ],
+        use: ['simple-pug-loader'],
       },
       {
         test: /\.js$/,
