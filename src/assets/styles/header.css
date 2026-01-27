@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--spacing-2) 0;
+}
+
+.header--blog {
+  margin: var(--spacing-3) 0 var(--spacing-4) 0;
+  text-align: center;
+}
+
+.header--blog h1 {
+  font-size: var(--font-size-xl);
+}
+
+.header .header__aside img {
+  margin: 0;
+  height: auto;
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.header a:link,
+.header a:visited {
+  color: var(--snow);
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: var(--smoke);
+}

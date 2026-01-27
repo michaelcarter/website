@@ -6,36 +6,36 @@ body {
 }
 
 h1 {
-  font-size: $font-size-lg;
+  font-size: var(--font-size-lg);
   letter-spacing: 0.5px;
   font-weight: 600;
 }
 
 h2 {
-  font-size: $font-size-semi-lg;
+  font-size: var(--font-size-semi-lg);
   font-weight: 600;
-  margin: $spacing-1 0 $spacing-2;
+  margin: var(--spacing-1) 0 var(--spacing-2);
 }
 
 h3 {
   font-size: 1.3rem;
   font-weight: 600;
-  margin: $spacing-1 0 $spacing-2;
+  margin: var(--spacing-1) 0 var(--spacing-2);
   letter-spacing: 0.5px;
 }
 
 p,
 ul,
 ol {
-  color: $smoke;
-  font-size: $font-size-md;
+  color: var(--smoke);
+  font-size: var(--font-size-md);
   font-weight: 300;
-  margin: $spacing-1 0 $spacing-3;
+  margin: var(--spacing-1) 0 var(--spacing-3);
   line-height: 1.45rem;
 }
 
 strong {
-  color: $snow;
+  color: var(--snow);
   font-weight: 500;
 }
 
@@ -44,10 +44,10 @@ li {
 }
 
 p.lead {
-  color: $snow;
+  color: var(--snow);
   font-weight: 400;
-  font-size: $font-size-base;
-  margin: 0 0 $spacing-3 0;
+  font-size: var(--font-size-base);
+  margin: 0 0 var(--spacing-3) 0;
 }
 
 h2 + p.lead {
@@ -56,15 +56,15 @@ h2 + p.lead {
 
 a:link,
 a:visited {
-  color: $orange;
+  color: var(--orange);
   line-height: 2rem;
   text-decoration: underline;
   text-underline-offset: 0.2rem;
   text-decoration-style: dotted;
-  transition: color $duration-short ease-in-out;
+  transition: color var(--duration-short) ease-in-out;
 }
 
 a:hover,
 a:active {
-  color: $peach;
+  color: var(--peach);
 }

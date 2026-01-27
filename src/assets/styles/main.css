@@ -1,0 +1,13 @@
+@import './reset.css';
+@import './variables.css';
+
+@import './structure.css';
+@import './typography.css';
+
+@import './header.css';
+@import './card.css';
+@import './posts.css';
+@import './gallery.css';
+@import './figure.css';
+@import './table.css';
+@import './footer.css';

@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  margin: var(--spacing-4) 0;
+}
+
+.card__aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card h3 {
+  margin-bottom: var(--spacing-1);
+}
+
+.card p {
+  margin-bottom: var(--spacing-1);
+}
+
+.card__dates {
+  color: var(--soot);
+  margin-left: var(--spacing-1);
+}
+
+.card__image {
+  height: auto;
+  width: 2.5rem;
+  max-width: 2.5rem;
+  margin: var(--spacing-1) var(--spacing-2) 0 0;
+}
+
+@media (min-width: 47.9rem) {
+  .card__image {
+    max-width: 4rem;
+  }
+}
+
+h2 + .card,
+p + .card {
+  margin-top: var(--spacing-4);
+}

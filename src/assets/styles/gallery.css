@@ -1,0 +1,41 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery__item {
+  flex: 0 0 100%;
+  padding: var(--spacing-1) 0;
+}
+
+@media (min-width: 30rem) {
+  .gallery__item {
+    flex: 0 0 50%;
+    padding: var(--spacing-1) var(--spacing-2);
+  }
+}
+
+@media (min-width: 47.9rem) {
+  .gallery__item {
+    flex: 0 0 33%;
+  }
+}
+
+.gallery__image-link {
+  display: block;
+}
+
+.gallery__image {
+  border-radius: var(--border-radius-2);
+  transition: opacity var(--duration-short) ease-in-out;
+}
+
+.gallery__image:hover {
+  opacity: 0.8;
+}
+
+.gallery__caption {
+  font-size: var(--font-size-xs);
+  margin-top: var(--spacing-1);
+  text-align: center;
+}

@@ -71,7 +71,7 @@ const config = {
     hints: false,
   },
   entry: {
-    main: './src/assets/styles/main.scss',
+    main: './src/assets/styles/main.css',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -115,20 +115,11 @@ const config = {
         },
       },
       {
-        test: /\.scss$/,
+        test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
           { loader: 'css-loader', options: { url: false } },
           { loader: 'postcss-loader' },
-          {
-            loader: 'sass-loader',
-            options: {
-              api: 'modern-compiler',
-              sassOptions: {
-                silenceDeprecations: ['legacy-js-api', 'import', 'global-builtin', 'color-functions'],
-              },
-            },
-          },
         ],
       },
     ],

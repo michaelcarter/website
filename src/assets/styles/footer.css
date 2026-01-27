@@ -1,0 +1,7 @@
+footer {
+  margin: var(--spacing-2) 0;
+}
+
+footer p {
+  text-align: center;
+}

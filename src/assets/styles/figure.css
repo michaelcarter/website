@@ -1,0 +1,13 @@
+figure {
+  margin: var(--spacing-1) 0 var(--spacing-2);
+}
+
+figure img {
+  border-radius: var(--border-radius-2);
+}
+
+figure figcaption {
+  font-size: var(--font-size-xs);
+  margin-top: var(--spacing-1);
+  text-align: center;
+}
