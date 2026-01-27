@@ -1,29 +1,46 @@
 ## Tech Stack
 
 - **HTML**: Generated from Pug templates
-- **CSS**: Generated from SCSS
-- **Build**: Webpack 5
+- **CSS**: Plain CSS with PostCSS (postcss-import, autoprefixer)
+- **Build**: Vite 5
 
-## Components & SCSS
+## Project Structure
+
+```
+public/              # Static assets (served as-is)
+├── assets/images/   # Images
+├── assets/fonts/    # Fonts
+├── rss.xml          # RSS feed
+└── ...              # Favicons, robots.txt, etc.
+
+src/
+├── base.pug         # Base template
+├── assets/styles/   # CSS files
+└── pages/           # Pug pages (compiled to HTML)
+    ├── index.pug
+    ├── posts/
+    └── mixins/
+```
+
+## Components & CSS
 
 ### Components
-- Each component in `src/mixins` has a corresponding SCSS file in `src/assets/styles/`, e.g. `src/mixins/navigation.pug` has a matching `src/assets/styles/navigation.scss` file
+- Each component in `src/mixins` has a corresponding CSS file in `src/assets/styles/`
 
 ### Entry points
-- `main.scss` - Primary stylesheet (imports all components)
-- `blog.scss` - Blog-specific styles
+- `main.css` - Primary stylesheet (imports all components via postcss-import)
 
 ### CSS Methodology
 We use BEM (Block, Element, Modifier) naming:
 
-```scss
-.block {}              // Block
-.block__element {}     // Element (double underscore)
-.block--modifier {}    // Modifier (double hyphens)
+```css
+.block {}              /* Block */
+.block__element {}     /* Element (double underscore) */
+.block--modifier {}    /* Modifier (double hyphens) */
 ```
 
 Examples from codebase:
-```scss
+```css
 .header {}
 .header__title {}
 .header__subtitle {}
@@ -44,7 +61,7 @@ npm run dev            # Dev server with hot reload
 ```
 
 ## RSS Feed
-**Location**: `src/pages/rss.xml`
+**Location**: `public/rss.xml`
 
 **Important**: Update RSS feed when adding new blog posts or articles. Add new `<item>` entries with:
 - `<title>` - Article title
@@ -55,19 +72,19 @@ npm run dev            # Dev server with hot reload
 
 ## Design Tokens
 
-Variables defined in `_variables.scss`:
+Variables defined in `_variables.css`:
 
 ## Adding Content
 
 ### New Blog Post
 1. Create `.pug` file in `src/pages/posts/`
 2. Extend `base.pug`, include blog mixins
-3. **Update `src/pages/rss.xml`** with new entry
+3. **Update `public/rss.xml`** with new entry
 4. Sitemap auto-generates on build
 
 ### New Article
 1. Create `.pug` file in `src/pages/articles/`
-2. **Update `src/pages/rss.xml`** with new entry
+2. **Update `public/rss.xml`** with new entry
 
 ## Making visual changes
 
