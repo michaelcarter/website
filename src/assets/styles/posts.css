@@ -8,13 +8,13 @@
 }
 
 .posts__post-date {
-  color: var(--soot);
+  color: var(--text-muted);
   font-size: var(--font-size-md);
   margin-left: var(--spacing-1);
 }
 
 .posts__post-external-icon {
-  fill: var(--ash);
+  fill: var(--text-muted);
   display: inline-block;
   margin-left: var(--spacing-1);
   width: 1em;
@@ -22,8 +22,8 @@
 }
 
 .tip {
-  background: rgba(255, 165, 0, 0.1);
-  border-left: 3px solid var(--orange);
+  background: rgba(196, 117, 28, 0.1);
+  border-left: 3px solid var(--accent);
   padding: var(--spacing-2);
   margin: var(--spacing-2) 0;
   border-radius: var(--border-radius-2);
@@ -32,7 +32,7 @@
 .tip__title {
   font-size: var(--font-size-base);
   margin: 0 0 var(--spacing-1);
-  color: var(--snow);
+  color: var(--text);
 }
 
 .tip__text {
@@ -45,5 +45,5 @@
 }
 
 .article-image--bordered {
-  border: 1px solid var(--soot);
+  border: 1px solid var(--text-muted);
 }

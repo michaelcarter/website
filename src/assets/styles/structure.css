@@ -1,6 +1,6 @@
 body {
-  background: var(--charcoal);
-  color: var(--snow);
+  background: var(--bg);
+  color: var(--text);
 }
 
 .container {

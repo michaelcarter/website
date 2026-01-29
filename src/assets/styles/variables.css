@@ -4,13 +4,11 @@
   --bp-sm: 47.9rem;
 
   /* Colours */
-  --charcoal: #222;
-  --soot: #999;
-  --ash: #aaa;
-  --smoke: #e1e1e1;
-  --snow: #f9f9f9;
-  --orange: rgb(214, 169, 85);
-  --peach: #e9c98a;
+  --bg: #faf9f7;
+  --text: #1a1a1a;
+  --text-muted: #555;
+  --accent: #c4751c;
+  --accent-hover: #a05d10;
 
   /* Spacings */
   --spacing-1: 0.5rem;

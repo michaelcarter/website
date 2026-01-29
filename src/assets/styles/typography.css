@@ -27,7 +27,7 @@ h3 {
 p,
 ul,
 ol {
-  color: var(--smoke);
+  color: var(--text);
   font-size: var(--font-size-md);
   font-weight: 300;
   margin: var(--spacing-1) 0 var(--spacing-3);
@@ -35,7 +35,7 @@ ol {
 }
 
 strong {
-  color: var(--snow);
+  color: var(--text);
   font-weight: 500;
 }
 
@@ -44,7 +44,7 @@ li {
 }
 
 p.lead {
-  color: var(--snow);
+  color: var(--text);
   font-weight: 400;
   font-size: var(--font-size-base);
   margin: 0 0 var(--spacing-3) 0;
@@ -56,7 +56,7 @@ h2 + p.lead {
 
 a:link,
 a:visited {
-  color: var(--orange);
+  color: var(--accent);
   line-height: 2rem;
   text-decoration: underline;
   text-underline-offset: 0.2rem;
@@ -66,5 +66,5 @@ a:visited {
 
 a:hover,
 a:active {
-  color: var(--peach);
+  color: var(--accent-hover);
 }

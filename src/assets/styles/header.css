@@ -23,10 +23,10 @@
 
 .header a:link,
 .header a:visited {
-  color: var(--snow);
+  color: var(--text);
   text-decoration: none;
 }
 
 .header a:hover {
-  color: var(--smoke);
+  color: var(--text-muted);
 }
