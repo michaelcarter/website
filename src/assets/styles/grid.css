@@ -12,6 +12,7 @@
 
 .grid__item {
   min-width: 0;
+  display: flex;
 }
 
 .grid__item--full {
@@ -20,4 +21,18 @@
 
 .grid .card {
   margin: 0;
+  height: 100%;
+}
+
+.grid__placeholder {
+  display: none;
+  background: rgba(243, 241, 237, 0.7);
+  border-radius: var(--border-radius-2);
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .grid__placeholder {
+    display: block;
+  }
 }
