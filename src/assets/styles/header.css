@@ -11,14 +11,14 @@
 }
 
 .header--blog h1 {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-h1);
 }
 
 .header .header__aside img {
   margin: 0;
   height: auto;
-  width: 4rem;
-  border-radius: 50%;
+  width: 12rem;
+  border-radius: 5px;
 }
 
 .header a:link,

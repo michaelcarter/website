@@ -1,10 +1,13 @@
 :root {
   /* Breakpoints */
-  --bp-xs: 30rem;
-  --bp-sm: 47.9rem;
+  --bp-xs: 480px;
+  --bp-sm: 768px;
+  --bp-lg: 1024px;
 
   /* Colours */
   --bg: #faf9f7;
+  --bg-card: #f3f1ed;
+  --border-card: #e5e2db;
   --text: #1a1a1a;
   --text-muted: #555;
   --accent: #c4751c;
@@ -13,21 +16,24 @@
   /* Spacings */
   --spacing-1: 0.5rem;
   --spacing-2: 1rem;
-  --spacing-3: 2rem;
+  --spacing-3: 1.8rem;
   --spacing-4: 3rem;
-  --spacing-5: 5rem;
+  --spacing-5: 8rem;
 
   /* Border radiuses */
   --border-radius-2: 0.5rem;
 
-  /* Font-sizings */
-  --font-size-xl: 2.7rem;
-  --font-size-lg: 2rem;
-  --font-size-semi-lg: 1.6rem;
-  --font-size-base: 1.1rem;
-  --font-size-md: 1.1rem;
-  --font-size-sm: 0.9rem;
-  --font-size-xs: 0.8rem;
+  /* Font families */
+  --font-heading: 'Yrsa', serif;
+  --font-body: 'Lato', sans-serif;
+
+  /* Font sizes (62.5% base = 10px root) */
+  --font-size-h1: 8rem;
+  --font-size-h2: 5.6rem;
+  --font-size-body: 2.2rem;
+  --font-size-detail: 2rem;
+  --font-size-small: 1.8rem;
+  --font-size-xs: 1.5rem;
 
   /* Durations */
   --duration-short: 0.25s;

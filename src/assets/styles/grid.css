@@ -1,0 +1,23 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-3);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid__item {
+  min-width: 0;
+}
+
+.grid__item--full {
+  grid-column: 1 / -1;
+}
+
+.grid .card {
+  margin: 0;
+}

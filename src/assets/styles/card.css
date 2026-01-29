@@ -1,20 +1,29 @@
 .card {
-  display: flex;
-  margin: var(--spacing-4) 0;
+  margin: var(--spacing-3) 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--border-radius-2);
+  padding: var(--spacing-4);
 }
 
 .card__aside {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  margin: 0 auto var(--spacing-3) auto;
+  width: fit-content;
 }
 
 .card h3 {
+  margin-top: 0;
   margin-bottom: var(--spacing-1);
 }
 
-.card p {
-  margin-bottom: var(--spacing-1);
+.card p,
+.card ul {
+  font-size: var(--font-size-detail);
+  margin: 0 0 var(--spacing-2) 0;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
 }
 
 .card__dates {
@@ -24,15 +33,9 @@
 
 .card__image {
   height: auto;
-  width: 2.5rem;
-  max-width: 2.5rem;
-  margin: var(--spacing-1) var(--spacing-2) 0 0;
-}
-
-@media (min-width: 47.9rem) {
-  .card__image {
-    max-width: 4rem;
-  }
+  width: 7.5rem;
+  max-width: 7.5rem;
+  margin: 0;
 }
 
 h2 + .card,

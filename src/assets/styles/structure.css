@@ -6,11 +6,11 @@ body {
 .container {
   margin: 0 auto;
   padding: var(--spacing-2);
-  max-width: var(--bp-sm);
+  max-width: var(--bp-lg);
 }
 
 section {
-  margin: var(--spacing-4) 0;
+  margin: var(--spacing-5) 0;
 }
 
 section:first-child {

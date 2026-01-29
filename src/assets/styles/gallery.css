@@ -35,7 +35,7 @@
 }
 
 .gallery__caption {
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-small);
   margin-top: var(--spacing-1);
   text-align: center;
 }

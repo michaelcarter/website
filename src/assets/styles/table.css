@@ -2,7 +2,7 @@
   border-collapse: collapse;
   border-top: 1px solid var(--text);
   border-left: 1px solid var(--text);
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-body);
   margin: var(--spacing-1) 0 var(--spacing-2);
   width: 100%;
 }
