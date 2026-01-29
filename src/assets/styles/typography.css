@@ -78,3 +78,22 @@ a:hover,
 a:active {
   color: var(--accent-hover);
 }
+
+a.tech-link:link,
+a.tech-link:visited {
+  background: var(--bg-card);
+  color: var(--text-muted);
+  display: inline-block;
+  font-size: var(--font-size-small);
+  line-height: 2.1rem;
+  border: 1px solid var(--border-card);
+  border-radius: 3px;
+  margin: 0 0.1rem;
+  padding: 0 0.3rem;
+  vertical-align: 4%;
+}
+
+a.tech-link:hover,
+a.tech-link:active {
+  color: var(--accent-hover);
+}
