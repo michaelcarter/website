@@ -1,24 +1,19 @@
 extends ../../base.pug
 
-
-include ../mixins/header.pug
-
 block append vars
   -var pageTitle = "My first month of freelancing | Mike Carter"
   -var metaTitle = "My first month of freelancing"
   -var metaDescription = "I started working as a freelance development consultant full time in April 2021. Here are the numbers and reflections on my first month."
   -var metaUrl = "https://mcarter.me/posts/update-april-2021"
   -var metaType = "article"
+  -var isBlogPost = true
 
 
 
 block pageContent
   section
     article
-      +header(
-        "My first month of freelancing",
-        "I started working as a freelance development consultant full time in April 2021. Here are the numbers and reflections on my first month."
-      )
+      +header("My first month of freelancing", "I started working as a freelance development consultant full time in April 2021. Here are the numbers and reflections on my first month.")
 
       main
         h2 Revenue

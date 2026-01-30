@@ -1,6 +1,13 @@
 body {
   background: var(--bg);
   color: var(--text);
+  padding-top: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-top: 0;
+  }
 }
 
 .container {
@@ -11,8 +18,15 @@ body {
 
 section {
   margin: var(--spacing-5) 0;
+  scroll-margin-top: 4rem;
 }
 
 section:first-child {
   margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  section {
+    scroll-margin-top: 1rem;
+  }
 }

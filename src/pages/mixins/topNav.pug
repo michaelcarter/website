@@ -1,0 +1,24 @@
+mixin topNav()
+  header.top-nav
+    .top-nav__brand
+      img.top-nav__photo(src="/assets/images/me.webp", alt="Mike Carter" width="208" height="208" loading="lazy")
+      span.top-nav__title
+        a(href="/") Mike Carter
+    nav.top-nav__nav
+      a.top-nav__nav-link(href="/#work-history")
+        svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+          rect(x="2" y="7" width="20" height="14" rx="2" ry="2")
+          path(d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16")
+        span.top-nav__nav-text Work
+      a.top-nav__nav-link(href="/#projects")
+        svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+          polyline(points="16 18 22 12 16 6")
+          polyline(points="8 6 2 12 8 18")
+        span.top-nav__nav-text Projects
+      a.top-nav__nav-link(href="/#writing")
+        svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+          path(d="M12 19l7-7 3 3-7 7-3-3z")
+          path(d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z")
+          path(d="M2 2l7.586 7.586")
+          circle(cx="11" cy="11" r="2")
+        span.top-nav__nav-text Writing

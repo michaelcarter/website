@@ -1,22 +1,17 @@
 extends ../../base.pug
 
-
-include ../mixins/header.pug
-
 block append vars
   -var pageTitle = "Things I wish I understood before starting an agency | Mike Carter"
   -var metaTitle = "Things I wish I understood before starting an agency"
   -var metaDescription = "In 2015 I started a digital agency. As an employee who made the switch to running a business, here are some things I wish I'd understood before starting."
   -var metaUrl = "https://mcarter.me/posts/before-you-start-an-agency"
   -var metaType = "article"
+  -var isBlogPost = true
 
 block pageContent
   section
     article
-      +header(
-        "Things I wish I understood before starting an agency",
-        "In 2015 I started a <a href='https://www.weareleaf.com' target='_blank' rel='noopener noreferrer'>digital agency</a>. As an employee who made the switch to running a business, here are some things I wish I'd understood before starting."
-      )
+      +header("Things I wish I understood before starting an agency", "In 2015 I started a <a href='https://www.weareleaf.com' target='_blank' rel='noopener noreferrer'>digital agency</a>. As an employee who made the switch to running a business, here are some things I wish I'd understood before starting.")
       main
         h2 Keep learning
         p You'll find yourself needing to know a little on a broad range of subjects like finance, marketing, sales, management, business, economics, and law. You can learn these on an ad-hoc basis, but it's a time consuming process.

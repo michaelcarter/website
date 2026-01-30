@@ -1,7 +1,5 @@
 extends ../../base.pug
 
-
-include ../mixins/header.pug
 include ../mixins/tip.pug
 
 block append vars
@@ -10,14 +8,12 @@ block append vars
   -var metaDescription = "I started working as a freelance development consultant in April 2021. 6 months and almost £50,000 later, here are a few of my biggest mistakes."
   -var metaUrl = "https://mcarter.me/posts/mistakes-from-6-months-of-freelancing"
   -var metaType = "article"
+  -var isBlogPost = true
 
 block pageContent
   section
     article
-      +header(
-        "Mistakes from 6 months of freelancing",
-        "I started working as a freelance development consultant in April 2021. 6 months and almost £50,000 later, here are a few of my biggest mistakes."
-      )
+      +header("Mistakes from 6 months of freelancing", "I started working as a freelance development consultant in April 2021. 6 months and almost £50,000 later, here are a few of my biggest mistakes.")
 
       main
         h2 Not specialising enough

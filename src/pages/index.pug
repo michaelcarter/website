@@ -1,15 +1,13 @@
 extends ../base.pug
 
-include mixins/header.pug
 include mixins/postLinks.pug
 
 block pageContent
   main
     section
-      h2 About me
-      p.lead I’m an experienced full-stack developer and technical leader with experience building web and mobile platforms since 2006. I’ve worked with teams of all sizes and led digital transformations through the companies I’ve founded.
+      +header("About me", "I’m Mike Carter, an experienced full-stack developer and technical leader, building web and mobile platforms since 2006.")
 
-      p I enjoy designing and delivering high-performance systems, collaborating with teams, and solving complex problems. My expertise spans:
+      p I’ve worked with teams of all sizes and led digital transformations through the companies I’ve founded. I enjoy designing and delivering high-performance systems, collaborating with teams, and solving complex problems:
 
       ul
         li <strong>Backend</strong> &#9758; <a href="https://nodejs.org/" target="_blank" rel="noopener" class="tech-link">Node.js</a>/<a href="http://typescriptlang.org" target="_blank" rel="noopener" class="tech-link">TypeScript</a>, <a href="https://www.ruby-lang.org/" target="_blank" rel="noopener" class="tech-link">Ruby</a>/<a href="https://rubyonrails.org/" target="_blank" rel="noopener" class="tech-link">Ruby on Rails</a>, <a href="https://www.mysql.com/" target="_blank" rel="noopener" class="tech-link">MySQL</a>/<a href="https://www.postgresql.org/" target="_blank" rel="noopener" class="tech-link">PostgreSQL</a>, <a href="https://redis.io/" target="_blank" rel="noopener" class="tech-link">Redis</a>, API design.
@@ -21,8 +19,8 @@ block pageContent
 
       p If you’d like to work together, just <a href="mailto:mike@mcarter.me">email me</a>.
 
-    section
-      h2 Work history
+    section#work-history
+      h2 Work
       .grid
         .grid__item
           .card
@@ -69,8 +67,8 @@ block pageContent
         .grid__item
           .grid__placeholder
 
-    section
-      h2 Products
+    section#projects
+      h2 Projects
       .grid
         .grid__item
           .card
@@ -99,7 +97,7 @@ block pageContent
         .grid__item
           .grid__placeholder
 
-    section
+    section#writing
       h2 Writing
       p.lead I write about software and product engineering, with an occasional personal update.
 

@@ -1,8 +1,5 @@
 extends ../../base.pug
 
-
-include ../mixins/header.pug
-
 block append vars
   -var pageTitle = "Testing and tradeoffs | Mike Carter"
   -var metaTitle = "Testing and tradeoffs"
@@ -10,16 +7,14 @@ block append vars
   -var metaUrl = "https://mcarter.me/posts/testing-and-tradeoffs"
   -var metaImage = "https://mcarter.me/assets/images/posts/testing-and-tradeoffs/social-image.png"
   -var metaType = "article"
+  -var isBlogPost = true
 
 
 
 block pageContent
   section
     article
-      +header(
-        "Testing and tradeoffs",
-        "More tests aren&#39;t always better. In this post, we explore testing tradeoffs and the importance of using a mix of tools to control software quality."
-      )
+      +header("Testing and tradeoffs", "More tests aren&#39;t always better. In this post, we explore testing tradeoffs and the importance of using a mix of tools to control software quality.")
 
       main
         p <em>&#8220;I&#39;ve finished the feature, I&#39;m just updating tests now&#8221;</em>. I hear this several times a week from developers I work with, usually a long while before their feature actually goes live.

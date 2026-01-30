@@ -1,24 +1,19 @@
 extends ../../base.pug
 
-
-include ../mixins/header.pug
-
 block append vars
   -var pageTitle = "Freelancing update - July 2021 | Mike Carter"
   -var metaTitle = "Freelancing update - July 2021"
   -var metaDescription = "Revenue and reflections on my fourth month of working as a freelance development consultant."
   -var metaUrl = "https://mcarter.me/posts/update-july-2021"
   -var metaType = "article"
+  -var isBlogPost = true
 
 
 
 block pageContent
   section
     article
-      +header(
-        "Freelancing update - July 2021",
-        "Revenue and reflections on my fourth month of working as a freelance development consultant."
-      )
+      +header("Freelancing update - July 2021", "Revenue and reflections on my fourth month of working as a freelance development consultant.")
 
       main
         p July was difficult. I failed several of my goals, changed my mind on the product I want to build, and neglected my social media activity. July was also my most profitable month to date, invoicing almost double my average revenue for April, May and June.

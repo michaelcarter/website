@@ -1,24 +1,19 @@
 extends ../../base.pug
 
-
-include ../mixins/header.pug
-
 block append vars
   -var pageTitle = "For a better web, let developers learn | Mike Carter"
   -var metaTitle = "For a better web, let developers learn"
   -var metaDescription = "Systemic demands on developers prevent them from building deep expertise, and it's holding back the web on an industry-wide scale. Here&#39;s why."
   -var metaUrl = "https://mcarter.me/posts/for-a-better-web-let-developers-learn"
   -var metaType = "article"
+  -var isBlogPost = true
 
 
 
 block pageContent
   section
     article
-      +header(
-        "For a better web, let developers learn",
-        "Systemic demands on developers prevent them from building deep expertise, and it&#39;s holding back the web on an industry-wide scale. Here&#39;s why."
-      )
+      +header("For a better web, let developers learn", "Systemic demands on developers prevent them from building deep expertise, and it&#39;s holding back the web on an industry-wide scale. Here&#39;s why.")
       main
         h2 A software revolution
 

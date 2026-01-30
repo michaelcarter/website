@@ -1,24 +1,19 @@
 extends ../../base.pug
 
-
-include ../mixins/header.pug
-
 block append vars
   -var pageTitle = "Twitter makes me feel bad | Mike Carter"
   -var metaTitle = "Twitter makes me feel bad"
   -var metaDescription = "Twitter has some great web development chatter. However, it also makes me feel like a fake and a failure. Here's why, and what I intend to do about it."
   -var metaUrl = "https://mcarter.me/posts/twitter-makes-me-feel-bad"
   -var metaType = "article"
+  -var isBlogPost = true
 
 
 
 block pageContent
   section
     article
-      +header(
-        "Twitter makes me feel bad",
-        "Twitter has some great web development chatter. However, it also makes me feel like a fake and a failure. Here's why, and what I intend to do about it."
-      )
+      +header("Twitter makes me feel bad", "Twitter has some great web development chatter. However, it also makes me feel like a fake and a failure. Here's why, and what I intend to do about it.")
       main
         h2 Not achieving enough
 

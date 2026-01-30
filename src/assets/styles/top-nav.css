@@ -1,0 +1,130 @@
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: var(--spacing-1) var(--spacing-2);
+  background: rgba(250, 249, 247, 0.7);
+  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .top-nav {
+    position: relative;
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    padding: var(--spacing-2) 0;
+    margin: var(--spacing-2) 0;
+    border-bottom: none;
+  }
+}
+
+.top-nav__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+}
+
+.top-nav__photo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+  .top-nav__photo {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+.top-nav__title {
+  font-family: var(--font-display);
+  font-size: var(--font-size-body);
+  font-weight: 700;
+}
+
+.top-nav__title a:link,
+.top-nav__title a:visited {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.top-nav__title a:hover {
+  color: var(--text-muted);
+}
+
+@media (max-width: 520px) {
+  .top-nav__title {
+    font-size: var(--font-size-xs);
+  }
+}
+
+@media (max-width: 390px) {
+  .top-nav__title {
+    display: none;
+  }
+}
+
+.top-nav__nav {
+  display: flex;
+  gap: var(--spacing-2);
+}
+
+.top-nav__nav-link,
+.top-nav__nav-link:link,
+.top-nav__nav-link:visited {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--text);
+  text-decoration: none;
+  font-size: var(--font-size-body);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease;
+}
+
+.top-nav__nav-link:hover,
+.top-nav__nav-link:active {
+  color: var(--accent);
+}
+
+.top-nav__nav-link svg {
+  flex-shrink: 0;
+}
+
+.top-nav__nav-text {
+  display: inline;
+}
+
+@media (max-width: 519px) {
+  .top-nav__nav {
+    gap: var(--spacing-1);
+  }
+
+  .top-nav__nav-link,
+  .top-nav__nav-link:link,
+  .top-nav__nav-link:visited {
+    font-size: var(--font-size-xs);
+  }
+
+  .top-nav__nav-link svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-nav__nav-link {
+    padding: 0;
+  }
+}

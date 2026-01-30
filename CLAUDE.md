@@ -91,3 +91,7 @@ Variables defined in `_variables.css`:
 - The development server runs at http://localhost:3000 (always check whether there’s one running before attempting to start a new one.
 - Use the frontend-design skill for any changes that require you build new user interfaces.
 - After making visual changes, if "claude in chrome" is enabled, you MUST check for issues at small, medium, and large viewport sizes.
+
+## Coding principles
+
+- Always use CSS variables for colors, text sizes and spacings.
