@@ -36,6 +36,14 @@ h3 {
   letter-spacing: 0.5px;
 }
 
+h4 {
+  font-size: var(--font-size-detail);
+  font-weight: 600;
+  line-height: 1.4;
+  margin: var(--spacing-4) 0 var(--spacing-1) 0;
+  letter-spacing: 0.5px;
+}
+
 p,
 ul,
 ol {
