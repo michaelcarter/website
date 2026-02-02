@@ -79,6 +79,12 @@
   gap: var(--spacing-2);
 }
 
+@media (min-width: 768px) {
+  .top-nav__nav {
+    gap: var(--spacing-4);
+  }
+}
+
 .top-nav__nav-link,
 .top-nav__nav-link:link,
 .top-nav__nav-link:visited {

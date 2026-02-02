@@ -37,6 +37,15 @@
   margin-left: var(--spacing-1);
 }
 
+.card__image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 7.5rem;
+  width: 7.5rem;
+}
+
 .card__image {
   height: auto;
   width: 7.5rem;

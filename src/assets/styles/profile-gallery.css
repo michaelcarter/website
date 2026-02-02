@@ -1,9 +1,9 @@
 .profile-gallery {
   display: flex;
   flex-direction: row;
-  margin: var(--spacing-2) 0 var(--spacing-4) 0;
+  margin: var(--spacing-3) auto var(--spacing-4) auto;
   padding: var(--spacing-1) 0;
-  isolation: isolate;
+  max-width: 520px;
 }
 
 @media only screen and (min-width: 640px) {

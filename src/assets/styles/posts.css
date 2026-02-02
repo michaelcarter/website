@@ -9,34 +9,22 @@
 a.posts__post-link:link,
 a.posts__post-link:visited {
   display: block;
-  border: 1px solid transparent;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
   border-radius: var(--border-radius-2);
-  margin: 0 calc(0px - var(--spacing-3));
+  margin: 0 0 var(--spacing-3) 0;
   padding: var(--spacing-3);
   transform: matrix(1, 0, 0, 1, 0, 0);
   transition-duration: 0.3s;
   transition-property: all;
   transition-timing-function: ease-in-out;
   will-change: transform, background-color, border-color;
-  position: relative;
-}
-
-@media (max-width: 767px) {
-  a.posts__post-link:link,
-  a.posts__post-link:visited {
-    background: var(--bg-card);
-    border-color: var(--border-card);
-    margin: 0 0 var(--spacing-3) 0;
-  }
 }
 
 a.posts__post-link:hover,
 a.posts__post-link:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.075);
-  background: var(--bg-card);
-  border-color: var(--border-card);
   transform: matrix3d(1.01, 0, 0, 0, 0, 1.01, 0, 0, 0, 0, 1.01, 0, 0, 0, 0, 1);
-  z-index: 1;
 }
 
 .posts__post h3 {
