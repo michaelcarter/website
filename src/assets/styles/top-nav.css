@@ -11,7 +11,7 @@
   background: var(--bg-translucent);
   backdrop-filter: blur(0.5rem);
   -webkit-backdrop-filter: blur(0.5rem);
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-card);
 }
 
 @media (min-width: 768px) {
@@ -36,7 +36,7 @@
   width: 3rem;
   height: 3rem;
   border-radius: 100%;
-  border: 1px solid var(--border-subtle-strong);
+  border: 1px solid var(--border-card);
 }
 
 @media (min-width: 768px) {
@@ -96,7 +96,7 @@ a.top-nav__nav-link:visited {
   font-size: var(--font-size-body);
   padding: 0.5rem;
   border-radius: 0.25rem;
-  transition: color 0.15s ease;
+  transition: color var(--duration-short) ease-in-out;
 }
 
 a.top-nav__nav-link:hover,
@@ -109,7 +109,7 @@ a.top-nav__nav-link:active {
   width: 20px;
   height: 20px;
   filter: var(--icon-filter);
-  transition: filter 0.15s ease;
+  transition: filter var(--duration-short) ease-in-out;
 }
 
 a.top-nav__nav-link:hover .top-nav__nav-icon,

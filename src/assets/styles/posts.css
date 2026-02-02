@@ -15,7 +15,7 @@ a.posts__post-link:visited {
   margin: 0 0 var(--spacing-3) 0;
   padding: var(--spacing-3);
   transform: matrix(1, 0, 0, 1, 0, 0);
-  transition-duration: 0.3s;
+  transition-duration: var(--duration-short);
   transition-property: all;
   transition-timing-function: ease-in-out;
   will-change: transform, background-color, border-color;
@@ -30,7 +30,7 @@ a.posts__post-link:visited {
 
 a.posts__post-link:hover,
 a.posts__post-link:active {
-  box-shadow: 0 0.5rem 1rem var(--shadow-card);
+  box-shadow: 0 0.5rem 1rem var(--shadow);
   transform: matrix3d(1.01, 0, 0, 0, 0, 1.01, 0, 0, 0, 0, 1.01, 0, 0, 0, 0, 1);
 }
 
@@ -66,15 +66,15 @@ a.posts__post-link:active {
   position: absolute;
   top: 2.5rem;
   right: var(--spacing-2);
-  transition-duration: 0.3s;
+  transition-duration: var(--duration-short);
   transition-property: fill;
   transition-timing-function: ease-in-out;
   z-index: 2;
 }
 
 .tip {
-  background: var(--accent-subtle);
-  border-left: 3px solid var(--accent);
+  background: var(--bg-card);
+  border-left: 3px solid var(--border-card);
   padding: var(--spacing-2);
   margin: var(--spacing-2) 0;
   border-radius: var(--border-radius-2);
