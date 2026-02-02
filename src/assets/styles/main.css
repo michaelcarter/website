@@ -3,6 +3,7 @@
 
 @import './structure.css';
 @import './typography.css';
+@import './clickable-icon.css';
 
 @import './top-nav.css';
 @import './header.css';

@@ -21,6 +21,13 @@ a.posts__post-link:visited {
   will-change: transform, background-color, border-color;
 }
 
+@media (min-width: 768px) {
+  a.posts__post-link:link,
+  a.posts__post-link:visited {
+    margin: 0 0 var(--spacing-4) 0;
+  }
+}
+
 a.posts__post-link:hover,
 a.posts__post-link:active {
   box-shadow: 0 0.5rem 1rem var(--shadow-card);

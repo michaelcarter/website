@@ -1,0 +1,29 @@
+.clickable-icon,
+a.clickable-icon:link,
+a.clickable-icon:visited {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-1);
+  background: transparent;
+  border: none;
+  border-radius: var(--border-radius-1);
+  cursor: pointer;
+  transition: background-color var(--duration-short) ease;
+}
+
+.clickable-icon:hover,
+a.clickable-icon:hover {
+  background-color: var(--accent-subtle);
+}
+
+.clickable-icon__icon {
+  width: 24px;
+  height: 24px;
+  filter: var(--icon-filter);
+  transition: filter var(--duration-short) ease;
+}
+
+.clickable-icon:hover .clickable-icon__icon {
+  filter: var(--icon-filter-hover);
+}

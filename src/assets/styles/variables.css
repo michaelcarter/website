@@ -16,16 +16,26 @@
   --accent-hover: light-dark(#a05d10, #e9a352);
 
   /* Semantic colours */
-  --bg-translucent: light-dark(rgba(250, 249, 247, 0.7), rgba(26, 25, 23, 0.85));
+  --bg-translucent: light-dark(
+    rgba(250, 249, 247, 0.7),
+    rgba(26, 25, 23, 0.85)
+  );
   --border-subtle: light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.08));
-  --border-subtle-strong: light-dark(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.15));
+  --border-subtle-strong: light-dark(
+    rgba(0, 0, 0, 0.2),
+    rgba(255, 255, 255, 0.15)
+  );
   --shadow-card: light-dark(rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.3));
   --shadow-photo: light-dark(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
-  --accent-subtle: light-dark(rgba(196, 117, 28, 0.1), rgba(212, 137, 58, 0.15));
+  --accent-subtle: light-dark(
+    rgba(196, 117, 28, 0.1),
+    rgba(212, 137, 58, 0.15)
+  );
   --bg-photo: light-dark(#fff, #2a2826);
   /* Filter vars can't use light-dark() - handled via media query + data-theme */
   --icon-filter: none;
-  --icon-filter-hover: invert(38%) sepia(91%) saturate(456%) hue-rotate(6deg) brightness(96%) contrast(88%);
+  --icon-filter-hover: invert(38%) sepia(91%) saturate(456%) hue-rotate(6deg)
+    brightness(96%) contrast(88%);
 
   /* Spacings */
   --spacing-1: 0.5rem;
@@ -35,6 +45,7 @@
   --spacing-5: 8rem;
 
   /* Border radiuses */
+  --border-radius-1: 0.25rem;
   --border-radius-2: 0.5rem;
 
   /* Font families */
@@ -56,18 +67,21 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --icon-filter: invert(1) brightness(0.85);
-    --icon-filter-hover: invert(76%) sepia(30%) saturate(1000%) hue-rotate(351deg) brightness(97%) contrast(88%);
+    --icon-filter-hover: invert(76%) sepia(30%) saturate(1000%)
+      hue-rotate(351deg) brightness(97%) contrast(88%);
   }
 }
 
-[data-theme="light"] {
+[data-theme='light'] {
   color-scheme: light;
   --icon-filter: none;
-  --icon-filter-hover: invert(38%) sepia(91%) saturate(456%) hue-rotate(6deg) brightness(96%) contrast(88%);
+  --icon-filter-hover: invert(38%) sepia(91%) saturate(456%) hue-rotate(6deg)
+    brightness(96%) contrast(88%);
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   color-scheme: dark;
   --icon-filter: invert(1) brightness(0.85);
-  --icon-filter-hover: invert(76%) sepia(30%) saturate(1000%) hue-rotate(351deg) brightness(97%) contrast(88%);
+  --icon-filter-hover: invert(76%) sepia(30%) saturate(1000%) hue-rotate(351deg)
+    brightness(97%) contrast(88%);
 }
