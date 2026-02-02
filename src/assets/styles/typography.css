@@ -28,6 +28,24 @@ h2 {
   margin: var(--spacing-1) 0 var(--spacing-2);
 }
 
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  margin-left: calc(0px - var(--spacing-3) - 50px);
+}
+
+.section-heading__icon {
+  width: 50px;
+  height: auto;
+  color: var(--border-card);
+  flex-shrink: 0;
+}
+
+.section-heading h2 {
+  margin: 0;
+}
+
 h3 {
   font-size: var(--font-size-body);
   font-weight: 600;

@@ -1,6 +1,7 @@
 extends ../base.pug
 
 include mixins/postLinks.pug
+include mixins/sectionHeading.pug
 
 block pageContent
   main
@@ -20,7 +21,7 @@ block pageContent
 
             p I’ve worked with teams of all and led many digital transformations through the companies I’ve founded, and I’m at my best collaborating with others to deliver high quality web applications that solve valuable problems.
 
-            p I've been at this for 2 decades now, and find myself just as excited by AI today as I was by publishing handwritten HTML and CSS in 2006. If you'd like to work together, just <a href="mailto:mike@mcarter.me">email me</a>.
+            p I've been at this for 2 decades now, and find myself just as excited by AI today as I was by publishing handwritten HTML and CSS when I started. If you'd like to work together, just <a href="mailto:mike@mcarter.me">email me</a>.
 
         .grid__item
           .card
@@ -34,7 +35,7 @@ block pageContent
               li <strong>DevOps</strong> &#9758; Continuous Itegration (CI) &amp; Deployment (CD), automated testing, monitoring.
 
     section#work-history
-      h2 Work
+      +sectionHeading("Work", "work")
       p.lead I’ve founded 2 companies that have worked with numerous big UK brands.
 
       .grid
@@ -87,7 +88,7 @@ block pageContent
           .grid__placeholder
 
     section#projects
-      h2 Projects
+      +sectionHeading("Projects", "projects")
       p.lead I’ve also created a few digital products of my own.
       .grid
         .grid__item
@@ -121,7 +122,7 @@ block pageContent
           .grid__placeholder
 
     section#writing
-      h2 Writing
+      +sectionHeading("Writing", "writing")
       p.lead I write about software and product engineering, with an occasional personal update.
 
       .grid

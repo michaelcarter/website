@@ -32,4 +32,5 @@ a.technologies__link:visited {
 a.technologies__link:hover,
 a.technologies__link:active {
   color: var(--accent-hover);
+  border: 1px solid var(--accent-hover);
 }
