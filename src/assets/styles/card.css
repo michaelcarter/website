@@ -57,6 +57,16 @@
   filter: var(--icon-filter);
 }
 
+@media (prefers-color-scheme: dark) {
+  .card__image--lighten-dark {
+    filter: brightness(5) saturate(0.35) hue-rotate(-55deg);
+  }
+}
+
+[data-theme='dark'] .card__image--lighten-dark {
+  filter: brightness(5) saturate(0.35) hue-rotate(-15deg);
+}
+
 h2 + .card,
 p + .card {
   margin-top: var(--spacing-4);
