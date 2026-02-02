@@ -2,6 +2,7 @@ extends ../base.pug
 
 include mixins/postLinks.pug
 include mixins/sectionHeading.pug
+include mixins/socialLinks.pug
 
 block pageContent
   main
@@ -21,7 +22,9 @@ block pageContent
 
             p I’ve worked with teams of all sizes and led many digital transformations through the companies I’ve founded, and I’m at my best collaborating with others to deliver high quality web applications that solve valuable problems.
 
-            p I've been at this for 2 decades now, and find myself just as excited by AI today as I was by publishing handwritten HTML and CSS when I started. If you'd like to work together, just <a href="mailto:mike@mcarter.me">email me</a>.
+            p I've been at this for 2 decades now, and find myself just as excited by AI today as I was by publishing handwritten HTML and CSS when I started.
+
+            +socialLinks("social-links")
 
         .grid__item
           .card
@@ -110,7 +113,7 @@ block pageContent
           .card
             .card__aside
               .card__image-container
-                img.card__image(src="/assets/images/logos/parable.svg", alt="Parable logo" width="101" height="71" loading="lazy")
+                img.card__image.card__image--invert(src="/assets/images/logos/parable.svg", alt="Parable logo" width="101" height="71" loading="lazy")
             .card__content
               h3 Parable <span class="card__dates">2022 - 2023</span>
               p An analytics platform for blog posts. Tracks actual readership and provides insights for writers. Built over a year, launched in 2022, <a href="/posts/my-first-failed-product">shut down in 2023</a> due to lack of product-market fit.

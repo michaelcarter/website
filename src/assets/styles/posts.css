@@ -23,7 +23,7 @@ a.posts__post-link:visited {
 
 a.posts__post-link:hover,
 a.posts__post-link:active {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.075);
+  box-shadow: 0 0.5rem 1rem var(--shadow-card);
   transform: matrix3d(1.01, 0, 0, 0, 0, 1.01, 0, 0, 0, 0, 1.01, 0, 0, 0, 0, 1);
 }
 
@@ -66,7 +66,7 @@ a.posts__post-link:active {
 }
 
 .tip {
-  background: rgba(196, 117, 28, 0.1);
+  background: var(--accent-subtle);
   border-left: 3px solid var(--accent);
   padding: var(--spacing-2);
   margin: var(--spacing-2) 0;

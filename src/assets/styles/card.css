@@ -53,6 +53,10 @@
   margin: 0;
 }
 
+.card__image--invert {
+  filter: var(--icon-filter);
+}
+
 h2 + .card,
 p + .card {
   margin-top: var(--spacing-4);

@@ -27,6 +27,9 @@ a.technologies__link:visited {
   margin: 0 0.1rem;
   padding: 0 0.3rem;
   vertical-align: 4%;
+  transition:
+    color var(--duration-short) ease-in-out,
+    border-color var(--duration-short) ease-in-out;
 }
 
 a.technologies__link:hover,
@@ -34,3 +37,4 @@ a.technologies__link:active {
   color: var(--accent-hover);
   border: 1px solid var(--accent-hover);
 }
+

@@ -1,5 +1,6 @@
 include pages/mixins/topNav.pug
 include pages/mixins/header.pug
+include pages/mixins/socialLinks.pug
 
 block vars
   -var pageTitle = "Mike Carter | Software developer & founder | UK"
@@ -13,6 +14,8 @@ block vars
 doctype html
 html(lang="en-GB")
   head
+    script.
+      (function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
     meta(charset='utf-8')
     link(rel='shortcut icon' href='/favicon.ico' type='image/x-icon')
     link(rel='icon' href='/favicon.ico' type='image/x-icon')
@@ -49,5 +52,29 @@ html(lang="en-GB")
     .container
       +topNav()
       block pageContent
-      footer
-        p &copy; 2026 Mike Carter
+      footer.footer
+        .footer__brand
+          img.footer__photo(src="/assets/images/me.webp" alt="Mike Carter")
+          p.footer__copyright &copy; 2026 Mike Carter
+        +socialLinks("footer__social")
+    script.
+      (function(){
+        var icon=document.getElementById('theme-icon');
+        var btn=document.querySelector('.top-nav__theme-toggle');
+        function isDark(){
+          var t=document.documentElement.getAttribute('data-theme');
+          return t==='dark'||(t!=='light'&&window.matchMedia('(prefers-color-scheme:dark)').matches);
+        }
+        function updateIcon(){if(icon)icon.src='/assets/images/icons/lightbulb-'+(isDark()?'off':'on')+'.svg';}
+        updateIcon();
+        if(!btn)return;
+        btn.addEventListener('click',function(){
+          var html=document.documentElement;
+          var current=html.getAttribute('data-theme');
+          var next=current==='dark'?'light':current==='light'?'dark':
+            (window.matchMedia('(prefers-color-scheme:dark)').matches?'light':'dark');
+          html.setAttribute('data-theme',next);
+          localStorage.setItem('theme',next);
+          updateIcon();
+        });
+      })();

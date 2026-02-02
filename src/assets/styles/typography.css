@@ -40,6 +40,7 @@ h2 {
   height: auto;
   flex-shrink: 0;
   opacity: 0.2;
+  filter: var(--icon-filter);
 }
 
 .section-heading__icon--work {

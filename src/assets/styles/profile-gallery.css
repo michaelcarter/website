@@ -19,8 +19,8 @@
 }
 
 .profile-gallery__image {
-  background: #fff;
-  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.2));
+  background: var(--bg-photo);
+  filter: drop-shadow(0 0 6px var(--shadow-photo));
   height: auto;
   flex: 1 1 100%;
   min-width: 0;
