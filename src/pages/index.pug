@@ -5,22 +5,39 @@ include mixins/postLinks.pug
 block pageContent
   main
     section
-      +header("About me", "I’m Mike Carter, an experienced full-stack developer and technical leader, building web and mobile platforms since 2006.")
+      +header("About me")
 
-      p I’ve worked with teams of all sizes and led digital transformations through the companies I’ve founded. I enjoy designing and delivering high-performance systems, collaborating with teams, and solving complex problems:
+      .grid
+        .grid__item
+          div
+            p.lead I’m Mike Carter, an experienced full-stack developer and technical lead, building on the web since 2006.
 
-      ul
-        li <strong>Backend</strong> &#9758; <a href="https://nodejs.org/" target="_blank" rel="noopener" class="tech-link">Node.js</a>/<a href="http://typescriptlang.org" target="_blank" rel="noopener" class="tech-link">TypeScript</a>, <a href="https://www.ruby-lang.org/" target="_blank" rel="noopener" class="tech-link">Ruby</a>/<a href="https://rubyonrails.org/" target="_blank" rel="noopener" class="tech-link">Ruby on Rails</a>, <a href="https://www.mysql.com/" target="_blank" rel="noopener" class="tech-link">MySQL</a>/<a href="https://www.postgresql.org/" target="_blank" rel="noopener" class="tech-link">PostgreSQL</a>, <a href="https://redis.io/" target="_blank" rel="noopener" class="tech-link">Redis</a>, API design.
-        li <strong>Frontend</strong> &#9758; <a href="https://react.dev/" target="_blank" rel="noopener" class="tech-link">React</a>/<a href="http://typescriptlang.org" target="_blank" rel="noopener" class="tech-link">TypeScript</a>, <a href="https://nextjs.org/" target="_blank" rel="noopener" class="tech-link">Next.js</a>, SPA architecture, state management, high-volume user flows.
-        li <strong>Mobile</strong> &#9758; <a href="https://reactnative.dev/" target="_blank" rel="noopener" class="tech-link">React Native</a> &amp; <a href="https://native.hotwired.dev/" target="_blank" rel="noopener" class="tech-link">Hotwire Native</a>, push notifications, authentication, real-time messaging.
-        li <strong>Cloud infrastructure</strong> &#9758; AWS (<a href="https://aws.amazon.com/ecr/" target="_blank" rel="noopener" class="tech-link">ECR</a>, <a href="https://aws.amazon.com/ecs/" target="_blank" rel="noopener" class="tech-link">ECS</a>, <a href="https://aws.amazon.com/ec2/" target="_blank" rel="noopener" class="tech-link">EC2</a>, <a href="https://aws.amazon.com/rds/" target="_blank" rel="noopener" class="tech-link">RDS</a>, <a href="https://aws.amazon.com/lambda/" target="_blank" rel="noopener" class="tech-link">Lambda</a>, <a href="https://aws.amazon.com/cloudfront/" target="_blank" rel="noopener" class="tech-link">Cloudfront</a>, <a href="https://aws.amazon.com/s3/" target="_blank" rel="noopener" class="tech-link">S3</a>, <a href="https://aws.amazon.com/ses/" target="_blank" rel="noopener" class="tech-link">SES</a>, <a href="https://aws.amazon.com/sns/" target="_blank" rel="noopener" class="tech-link">SNS</a>), scalable systems design.
-        li <strong>DevOps</strong> &#9758; Continuous Itegration (CI) &amp; Deployment (CD), automated testing, monitoring.
-        li <strong>Systems Integration</strong> &#9758; Third-party APIs for payments, authentication, booking, and more.
+            .profile-gallery
+              img.profile-gallery__image(src="/assets/images/profile/mike-carter-1.jpeg" alt="Mike Carter climbing a hill in the snow" width="157" height="157" loading="lazy")
+              img.profile-gallery__image(src="/assets/images/profile/mike-carter-2.jpeg" alt="Mike Carter standing with his family in front of a waterfall" width="157" height="157" loading="lazy")
+              img.profile-gallery__image(src="/assets/images/profile/mike-carter-3.jpeg" alt="Mike Carter wearing a tiara" width="157" height="157" loading="lazy")
 
-      p If you’d like to work together, just <a href="mailto:mike@mcarter.me">email me</a>.
+
+            p I’ve worked with teams of all and led many digital transformations through the companies I’ve founded. I enjoy collaborating with others to deliver high quality web applications that solve valuable problems.
+
+            p I've been at this for 2 decades now, and find myself just as excited by AI today as I was by publishing handwritten HTML and CSS in 2006. If you'd like to work together, just <a href="mailto:mike@mcarter.me">email me</a>.
+
+        .grid__item
+          .card
+            h3 Technologies
+            ul.technologies
+              li <strong>AI</strong> &#9758; <a href="https://claude.com/product/claude-code" target="_blank" rel="noopener" class="technologies__link">Claude Code</a>, <a href="https://cursor.com/" target="_blank" rel="noopener" class="technologies__link">Cursor</a>, AI-assisted refactoring & code analysis, prompt engineering and agent orchestration for development workflows.
+              li <strong>Backend</strong> &#9758; <a href="https://nodejs.org/" target="_blank" rel="noopener" class="technologies__link">Node.js</a>/<a href="http://typescriptlang.org" target="_blank" rel="noopener" class="technologies__link">TypeScript</a>, <a href="https://www.ruby-lang.org/" target="_blank" rel="noopener" class="technologies__link">Ruby</a>/<a href="https://rubyonrails.org/" target="_blank" rel="noopener" class="technologies__link">Ruby on Rails</a>, <a href="https://www.mysql.com/" target="_blank" rel="noopener" class="technologies__link">MySQL</a>/<a href="https://www.postgresql.org/" target="_blank" rel="noopener" class="technologies__link">PostgreSQL</a>, <a href="https://redis.io/" target="_blank" rel="noopener" class="technologies__link">Redis</a>, API design.
+              li <strong>Frontend</strong> &#9758; <a href="https://react.dev/" target="_blank" rel="noopener" class="technologies__link">React</a>/<a href="http://typescriptlang.org" target="_blank" rel="noopener" class="technologies__link">TypeScript</a>, <a href="https://nextjs.org/" target="_blank" rel="noopener" class="technologies__link">Next.js</a>, SPA architecture, state management, high-volume user flows.
+              li <strong>Mobile</strong> &#9758; <a href="https://reactnative.dev/" target="_blank" rel="noopener" class="technologies__link">React Native</a> &amp; <a href="https://native.hotwired.dev/" target="_blank" rel="noopener" class="technologies__link">Hotwire Native</a>, push notifications, authentication, real-time messaging.
+              li <strong>Cloud infrastructure</strong> &#9758; AWS (<a href="https://aws.amazon.com/ecr/" target="_blank" rel="noopener" class="technologies__link">ECR</a>, <a href="https://aws.amazon.com/ecs/" target="_blank" rel="noopener" class="technologies__link">ECS</a>, <a href="https://aws.amazon.com/ec2/" target="_blank" rel="noopener" class="technologies__link">EC2</a>, <a href="https://aws.amazon.com/rds/" target="_blank" rel="noopener" class="technologies__link">RDS</a>, <a href="https://aws.amazon.com/lambda/" target="_blank" rel="noopener" class="technologies__link">Lambda</a>, <a href="https://aws.amazon.com/cloudfront/" target="_blank" rel="noopener" class="technologies__link">Cloudfront</a>, <a href="https://aws.amazon.com/s3/" target="_blank" rel="noopener" class="technologies__link">S3</a>, <a href="https://aws.amazon.com/ses/" target="_blank" rel="noopener" class="technologies__link">SES</a>, <a href="https://aws.amazon.com/sns/" target="_blank" rel="noopener" class="technologies__link">SNS</a>), scalable systems design.
+              li <strong>DevOps</strong> &#9758; Continuous Itegration (CI) &amp; Deployment (CD), automated testing, monitoring.
+              li <strong>Systems Integration</strong> &#9758; Third-party APIs for payments, authentication, booking, and more.
 
     section#work-history
       h2 Work
+      p.lead I’ve worked with numerous UK brands as clients of the two agencies I’ve founded, or as an employee.
+
       .grid
         .grid__item
           .card
@@ -69,6 +86,7 @@ block pageContent
 
     section#projects
       h2 Projects
+      p.lead I’ve also created a few digital products of my own.
       .grid
         .grid__item
           .card

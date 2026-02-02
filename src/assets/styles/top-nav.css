@@ -59,7 +59,7 @@
 }
 
 .top-nav__title a:hover {
-  color: var(--text-muted);
+  color: var(--accent-hover);
 }
 
 @media (max-width: 520px) {
@@ -95,7 +95,7 @@
 
 .top-nav__nav-link:hover,
 .top-nav__nav-link:active {
-  color: var(--accent);
+  color: var(--accent-hover);
 }
 
 .top-nav__nav-link svg {
