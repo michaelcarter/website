@@ -25,11 +25,11 @@ block pageContent
 
         img(src="/assets/images/posts/fix-the-right-problems/badcode.png" alt="getsBigger - a slightly verbose, slightly hard to read function")
 
-        p This function returns <span class="code">true</span> if each number in a given array increments by one from the number that preceeded it (e.g. 1, 2, 3), and <span class="code">false</span> if not (e.g. 1, 3, 2). It's a little verbose, but with 15 minutes of refactoring we could transform it into something more clear and concise.
+        p This function returns <span class="code">true</span> if each number in a given array increments by one from the number that preceded it (e.g. 1, 2, 3), and <span class="code">false</span> if not (e.g. 1, 3, 2). It's a little verbose, but with 15 minutes of refactoring we could transform it into something more clear and concise.
 
         p If we did refactor for clarity and brevity, it'd be tempting to think we'd spent our time well. However, taking into account the wider context of a whole codebase, we'd see the biggest issue isn't how the function is written, it's actually the function name. <span class="code">getsBigger</span> is both misleading and ambiguous.
 
-        p Any developer seeing <span class="code">getsBigger</span> in use is likely to mininterpret its operation from its name alone. This wastes time, reduces the readability of the codebase, and increases the likelihood of accidental bugs through misuse. By contrast, the code within <span class="code">getsBigger</span> is actually a non-issue. It works, it's reasonably efficient, and it's unlikely to need to change.
+        p Any developer seeing <span class="code">getsBigger</span> in use is likely to misinterpret its operation from its name alone. This wastes time, reduces the readability of the codebase, and increases the likelihood of accidental bugs through misuse. By contrast, the code within <span class="code">getsBigger</span> is actually a non-issue. It works, it's reasonably efficient, and it's unlikely to need to change.
 
         p Most developers will opt to rewrite the function, but the best value improvement we could make to <span class="code">getsBigger</span> would probably be to rename it to clearly convey its purpose. Something as quick as a find and replace across the codebase would mean every future developer could confidently use the function without needing to see how it's implemented. We'd be making a small change that pays off big over the long term, and we'd be fixing the right problem.
 
