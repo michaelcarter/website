@@ -38,8 +38,12 @@ h2 {
 .section-heading__icon {
   width: 50px;
   height: auto;
-  color: var(--border-card);
   flex-shrink: 0;
+  opacity: 0.2;
+}
+
+.section-heading__icon--work {
+  margin-top: -1rem;
 }
 
 .section-heading h2 {

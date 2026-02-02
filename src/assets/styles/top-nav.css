@@ -104,8 +104,10 @@
   color: var(--accent-hover);
 }
 
-.top-nav__nav-link svg {
+.top-nav__nav-icon {
   flex-shrink: 0;
+  width: 20px;
+  height: 20px;
 }
 
 .top-nav__nav-text {
@@ -123,7 +125,7 @@
     font-size: var(--font-size-xs);
   }
 
-  .top-nav__nav-link svg {
+  .top-nav__nav-icon {
     width: 2rem;
     height: 2rem;
   }
