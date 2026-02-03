@@ -16,6 +16,12 @@ body {
   max-width: var(--bp-lg);
 }
 
+@media (min-width: 768px) {
+  .container {
+    padding: var(--spacing-4);
+  }
+}
+
 section {
   margin: var(--spacing-5) 0;
   scroll-margin-top: 4rem;

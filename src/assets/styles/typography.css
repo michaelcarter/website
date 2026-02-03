@@ -32,15 +32,26 @@ h2 {
   display: flex;
   align-items: center;
   gap: var(--spacing-3);
-  margin-left: calc(0px - var(--spacing-3) - 50px);
+  margin: 0;
 }
 
 .section-heading__icon {
-  width: 50px;
-  height: auto;
-  flex-shrink: 0;
-  opacity: 0.2;
-  filter: var(--icon-filter);
+  display: none;
+}
+
+@media (min-width: 1130px) {
+  .section-heading {
+    margin-left: calc(0px - var(--spacing-3) - 50px);
+  }
+
+  .section-heading__icon {
+    display: block;
+    width: 50px;
+    height: auto;
+    flex-shrink: 0;
+    opacity: 0.2;
+    filter: var(--icon-filter);
+  }
 }
 
 .section-heading__icon--work {

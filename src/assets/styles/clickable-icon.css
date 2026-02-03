@@ -27,3 +27,14 @@ a.clickable-icon:hover {
 .clickable-icon:hover .clickable-icon__icon {
   filter: var(--icon-filter-hover);
 }
+
+.clickable-icon span {
+  display: block;
+  margin-left: var(--spacing-2);
+  font-size: var(--font-size-small);
+  color: var(--text);
+}
+
+.clickable-icon:hover span {
+  color: var(--accent-hover);
+}
