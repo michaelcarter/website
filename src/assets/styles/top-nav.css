@@ -47,7 +47,7 @@
 }
 
 .top-nav__title {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: var(--font-size-body);
   font-weight: 700;
 }
