@@ -1,6 +1,6 @@
-.clickable-icon,
-a.clickable-icon:link,
-a.clickable-icon:visited {
+.icon-button,
+a.icon-button:link,
+a.icon-button:visited {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,29 +12,29 @@ a.clickable-icon:visited {
   transition: background-color var(--duration-short) ease-in-out;
 }
 
-.clickable-icon:hover,
-a.clickable-icon:hover {
+.icon-button:hover,
+a.icon-button:hover {
   background-color: var(--bg-card);
 }
 
-.clickable-icon__icon {
+.icon-button__icon {
   width: 24px;
   height: 24px;
   filter: var(--icon-filter);
   transition: filter var(--duration-short) ease-in-out;
 }
 
-.clickable-icon:hover .clickable-icon__icon {
+.icon-button:hover .icon-button__icon {
   filter: var(--icon-filter-hover);
 }
 
-.clickable-icon span {
+.icon-button span {
   display: block;
-  margin-left: var(--spacing-2);
+  margin-left: var(--spacing-1);
   font-size: var(--font-size-small);
   color: var(--text);
 }
 
-.clickable-icon:hover span {
+.icon-button:hover span {
   color: var(--accent-hover);
 }

@@ -59,22 +59,38 @@ html(lang="en-GB")
         +socialLinks("footer__social")
     script.
       (function(){
-        var icon=document.getElementById('theme-icon');
-        var btn=document.querySelector('.top-nav__theme-toggle');
+        if(window.__themeInit)return;
+        window.__themeInit=true;
+        var icons=document.querySelectorAll('.theme-icon');
+        var btns=document.querySelectorAll('.top-nav__theme-toggle');
         function isDark(){
           var t=document.documentElement.getAttribute('data-theme');
           return t==='dark'||(t!=='light'&&window.matchMedia('(prefers-color-scheme:dark)').matches);
         }
-        function updateIcon(){if(icon)icon.src='/assets/images/icons/lightbulb-'+(isDark()?'off':'on')+'.svg';}
-        updateIcon();
-        if(!btn)return;
-        btn.addEventListener('click',function(){
-          var html=document.documentElement;
-          var current=html.getAttribute('data-theme');
-          var next=current==='dark'?'light':current==='light'?'dark':
-            (window.matchMedia('(prefers-color-scheme:dark)').matches?'light':'dark');
-          html.setAttribute('data-theme',next);
-          localStorage.setItem('theme',next);
-          updateIcon();
+        function updateIcons(){
+          var src='/assets/images/icons/lightbulb-'+(isDark()?'off':'on')+'.svg';
+          icons.forEach(function(ic){ic.src=src;});
+        }
+        updateIcons();
+        btns.forEach(function(btn){
+          btn.addEventListener('click',function(){
+            var html=document.documentElement;
+            var current=html.getAttribute('data-theme');
+            var next=current==='dark'?'light':current==='light'?'dark':
+              (window.matchMedia('(prefers-color-scheme:dark)').matches?'light':'dark');
+            html.setAttribute('data-theme',next);
+            localStorage.setItem('theme',next);
+            updateIcons();
+          });
         });
+        var menu=document.getElementById('mobile-menu');
+        var burger=document.querySelector('.top-nav__burger');
+        if(menu){
+          document.querySelectorAll('#mobile-menu a').forEach(function(a){
+            a.addEventListener('click',function(){menu.hidePopover();});
+          });
+          menu.addEventListener('toggle',function(e){
+            if(burger)burger.setAttribute('aria-expanded',e.newState==='open');
+          });
+        }
       })();

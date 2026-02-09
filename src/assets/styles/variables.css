@@ -35,8 +35,8 @@
   --spacing-5: 8rem;
 
   /* Border radiuses */
-  --border-radius-1: 0.25rem;
-  --border-radius-2: 0.5rem;
+  --border-radius-1: 0.75rem;
+  --border-radius-2: 1rem;
 
   /* Font families */
   --font-heading: 'Crimson Pro', serif;

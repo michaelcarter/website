@@ -1,18 +1,32 @@
 mixin topNav()
   header.top-nav
-    .top-nav__brand
-      img.top-nav__photo(src="/assets/images/me.webp", alt="Mike Carter" width="208" height="208" loading="lazy")
-      span.top-nav__title
-        a(href="/") Mike Carter
+    a.top-nav__title(href="/") Mike Carter
     nav.top-nav__nav
-      a.top-nav__nav-link(href="/#work-history")
-        img.top-nav__nav-icon(src="/assets/images/icons/work.svg" alt="" aria-hidden="true")
-        span.top-nav__nav-text Work
-      a.top-nav__nav-link(href="/#projects")
-        img.top-nav__nav-icon(src="/assets/images/icons/projects.svg" alt="" aria-hidden="true")
-        span.top-nav__nav-text Projects
-      a.top-nav__nav-link(href="/#writing")
-        img.top-nav__nav-icon(src="/assets/images/icons/writing.svg" alt="" aria-hidden="true")
-        span.top-nav__nav-text Writing
-      button.top-nav__theme-toggle.clickable-icon(type="button" aria-label="Toggle dark mode")
-        img#theme-icon.clickable-icon__icon(src="/assets/images/icons/lightbulb-on.svg" alt="" aria-hidden="true")
+      a.icon-button(href="/#work-history")
+        img.icon-button__icon(src="/assets/images/icons/work.svg" alt="" aria-hidden="true")
+        span Work
+      a.icon-button(href="/#projects")
+        img.icon-button__icon(src="/assets/images/icons/projects.svg" alt="" aria-hidden="true")
+        span Projects
+      a.icon-button(href="/#writing")
+        img.icon-button__icon(src="/assets/images/icons/writing.svg" alt="" aria-hidden="true")
+        span Writing
+      button.top-nav__theme-toggle.icon-button(type="button" aria-label="Toggle dark mode")
+        img.icon-button__icon.theme-icon(src="/assets/images/icons/lightbulb-on.svg" alt="" aria-hidden="true")
+    button.top-nav__burger.icon-button(type="button" popovertarget="mobile-menu" aria-label="Open menu" aria-expanded="false")
+      img.icon-button__icon(src="/assets/images/icons/menu.svg" alt="" aria-hidden="true")
+  nav#mobile-menu.mobile-menu(popover="auto")
+    button.mobile-menu__close.icon-button(type="button" popovertarget="mobile-menu" popovertargetaction="hide" aria-label="Close menu")
+      img.icon-button__icon(src="/assets/images/icons/close.svg" alt="" aria-hidden="true")
+    .mobile-menu__links
+      a.mobile-menu__link(href="/#work-history")
+        img.mobile-menu__link-icon(src="/assets/images/icons/work.svg" alt="" aria-hidden="true")
+        span Work
+      a.mobile-menu__link(href="/#projects")
+        img.mobile-menu__link-icon(src="/assets/images/icons/projects.svg" alt="" aria-hidden="true")
+        span Projects
+      a.mobile-menu__link(href="/#writing")
+        img.mobile-menu__link-icon(src="/assets/images/icons/writing.svg" alt="" aria-hidden="true")
+        span Writing
+    button.mobile-menu__theme-toggle.top-nav__theme-toggle.icon-button(type="button" aria-label="Toggle dark mode")
+      img.icon-button__icon.theme-icon(src="/assets/images/icons/lightbulb-on.svg" alt="" aria-hidden="true")
