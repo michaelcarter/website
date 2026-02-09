@@ -19,6 +19,9 @@ mixin topNav()
     button.mobile-menu__close.icon-button(type="button" popovertarget="mobile-menu" popovertargetaction="hide" aria-label="Close menu")
       img.icon-button__icon(src="/assets/images/icons/close.svg" alt="" aria-hidden="true")
     .mobile-menu__links
+      a.mobile-menu__link(href="/")
+        img.mobile-menu__link-icon(src="/assets/images/icons/home.svg" alt="" aria-hidden="true")
+        span Home
       a.mobile-menu__link(href="/#work-history")
         img.mobile-menu__link-icon(src="/assets/images/icons/work.svg" alt="" aria-hidden="true")
         span Work
