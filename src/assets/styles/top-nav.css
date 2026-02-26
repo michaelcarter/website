@@ -123,13 +123,8 @@
 
 .mobile-menu__close {
   position: absolute;
-  top: calc(var(--spacing-3) + var(--spacing-1) - 3px);
-  right: calc(2 * var(--spacing-2) - 3px);
-}
-
-.mobile-menu__close .icon-button__icon {
-  width: 32px;
-  height: 32px;
+  top: calc(var(--spacing-1) + var(--spacing-2));
+  right: calc(2 * var(--spacing-2));
 }
 
 .mobile-menu__links {

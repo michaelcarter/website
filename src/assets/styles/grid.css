@@ -16,10 +16,6 @@
   display: flex;
 }
 
-.grid__item--full {
-  grid-column: 1 / -1;
-}
-
 .grid .card {
   margin: 0;
   height: 100%;

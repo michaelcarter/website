@@ -2,8 +2,6 @@
   color-scheme: light dark;
 
   /* Breakpoints */
-  --bp-xs: 480px;
-  --bp-sm: 768px;
   --bp-lg: 1024px;
 
   /* Colours */
@@ -43,8 +41,8 @@
   --font-body: 'Lato', sans-serif;
 
   /* Font sizes (62.5% base = 10px root) */
-  --font-size-h1: 6rem;
-  --font-size-h2: 5.6rem;
+  --font-size-h1: 5rem;
+  --font-size-h2: 5rem;
   --font-size-body: 2.2rem;
   --font-size-detail: 2rem;
   --font-size-small: 1.8rem;

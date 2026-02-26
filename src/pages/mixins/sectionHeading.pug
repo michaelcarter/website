@@ -3,7 +3,7 @@ mixin sectionHeading(title, iconType)
     if iconType === 'work'
       img.section-heading__icon.section-heading__icon--work(src="/assets/images/icons/work.svg" alt="" aria-hidden="true")
     else if iconType === 'projects'
-      img.section-heading__icon(src="/assets/images/icons/projects.svg" alt="" aria-hidden="true")
+      img.section-heading__icon.section-heading__icon--projects(src="/assets/images/icons/projects.svg" alt="" aria-hidden="true")
     else if iconType === 'writing'
-      img.section-heading__icon(src="/assets/images/icons/writing.svg" alt="" aria-hidden="true")
+      img.section-heading__icon.section-heading__icon--writing(src="/assets/images/icons/writing.svg" alt="" aria-hidden="true")
     h2=title
