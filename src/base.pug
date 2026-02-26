@@ -93,4 +93,22 @@ html(lang="en-GB")
             if(burger)burger.setAttribute('aria-expanded',e.newState==='open');
           });
         }
+        var SCROLL_THRESHOLD=50;
+        var navMq=window.matchMedia('(max-width:767.99px)');
+        var navEl=document.querySelector('.top-nav');
+        function updateNavBg(){
+          var t=Math.min(window.scrollY/SCROLL_THRESHOLD,1);
+          navEl.style.setProperty('--nav-bg-opacity',t);
+        }
+        function handleNavMq(e){
+          if(e.matches){
+            updateNavBg();
+            window.addEventListener('scroll',updateNavBg,{passive:true});
+          }else{
+            window.removeEventListener('scroll',updateNavBg);
+            navEl.style.removeProperty('--nav-bg-opacity');
+          }
+        }
+        navMq.addEventListener('change',handleNavMq);
+        handleNavMq(navMq);
       })();

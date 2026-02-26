@@ -7,7 +7,7 @@ ul.technologies {
 .technologies li {
   border-bottom: 1px solid var(--border-card);
   margin: 0;
-  padding: var(--spacing-2) 0;
+  padding: var(--spacing-3) 0;
   font-size: var(--font-size-small);
 }
 
@@ -37,4 +37,3 @@ a.technologies__link:active {
   color: var(--accent-hover);
   border: 1px solid var(--accent-hover);
 }
-

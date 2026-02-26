@@ -3,38 +3,56 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  top: var(--spacing-3);
+  top: var(--spacing-1);
   left: var(--spacing-2);
   right: var(--spacing-2);
   z-index: 100;
-  padding: var(--spacing-1) var(--spacing-2);
+  padding: var(--spacing-2);
+  border-radius: var(--border-radius-2);
+}
+
+.top-nav::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--border-radius-2);
   background: var(--bg-translucent);
   backdrop-filter: blur(1rem);
   -webkit-backdrop-filter: blur(1rem);
   border: 1px solid var(--border-card);
-  border-radius: var(--border-radius-2);
+  opacity: var(--nav-bg-opacity, 0);
+  transition: opacity var(--duration-short) ease;
+  z-index: -1;
+  pointer-events: none;
 }
 
 @media (min-width: 768px) {
   .top-nav {
-    left: 50%;
+    position: relative;
+    top: auto;
+    left: auto;
     right: auto;
-    transform: translateX(-50%);
-    width: calc(100% - 2 * var(--spacing-4));
-    max-width: var(--bp-lg);
-    padding: var(--spacing-1) var(--spacing-3);
+    transform: none;
+    width: auto;
+    max-width: none;
+    padding: var(--spacing-1) 0;
+  }
+
+  .top-nav::after {
+    display: none;
   }
 }
 
-.top-nav__title:link,
-.top-nav__title:visited {
-  font-size: var(--font-size-small);
-  color: var(--text);
-  text-decoration: none;
+.top-nav__logo img {
+  margin: 0;
+  width: 100px;
+  filter: var(--icon-filter);
 }
 
-.top-nav__title:hover {
-  color: var(--accent-hover);
+@media (min-width: 768px) {
+  .top-nav__logo img {
+    width: 125px;
+  }
 }
 
 .top-nav__nav {
@@ -55,6 +73,7 @@
 @media (min-width: 768px) {
   .top-nav__theme-toggle {
     display: flex;
+    margin-right: calc(0px - var(--spacing-2));
   }
 }
 
@@ -86,7 +105,8 @@
   justify-content: center;
   gap: var(--spacing-4);
   opacity: 0;
-  transition: opacity var(--duration-short) ease-in-out,
+  transition:
+    opacity var(--duration-short) ease-in-out,
     display var(--duration-short) ease-in-out allow-discrete;
 }
 
@@ -150,4 +170,9 @@
   position: absolute;
   bottom: var(--spacing-4);
   display: flex;
+}
+
+.mobile-menu__theme-toggle .icon-button__icon {
+  width: 32px;
+  height: 32px;
 }

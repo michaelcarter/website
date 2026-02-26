@@ -1,7 +1,12 @@
 body {
   background: var(--bg);
   color: var(--text);
-  padding-top: 5rem;
+}
+
+@media (max-width: 767.99px) {
+  body {
+    padding-top: 5rem;
+  }
 }
 
 .container {
@@ -18,7 +23,12 @@ body {
 
 section {
   margin: var(--spacing-5) 0;
-  scroll-margin-top: 5rem;
+}
+
+@media (max-width: 767.99px) {
+  section {
+    scroll-margin-top: 5rem;
+  }
 }
 
 section:first-child {
