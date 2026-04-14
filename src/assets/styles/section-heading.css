@@ -1,0 +1,57 @@
+.section-heading {
+  margin: 0 0 var(--spacing-5) 0;
+}
+
+.section-heading__inner {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  margin: 0;
+}
+
+.section-heading__icon {
+  display: none;
+}
+
+.section-heading__lead {
+  font-weight: 500;
+  text-align: center;
+  text-wrap: pretty;
+}
+
+@media (min-width: 768px) {
+  .section-heading__lead {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1130px) {
+  .section-heading__inner {
+    margin-left: calc(0px - var(--spacing-3) - 40px);
+  }
+
+  .section-heading__icon {
+    display: block;
+    width: 40px;
+    height: auto;
+    flex-shrink: 0;
+    opacity: 0.2;
+    filter: var(--icon-filter);
+  }
+}
+
+.section-heading__icon--work {
+  margin-top: 0.3rem;
+}
+
+.section-heading__icon--projects {
+  margin-top: 0.5rem;
+}
+
+.section-heading__icon--writing {
+  margin-top: 1rem;
+}
+
+.section-heading h2 {
+  margin: 0;
+}

@@ -47,6 +47,11 @@
   margin: 0;
   width: 29px;
   filter: var(--icon-filter);
+  transition: transform var(--duration-short) ease-out;
+}
+
+.top-nav__logo:hover img {
+  transform: rotate(-6deg) scale(1.2);
 }
 
 @media (min-width: 768px) {

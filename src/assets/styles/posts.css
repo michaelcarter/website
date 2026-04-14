@@ -1,7 +1,7 @@
 .posts {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--spacing-3);
+  gap: var(--spacing-2);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -34,7 +34,6 @@ a.posts__post-link:visited {
 
 a.posts__post-link:hover,
 a.posts__post-link:active {
-  box-shadow: 0 0 10px #eee;
   background: var(--bg-card);
   border-color: var(--border-card-hover);
 }
@@ -44,6 +43,14 @@ a.posts__post-link:active {
   color: var(--text);
   max-width: calc(100% - 15px);
   margin: 0;
+  transition-duration: var(--duration-short);
+  transition-property: color;
+  transition-timing-function: ease-in-out;
+}
+
+a.posts__post-link:hover h3,
+a.posts__post-link:active h3 {
+  color: var(--accent-hover);
 }
 
 .posts__post-description {
