@@ -14,7 +14,6 @@ a.posts__post-link:visited {
   border-radius: var(--border-radius-2);
   margin: 0 0 var(--spacing-3) 0;
   padding: var(--spacing-3);
-  transform: matrix(1, 0, 0, 1, 0, 0);
   transition-duration: var(--duration-short);
   transition-property: all;
   transition-timing-function: ease-in-out;
@@ -30,8 +29,9 @@ a.posts__post-link:visited {
 
 a.posts__post-link:hover,
 a.posts__post-link:active {
-  box-shadow: 0 0.5rem 1rem var(--shadow);
-  transform: matrix3d(1.01, 0, 0, 0, 0, 1.01, 0, 0, 0, 0, 1.01, 0, 0, 0, 0, 1);
+  box-shadow: 0 0 10px #eee;
+  background: var(--bg-card-hover);
+  border-color: var(--border-card-hover);
 }
 
 .posts__post h3 {

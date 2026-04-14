@@ -7,7 +7,9 @@
   /* Colours */
   --bg: light-dark(#faf9f7, #1a1917);
   --bg-card: light-dark(#f3f1ed, #242220);
+  --bg-card-hover: light-dark(#eeece6, #2a2724);
   --border-card: light-dark(#e0ddd3, #3a3632);
+  --border-card-hover: light-dark(#d5d1c4, #423e39);
   --text: light-dark(#1a1a1a, #d9d7d2);
   --text-muted: light-dark(#555, #8a857f);
   --accent: light-dark(#c4751c, #d4893a);
