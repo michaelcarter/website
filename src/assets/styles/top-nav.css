@@ -45,13 +45,13 @@
 
 .top-nav__logo img {
   margin: 0;
-  width: 100px;
+  width: 29px;
   filter: var(--icon-filter);
 }
 
 @media (min-width: 768px) {
   .top-nav__logo img {
-    width: 125px;
+    width: 38px;
   }
 }
 

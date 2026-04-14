@@ -4,6 +4,7 @@ import Sitemap from 'vite-plugin-sitemap'
 import { glob } from 'glob'
 import path from 'path'
 import fs from 'fs'
+import webpImages from './vite-plugins/webp-images.js'
 
 const rootDir = import.meta.dirname
 const pagesDir = path.resolve(rootDir, 'src/pages')
@@ -65,6 +66,10 @@ export default defineConfig({
   },
   plugins: [
     devServerMiddleware(),
+    webpImages({
+      srcDir: path.resolve(rootDir, 'src/assets/images'),
+      cacheDir: path.resolve(rootDir, 'node_modules/.cache/webp-images'),
+    }),
     vitePluginPugStatic({
       buildOptions: { basedir: path.resolve(rootDir, 'src') },
       serveOptions: { basedir: path.resolve(rootDir, 'src') },

@@ -17,6 +17,7 @@
     "glob": "^10.3.10",
     "postcss": "^8.4.35",
     "postcss-import": "^16.1.1",
+    "sharp": "^0.34.5",
     "vite": "^5.4.21",
     "vite-plugin-sitemap": "^0.8.2"
   },
@@ -29,6 +30,5 @@
     "semi": false,
     "tabWidth": 2,
     "singleQuote": true
-  },
-  "dependencies": {}
+  }
 }
