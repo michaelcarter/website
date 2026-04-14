@@ -1,0 +1,6 @@
+.image--profile {
+  border-radius: var(--border-radius-1);
+  box-shadow: 0 0 10px #ccc;
+  height: auto;
+  width: 100%;
+}

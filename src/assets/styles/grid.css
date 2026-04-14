@@ -13,7 +13,12 @@
 
 .grid__item {
   min-width: 0;
+}
+
+.grid__item--center-content {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid .card {
