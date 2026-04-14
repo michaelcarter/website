@@ -39,10 +39,10 @@ a.posts__post-link:active {
   border-color: var(--border-card-hover);
 }
 
-.posts__post h3 {
-  font-family: var(--font-heading);
-  font-size: calc(1.1 * var(--font-size-body));
-  font-weight: 400;
+.posts__post-link:link h3,
+.posts__post-link:visited h3 {
+  color: var(--text);
+  max-width: calc(100% - 15px);
   margin: 0;
 }
 

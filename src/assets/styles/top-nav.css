@@ -62,7 +62,7 @@
 @media (min-width: 768px) {
   .top-nav__nav {
     display: flex;
-    gap: var(--spacing-4);
+    gap: var(--spacing-2);
   }
 }
 
@@ -165,9 +165,4 @@
   position: absolute;
   bottom: var(--spacing-4);
   display: flex;
-}
-
-.mobile-menu__theme-toggle .icon-button__icon {
-  width: 32px;
-  height: 32px;
 }

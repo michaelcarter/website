@@ -1,0 +1,110 @@
+.button,
+.button:link,
+.button:visited {
+  background: var(--bg);
+  color: var(--text-muted);
+  display: inline-block;
+  line-height: 2.1rem;
+  border: 1px solid var(--border-card);
+  border-radius: 3px;
+  margin: 0 0.1rem;
+  padding: 0 0.3rem;
+  vertical-align: 4%;
+  cursor: pointer;
+  transition:
+    color var(--duration-short) ease-in-out,
+    border-color var(--duration-short) ease-in-out,
+    background-color var(--duration-short) ease-in-out;
+}
+
+.button--large,
+.button--large:link,
+.button--large:visited {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-1) var(--spacing-2);
+  border-radius: var(--border-radius-1);
+  line-height: normal;
+  vertical-align: baseline;
+  margin: 0;
+  background: transparent;
+}
+
+.button--client-logo,
+.button--client-logo:link,
+.button--client-logo:visited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.8rem;
+  padding: 2px 4px;
+  margin: 0 0.2rem 0 0;
+  vertical-align: -0.7rem;
+  background: transparent;
+}
+
+.button__logo {
+  display: block;
+  height: 100%;
+  width: 10rem;
+  background-color: var(--text-muted);
+  mask-image: var(--logo);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: var(--logo);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  transition: background-color var(--duration-short) ease-in-out;
+}
+
+.button__icon {
+  width: 24px;
+  height: 24px;
+  filter: var(--icon-filter);
+  transition: filter var(--duration-short) ease-in-out;
+}
+
+.button__label {
+  display: block;
+  margin-left: var(--spacing-1);
+  font-size: var(--font-size-small);
+  color: var(--text);
+  transition: color var(--duration-short) ease-in-out;
+}
+
+/* Active/Hover Styles: */
+
+.button:hover,
+.button:active {
+  background-color: var(--bg-card);
+  border-color: var(--border-card-hover);
+  color: var(--accent-hover);
+}
+
+.button--large:hover,
+.button--large:active {
+  background-color: var(--bg-card);
+  border-color: var(--border-card-hover);
+}
+
+.button--large:hover .button__icon {
+  filter: var(--icon-filter-hover);
+}
+
+.button--large:hover .button__label {
+  color: var(--accent-hover);
+}
+
+.button--client-logo:hover,
+.button--client-logo:active {
+  background-color: var(--bg-card);
+  border-color: var(--border-card-hover);
+}
+
+.button--client-logo:hover .button__logo,
+.button--client-logo:active .button__logo {
+  background-color: var(--accent-hover);
+}
