@@ -22,6 +22,7 @@
 a.posts__post-link:link,
 a.posts__post-link:visited {
   display: block;
+  position: relative;
   width: 100%;
   background: var(--bg-card);
   border: 1px solid var(--border-card);

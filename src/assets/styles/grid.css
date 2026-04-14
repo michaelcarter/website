@@ -21,6 +21,11 @@
   justify-content: center;
 }
 
+.grid__item--stretch {
+  display: flex;
+  height: 100%;
+}
+
 .grid .card {
   margin: 0;
   height: 100%;
@@ -38,5 +43,6 @@
 @media (min-width: 768px) {
   .grid__placeholder {
     display: block;
+    height: 100%;
   }
 }
