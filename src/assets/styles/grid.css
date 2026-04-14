@@ -9,6 +9,10 @@
     gap: var(--spacing-4);
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .grid--reverse-md > .grid__item:first-child {
+    order: 2;
+  }
 }
 
 .grid__item {
