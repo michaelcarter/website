@@ -67,7 +67,6 @@ a.technologies__logo-link:visited {
   justify-content: center;
   height: 2.8rem;
   padding: 2px 4px;
-  background: var(--bg-card);
   border-radius: 3px;
   margin-right: 0.2rem;
   vertical-align: -0.7rem;
@@ -78,7 +77,6 @@ a.technologies__logo-link:visited {
 
 a.technologies__logo-link:hover,
 a.technologies__logo-link:active {
-  background: var(--bg-card-hover);
   border-color: var(--accent-hover);
 }
 

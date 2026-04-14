@@ -5,8 +5,8 @@ a.icon-button:visited {
   align-items: center;
   justify-content: center;
   padding: var(--spacing-1) var(--spacing-2);
-  background: transparent;
-  border: none;
+  /*background: var(--bg-card-hover);*/
+  border: 1px solid var(--border-card);
   border-radius: var(--border-radius-1);
   cursor: pointer;
   transition: background-color var(--duration-short) ease-in-out;

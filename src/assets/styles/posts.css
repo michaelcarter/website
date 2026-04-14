@@ -24,7 +24,6 @@ a.posts__post-link:visited {
   display: block;
   position: relative;
   width: 100%;
-  background: var(--bg-card);
   border: 1px solid var(--border-card);
   border-radius: var(--border-radius-2);
   padding: var(--spacing-3);
@@ -36,7 +35,7 @@ a.posts__post-link:visited {
 a.posts__post-link:hover,
 a.posts__post-link:active {
   box-shadow: 0 0 10px #eee;
-  background: var(--bg-card-hover);
+  background: var(--bg-card);
   border-color: var(--border-card-hover);
 }
 

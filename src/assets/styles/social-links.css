@@ -3,6 +3,7 @@
   flex-direction: row;
   align-items: flex-start;
   margin-bottom: var(--spacing-3);
+  gap: var(--spacing-2);
 }
 
 @media (min-width: 768px) {
