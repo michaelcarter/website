@@ -58,3 +58,47 @@ a.technologies__link:active {
   color: var(--accent-hover);
   border: 1px solid var(--accent-hover);
 }
+
+a.technologies__logo-link:link,
+a.technologies__logo-link:visited {
+  border: 1px solid var(--border-card);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.8rem;
+  padding: 2px 4px;
+  background: var(--bg-card);
+  border-radius: 3px;
+  margin-right: 0.2rem;
+  vertical-align: -0.7rem;
+  transition:
+    background-color var(--duration-short) ease-in-out,
+    border-color var(--duration-short) ease-in-out;
+}
+
+a.technologies__logo-link:hover,
+a.technologies__logo-link:active {
+  background: var(--bg-card-hover);
+  border-color: var(--accent-hover);
+}
+
+.technologies__logo {
+  display: block;
+  height: 100%;
+  width: 10rem;
+  background-color: var(--text-muted);
+  mask-image: var(--logo);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: var(--logo);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  transition: background-color var(--duration-short) ease-in-out;
+}
+
+a.technologies__logo-link:hover .technologies__logo,
+a.technologies__logo-link:active .technologies__logo {
+  background-color: var(--accent-hover);
+}

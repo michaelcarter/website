@@ -31,6 +31,7 @@ block pageContent
 
     section#work-history
       +sectionHeading("Work", "work")
+
       p.lead I’ve founded 2 companies that have worked with numerous big UK brands.
 
       .grid
@@ -48,11 +49,11 @@ block pageContent
               h4 Recent projects
 
               ul.technologies
-                li <strong><a href="https://dcthomsonshop.co.uk" target="_blank" rel="noopener">DC Thomson</a></strong> &#9758; Rebuilding their subscription purchase platform for better customer experience.
-                li <strong><a href="https://laced.com" target="_blank" rel="noopener">Laced</a></strong> &#9758; Consulting and development support on a major European expansion.
-                li <strong><a href="https://riftrefunds.co.uk" target="_blank" rel="noopener">RIFT</a></strong> &#9758; Partnering to digitise and streamline their Tax Refund claims process.
-                li <strong><a href="https://purplebricks.com" target="_blank" rel="noopener">Purplebricks</a></strong> &#9758; Reducing overheads with a self-service property information collection flow.
-                li <strong><a href="https://allocate.co.uk" target="_blank" rel="noopener">Allocate</a></strong> &#9758; Leading modernisation and ongoing development of their core web application and API.
+                li <a href="https://dcthomsonshop.co.uk" target="_blank" rel="noopener" class="technologies__logo-link" aria-label="DC Thomson"><span class="technologies__logo" style="--logo: url(/assets/images/client-logos/dc-thomson.svg)"></span></a> Rebuilding their subscription purchase platform for better customer experience.
+                li <a href="https://laced.com" target="_blank" rel="noopener" class="technologies__logo-link" aria-label="Laced"><span class="technologies__logo" style="--logo: url(/assets/images/client-logos/laced.svg)"></span></a> Consulting and development support on a major European expansion.
+                li <a href="https://riftrefunds.co.uk" target="_blank" rel="noopener" class="technologies__logo-link" aria-label="RIFT"><span class="technologies__logo" style="--logo: url(/assets/images/client-logos/rift.svg)"></span></a> Partnering to digitise and streamline their Tax Refund claims process.
+                li <a href="https://purplebricks.com" target="_blank" rel="noopener" class="technologies__logo-link" aria-label="Purplebricks"><span class="technologies__logo" style="--logo: url(/assets/images/client-logos/purplebricks.svg)"></span></a> Reducing overheads with a self-service property information collection flow.
+                li <a href="https://allocate.co.uk" target="_blank" rel="noopener" class="technologies__logo-link" aria-label="Allocate"><span class="technologies__logo" style="--logo: url(/assets/images/client-logos/allocate.svg)"></span></a> Leading modernisation and ongoing development of their core web application and API.
 
         .grid__item
           .card
@@ -68,10 +69,10 @@ block pageContent
               h4 Notable clients
 
               ul.technologies
-                li <strong><a href="https://holidayextras.co.uk" target="_blank" rel="noopener">Holiday Extras</a></strong> &#9758; Played a major role in the development of their HEHA trip planning app.
-                li <strong><a href="https://riftrefunds.co.uk" target="_blank" rel="noopener">RIFT</a></strong> &#9758; Led their digital transformation, enabling hundreds of thousands to self service tax refund claims.
-                li <strong><a href="https://laced.com" target="_blank" rel="noopener">Laced</a></strong> &#9758; Built their digital platform from the ground up and helped them scale to handle hundreds of millions in transactions.
-                li <strong><a href="https://allocate.co.uk" target="_blank" rel="noopener">Allocate</a></strong> &#9758; Pulled out of a technical debt crisis and put a sustainable, modern foundation in place.
+                li <a href="https://holidayextras.co.uk" target="_blank" rel="noopener" class="technologies__logo-link" aria-label="Holiday Extras"><span class="technologies__logo" style="--logo: url(/assets/images/client-logos/holiday-extras.svg)"></span></a> Played a major role in the development of their HEHA trip planning app.
+                li <a href="https://riftrefunds.co.uk" target="_blank" rel="noopener" class="technologies__logo-link" aria-label="RIFT"><span class="technologies__logo" style="--logo: url(/assets/images/client-logos/rift.svg)"></span></a> Led their digital transformation, enabling hundreds of thousands to self service tax refund claims.
+                li <a href="https://laced.com" target="_blank" rel="noopener" class="technologies__logo-link" aria-label="Laced"><span class="technologies__logo" style="--logo: url(/assets/images/client-logos/laced.svg)"></span></a> Built their digital platform from the ground up and helped them scale to handle hundreds of millions in transactions.
+                li <a href="https://allocate.co.uk" target="_blank" rel="noopener" class="technologies__logo-link" aria-label="Allocate"><span class="technologies__logo" style="--logo: url(/assets/images/client-logos/allocate.svg)"></span></a> Pulled out of a technical debt crisis and put a sustainable, modern foundation in place.
 
         .grid__item
           .card
@@ -373,3 +374,5 @@ block pageContent
           external: true
         }
       ])
+
+    script(src="/assets/scripts/logo-marquee.js" defer)
