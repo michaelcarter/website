@@ -13,6 +13,18 @@
   .grid--reverse-md > .grid__item:first-child {
     order: 2;
   }
+
+  .grid--reverse-md > .grid__item--center-content {
+    position: relative;
+  }
+
+  .grid--reverse-md > .grid__item--center-content > .image--profile {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .grid__item {
