@@ -1,0 +1,13 @@
+mixin postList(posts)
+  ul.post-list
+    each post in posts
+      li.post-list__item
+        if post.external
+          a.post-list__link(href!=post.href, target="_blank" rel="noopener")
+            h3=post.title
+            span.post-list__date=post.date
+            img.post-list__external-icon(src="/assets/images/external-link.svg" alt="External link")
+        else
+          a.post-list__link(href!=post.href)
+            h3=post.title
+            span.post-list__date=post.date

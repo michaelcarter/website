@@ -1,6 +1,7 @@
 extends ../base.pug
 
-include mixins/postLinks.pug
+include mixins/postCards.pug
+include mixins/postList.pug
 include mixins/sectionHeading.pug
 include mixins/socialLinks.pug
 
@@ -13,7 +14,7 @@ block pageContent
         .grid__item
           img.image--profile(src="/assets/images/profile/mike-carter-office-talk.webp" alt="Mike Carter talking to a group of people in an office environment" width="475" height="381")
 
-          h3 Core technologies
+          h3.heading--small Core technologies
           ul.technologies
             li.technologies__item
               strong Ruby:
@@ -145,7 +146,7 @@ block pageContent
     section#writing
       +sectionHeading("Writing", "writing", "Writing about the decisions that shape software systems — architecture, technical debt, and the trade-offs nobody warns you about.")
 
-      +postLinks([
+      +postCards([
         {
           title: "Speed run to legacy: how cheap AI tokens hide expensive mistakes",
           description: "Falling token prices mask a rising cost: the codebase complexity that turns AI-assisted applications into legacy systems.",
@@ -211,9 +212,9 @@ block pageContent
         }
       ])
 
-      h3.posts__archive-heading Archive
+      h3.post-list__heading Archive
 
-      +postLinks([
+      +postList([
         {
           title: "What to do when your developer leaves and nobody understands the code",
           date: "30th March 2026",
@@ -385,6 +386,6 @@ block pageContent
           date: "20th January 2014",
           external: true
         }
-      ], true)
+      ])
 
     script(src="/assets/scripts/logo-marquee.js" defer)

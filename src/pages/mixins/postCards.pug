@@ -1,0 +1,17 @@
+mixin postCards(posts)
+  ul.post-cards
+    each post in posts
+      li.post-cards__item
+        if post.external
+          a.post-cards__link(href!=post.href, target="_blank" rel="noopener")
+            h3=post.title
+            if post.description
+              p.post-cards__description=post.description
+            span.post-cards__date=post.date
+            img.post-cards__external-icon(src="/assets/images/external-link.svg" alt="External link")
+        else
+          a.post-cards__link(href!=post.href)
+            h3=post.title
+            if post.description
+              p.post-cards__description=post.description
+            span.post-cards__date=post.date
