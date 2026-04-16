@@ -12,8 +12,8 @@
   --border-card-hover: light-dark(#d5d1c4, #423e39);
   --text: light-dark(#1a1a1a, #d9d7d2);
   --text-muted: light-dark(#555, #8a857f);
-  --accent: light-dark(#c4751c, #d4893a);
-  --accent-hover: light-dark(#a05d10, #e9a352);
+  --accent: light-dark(#9c5c15, #d4893a);
+  --accent-hover: light-dark(#7f4a0c, #e9a352);
   /* Semantic colours */
   --bg-translucent: light-dark(
     rgba(250, 249, 247, 0.7),
