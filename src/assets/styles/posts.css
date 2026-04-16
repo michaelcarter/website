@@ -84,6 +84,62 @@ a.posts__post-link:active h3 {
   z-index: 2;
 }
 
+.posts__archive-heading {
+  color: var(--text-muted);
+  font-size: var(--font-size-body);
+  font-weight: 400;
+  margin: var(--spacing-5) 0 var(--spacing-3);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .posts__archive-heading {
+    text-align: left;
+  }
+}
+
+.posts--archive {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.posts--archive a.posts__post-link:link,
+.posts--archive a.posts__post-link:visited {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-2);
+  border: none;
+  border-bottom: 1px solid var(--border-card);
+  border-radius: 0;
+  padding: var(--spacing-2) 0;
+}
+
+.posts--archive a.posts__post-link:hover,
+.posts--archive a.posts__post-link:active {
+  background: none;
+}
+
+.posts--archive .posts__post-link:link h3,
+.posts--archive .posts__post-link:visited h3 {
+  font-size: var(--font-size-small);
+  font-weight: 400;
+  flex: 1;
+  max-width: none;
+}
+
+.posts--archive .posts__post-date {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.posts--archive .posts__post-external-icon {
+  position: static;
+  flex-shrink: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-left: 0;
+}
+
 .tip {
   background: var(--bg-card);
   border-left: 3px solid var(--border-card);

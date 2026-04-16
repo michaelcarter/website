@@ -1,5 +1,5 @@
-mixin postLinks(posts)
-  ul.posts
+mixin postLinks(posts, archive)
+  ul.posts(class=archive ? 'posts--archive' : '')
     each post in posts
       li.posts__post
         if post.external
