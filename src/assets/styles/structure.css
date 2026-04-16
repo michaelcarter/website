@@ -3,7 +3,7 @@ body {
   color: var(--text);
 }
 
-@media (max-width: 767.99px) {
+@media (max-width: 767px) {
   body {
     padding-top: 5rem;
   }
@@ -25,7 +25,7 @@ section {
   margin: var(--spacing-5) 0;
 }
 
-@media (max-width: 767.99px) {
+@media (max-width: 767px) {
   section {
     scroll-margin-top: 5rem;
   }
