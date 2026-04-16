@@ -37,24 +37,3 @@ ul.technologies {
   white-space: nowrap;
 }
 
-@media (min-width: 768px) {
-  .technologies--grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .technologies--grid li:nth-child(odd) {
-    padding-right: var(--spacing-3);
-  }
-
-  .technologies--grid li:nth-child(even) {
-    padding-left: var(--spacing-3);
-    border-left: 1px solid var(--border-card);
-  }
-
-  .technologies--grid li:nth-last-child(2):nth-child(odd) {
-    border-bottom: none;
-    padding-bottom: 0;
-  }
-}
-

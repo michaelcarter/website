@@ -36,6 +36,12 @@ h3 {
   letter-spacing: 0.5px;
 }
 
+h3.heading--small {
+  font-size: var(--font-size-detail);
+  margin: var(--spacing-1) 0 0 0;
+  font-weight: 600;
+}
+
 h4 {
   font-size: var(--font-size-detail);
   font-weight: 600;
@@ -55,7 +61,6 @@ ol {
 }
 
 strong {
-  color: var(--text);
   font-weight: 400;
 }
 
