@@ -1,18 +1,11 @@
 .card {
   margin: var(--spacing-3) 0;
-  /*background: var(--bg-card);*/
   border: 1px solid var(--border-card);
   border-radius: var(--border-radius-2);
   padding: var(--spacing-2);
 }
 
 @media (min-width: 768px) {
-  .card {
-    padding: var(--spacing-4);
-  }
-}
-
-@media (min-width: 1024px) {
   .card {
     padding: var(--spacing-4);
   }
@@ -71,9 +64,4 @@
 
 [data-theme='dark'] .card__image--lighten-dark {
   filter: brightness(5) saturate(0.35) hue-rotate(-55deg);
-}
-
-h2 + .card,
-p + .card {
-  margin-top: var(--spacing-4);
 }
