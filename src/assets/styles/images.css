@@ -1,6 +1,6 @@
 .image--profile {
   border-radius: var(--border-radius-2);
-  box-shadow: 0 0 3px #bbb;
+  border: 1px solid var(--border-card);
   height: auto;
   margin: 0 0 var(--spacing-2) 0;
   width: 100%;

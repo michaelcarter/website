@@ -10,32 +10,30 @@ block pageContent
       +header("About me")
 
       .grid.grid--reverse-md
-        .grid__item.grid__item--center-content
+        .grid__item
           img.image--profile(src="/assets/images/profile/mike-carter-office-talk.webp" alt="Mike Carter talking to a group of people in an office environment" width="475" height="381")
 
+          .card
+            h3 Core technologies
+            ul.technologies
+              li <strong>Ruby:</strong> Rails &bull; Hotwire &bull; Hotwire Native
+              li <strong>JavaScript:</strong> Node.js &bull; TypeScript &bull; React &bull; Next.js
+              li <strong>Databases:</strong> PostgreSQL &bull; MySQL &bull; Redis
+              li <strong>Infrastructure:</strong> AWS &bull; GCP &bull; Docker &bull; Kamal
+              li <strong>AI:</strong> Orchestration & Monitoring &bull; Code Generation &bull; RAG
+
         .grid__item
-            p.lead I’m Mike Carter, a principal full-stack software engineer, building on the web since 2006.
+            p.lead I'm Mike Carter, a principal full-stack software engineer with two decades of experience designing, building, and scaling commercial web applications.
 
-            p I’ve worked with teams of all sizes and have led many digital transformations for many clients through the two businesses I’ve started.
+            p As a Software Architect at Holiday Extras, I shaped technical direction across a 120-strong team, and was a driving force behind migrating their core booking platform to a React SPA that's still processing thousands of bookings per day. I architected Laced's platform from its earliest days, and helped scale it to handle millions in transactions. At RIFT, I led the technical transformation of their tax refund claims process from manual to self-service, opening access to hundreds of thousands of claimants.
 
-            p I’m at my best collaborating with others to deliver high quality web applications that solve valuable problems using the latest AI assisted development techniques.
+            p I've founded two companies, grown distributed engineering teams, and delivered across the full stack from cloud infrastructure to native mobile. I operate where architecture meets business strategy — technology selection, data model design, migrating millions of sensitive records under strict compliance constraints. I'm most valuable when the problem isn't which framework to use, but how to change a running system under real commercial pressure without breaking the business that depends on it.
 
             +socialLinks("social-links")
 
-      hr
-
-      .card
-        h3 Skills &amp; Technologies
-        ul.technologies.technologies--grid
-          li <strong>AI</strong> &#9758; <a href="https://claude.com/product/claude-code" target="_blank" rel="noopener" class="button">Claude Code</a>, <a href="https://cursor.com/" target="_blank" rel="noopener" class="button">Cursor</a>, AI-assisted refactoring & code analysis, prompt engineering and agent orchestration for development workflows.
-          li <strong>Backend</strong> &#9758; <a href="https://nodejs.org/" target="_blank" rel="noopener" class="button">Node.js</a>/<a href="http://typescriptlang.org" target="_blank" rel="noopener" class="button">TypeScript</a>, <a href="https://www.ruby-lang.org/" target="_blank" rel="noopener" class="button">Ruby</a>/<a href="https://rubyonrails.org/" target="_blank" rel="noopener" class="button">Ruby on Rails</a>, <a href="https://www.mysql.com/" target="_blank" rel="noopener" class="button">MySQL</a>/<a href="https://www.postgresql.org/" target="_blank" rel="noopener" class="button">PostgreSQL</a>, <a href="https://redis.io/" target="_blank" rel="noopener" class="button">Redis</a>, API design.
-          li <strong>Frontend</strong> &#9758; <a href="https://react.dev/" target="_blank" rel="noopener" class="button">React</a>/<a href="http://typescriptlang.org" target="_blank" rel="noopener" class="button">TypeScript</a>, <a href="https://nextjs.org/" target="_blank" rel="noopener" class="button">Next.js</a>, SPA architecture, state management, high-volume user flows.
-          li <strong>Mobile</strong> &#9758; <a href="https://reactnative.dev/" target="_blank" rel="noopener" class="button">React Native</a> &amp; <a href="https://native.hotwired.dev/" target="_blank" rel="noopener" class="button">Hotwire Native</a>, push notifications, authentication, real-time messaging.
-          li <strong>Cloud infrastructure</strong> &#9758; AWS (<a href="https://aws.amazon.com/ecr/" target="_blank" rel="noopener" class="button">ECR</a>, <a href="https://aws.amazon.com/ecs/" target="_blank" rel="noopener" class="button">ECS</a>, <a href="https://aws.amazon.com/ec2/" target="_blank" rel="noopener" class="button">EC2</a>, <a href="https://aws.amazon.com/rds/" target="_blank" rel="noopener" class="button">RDS</a>, <a href="https://aws.amazon.com/lambda/" target="_blank" rel="noopener" class="button">Lambda</a>, <a href="https://aws.amazon.com/cloudfront/" target="_blank" rel="noopener" class="button">Cloudfront</a>, <a href="https://aws.amazon.com/s3/" target="_blank" rel="noopener" class="button">S3</a>, <a href="https://aws.amazon.com/ses/" target="_blank" rel="noopener" class="button">SES</a>, <a href="https://aws.amazon.com/sns/" target="_blank" rel="noopener" class="button">SNS</a>), scalable systems design.
-          li <strong>DevOps</strong> &#9758; Continuous Integration (CI) &amp; Deployment (CD), automated testing, monitoring.
 
     section#work-history
-      +sectionHeading("Work", "work", "I’ve founded 2 companies that have worked with numerous big UK brands.")
+      +sectionHeading("Work", "work", "Over 13 years I've worked across organisations from 5-person startups to 500-employee enterprises, at every level from IC to architect to founder.")
 
       .grid
         .grid__item
@@ -45,18 +43,18 @@ block pageContent
                 img.card__image(src="/assets/images/bitbrawn-logo.webp", alt="Bitbrawn logo" width="80" height="74" loading="lazy")
             .card__content
               h3 BitBrawn <span class="card__dates">2021 - Now</span>
-              p I founded BitBrawn to rescue aging web applications that have become too fragile to change. If your JavaScript or Rails system is slowing you down, we stabilise it, modernise it, and get it generating value again without a full rebuild.
+              p I founded BitBrawn in 2021 to provide senior technical leadership to companies stuck with web applications they've outgrown. As principal engineer and architect on every engagement, I own the technical strategy — from initial system audit through to delivery — working directly with founders, CTOs, and product directors.
 
               p <a href="https://bitbrawn.com" target="_blank" rel="noopener">Visit BitBrawn</a>
 
               h4 Recent projects
 
               ul.technologies
-                li <a href="https://dcthomsonshop.co.uk" target="_blank" rel="noopener" class="button button--client-logo" aria-label="DC Thomson"><span class="button__logo" style="--logo: url(/assets/images/client-logos/dc-thomson.svg)"></span></a> Rebuilding their subscription purchase platform for better customer experience.
-                li <a href="https://laced.com" target="_blank" rel="noopener" class="button button--client-logo" aria-label="Laced"><span class="button__logo" style="--logo: url(/assets/images/client-logos/laced.svg)"></span></a> Consulting and development support on a major European expansion.
-                li <a href="https://riftrefunds.co.uk" target="_blank" rel="noopener" class="button button--client-logo" aria-label="RIFT"><span class="button__logo" style="--logo: url(/assets/images/client-logos/rift.svg)"></span></a> Partnering to digitise and streamline their Tax Refund claims process.
-                li <a href="https://purplebricks.com" target="_blank" rel="noopener" class="button button--client-logo" aria-label="Purplebricks"><span class="button__logo" style="--logo: url(/assets/images/client-logos/purplebricks.svg)"></span></a> Reducing overheads with a self-service property information collection flow.
-                li <a href="https://allocate.co.uk" target="_blank" rel="noopener" class="button button--client-logo" aria-label="Allocate"><span class="button__logo" style="--logo: url(/assets/images/client-logos/allocate.svg)"></span></a> Leading modernisation and ongoing development of their core web application and API.
+                li <a href="https://riftrefunds.co.uk" target="_blank" rel="noopener" class="button button--client-logo" aria-label="RIFT"><span class="button__logo" style="--logo: url(/assets/images/client-logos/rift.svg)"></span></a> Rescued a legacy Rails platform serving 160,000+ customers. Rebuilt the self-service claims experience and consolidated fragmented data stores into a unified API. Claim submissions increased 192%. <a href="https://bitbrawn.com/work/rift-legacy-platform-modernisation" target="_blank" rel="noopener">Read case study →</a>
+                li <a href="https://laced.com" target="_blank" rel="noopener" class="button button--client-logo" aria-label="Laced"><span class="button__logo" style="--logo: url(/assets/images/client-logos/laced.svg)"></span></a> Built the original marketplace platform in 2018, returned in 2023 to architect multi-market support for European expansion. Introduced market-level abstractions across the full stack without taking a live marketplace offline. Laced has cleared £100m+ in sales and now ships globally. <a href="https://bitbrawn.com/work/laced-ecommerce-platform" target="_blank" rel="noopener">Read case study →</a>
+                li <a href="https://purplebricks.com" target="_blank" rel="noopener" class="button button--client-logo" aria-label="Purplebricks"><span class="button__logo" style="--logo: url(/assets/images/client-logos/purplebricks.svg)"></span></a> Three-month engagement to design and ship a property onboarding flow within a large legacy platform at the UK's biggest online estate agent (500+ employees, £300m+ market cap at peak). Worked within their existing architecture, deployment process, and data model under tight constraints. <a href="https://bitbrawn.com/work/purplebricks-property-onboarding" target="_blank" rel="noopener">Read case study →</a>
+                li <a href="https://allocate.co.uk" target="_blank" rel="noopener" class="button button--client-logo" aria-label="Allocate"><span class="button__logo" style="--logo: url(/assets/images/client-logos/allocate.svg)"></span></a> Took over a booking management platform after the lead developer left without warning or documentation. Mapped dozens of undocumented services, stabilised critical systems, and now lead ongoing modernisation.  <a href="https://bitbrawn.com/work/allocate-legacy-application-rescue" target="_blank" rel="noopener">Read case study →</a>
+                li <a href="https://dcthomsonshop.co.uk" target="_blank" rel="noopener" class="button button--client-logo" aria-label="DC Thomson"><span class="button__logo" style="--logo: url(/assets/images/client-logos/dc-thomson.svg)"></span></a> Rebuilt their legacy PHP subscriptions platform using Next.js with a configurable backing CMS. Dramatically simplified the process of purchasing a subscription for their tens of thousands of subscribers.
 
         .grid__item
           .card
@@ -72,10 +70,9 @@ block pageContent
               h4 Notable clients
 
               ul.technologies
-                li <a href="https://holidayextras.co.uk" target="_blank" rel="noopener" class="button button--client-logo" aria-label="Holiday Extras"><span class="button__logo" style="--logo: url(/assets/images/client-logos/holiday-extras.svg)"></span></a> Played a major role in the development of their HEHA trip planning app.
-                li <a href="https://riftrefunds.co.uk" target="_blank" rel="noopener" class="button button--client-logo" aria-label="RIFT"><span class="button__logo" style="--logo: url(/assets/images/client-logos/rift.svg)"></span></a> Led their digital transformation, enabling hundreds of thousands to self service tax refund claims.
-                li <a href="https://laced.com" target="_blank" rel="noopener" class="button button--client-logo" aria-label="Laced"><span class="button__logo" style="--logo: url(/assets/images/client-logos/laced.svg)"></span></a> Built their digital platform from the ground up and helped them scale to handle hundreds of millions in transactions.
-                li <a href="https://allocate.co.uk" target="_blank" rel="noopener" class="button button--client-logo" aria-label="Allocate"><span class="button__logo" style="--logo: url(/assets/images/client-logos/allocate.svg)"></span></a> Pulled out of a technical debt crisis and put a sustainable, modern foundation in place.
+                li <a href="https://holidayextras.co.uk" target="_blank" rel="noopener" class="button button--client-logo" aria-label="Holiday Extras"><span class="button__logo" style="--logo: url(/assets/images/client-logos/holiday-extras.svg)"></span></a> Architected a React Native trip planning app, as an incubated product within Holiday Extras. Designed a Node.js and GraphQL backend, handling all types of trips, from fixed dates and destinations to entirely open-ended. Launched summer 2017. <a href="https://weareleaf.com/heha" target="_blank" rel="noopener">Read case study →</a>
+                li <a href="https://riftrefunds.co.uk" target="_blank" rel="noopener" class="button button--client-logo" aria-label="RIFT"><span class="button__logo" style="--logo: url(/assets/images/client-logos/rift.svg)"></span></a> Led development of RIFT's first self-service claims platform, MyRIFT, replacing an entirely manual process. Built the pre-registration eligibility flow, document upload system, and integrated API lookups for addresses, vehicles, and bank details — achieving 99.8% address accuracy across 20,000+ records. This engagement laid the foundation for a multi-year modernisation I continued at BitBrawn. <a href="https://weareleaf.com/rift" target="_blank" rel="noopener">Read case study →</a>
+                li <a href="https://laced.com" target="_blank" rel="noopener" class="button button--client-logo" aria-label="Laced"><span class="button__logo" style="--logo: url(/assets/images/client-logos/laced.svg)"></span></a> Architected and built Laced's marketplace platform from scratch using Ruby on Rails and React. Features included product listings, bulk seller tools, Stripe and PayPal integration, and a credit-based bidding system. The platform launched in early 2018 and scaled rapidly through the Covid sneaker boom, clearing £100m+ in total sales. I returned to the platform five years later through BitBrawn to architect their European expansion. <a href="https://weareleaf.com/laced" target="_blank" rel="noopener">Read case study →</a>
 
         .grid__item
           .card
@@ -84,8 +81,7 @@ block pageContent
                 img.card__image(src="/assets/images/logos/holidayextras.svg", alt="Holiday Extras logo" width="80" height="80" loading="lazy")
             .card__content
               h3 Holiday Extras <span class="card__dates">2013 - 2016</span>
-              p I joined Holiday Extras as a Web Developer in 2013, working primarily on their airport hotel and parking booking system.
-              p During my employment I was promoted to Software Engineer, and then Software Architect, where I helped shape technical decision making across the organisation.
+              p I joined Holiday Extras as a developer and was promoted to Software Architect within the 120-strong engineering team. I led the migration of their core booking platform to a React SPA — a system processing 10,000+ bookings per day that's still in production today. I also led development of the company's first React Native mobile app and contributed to engineering practices, CI/CD infrastructure, and technical decision-making across the wider organisation.
 
               p <a href="https://holidayextras.co.uk" target="_blank" rel="noopener">Visit Holiday Extras</a>.
 

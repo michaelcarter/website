@@ -24,6 +24,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: right 50%;
   }
 }
 
@@ -31,21 +32,21 @@
   min-width: 0;
 }
 
-.grid__item--center-content {
+/*.grid__item--center-content {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+}*/
 
 .grid__item--stretch {
   display: flex;
   height: 100%;
 }
 
-.grid .card {
+/*.grid .card {
   margin: 0;
   height: 100%;
-}
+}*/
 
 .grid__placeholder {
   display: none;

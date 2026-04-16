@@ -45,10 +45,10 @@
   /* Font sizes (62.5% base = 10px root) */
   --font-size-h1: 5rem;
   --font-size-h2: 5rem;
-  --font-size-body: 2.2rem;
-  --font-size-detail: 2rem;
-  --font-size-small: 1.8rem;
-  --font-size-xs: 1.5rem;
+  --font-size-body: 2rem;
+  --font-size-detail: 1.8rem;
+  --font-size-small: 1.7rem;
+  --font-size-xs: 1.4rem;
 
   /* Durations */
   --duration-short: 0.3s;
