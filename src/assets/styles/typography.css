@@ -36,10 +36,13 @@ h3 {
   letter-spacing: 0.5px;
 }
 
-h3.heading--small {
+h2.heading--small {
+  font-family: var(--font-body);
+  line-height: 1.4;
   font-size: var(--font-size-detail);
   margin: var(--spacing-1) 0 var(--spacing-2) 0;
   font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 h4 {
