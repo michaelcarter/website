@@ -13,14 +13,35 @@ block pageContent
         .grid__item
           img.image--profile(src="/assets/images/profile/mike-carter-office-talk.webp" alt="Mike Carter talking to a group of people in an office environment" width="475" height="381")
 
-          .card
-            h3 Core technologies
-            ul.technologies
-              li <strong>Ruby:</strong> Rails &bull; Hotwire &bull; Hotwire Native
-              li <strong>JavaScript:</strong> Node.js &bull; TypeScript &bull; React &bull; Next.js
-              li <strong>Databases:</strong> PostgreSQL &bull; MySQL &bull; Redis
-              li <strong>Infrastructure:</strong> AWS &bull; GCP &bull; Docker &bull; Kamal
-              li <strong>AI:</strong> Orchestration & Monitoring &bull; Code Generation &bull; RAG
+          h3 Core technologies
+          ul.technologies
+            li.technologies__item
+              strong Ruby:
+              span.technologies__tag Rails
+              span.technologies__tag Hotwire
+              span.technologies__tag Hotwire Native
+            li.technologies__item
+              strong JavaScript:
+              span.technologies__tag Node.js
+              span.technologies__tag TypeScript
+              span.technologies__tag React
+              span.technologies__tag Next.js
+            li.technologies__item
+              strong Databases:
+              span.technologies__tag PostgreSQL
+              span.technologies__tag MySQL
+              span.technologies__tag Redis
+            li.technologies__item
+              strong Infrastructure:
+              span.technologies__tag AWS
+              span.technologies__tag GCP
+              span.technologies__tag Docker
+              span.technologies__tag Kamal
+            li.technologies__item
+              strong AI:
+              span.technologies__tag Orchestration & Monitoring
+              span.technologies__tag Code Generation
+              span.technologies__tag RAG
 
         .grid__item
             p.lead I'm Mike Carter, a principal full-stack software engineer with two decades of experience designing, building, and scaling commercial web applications.
@@ -33,7 +54,7 @@ block pageContent
 
 
     section#work-history
-      +sectionHeading("Work", "work", "Over 13 years I've worked across organisations from 5-person startups to 500-employee enterprises, at every level from individual contributer to architect to founder.")
+      +sectionHeading("Work", "work", "Over 13 years I've worked across organisations from 5-person startups to 500-employee enterprises, at every level from individual contributor to architect to founder.")
 
       .grid
         .grid__item
@@ -110,6 +131,15 @@ block pageContent
               p An analytics platform tracking readership behaviour for blog authors. Built with Node.js and React, launched in 2022, and deliberately <a href="/posts/my-first-failed-product">shut down in 2023</a> when the market proved too narrow. A formative lesson in validating demand before writing code.
 
         .grid__item
+          .card
+            .card__aside
+              .card__image-container
+                img.card__image(src="/assets/images/logos/howdy.svg", alt="Howdy logo" width="38" height="29" loading="lazy")
+            .card__content
+              h3 Howdy <span class="card__dates">2017 - 2022</span>
+              p A hosted API for web contact forms — validation, spam filtering, and email delivery with zero backend code. Built at Leaf as an internal tool, opened to the public, and organically grew to 100+ paying users before winding down.
+
+        .grid__item.grid__item--stretch
           .grid__placeholder
 
     section#writing

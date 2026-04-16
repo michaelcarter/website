@@ -29,6 +29,8 @@
 }
 
 .grid__item {
+  display: flex;
+  flex-direction: column;
   min-width: 0;
 }
 
@@ -43,10 +45,10 @@
   height: 100%;
 }
 
-/*.grid .card {
+.grid .card {
+  flex: 1;
   margin: 0;
-  height: 100%;
-}*/
+}
 
 .grid__placeholder {
   display: none;
