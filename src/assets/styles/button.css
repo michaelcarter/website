@@ -34,28 +34,29 @@
 .button--client-logo,
 .button--client-logo:link,
 .button--client-logo:visited {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.8rem;
-  padding: 2px 4px;
-  margin: 0 0.2rem 0 0;
-  vertical-align: -0.7rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  min-height: 3.3rem;
+  padding: 0;
+  margin: 0 0 var(--spacing-2) 0;
+  border: none;
+  border-radius: 0;
   background: transparent;
 }
 
 .button__logo {
   display: block;
-  height: 100%;
-  width: 10rem;
+  width: var(--logo-w, auto);
+  height: var(--logo-h, 3.2rem);
   background-color: var(--text-muted);
   mask-image: var(--logo);
   mask-repeat: no-repeat;
-  mask-position: center;
+  mask-position: left center;
   mask-size: contain;
   -webkit-mask-image: var(--logo);
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
+  -webkit-mask-position: left center;
   -webkit-mask-size: contain;
   transition: background-color var(--duration-short) ease-in-out;
 }
@@ -100,8 +101,8 @@
 
 .button--client-logo:hover,
 .button--client-logo:active {
-  background-color: var(--bg-card);
-  border-color: var(--border-card-hover);
+  background: transparent;
+  border: none;
 }
 
 .button--client-logo:hover .button__logo,
