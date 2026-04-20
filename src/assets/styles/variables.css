@@ -14,6 +14,18 @@
   --text-muted: light-dark(#555, #8a857f);
   --accent: light-dark(#9c5c15, #d4893a);
   --accent-hover: light-dark(#7f4a0c, #e9a352);
+  /* Availability status (sage green, harmonises with warm accent) */
+  --status-available: light-dark(#4e6b3a, #9cc083);
+  --status-available-ink: light-dark(#fbfbf8, #1a2112);
+  --status-available-pulse: light-dark(#dbecba, #26351b);
+  --status-available-pulse-halo: light-dark(
+    rgba(219, 236, 186, 0.7),
+    rgba(38, 53, 27, 0.7)
+  );
+  --status-available-translucent: light-dark(
+    rgba(78, 107, 58, 0.92),
+    rgba(156, 192, 131, 0.85)
+  );
   /* Semantic colours */
   --bg-translucent: light-dark(
     rgba(250, 249, 247, 0.7),

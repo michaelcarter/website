@@ -1,0 +1,89 @@
+.availability-tag {
+  display: inline-flex;
+}
+
+.availability-tag__body {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px 4px 16px;
+  background: var(--status-available);
+  color: var(--status-available-ink);
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  clip-path: polygon(
+    8px 0,
+    100% 0,
+    100% 100%,
+    8px 100%,
+    0 50%
+  );
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.12),
+    0 4px 12px rgba(0, 0, 0, 0.08);
+  animation: availability-tag-enter 0.7s ease-out both;
+}
+
+.availability-tag__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--status-available-pulse);
+  box-shadow: 0 0 0 0 var(--status-available-pulse-halo);
+  animation: availability-tag-pulse 2.2s ease-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes availability-tag-enter {
+  0% {
+    opacity: 0;
+    transform: translateX(-6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes availability-tag-pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--status-available-pulse-halo);
+  }
+  70% {
+    box-shadow: 0 0 0 5px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+/* Mobile: translucent backdrop so the tag reads over scrolled content behind the fixed nav */
+@media (max-width: 767px) {
+  .availability-tag__body {
+    padding: 3px 8px 3px 13px;
+    font-size: 0.95rem;
+    letter-spacing: 0.015em;
+    gap: 4px;
+    background: var(--status-available-translucent);
+    backdrop-filter: blur(0.5rem);
+    -webkit-backdrop-filter: blur(0.5rem);
+  }
+
+  .availability-tag__dot {
+    width: 5px;
+    height: 5px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .availability-tag__body {
+    animation: none;
+  }
+
+  .availability-tag__dot {
+    animation: none;
+  }
+}

@@ -1,7 +1,12 @@
 mixin topNav()
   header.top-nav
-    a.top-nav__logo(href="/")
-      img(src="/assets/images/logo.webp" alt="Mike Carter Logo" width="50px")
+    .top-nav__brand
+      a.top-nav__logo(href="/")
+        img(src="/assets/images/logo.webp" alt="Mike Carter Logo" width="50px")
+      span.availability-tag
+        span.availability-tag__body
+          span.availability-tag__dot(aria-hidden="true")
+          span.availability-tag__text Open · 2-3 day contracts
     nav.top-nav__nav
       a.button.button--large(href="/#work-history")
         img.button__icon(src="/assets/images/icons/work.svg" alt="" aria-hidden="true")
